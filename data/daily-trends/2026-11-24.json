@@ -1,0 +1,92 @@
+{
+ "bot": "Daily Trends",
+ "date": "2026-11-24",
+ "status": "已检查 8 个来源，各源正常（Reddit、Product Hunt、微博官方接口受限，已用备用渠道读取）",
+ "corrections": [],
+ "items": [
+  {
+   "title": "🔄 英伟达董事会恢复黄仁勋 CEO 职务（据 CNBC 报道，董事会声明原文未读）",
+   "summary": "据 CNBC，英伟达 11/23 宣布董事会一致投票恢复黄仁勋总裁、CEO 及董事职务，即日生效；董事会称听取了「美国政府高层」意见，确信其复职「不构成国家安全风险」。黄仁勋 11/13 因婚外情报道（其一对象被指与中国间谍有关）辞职；复职当天英伟达股价收涨 31%。",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "CNBC",
+     "platform": "CNBC",
+     "published": "2026-11-23",
+     "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+    }
+   ],
+   "new_since": "相比 11/18「愿意回任」：董事会已正式恢复其职务，并称听取了美国政府高层意见。",
+   "prior": [
+    {
+     "title": "2026-11-13 黄仁勋辞去英伟达 CEO",
+     "url": "https://news.ycombinator.com/item?id=50467087"
+    },
+    {
+     "title": "2026-11-18 🔄 黄仁勋辞职后首次发声：愿意回任",
+     "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html"
+    }
+   ]
+  },
+  {
+   "title": "🔄 黎曼猜想 Lean 证明遭质疑，Alpöge 回应「代码满是垃圾但能编译」（质疑论文为转述，Nielsen 原文未读）",
+   "summary": "Alpöge 在 X 发文称「25 万+页」是玩笑；Lean 代码「显然满是垃圾，但能编译」，相关批评「完全合理、接受」，但未承认结论错误。此前 J. L. Nielsen 在 PhilArchive 发文称该证明「不包含证明」：几何条件被定义为恒真（True），几何侧与解析侧按定义是同一对象。据 aiciety 转述，该文并未否认最终定理就是 Mathlib 的 RiemannHypothesis，且代码中没有 sorry/axiom。",
+   "url": "https://x.com/__alpoge__/status/2124987173439209561",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "Levent Alpöge",
+     "platform": "X",
+     "published": "2026-11-24",
+     "url": "https://x.com/__alpoge__/status/2124987173439209561"
+    },
+    {
+     "author": "aiciety",
+     "platform": "aiciety.net",
+     "published": "2026-11-22",
+     "url": "https://aiciety.net/riemann-lean-proof-anygeometry-true-critique/"
+    }
+   ],
+   "new_since": "相比 11/22 Lean/Mathlib 社区认证：出现「几何条件恒真」的质疑论文，作者回应承认代码质量问题。",
+   "prior": [
+    {
+     "title": "2026-11-21 Anthropic 数学家称与 Claude 合作证明黎曼猜想",
+     "url": "https://alpo.ge/remark.pdf"
+    },
+    {
+     "title": "2026-11-22 🔄 黎曼猜想 Claude 辅助证明获 Lean/Mathlib 社区认证",
+     "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+    }
+   ]
+  },
+  {
+   "title": "弗吉尼亚、俄勒冈起诉 SpaceX：指 Grok 生成深伪色情并虚假宣称安全（据 CNBC，起诉书原文未读）",
+   "summary": "据 CNBC，两州总检察长 11/23 分别在州法院起诉 SpaceX，称其未设足够防护，任由用户用 Grok 和 X 生成、传播未经同意的露骨深度伪造图像（含涉儿童内容），又把产品宣传为「总体安全」，违反两州消费者保护法；要求民事罚款并强制加严防护。这是首批起诉 SpaceX 的州。",
+   "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "CNBC",
+     "platform": "CNBC",
+     "published": "2026-11-23",
+     "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"
+    }
+   ]
+  },
+  {
+   "title": "开发者自述：FSNotes 被苹果下架全部欧盟 App Store，工单两周无回复",
+   "summary": "开源笔记应用 FSNotes 作者（乌克兰注册个体户）11/23 在 GitHub 发文称，上架 9 年的应用被苹果从全部欧洲 App Store 移除；起因是 10 月销售回款未到账，11/5、11/17 两次开工单均无回复。他称已补齐欧盟《数字服务法》（DSA）交易者合规信息并提交营业登记文件。仅作者自述，苹果未回应，下架原因不明。",
+   "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "glushchenko",
+     "platform": "GitHub",
+     "published": "2026-11-23",
+     "url": "https://github.com/glushchenko/fsnotes/discussions/2056"
+    }
+   ]
+  }
+ ]
+}
