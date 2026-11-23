@@ -22,6 +22,7 @@ jobs:
           node --check site/mobile-columns.js
           python3 - <<'PY'
           from hashlib import sha256
+          from os import environ
           from pathlib import Path
           page = Path('site/index.html')
           html = page.read_text(encoding='utf-8')
@@ -30,8 +31,79 @@ jobs:
               raise ValueError('Expected one closing body tag in the generated briefing')
           version = sha256(Path('site/mobile-columns.js').read_bytes()).hexdigest()[:12]
           script = f'<script src="./mobile-columns.js?v={version}" defer></script>'
-          page.write_text(html.replace(marker, script + '\n' + marker), encoding='utf-8')
+          revision = sha256((environ.get('GITHUB_SHA', '') + version + html).encode('utf-8')).hexdigest()[:20]
+          Path('site/edition-version.json').write_text('{"revision":"' + revision + '"}', encoding='utf-8')
+          refresh = r'''
+          (() => {
+            const revision = __REVISION__;
+            const toolbar = document.querySelector('.toolbar');
+            const datePicker = document.getElementById('m-date');
+            const todayButton = document.querySelector('#rel-row button[data-date]');
+            const address = new URL(location.href);
+            if (!toolbar || !datePicker || !todayButton || address.searchParams.has('today')) return;
+          
+            const status = document.createElement('p');
+            status.setAttribute('role', 'status');
+            status.style.cssText = 'margin:4px 0;color:#5b6560;font-size:.875rem';
+            status.hidden = true;
+            toolbar.after(status);
+            let checking = false;
+            function warn(message) {
+              status.textContent = message;
+              status.hidden = !message;
+            }
+            async function check() {
+              if (document.hidden || checking) return;
+              checking = true;
+              const controller = new AbortController();
+              const timer = setTimeout(() => controller.abort(), 10000);
+              try {
+                const day = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
+                const endpoint = new URL('./edition-version.json', location.href);
+                endpoint.searchParams.set('check', String(Date.now()));
+                const response = await fetch(endpoint, {cache: 'no-store', signal: controller.signal});
+                if (!response.ok) throw Error('Unavailable');
+                const current = (await response.json()).revision;
+                if (!/^[a-f0-9]{20}$/.test(current)) throw Error('Invalid revision');
+                if (current !== revision || day !== todayButton.dataset.date) {
+                  const target = new URL(location.href);
+                  const version = day + '.' + current;
+                  if (target.searchParams.get('edition') !== version) {
+                    target.searchParams.set('edition', version);
+                    location.replace(target.href);
+                    return;
+                  }
+                  warn('新版正在同步，请稍后刷新。');
+                  return;
+                }
+                if (address.searchParams.has('edition')) {
+                  address.searchParams.delete('edition');
+                  history.replaceState(history.state, '', address.href);
+                }
+                if (!address.searchParams.has('date') && (navigator.standalone || matchMedia('(display-mode: standalone)').matches)
+                    && datePicker.value !== day) {
+                  datePicker.value = day;
+                  datePicker.dispatchEvent(new Event('change'));
+                }
+                warn('');
+              } catch {
+                warn('暂时无法确认最新版本，当前显示上次载入的简报。');
+              } finally {
+                clearTimeout(timer);
+                checking = false;
+              }
+            }
+            window.addEventListener('pageshow', check);
+            document.addEventListener('visibilitychange', () => { if (!document.hidden) check(); });
+            window.addEventListener('online', check);
+            check();
+          })();
+          '''.replace('__REVISION__', repr(revision))
+          Path('site/check-edition.js').write_text(refresh, encoding='utf-8')
+          check = f'<script src="./check-edition.js?v={revision}" defer></script>'
+          page.write_text(html.replace(marker, script + '\n' + check + '\n' + marker), encoding='utf-8')
           PY
+          node --check site/check-edition.js
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
@@ -48,3 +120,4 @@ jobs:
       - name: Deploy briefing
         id: deployment
         uses: actions/deploy-pages@v4
+
