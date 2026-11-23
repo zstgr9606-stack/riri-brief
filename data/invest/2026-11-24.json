@@ -1,0 +1,114 @@
+{
+ "bot": "Invest",
+ "date": "2026-11-24",
+ "status": "已检查 5 位创作者（窗口 11/23 06:30–11/24 06:30 北京时间）：硅谷居士 X/Substack/文学城、老雷 X/YouTube/Patreon、脑总 YouTube/知识星球、段永平雪球镜像与 H&H 13F、伯克希尔新闻页与 EDGAR；脑总、文学城、老雷视频与 Patreon、伯克希尔、H&H 无新内容；脑总雪球被防火墙拦截、知识星球需登录、小红书未读，段永平雪球原站未直读（用镜像）。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "老雷：黄仁勋回归是 AI 产业链最大利多，但一天暴涨不改变趋势",
+   "summary": "老雷 11/23 23:49（北京时间）在 X 原话：「黃仁勳回歸 $NVDA ，這顯然對整個 AI 產業鏈是最大的利多，但是一天的暴漲行情不會改變趨勢，繼續觀察。以下是下行趨勢轉為上行趨勢的一系列動作，走一步做一步即可」。他引用的五步（11/22 原帖）：出现止跌迹象（如 2B 形态）→价格站上短期均线→短期与中期均线多头交叉→短期与长期均线多头交叉→中期与长期均线多头交叉；可分步进场，哪一步走不下去就平掉之前的部位。另在回复中称当日 ES（标普 500 股指期货）跳空缺口「應該是有人提前知道了黃仁勳回歸輝達，這個缺口有可能不會補」（他的猜测，无证据）。背景：英伟达官方 11/23 宣布董事会一致投票恢复黄仁勋总裁兼 CEO 及董事职务，独立委员会调查继续进行；CNBC 报道 NVDA 当日收涨约 31%。",
+   "url": "https://x.com/TheMarketMemo/status/2124893074707087465",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "老雷 LEI",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/TheMarketMemo/status/2124893074707087465"
+    },
+    {
+     "author": "老雷 LEI",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/TheMarketMemo/status/2124895320815612412"
+    },
+    {
+     "author": "NVIDIA",
+     "platform": "官方新闻稿",
+     "published": "2026-11-23",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+    },
+    {
+     "author": "CNBC",
+     "platform": "新闻",
+     "published": "2026-11-23",
+     "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+    }
+   ],
+   "new_since": "相比上期新增：英伟达官方已宣布黄仁勋复职，老雷首次表态",
+   "prior": [
+    {
+     "title": "11-19 黄仁勋回归：董事长不打算复职",
+     "url": "https://www.theverge.com/tech/1036160/nvidia-earnings-harvey-c-jones-jensen-huang"
+    }
+   ]
+  },
+  {
+   "title": "硅谷居士：SMH 几个月内就能回到 600 美元以上",
+   "summary": "11/23 08:19 他回复网友原话：「不用在意单一个股的波动。我觉得SMH在几个月内就能回到600美元以上。」（SMH：VanEck 半导体 ETF）。23:11 又写：会员问「现在还能买纳指和SMH吗？」，「我说：当然可以！」。11/24 05:31 他自列 11/23 当日涨幅：标普 500 +4.73%、纳指 100 +6.86%、VGT（先锋信息科技 ETF）+8.98%、SMH +15.03%、英伟达 +31.48%（数字为作者自报，本期未逐一核对）。背景是黄仁勋 11/23 复职。价位预期是他的个人判断。",
+   "url": "https://x.com/SVScholar/status/2124659076344991925",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "硅谷居士",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/SVScholar/status/2124659076344991925"
+    },
+    {
+     "author": "硅谷居士",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/SVScholar/status/2124883524654411950"
+    },
+    {
+     "author": "硅谷居士",
+     "platform": "X",
+     "published": "2026-11-24",
+     "url": "https://x.com/SVScholar/status/2124979281097089142"
+    }
+   ],
+   "new_since": "相比上期新增：从「调整最多以月计」变为给出具体价位（几个月内 600 美元以上）",
+   "prior": [
+    {
+     "title": "11-23 居士：SMH 调整最多以月计",
+     "url": "https://x.com/SVScholar/status/2124556360998408688"
+    }
+   ]
+  },
+  {
+   "title": "硅谷居士（Substack#96）：频繁交易的费用和税会吃掉大半收益，券商的交易建议应拒绝",
+   "summary": "11/23 文章《理财笔记#96：如何应对基金和证券公司的投资建议？》。他的论据（均为他的举例和假设）：博时标普 500 ETF 联接 A（050025）最高申购费 1.2%、赎回费 1.5%；国内场内 ETF 倒手一次平均约 0.4%；假设年化 10%，持有 30 年总收益约 1645%，每年倒手 10 次降到年化 6%、总收益 474%，约为长期持有的 29%；美国应税账户若按 40% 边际税率交短期资本利得税，30 年 661% 对长期持有税后 1655%，约 40%。他认为券商和基金人员不是受托人（Fiduciary，法律上须以客户利益为先的角色），建议「上策」是礼貌告知自己长期持有、不要提建议，继续骚扰就拉黑。",
+   "url": "https://svscholar.substack.com/p/96",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "硅谷居士",
+     "platform": "Substack",
+     "published": "2026-11-23",
+     "url": "https://svscholar.substack.com/p/96"
+    }
+   ]
+  },
+  {
+   "title": "段永平：只问商业模式和企业文化，90% 以上甚至 99% 的公司不用看（据镜像，雪球原帖未直读）",
+   "summary": "11/23 14:55 雪球。网友帖称「只问两个问题，问完，一半的公司不用再看第二眼：一个是商业模式，一个是企业文化」，段永平（雪球「大道无形我有型」）回复：「不是一半，是90%以上，如果不是99%的话。」本期经阿段笔记（learnduan.com）镜像读到，雪球原站未直接打开。",
+   "url": "https://xueqiu.com/1247347556/418162841",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "段永平",
+     "platform": "雪球",
+     "published": "2026-11-23",
+     "url": "https://xueqiu.com/1247347556/418162841"
+    },
+    {
+     "author": "阿段笔记",
+     "platform": "镜像",
+     "published": "2026-11-23",
+     "url": "https://learnduan.com/posts/2026.html"
+    }
+   ]
+  }
+ ]
+}
