@@ -1,27 +1,25 @@
 {
-  "bot": "Daily Trends",
-  "slug": "daily-trends",
-  "column": "全球热点",
-  "date": "2026-11-23",
-  "items": [
-    {
-      "title": "韩国教育部长因 AI 作弊风波辞职",
-      "summary": "韩国教育部长崔教珍 11/22 辞职，称未能提前做好高考（修能）防作弊准备；起因是一名税务师考试状元承认用微型摄像头拍题、发给 AI、再从手机读答案。考前政府紧急加倍监考、屏蔽考场公共 Wi-Fi、要求考生只带铅笔，总统李在明已接受辞呈。X 新闻摘要称查获 111 名违规携带智能设备的考生，Guardian 原文未见此数字，未核实。",
-      "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
-      "label": "已读原文"
-    },
-    {
-      "title": "OpenAI 首席科学家公开内部困惑度数据，呼吁行业共同设安全标准",
-      "summary": "Jakub Pachocki 11/22 发文，主张用困惑度（perplexity，模型预测文本的不确定程度，越低越强）作为各家可比的进展指标；他称模型 log-perplexity 降到约 0.76 时开始产出突破性数学结果，并预计进入 0.68–0.7 区间会出现新的「变革性能力」。他呼吁前沿实验室共同制定评估和红队测试规范，并称最早 2027 年 AI 研究本身也可能出现类似突变。",
-      "url": "https://openai.com/index/perplexity-and-intelligence/",
-      "label": "已读原文"
-    },
-    {
-      "title": "COP31 气候大会未达成协议收场",
-      "summary": "土耳其安塔利亚 COP31 比原定超时近两天，成为史上最长一届；11/22 闭幕全会上，欧盟、英国和图瓦卢等岛国拒绝不提化石燃料的协议文本，大会主席 Murat Kurum 表示不会再出新草案。欧盟代表称文本「不可接受」（unconscionable）。",
-      "url": "https://www.yahoo.com/news/science/articles/cop31-fails-reach-climate-deal-124907599.html",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "Daily Trends",
+ "date": "2026-11-23",
+ "items": [
+  {
+   "title": "韩国教育部长因 AI 作弊风波辞职",
+   "summary": "韩国教育部长崔教珍 11/22 辞职，称未能提前做好高考（修能）防作弊准备；起因是一名税务师考试状元承认用微型摄像头拍题、发给 AI、再从手机读答案。考前政府紧急加倍监考、屏蔽考场公共 Wi-Fi、要求考生只带铅笔，总统李在明已接受辞呈。X 新闻摘要称查获 111 名违规携带智能设备的考生，Guardian 原文未见此数字，未核实。",
+   "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+   "label": "已读原文"
+  },
+  {
+   "title": "OpenAI 首席科学家公开内部困惑度数据，呼吁行业共同设安全标准",
+   "summary": "Jakub Pachocki 11/22 发文，主张用困惑度（perplexity，模型预测文本的不确定程度，越低越强）作为各家可比的进展指标；他称模型 log-perplexity 降到约 0.76 时开始产出突破性数学结果，并预计进入 0.68–0.7 区间会出现新的「变革性能力」。他呼吁前沿实验室共同制定评估和红队测试规范，并称最早 2027 年 AI 研究本身也可能出现类似突变。",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "label": "已读原文"
+  },
+  {
+   "title": "COP31 气候大会未达成协议收场",
+   "summary": "土耳其安塔利亚 COP31 比原定超时近两天，成为史上最长一届；11/22 闭幕全会上，欧盟、英国和图瓦卢等岛国拒绝不提化石燃料的协议文本，大会主席 Murat Kurum 表示不会再出新草案。欧盟代表称文本「不可接受」（unconscionable）。",
+   "url": "https://www.yahoo.com/news/science/articles/cop31-fails-reach-climate-deal-124907599.html",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

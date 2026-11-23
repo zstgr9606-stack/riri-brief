@@ -1,39 +1,37 @@
 {
-  "bot": "Invest",
-  "slug": "invest",
-  "column": "投资观察",
-  "date": "2026-11-17",
-  "items": [
-    {
-      "title": "段永平：13F 显示 Q3 已减持英伟达六成，雪球称\"不想急着逃\"",
-      "summary": "H&H 13F（截至 9/30，11/16 申报）：NVDA 628.1 万股→231.9 万股（−63%），AAPL −22%、GOOG −42%、BRK.B −9.5%，清仓 BABA、CRCL，加 PDD +12%、TSLA +21%，新进 SpaceX。\"",
-      "url": "https://www.sec.gov/Archives/edgar/data/1759760/000175976026000008/",
-      "label": "已读原文"
-    },
-    {
-      "title": "伯克希尔 Q3 13F：苹果未动，Lennar 翻倍、新进 Bending Spoons；巴菲特感恩节信",
-      "summary": "13F（截至 9/30，11/16 申报）：Lennar A 股 1311 万→2603 万股，新进 Bending Spoons 2069 万股（约 6.9 亿美元），Delta +12%；减 Capital One −62%、VeriSign −34%、Kroger −10%、美银 −5.7%；苹果 2.28 亿股不变。",
-      "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526463399/",
-      "label": "已读原文"
-    },
-    {
-      "title": "美商务部新规：封堵中国经海外数据中心租用 AI 芯片（居士、老雷）",
-      "summary": "硅谷居士 11/17 05:12：\"今天，美国商务部发布新规，收紧芯片和数据中心算力的管制。东南亚和巴西的数据中心，必须在90天内获得美国政府的审批，才能将AI相关的算力租给受限制的国家。\" 老雷 11/16 12:36 转述 WSJ：黄仁勋\"透過建立東南亞數據中心與走私管道……使中國企業得以取得高階 AI 晶片\"。",
-      "url": "https://apnews.com/article/nvidia-export-controls-chips-china-remote-access-60f868d3bb430b85a8657b27d421096e",
-      "label": "已读原文"
-    },
-    {
-      "title": "白毛股神：大摩喊\"Max Overweight\"，MLCC 交期拉长到 40 周",
-      "summary": "\"Morgan Stanley sends a note to clients using the term: 'Max Overweight' for global equities. Arguing that AI capex cycle remains intact and sustains corporate earnings into 2027.\" 另帖：\"MLCC lead times…",
-      "url": "https://x.com/aleabitoreddit/status/2122268155682996328",
-      "label": "已读原文"
-    },
-    {
-      "title": "老雷：复盘 10/21 看图提前对冲；Patreon 新标题《「希望」是悲劇的開始》",
-      "summary": "11/16 12:58：\"回顧10月21日的交易筆記……我提出，納指期貨跌破29600就需要對沖、跌至29200下方則須增加保護⋯⋯後面的事大家都知道了。\" Patreon 11/17 06:04 新帖《「希望」是悲劇的開始｜交易筆記 2026-11-16》（付费，只见标题）。10/21 点位是他自述，未核对原笔记；Patreon 正文未读。",
-      "url": "https://www.patreon.com/TheMarketMemo/posts/xi-wang-shi-bei-175535307",
-      "label": "作者自报"
-    }
-  ],
-  "corrections": []
+ "bot": "Invest",
+ "date": "2026-11-17",
+ "items": [
+  {
+   "title": "段永平：13F 显示 Q3 已减持英伟达六成，雪球称\"不想急着逃\"",
+   "summary": "H&H 13F（截至 9/30，11/16 申报）：NVDA 628.1 万股→231.9 万股（−63%），AAPL −22%、GOOG −42%、BRK.B −9.5%，清仓 BABA、CRCL，加 PDD +12%、TSLA +21%，新进 SpaceX。\"",
+   "url": "https://www.sec.gov/Archives/edgar/data/1759760/000175976026000008/",
+   "label": "已读原文"
+  },
+  {
+   "title": "伯克希尔 Q3 13F：苹果未动，Lennar 翻倍、新进 Bending Spoons；巴菲特感恩节信",
+   "summary": "13F（截至 9/30，11/16 申报）：Lennar A 股 1311 万→2603 万股，新进 Bending Spoons 2069 万股（约 6.9 亿美元），Delta +12%；减 Capital One −62%、VeriSign −34%、Kroger −10%、美银 −5.7%；苹果 2.28 亿股不变。",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526463399/",
+   "label": "已读原文"
+  },
+  {
+   "title": "美商务部新规：封堵中国经海外数据中心租用 AI 芯片（居士、老雷）",
+   "summary": "硅谷居士 11/17 05:12：\"今天，美国商务部发布新规，收紧芯片和数据中心算力的管制。东南亚和巴西的数据中心，必须在90天内获得美国政府的审批，才能将AI相关的算力租给受限制的国家。\" 老雷 11/16 12:36 转述 WSJ：黄仁勋\"透過建立東南亞數據中心與走私管道……使中國企業得以取得高階 AI 晶片\"。",
+   "url": "https://apnews.com/article/nvidia-export-controls-chips-china-remote-access-60f868d3bb430b85a8657b27d421096e",
+   "label": "已读原文"
+  },
+  {
+   "title": "白毛股神：大摩喊\"Max Overweight\"，MLCC 交期拉长到 40 周",
+   "summary": "\"Morgan Stanley sends a note to clients using the term: 'Max Overweight' for global equities. Arguing that AI capex cycle remains intact and sustains corporate earnings into 2027.\" 另帖：\"MLCC lead times…",
+   "url": "https://x.com/aleabitoreddit/status/2122268155682996328",
+   "label": "已读原文"
+  },
+  {
+   "title": "老雷：复盘 10/21 看图提前对冲；Patreon 新标题《「希望」是悲劇的開始》",
+   "summary": "11/16 12:58：\"回顧10月21日的交易筆記……我提出，納指期貨跌破29600就需要對沖、跌至29200下方則須增加保護⋯⋯後面的事大家都知道了。\" Patreon 11/17 06:04 新帖《「希望」是悲劇的開始｜交易筆記 2026-11-16》（付费，只见标题）。10/21 点位是他自述，未核对原笔记；Patreon 正文未读。",
+   "url": "https://www.patreon.com/TheMarketMemo/posts/xi-wang-shi-bei-175535307",
+   "label": "作者自报"
+  }
+ ],
+ "corrections": []
 }

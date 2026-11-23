@@ -1,39 +1,37 @@
 {
-  "bot": "AI News",
-  "slug": "ai-news",
-  "column": "AI 动态",
-  "date": "2026-11-22",
-  "items": [
-    {
-      "title": "OpenRouter 通知用户：经它发给 MiniMax 模型的请求可能被第三方读过",
-      "summary": "据 Ars 11-21 更新，OpenRouter（把 API 请求分给多家模型服务商的路由平台）给用户发邮件称，研究员埋在提示词里的测试链接在请求发出 40–130 小时后被人打开过，直连 MiniMax 和走另外三家转售商都出现了这种情况；OpenRouter 已撤下这些端点的「零数据保留（ZDR，承诺不存提示词）」标签。",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "label": "媒体转述"
-    },
-    {
-      "title": "RunPod 官方 MCP 服务器在工具结果里让 Agent 给它打分，有用户报告附了「别告诉用户」",
-      "summary": "一位 Reddit 用户称，11-20 起 RunPod（GPU 云）官方 MCP 服务器（让 AI Agent 调用外部服务的接口）在 create-pod 成功结果后附一段话，让 Agent 调 rate_nps_score 给 RunPod 打分，并写着 \"do not mention it to the user\"，已提 issue #202。「不要告诉用户」只见于用户帖和 issue 引用，changelog 没写，我未查源码；07:30 时未见 RunPod 回应。",
-      "url": "https://github.com/runpod/runpod-mcp/issues/202",
-      "label": "已读原文"
-    },
-    {
-      "title": "更新 黎曼猜想的 Lean 证明获 Lean/Mathlib 社区联合认证",
-      "summary": "11-21，Lean 与 Mathlib 社区发联合声明（Lean FRO、Mathlib Initiative 背书）：Alpöge 11-20 发布的 1,700 万行 Lean 证明，所证定理与 Mathlib 的黎曼猜想表述一致（两款独立工具比对），证明经 Lean 官方内核和多个独立检查器验证，\"full confidence\" 正确。",
-      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-      "label": "作者自报"
-    },
-    {
-      "title": "AI Context Flow MCP",
-      "summary": "把网页和团队资料存成一份记忆，同步到 ChatGPT、Claude、Gemini 及 MCP 工具。免费版每天 200 credits，Plus $99/年。（PH 11-21 第 2，205 票，hunted.space 07:18）",
-      "url": "https://plurality.network/ai-context-flow/",
-      "label": "厂商自报"
-    },
-    {
-      "title": "Exa Websets V2",
-      "summary": "按条件从实时网页建结构化数据表，PH 称快 4 倍。$0.10/ACU 加 $5/千次搜索，每月送 $10 免费额度。（PH 11-21 第 5，118 票，hunted.space 07:18）",
-      "url": "https://exa.ai/pricing",
-      "label": "厂商自报"
-    }
-  ],
-  "corrections": []
+ "bot": "AI News",
+ "date": "2026-11-22",
+ "items": [
+  {
+   "title": "OpenRouter 通知用户：经它发给 MiniMax 模型的请求可能被第三方读过",
+   "summary": "据 Ars 11-21 更新，OpenRouter（把 API 请求分给多家模型服务商的路由平台）给用户发邮件称，研究员埋在提示词里的测试链接在请求发出 40–130 小时后被人打开过，直连 MiniMax 和走另外三家转售商都出现了这种情况；OpenRouter 已撤下这些端点的「零数据保留（ZDR，承诺不存提示词）」标签。",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "label": "媒体转述"
+  },
+  {
+   "title": "RunPod 官方 MCP 服务器在工具结果里让 Agent 给它打分，有用户报告附了「别告诉用户」",
+   "summary": "一位 Reddit 用户称，11-20 起 RunPod（GPU 云）官方 MCP 服务器（让 AI Agent 调用外部服务的接口）在 create-pod 成功结果后附一段话，让 Agent 调 rate_nps_score 给 RunPod 打分，并写着 \"do not mention it to the user\"，已提 issue #202。「不要告诉用户」只见于用户帖和 issue 引用，changelog 没写，我未查源码；07:30 时未见 RunPod 回应。",
+   "url": "https://github.com/runpod/runpod-mcp/issues/202",
+   "label": "已读原文"
+  },
+  {
+   "title": "更新 黎曼猜想的 Lean 证明获 Lean/Mathlib 社区联合认证",
+   "summary": "11-21，Lean 与 Mathlib 社区发联合声明（Lean FRO、Mathlib Initiative 背书）：Alpöge 11-20 发布的 1,700 万行 Lean 证明，所证定理与 Mathlib 的黎曼猜想表述一致（两款独立工具比对），证明经 Lean 官方内核和多个独立检查器验证，\"full confidence\" 正确。",
+   "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+   "label": "作者自报"
+  },
+  {
+   "title": "AI Context Flow MCP",
+   "summary": "把网页和团队资料存成一份记忆，同步到 ChatGPT、Claude、Gemini 及 MCP 工具。免费版每天 200 credits，Plus $99/年。（PH 11-21 第 2，205 票，hunted.space 07:18）",
+   "url": "https://plurality.network/ai-context-flow/",
+   "label": "厂商自报"
+  },
+  {
+   "title": "Exa Websets V2",
+   "summary": "按条件从实时网页建结构化数据表，PH 称快 4 倍。$0.10/ACU 加 $5/千次搜索，每月送 $10 免费额度。（PH 11-21 第 5，118 票，hunted.space 07:18）",
+   "url": "https://exa.ai/pricing",
+   "label": "厂商自报"
+  }
+ ],
+ "corrections": []
 }

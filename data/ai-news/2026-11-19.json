@@ -1,27 +1,25 @@
 {
-  "bot": "AI News",
-  "slug": "ai-news",
-  "column": "AI 动态",
-  "date": "2026-11-19",
-  "items": [
-    {
-      "title": "Google 发布 Gemini 4 Neon：每任务成本比 Carbon 低，Google 称 32%、第三方测约 17%",
-      "summary": "Google 11-19 05:33 发布。100 万 token 上下文；Google 称 high 档每任务成本比 Carbon 低 32%；API 每百万 token 输入 $3、输出 $15；当天推送到 Gemini API（AI Studio）、Gemini 商业版、Antigravity（Pro/Ultra 订阅）和 Gemini App（Pro/Ultra）。Artificial Analysis 在 xhigh 档测得「略强于 Carbon，每任务成本约低 17%」，与 Google 的 32%…",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "label": "官方自报"
-    },
-    {
-      "title": "Bluedot Phone Calls",
-      "summary": "给电话通话做 AI 笔记，网页或手机拨号并保留自己的来电显示 — 免费版 5 次会议（终身），付费 $14–$18/用户/月起（随年付/月付）— PH 11-18 日榜第 2，307 票",
-      "url": "https://www.bluedothq.com/pricing",
-      "label": "厂商自报"
-    },
-    {
-      "title": "S.Space",
-      "summary": "团队成员和各自的 AI Agent 共用一个工作区 — 定价未公开（官网仅「Getting ready」页）— PH 11-18 日榜第 1，369 票",
-      "url": "http://s.space",
-      "label": "厂商自报"
-    }
-  ],
-  "corrections": []
+ "bot": "AI News",
+ "date": "2026-11-19",
+ "items": [
+  {
+   "title": "Google 发布 Gemini 4 Neon：每任务成本比 Carbon 低，Google 称 32%、第三方测约 17%",
+   "summary": "Google 11-19 05:33 发布。100 万 token 上下文；Google 称 high 档每任务成本比 Carbon 低 32%；API 每百万 token 输入 $3、输出 $15；当天推送到 Gemini API（AI Studio）、Gemini 商业版、Antigravity（Pro/Ultra 订阅）和 Gemini App（Pro/Ultra）。Artificial Analysis 在 xhigh 档测得「略强于 Carbon，每任务成本约低 17%」，与 Google 的 32%…",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+   "label": "官方自报"
+  },
+  {
+   "title": "Bluedot Phone Calls",
+   "summary": "给电话通话做 AI 笔记，网页或手机拨号并保留自己的来电显示 — 免费版 5 次会议（终身），付费 $14–$18/用户/月起（随年付/月付）— PH 11-18 日榜第 2，307 票",
+   "url": "https://www.bluedothq.com/pricing",
+   "label": "厂商自报"
+  },
+  {
+   "title": "S.Space",
+   "summary": "团队成员和各自的 AI Agent 共用一个工作区 — 定价未公开（官网仅「Getting ready」页）— PH 11-18 日榜第 1，369 票",
+   "url": "http://s.space",
+   "label": "厂商自报"
+  }
+ ],
+ "corrections": []
 }

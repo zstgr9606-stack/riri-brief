@@ -1,33 +1,31 @@
 {
-  "bot": "Startup News",
-  "slug": "startup-news",
-  "column": "创业与工作",
-  "date": "2026-11-17",
-  "items": [
-    {
-      "title": "前 Freshworks 高管做 AI 原生 CRM，融资 5300 万美元挑战 Salesforce",
-      "summary": "Dreamteam 宣布种子轮+A 轮共 5300 万美元（Together Fund、Accel 领投，Premji Invest 跟投），用「Company Brain」自动从邮件、会议抓取客户信息，4 个 AI agent 负责调研、跟进、预警。TechCrunch 称开卖 3 个月签下 100+ 客户、覆盖 13 国，工程在金奈、销售在美国，目标 2027 年底年收入八位数。客户数、付费比例是创始人自报，未披露营收和估值；X 新闻摘要提到的 $49/席位月价在 TechCrunch 原文里没出现。",
-      "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
-      "label": "作者自报"
-    },
-    {
-      "title": "更新 微软 365 大故障原因公布：7 月的补丁埋雷",
-      "summary": "The Register 引述微软初步事故报告：7 月上线的网关补丁在高核数新硬件上会锁竞争，11-12 叠加 Teams 故障转移和约 14% 容量下线后连环崩溃，最低时 80%+ 服务器无响应；因补丁已数月无法直接回滚，只能「给补丁打补丁」，最终报告 11-20 发布。",
-      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
-      "label": "官方自报"
-    },
-    {
-      "title": "调查：亚马逊黑五「特价」近三分之一并不便宜",
-      "summary": "倡导机构 Groundwork 分析 2024–2025 年亚马逊黑五/网一官方特价页的 350 多件商品：近 1/3 价格与前一个月持平或更高，近 1/10 反而更贵，呼吁监管要求标出「30 天最低价」。发布方是消费者倡导组织，样本只是亚马逊精选页，不代表全站；亚马逊尚未公开回应。",
-      "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
-      "label": "已读原文"
-    },
-    {
-      "title": "Zoom Slides 暂列 PH 11-16 日榜第 1",
-      "summary": "hunted.space 显示，Zoom 推出的 AI 做幻灯片产品 Zoom Slides 在 11-16（太平洋时间）当天暂居第 1，236 票、69 评，领先 OpenBot（213）和 Boost.space AgentOS（206）。",
-      "url": "https://hunted.space/",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "Startup News",
+ "date": "2026-11-17",
+ "items": [
+  {
+   "title": "前 Freshworks 高管做 AI 原生 CRM，融资 5300 万美元挑战 Salesforce",
+   "summary": "Dreamteam 宣布种子轮+A 轮共 5300 万美元（Together Fund、Accel 领投，Premji Invest 跟投），用「Company Brain」自动从邮件、会议抓取客户信息，4 个 AI agent 负责调研、跟进、预警。TechCrunch 称开卖 3 个月签下 100+ 客户、覆盖 13 国，工程在金奈、销售在美国，目标 2027 年底年收入八位数。客户数、付费比例是创始人自报，未披露营收和估值；X 新闻摘要提到的 $49/席位月价在 TechCrunch 原文里没出现。",
+   "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+   "label": "作者自报"
+  },
+  {
+   "title": "更新 微软 365 大故障原因公布：7 月的补丁埋雷",
+   "summary": "The Register 引述微软初步事故报告：7 月上线的网关补丁在高核数新硬件上会锁竞争，11-12 叠加 Teams 故障转移和约 14% 容量下线后连环崩溃，最低时 80%+ 服务器无响应；因补丁已数月无法直接回滚，只能「给补丁打补丁」，最终报告 11-20 发布。",
+   "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+   "label": "官方自报"
+  },
+  {
+   "title": "调查：亚马逊黑五「特价」近三分之一并不便宜",
+   "summary": "倡导机构 Groundwork 分析 2024–2025 年亚马逊黑五/网一官方特价页的 350 多件商品：近 1/3 价格与前一个月持平或更高，近 1/10 反而更贵，呼吁监管要求标出「30 天最低价」。发布方是消费者倡导组织，样本只是亚马逊精选页，不代表全站；亚马逊尚未公开回应。",
+   "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+   "label": "已读原文"
+  },
+  {
+   "title": "Zoom Slides 暂列 PH 11-16 日榜第 1",
+   "summary": "hunted.space 显示，Zoom 推出的 AI 做幻灯片产品 Zoom Slides 在 11-16（太平洋时间）当天暂居第 1，236 票、69 评，领先 OpenBot（213）和 Boost.space AgentOS（206）。",
+   "url": "https://hunted.space/",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

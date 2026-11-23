@@ -1,27 +1,25 @@
 {
-  "bot": "Startup News",
-  "slug": "startup-news",
-  "column": "创业与工作",
-  "date": "2026-11-21",
-  "items": [
-    {
-      "title": "更新 Marc Lou 黑客松取消榜首资格，10 万美元奖金改分给 10 人",
-      "summary": "Marc Lou 称榜首产品在 11-16 开赛前就已动工、且是旧产品改造，违反「从零做新业务」规则被取消资格；单人独得 10 万美元改为前 10 名分（第 1 名 3 万、第 2 名 2 万、第 3 名 1 万，4–10 名 5,000–8,000），仍按核实利润排名。取消资格的依据只有主办方说法，未见被取消者回应；另有开发者 @onlinedopamine 长帖批评合作方口碑、曾收 99 美元报名费后撤回…",
-      "url": "https://x.com/marclou/status/2123758657540370633",
-      "label": "作者自报"
-    },
-    {
-      "title": "开发者晒「年付 200 美元的 Claude 用了 160 亿 token」，引发订阅制 AI 定价讨论",
-      "summary": "开发者 Vlad Mihalcea 称自己 Claude 年付 200 美元，用了 160 亿 token（模型处理文本的计量单位），按 API 按量价算约 10 万美元，表示看不懂 Anthropic 的商业模式；Gergely Orosz 回应称编程场景大量读取 KV 缓存（重复上下文的缓存，读取很便宜）和推测解码，所以推理「非常赚钱」。",
-      "url": "https://x.com/vlad_mihalcea/status/2123753559191617993",
-      "label": "作者自报"
-    },
-    {
-      "title": "小团队自述：同事 vibe coding 写的装机日志，让插件欢迎页加载 15 秒",
-      "summary": "Google Forms 插件开发者 Mani Doraisamy 写道，同事用 AI 生成（vibe coding，即只描述需求让 AI 写代码）的新装机日志层层 try/catch 去取用户邮箱或 ID，每步都调 Google 接口，欢迎页要 15 秒才出来；他的修法是只记安装时间、先显示欢迎页，并告诉市场部装机时拿不到邮箱。单个团队案例，15 秒为作者自述，未见代码或测量数据。",
-      "url": "https://manidoraisamy.com/developer-to-architect.html",
-      "label": "作者自报"
-    }
-  ],
-  "corrections": []
+ "bot": "Startup News",
+ "date": "2026-11-21",
+ "items": [
+  {
+   "title": "更新 Marc Lou 黑客松取消榜首资格，10 万美元奖金改分给 10 人",
+   "summary": "Marc Lou 称榜首产品在 11-16 开赛前就已动工、且是旧产品改造，违反「从零做新业务」规则被取消资格；单人独得 10 万美元改为前 10 名分（第 1 名 3 万、第 2 名 2 万、第 3 名 1 万，4–10 名 5,000–8,000），仍按核实利润排名。取消资格的依据只有主办方说法，未见被取消者回应；另有开发者 @onlinedopamine 长帖批评合作方口碑、曾收 99 美元报名费后撤回…",
+   "url": "https://x.com/marclou/status/2123758657540370633",
+   "label": "作者自报"
+  },
+  {
+   "title": "开发者晒「年付 200 美元的 Claude 用了 160 亿 token」，引发订阅制 AI 定价讨论",
+   "summary": "开发者 Vlad Mihalcea 称自己 Claude 年付 200 美元，用了 160 亿 token（模型处理文本的计量单位），按 API 按量价算约 10 万美元，表示看不懂 Anthropic 的商业模式；Gergely Orosz 回应称编程场景大量读取 KV 缓存（重复上下文的缓存，读取很便宜）和推测解码，所以推理「非常赚钱」。",
+   "url": "https://x.com/vlad_mihalcea/status/2123753559191617993",
+   "label": "作者自报"
+  },
+  {
+   "title": "小团队自述：同事 vibe coding 写的装机日志，让插件欢迎页加载 15 秒",
+   "summary": "Google Forms 插件开发者 Mani Doraisamy 写道，同事用 AI 生成（vibe coding，即只描述需求让 AI 写代码）的新装机日志层层 try/catch 去取用户邮箱或 ID，每步都调 Google 接口，欢迎页要 15 秒才出来；他的修法是只记安装时间、先显示欢迎页，并告诉市场部装机时拿不到邮箱。单个团队案例，15 秒为作者自述，未见代码或测量数据。",
+   "url": "https://manidoraisamy.com/developer-to-architect.html",
+   "label": "作者自报"
+  }
+ ],
+ "corrections": []
 }

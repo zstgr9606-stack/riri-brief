@@ -1,33 +1,31 @@
 {
-  "bot": "AI News",
-  "slug": "ai-news",
-  "column": "AI 动态",
-  "date": "2026-11-23",
-  "items": [
-    {
-      "title": "更新 OpenRouter 官方：下架 3 家服务商，125 个端点撤销「零数据保留」",
-      "summary": "OpenRouter 11-22 发博客称，已从平台下架 3 家推理服务商，把 125 个端点移出 ZDR（零数据保留，承诺不存提示词）资格（含研究员点名的和预防性移除），并通知了所有可能受影响的客户；称 OpenRouter 自身未被入侵。页面列出 Atlas Cloud、Novita、Phala、Together 已发的安全公告，其中 Together 的标题是「6–7 月请求的提示词泄露」。3 家名字未公开；Together 公告正文是前端渲染，我只读到页面摘要（「部分 serverless 推理提示词」，11-21 发布），正…",
-      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
-      "label": "官方自报"
-    },
-    {
-      "title": "OpenAI 首次公布内部预训练困惑度曲线，提议按此设行业共同上限",
-      "summary": "11-22，OpenAI 首席科学家 Jakub Pachocki 发文，公开模型在内部代码库留出集上的 log-perplexity（对数困惑度，衡量预测下一个 token 的准确度，越低越好）：GPT-3.5 约 0.99、GPT-4 约 0.91，低于 0.8 后在网络安全和数学上出现变革性能力，约 0.76 的模型开始产出数学突破。原文自列局限：跨实验室不可比、不反映思维链（CoT，模型先写推理步骤再作答）带来的提升、下限未知。",
-      "url": "https://openai.com/index/perplexity-and-intelligence/",
-      "label": "官方自报"
-    },
-    {
-      "title": "Reddit 用户分享：用 Claude Agent 把照片做成 Unity 可用的 3D 植被，含时间和成本",
-      "summary": "r/ClaudeAI 用户发帖：用 Claude Fable 5.2（经 Hermes 调用）搭流程，Nano Banana Pro 出参考图和贴图，Meshy AI API 生成低面数模型，Blender 清理烘焙，Unity 6 搭测试场景；从 1 朵花做到 18 个植物模型后，让 Agent 把步骤固化成可复用流程，再给一张水仙照片即可出模。效果和成本均为作者自述加视频演示，「AAA 品质」是作者说法；无人复现；这是 Part 1，部分步骤未写全。",
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1y2i9ry/",
-      "label": "作者自报"
-    },
-    {
-      "title": "Yoroll",
-      "summary": "用文字、图片、视频生成带分支剧情的可玩互动视频游戏，不用游戏引擎。定价未公开（官网只写 App 内购）。（PH 11-22 第 2，241 票，hunted.space 07:14 实时）",
-      "url": "https://yoroll.ai",
-      "label": "厂商自报"
-    }
-  ],
-  "corrections": []
+ "bot": "AI News",
+ "date": "2026-11-23",
+ "items": [
+  {
+   "title": "更新 OpenRouter 官方：下架 3 家服务商，125 个端点撤销「零数据保留」",
+   "summary": "OpenRouter 11-22 发博客称，已从平台下架 3 家推理服务商，把 125 个端点移出 ZDR（零数据保留，承诺不存提示词）资格（含研究员点名的和预防性移除），并通知了所有可能受影响的客户；称 OpenRouter 自身未被入侵。页面列出 Atlas Cloud、Novita、Phala、Together 已发的安全公告，其中 Together 的标题是「6–7 月请求的提示词泄露」。3 家名字未公开；Together 公告正文是前端渲染，我只读到页面摘要（「部分 serverless 推理提示词」，11-21 发布），正…",
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
+   "label": "官方自报"
+  },
+  {
+   "title": "OpenAI 首次公布内部预训练困惑度曲线，提议按此设行业共同上限",
+   "summary": "11-22，OpenAI 首席科学家 Jakub Pachocki 发文，公开模型在内部代码库留出集上的 log-perplexity（对数困惑度，衡量预测下一个 token 的准确度，越低越好）：GPT-3.5 约 0.99、GPT-4 约 0.91，低于 0.8 后在网络安全和数学上出现变革性能力，约 0.76 的模型开始产出数学突破。原文自列局限：跨实验室不可比、不反映思维链（CoT，模型先写推理步骤再作答）带来的提升、下限未知。",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "label": "官方自报"
+  },
+  {
+   "title": "Reddit 用户分享：用 Claude Agent 把照片做成 Unity 可用的 3D 植被，含时间和成本",
+   "summary": "r/ClaudeAI 用户发帖：用 Claude Fable 5.2（经 Hermes 调用）搭流程，Nano Banana Pro 出参考图和贴图，Meshy AI API 生成低面数模型，Blender 清理烘焙，Unity 6 搭测试场景；从 1 朵花做到 18 个植物模型后，让 Agent 把步骤固化成可复用流程，再给一张水仙照片即可出模。效果和成本均为作者自述加视频演示，「AAA 品质」是作者说法；无人复现；这是 Part 1，部分步骤未写全。",
+   "url": "https://www.reddit.com/r/ClaudeAI/comments/1y2i9ry/",
+   "label": "作者自报"
+  },
+  {
+   "title": "Yoroll",
+   "summary": "用文字、图片、视频生成带分支剧情的可玩互动视频游戏，不用游戏引擎。定价未公开（官网只写 App 内购）。（PH 11-22 第 2，241 票，hunted.space 07:14 实时）",
+   "url": "https://yoroll.ai",
+   "label": "厂商自报"
+  }
+ ],
+ "corrections": []
 }

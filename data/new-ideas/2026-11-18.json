@@ -1,57 +1,55 @@
 {
-  "bot": "New Ideas",
-  "slug": "new-ideas",
-  "column": "观点与认知",
-  "date": "2026-11-18",
-  "items": [
-    {
-      "title": "Tyler Cowen｜专栏：Don’t Be Fooled By Randomness（一周内几起大宕机，先别当成“一个模式”）",
-      "summary": "11-18 MR 转载他为 Free Press 写的专栏。Cowen 说问题严重但“天没塌”：①AI 进步让网络攻击能力跑在了防御前面；②并非每起事故都是网络攻击，可能只是正常故障被更多人盯着看，也可能是机构为防攻击而打补丁/升级、升级时出了错；他认为微软 11-12 宕机、FAA 11-13 停飞、摩根大通 11-16 故障“似乎都不是直接的网络攻击”。",
-      "url": "https://marginalrevolution.com/marginalrevolution/2026/11/me-on-the-cyberattacks.html",
-      "label": "已读原文"
-    },
-    {
-      "title": "Scott Alexander｜随笔：Varieties of Discourseposting（别按立场给“吵架帖”分类，按“作者和读者各自要满足什么心理需求”分类）",
-      "summary": "11-18 ACX。起因是 Inkhaven 博客营里 Naomi Kanakia 讲了“discourseposting”（写文章回怼别人的观点）；Scott 没听课，决定“没看原材料就开吵”。他的主张：理想状态是作者想说服人、读者想被说服，但这两种人都稀少，所以多数“吵架帖”背后是别的需求。",
-      "url": "https://www.astralcodexten.com/p/varieties-of-discourseposting",
-      "label": "作者观点"
-    },
-    {
-      "title": "Tyler Cowen｜播客：Conversations with Tyler 第 296 期《Terence Tao on Proof, Beauty…》（模型和现实的差距、你没想到的“第三个假设”、有时放弃选项反而赢）",
-      "summary": "11-11 发布（10-08 录制，44 分钟，有全文转录）。主要观点是嘉宾陶哲轩的，Cowen 是提问者：①把数学分析里的 ε-δ 想成博弈（对手给 ε，你回 δ）能激活更好的思考方式；他用“比较优势”来安排自己的时间。②经济学是体会“模型与现实差距”的好场地：Black-Scholes 只在价格波动呈高斯分布时成立，否则（尤其层层叠加衍生品时）很危险。",
-      "url": "https://conversationswithtyler.com/episodes/terence-tao/",
-      "label": "已读原文"
-    },
-    {
-      "title": "Matt Ridley｜推文：“没有未来的专家”（转 Andreessen 讲 Edison 与留声机）",
-      "summary": "11-17 晚（北京时间 22:00）Ridley 转发一段剪辑并写“YES. There are no experts on the future.”（连写三遍）。",
-      "url": "https://friendsofthephonograph.org/NAR1878/Future-Phono-NAR.htm",
-      "label": "已读原文"
-    },
-    {
-      "title": "学校手机禁令真的提分吗？哈佛新研究：锁袋式严格禁令每年约 +0.01 个标准差，约等于多上 1–2 周课",
-      "summary": "11-17 哈佛教育政策研究中心（CEPR）联合 NWEA 和达特茅斯发布：追踪 4,600 所学校、约 330 万学生（2021–22 至 2025–26 学年）的 MAP Growth 成长数据，用 Yondr 锁袋的严格禁令使数学+阅读的年度成长多约 0.01 个标准差，约等于每年多 1–2 周学习，约抵 2013 年以来每年损失的一半；对不同学段、不同贫富学校效果没有显著差异。",
-      "url": "https://cepr.harvard.edu/cell-phone-press-release",
-      "label": "作者自报"
-    },
-    {
-      "title": "咖啡馆让科学家变多了？——17 世纪伦敦“便士大学”的求职论文（Bounadi & Oehlen）",
-      "summary": "论文版本 2026-10-31。作者用 17 世纪伦敦教区的地理编码数据做错峰事件研究：一个教区开出第一家咖啡馆后，应用科学家（教数学、写数学、做仪器的人）和科学仪器店持续增加，效应集中在与牛津剑桥家族联系较弱的人；欧洲多个城市在首家咖啡馆之后，应用数学书和仪器匠也增加。校准过的城市模型估计，咖啡馆解释了伦敦 1652 年首家开业后半个世纪里 31% 的应用科学家。",
-      "url": "https://www.monirbounadi.com/Bounadi_JMP.pdf",
-      "label": "作者自报"
-    },
-    {
-      "title": "Read More Facts and Fewer Theories（多读事实，少读理论）（Arjun Panickssery，LessWrong）",
-      "summary": "11-17 发表。他说很多“最有思想的人”都背了大量日期、地点、数字，并在乎能否准确回忆；主张多读具体事件/案例，少读宏大理论（点名 Diamond、Fukuyama、Morris、Acemoglu-Robinson、Turchin）。",
-      "url": "https://www.lesswrong.com/posts/xyFdGGJ6Ckdnrqnsp/read-more-facts-and-fewer-theories",
-      "label": "作者观点"
-    },
-    {
-      "title": "The idiot’s reductio（“你要真信，就该……”是个糟糕的论证）（Linch，LessWrong）",
-      "summary": "11-18 发表（美东 11-17）。Linch 把“如果你真信 X，你就会做 Y；你没做 Y，所以你不是真信 X”叫作 idiot’s reductio（愚蠢的归谬）。例子：真信圣经就不该穿混纺衣；真觉得堕胎是谋杀就该去烧沃尔玛；AI 末日派离职被说“信念是假的”，留下来也被说“信念是假的”——什么都能被解读成“你在装”。",
-      "url": "https://www.lesswrong.com/posts/YgKhExegrhax5efrJ/the-idiot-s-reductio",
-      "label": "作者观点"
-    }
-  ],
-  "corrections": []
+ "bot": "New Ideas",
+ "date": "2026-11-18",
+ "items": [
+  {
+   "title": "Tyler Cowen｜专栏：Don’t Be Fooled By Randomness（一周内几起大宕机，先别当成“一个模式”）",
+   "summary": "11-18 MR 转载他为 Free Press 写的专栏。Cowen 说问题严重但“天没塌”：①AI 进步让网络攻击能力跑在了防御前面；②并非每起事故都是网络攻击，可能只是正常故障被更多人盯着看，也可能是机构为防攻击而打补丁/升级、升级时出了错；他认为微软 11-12 宕机、FAA 11-13 停飞、摩根大通 11-16 故障“似乎都不是直接的网络攻击”。",
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/11/me-on-the-cyberattacks.html",
+   "label": "已读原文"
+  },
+  {
+   "title": "Scott Alexander｜随笔：Varieties of Discourseposting（别按立场给“吵架帖”分类，按“作者和读者各自要满足什么心理需求”分类）",
+   "summary": "11-18 ACX。起因是 Inkhaven 博客营里 Naomi Kanakia 讲了“discourseposting”（写文章回怼别人的观点）；Scott 没听课，决定“没看原材料就开吵”。他的主张：理想状态是作者想说服人、读者想被说服，但这两种人都稀少，所以多数“吵架帖”背后是别的需求。",
+   "url": "https://www.astralcodexten.com/p/varieties-of-discourseposting",
+   "label": "作者观点"
+  },
+  {
+   "title": "Tyler Cowen｜播客：Conversations with Tyler 第 296 期《Terence Tao on Proof, Beauty…》（模型和现实的差距、你没想到的“第三个假设”、有时放弃选项反而赢）",
+   "summary": "11-11 发布（10-08 录制，44 分钟，有全文转录）。主要观点是嘉宾陶哲轩的，Cowen 是提问者：①把数学分析里的 ε-δ 想成博弈（对手给 ε，你回 δ）能激活更好的思考方式；他用“比较优势”来安排自己的时间。②经济学是体会“模型与现实差距”的好场地：Black-Scholes 只在价格波动呈高斯分布时成立，否则（尤其层层叠加衍生品时）很危险。",
+   "url": "https://conversationswithtyler.com/episodes/terence-tao/",
+   "label": "已读原文"
+  },
+  {
+   "title": "Matt Ridley｜推文：“没有未来的专家”（转 Andreessen 讲 Edison 与留声机）",
+   "summary": "11-17 晚（北京时间 22:00）Ridley 转发一段剪辑并写“YES. There are no experts on the future.”（连写三遍）。",
+   "url": "https://friendsofthephonograph.org/NAR1878/Future-Phono-NAR.htm",
+   "label": "已读原文"
+  },
+  {
+   "title": "学校手机禁令真的提分吗？哈佛新研究：锁袋式严格禁令每年约 +0.01 个标准差，约等于多上 1–2 周课",
+   "summary": "11-17 哈佛教育政策研究中心（CEPR）联合 NWEA 和达特茅斯发布：追踪 4,600 所学校、约 330 万学生（2021–22 至 2025–26 学年）的 MAP Growth 成长数据，用 Yondr 锁袋的严格禁令使数学+阅读的年度成长多约 0.01 个标准差，约等于每年多 1–2 周学习，约抵 2013 年以来每年损失的一半；对不同学段、不同贫富学校效果没有显著差异。",
+   "url": "https://cepr.harvard.edu/cell-phone-press-release",
+   "label": "作者自报"
+  },
+  {
+   "title": "咖啡馆让科学家变多了？——17 世纪伦敦“便士大学”的求职论文（Bounadi & Oehlen）",
+   "summary": "论文版本 2026-10-31。作者用 17 世纪伦敦教区的地理编码数据做错峰事件研究：一个教区开出第一家咖啡馆后，应用科学家（教数学、写数学、做仪器的人）和科学仪器店持续增加，效应集中在与牛津剑桥家族联系较弱的人；欧洲多个城市在首家咖啡馆之后，应用数学书和仪器匠也增加。校准过的城市模型估计，咖啡馆解释了伦敦 1652 年首家开业后半个世纪里 31% 的应用科学家。",
+   "url": "https://www.monirbounadi.com/Bounadi_JMP.pdf",
+   "label": "作者自报"
+  },
+  {
+   "title": "Read More Facts and Fewer Theories（多读事实，少读理论）（Arjun Panickssery，LessWrong）",
+   "summary": "11-17 发表。他说很多“最有思想的人”都背了大量日期、地点、数字，并在乎能否准确回忆；主张多读具体事件/案例，少读宏大理论（点名 Diamond、Fukuyama、Morris、Acemoglu-Robinson、Turchin）。",
+   "url": "https://www.lesswrong.com/posts/xyFdGGJ6Ckdnrqnsp/read-more-facts-and-fewer-theories",
+   "label": "作者观点"
+  },
+  {
+   "title": "The idiot’s reductio（“你要真信，就该……”是个糟糕的论证）（Linch，LessWrong）",
+   "summary": "11-18 发表（美东 11-17）。Linch 把“如果你真信 X，你就会做 Y；你没做 Y，所以你不是真信 X”叫作 idiot’s reductio（愚蠢的归谬）。例子：真信圣经就不该穿混纺衣；真觉得堕胎是谋杀就该去烧沃尔玛；AI 末日派离职被说“信念是假的”，留下来也被说“信念是假的”——什么都能被解读成“你在装”。",
+   "url": "https://www.lesswrong.com/posts/YgKhExegrhax5efrJ/the-idiot-s-reductio",
+   "label": "作者观点"
+  }
+ ],
+ "corrections": []
 }

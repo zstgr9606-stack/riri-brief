@@ -1,39 +1,37 @@
 {
-  "bot": "AI Tools",
-  "slug": "ai-tools",
-  "column": "AI 工具",
-  "date": "2026-11-16",
-  "items": [
-    {
-      "title": "CALL-E：让 AI 助手替你打电话",
-      "summary": "在 ChatGPT、Claude、Muse 里说一句，CALL-E 先列出通话计划，你确认后拨打美国或加拿大的真实号码，能走完语音菜单、等待保留和留言，回传摘要和通话记录；Claude Code、Codex、Cursor 一条提示就能接入，也有 MCP、SDK 和 API。",
-      "url": "https://www.heycall-e.com/",
-      "label": "已读原文"
-    },
-    {
-      "title": "YouArt Desktop App：桌面端 AI 视频制作智能体",
-      "summary": "一块画布汇集本地文件和 Slack、Gmail、GitHub 的资料，直接驱动电脑上的 After Effects、CapCut、Blender 出片；可以填自己的 API Key，按镜头自动挑成本最低的模型。支持 Mac 和 Windows。",
-      "url": "https://youart.ai/download",
-      "label": "已读原文"
-    },
-    {
-      "title": "Skillbox：AI 编程 Skills 统一库，同步到各家智能体",
-      "summary": "把 Skills 收进一个库，同步到 Claude Code、Cursor、Codex；GitHub 来源可以跟踪更新、对比 diff，每个版本都扫描提示注入和泄密风险，Trim 功能压缩冗长的命令输出，让会话撑得更久。",
-      "url": "https://skillbox.so/",
-      "label": "已读原文"
-    },
-    {
-      "title": "Shot.video：手机扫码当机位，AI 剪多机位视频",
-      "summary": "笔记本跑录制，手机扫二维码就成为额外机位，不用装 App；一键同步录制所有机位和屏幕，AI 按你看向的镜头切换机位，加缩放和可选 B-roll，每处剪辑都能改。",
-      "url": "https://shot.video/",
-      "label": "已读原文"
-    },
-    {
-      "title": "Agweb：给 AI 智能体用的轻量浏览器",
-      "summary": "开源浏览器，专门给智能体控制，不抢窗口焦点，占用小，所有标签在一个视图里。",
-      "url": "https://github.com/paul-nameless/agweb",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "AI Tools",
+ "date": "2026-11-16",
+ "items": [
+  {
+   "title": "CALL-E：让 AI 助手替你打电话",
+   "summary": "在 ChatGPT、Claude、Muse 里说一句，CALL-E 先列出通话计划，你确认后拨打美国或加拿大的真实号码，能走完语音菜单、等待保留和留言，回传摘要和通话记录；Claude Code、Codex、Cursor 一条提示就能接入，也有 MCP、SDK 和 API。",
+   "url": "https://www.heycall-e.com/",
+   "label": "已读原文"
+  },
+  {
+   "title": "YouArt Desktop App：桌面端 AI 视频制作智能体",
+   "summary": "一块画布汇集本地文件和 Slack、Gmail、GitHub 的资料，直接驱动电脑上的 After Effects、CapCut、Blender 出片；可以填自己的 API Key，按镜头自动挑成本最低的模型。支持 Mac 和 Windows。",
+   "url": "https://youart.ai/download",
+   "label": "已读原文"
+  },
+  {
+   "title": "Skillbox：AI 编程 Skills 统一库，同步到各家智能体",
+   "summary": "把 Skills 收进一个库，同步到 Claude Code、Cursor、Codex；GitHub 来源可以跟踪更新、对比 diff，每个版本都扫描提示注入和泄密风险，Trim 功能压缩冗长的命令输出，让会话撑得更久。",
+   "url": "https://skillbox.so/",
+   "label": "已读原文"
+  },
+  {
+   "title": "Shot.video：手机扫码当机位，AI 剪多机位视频",
+   "summary": "笔记本跑录制，手机扫二维码就成为额外机位，不用装 App；一键同步录制所有机位和屏幕，AI 按你看向的镜头切换机位，加缩放和可选 B-roll，每处剪辑都能改。",
+   "url": "https://shot.video/",
+   "label": "已读原文"
+  },
+  {
+   "title": "Agweb：给 AI 智能体用的轻量浏览器",
+   "summary": "开源浏览器，专门给智能体控制，不抢窗口焦点，占用小，所有标签在一个视图里。",
+   "url": "https://github.com/paul-nameless/agweb",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

@@ -1,39 +1,37 @@
 {
-  "bot": "Life Hacks",
-  "slug": "life-hacks",
-  "column": "生活技巧",
-  "date": "2026-11-16",
-  "items": [
-    {
-      "title": "锅里的油别冲进水槽，先擦掉或倒进罐子再洗",
-      "summary": "r/LifeProTips 帖子提醒，炒菜剩的油先处理进垃圾再洗锅，因为油会在管道里积住、造成堵塞。热评的做法有：倒进玻璃罐攒着、倒在铝箔上凝固后包起来扔、用旧厨房纸吸干再洗。",
-      "url": "https://www.reddit.com/r/LifeProTips/comments/1xwy4e4/lpt_when_you_cook_and_have_grease_in_your_pan/",
-      "label": "已读原文"
-    },
-    {
-      "title": "双层玻璃杯夹层进水了：多数人说只能扔",
-      "summary": "r/CleaningTips 有人的双层茶杯夹层里进了水，倒不出来。最高赞（1939）说水本来不该进得去；多条热评说直接扔，因为夹层会长霉，也提醒双层杯和保温杯别进洗碗机。",
-      "url": "https://www.reddit.com/r/CleaningTips/comments/1xwvo8v/how_do_you_clean_2_layer_cups/",
-      "label": "已读原文"
-    },
-    {
-      "title": "松下“Whisper”浴室排风扇被吐槽“像卡车怠速”，装修师傅不同意",
-      "summary": "r/HomeImprovement 楼主换了松下 70–90CFM 的 Whisper 排风扇，说噪音很大、安装也难，出风口 6 英寸后有个 90° 弯。高赞反方是装了上千台的从业者，说正常应该几乎无声，响就是坏件、安装问题或风管堵了；也有电工说客用卫生间他反而建议装吵一点的。",
-      "url": "https://www.reddit.com/r/HomeImprovement/comments/1xwkjm2/panasonic_whisper_bathroom_fans_are_awful_dont/",
-      "label": "已读原文"
-    },
-    {
-      "title": "自己做面包真的省钱吗？",
-      "summary": "r/Frugal 楼主在 Walmart 用 $7.88 买了 20 磅面粉，算下来每杯约 10 美分，自己做披萨饼底、汉堡胚、馕等。热评有支持也有反对：最高赞说时间也是钱，有人说一个人吃反而不划算，还有人说电烤箱一个月多花 $80 电费。",
-      "url": "https://www.reddit.com/r/Frugal/comments/1xwq4ii/making_your_own_bread_products_can_help_you_save/",
-      "label": "已读原文"
-    },
-    {
-      "title": "烤箱烧焦的陈年油垢：黄盖 Easy-Off 终于搞定",
-      "summary": "r/CleaningTips 楼主烤箱一年前起过油火，用洗洁精和 BKF 都擦不掉，按网友建议换黄盖 Easy-Off，喷了几遍、擦了几次就干净了。最高赞（98）提醒别用它碰台面和水槽，会腐蚀；有人把灶架装进垃圾袋喷上，闷一夜。",
-      "url": "https://www.reddit.com/r/CleaningTips/comments/1xx0ga7/im_stunned_by_how_well_clean_my_oven_is_now/",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "Life Hacks",
+ "date": "2026-11-16",
+ "items": [
+  {
+   "title": "锅里的油别冲进水槽，先擦掉或倒进罐子再洗",
+   "summary": "r/LifeProTips 帖子提醒，炒菜剩的油先处理进垃圾再洗锅，因为油会在管道里积住、造成堵塞。热评的做法有：倒进玻璃罐攒着、倒在铝箔上凝固后包起来扔、用旧厨房纸吸干再洗。",
+   "url": "https://www.reddit.com/r/LifeProTips/comments/1xwy4e4/lpt_when_you_cook_and_have_grease_in_your_pan/",
+   "label": "已读原文"
+  },
+  {
+   "title": "双层玻璃杯夹层进水了：多数人说只能扔",
+   "summary": "r/CleaningTips 有人的双层茶杯夹层里进了水，倒不出来。最高赞（1939）说水本来不该进得去；多条热评说直接扔，因为夹层会长霉，也提醒双层杯和保温杯别进洗碗机。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1xwvo8v/how_do_you_clean_2_layer_cups/",
+   "label": "已读原文"
+  },
+  {
+   "title": "松下“Whisper”浴室排风扇被吐槽“像卡车怠速”，装修师傅不同意",
+   "summary": "r/HomeImprovement 楼主换了松下 70–90CFM 的 Whisper 排风扇，说噪音很大、安装也难，出风口 6 英寸后有个 90° 弯。高赞反方是装了上千台的从业者，说正常应该几乎无声，响就是坏件、安装问题或风管堵了；也有电工说客用卫生间他反而建议装吵一点的。",
+   "url": "https://www.reddit.com/r/HomeImprovement/comments/1xwkjm2/panasonic_whisper_bathroom_fans_are_awful_dont/",
+   "label": "已读原文"
+  },
+  {
+   "title": "自己做面包真的省钱吗？",
+   "summary": "r/Frugal 楼主在 Walmart 用 $7.88 买了 20 磅面粉，算下来每杯约 10 美分，自己做披萨饼底、汉堡胚、馕等。热评有支持也有反对：最高赞说时间也是钱，有人说一个人吃反而不划算，还有人说电烤箱一个月多花 $80 电费。",
+   "url": "https://www.reddit.com/r/Frugal/comments/1xwq4ii/making_your_own_bread_products_can_help_you_save/",
+   "label": "已读原文"
+  },
+  {
+   "title": "烤箱烧焦的陈年油垢：黄盖 Easy-Off 终于搞定",
+   "summary": "r/CleaningTips 楼主烤箱一年前起过油火，用洗洁精和 BKF 都擦不掉，按网友建议换黄盖 Easy-Off，喷了几遍、擦了几次就干净了。最高赞（98）提醒别用它碰台面和水槽，会腐蚀；有人把灶架装进垃圾袋喷上，闷一夜。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1xx0ga7/im_stunned_by_how_well_clean_my_oven_is_now/",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

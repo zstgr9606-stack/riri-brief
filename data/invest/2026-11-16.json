@@ -1,33 +1,31 @@
 {
-  "bot": "Invest",
-  "slug": "invest",
-  "column": "投资观察",
-  "date": "2026-11-16",
-  "items": [
-    {
-      "title": "更新 FT：黄仁勋考虑回归，白毛股神喊\"救赎线\"（白毛股神）",
-      "summary": "白毛 11/16 03:19：\"It's time for Jensen's redemption arc at $NVDA. FT: Jensen Huang discusses comeback as Nvidia CEO.\" 11/15 23:01 称已签请愿：\"Jensen Huang is worth fighting for.\"",
-      "url": "https://www.straitstimes.com/business/companies-markets/jensen-huang-discusses-comeback-as-nvidia-ceo-with-allies-ft-reports",
-      "label": "已读原文"
-    },
-    {
-      "title": "白毛股神：上游\"卡脖子\"零部件采购会加速到 2027（白毛股神）",
-      "summary": "11/15 18:47：\"we're going to see game theory bottleneck supply procurement actually accelerate upstream through 2027, with or without him.\" 点名 SOI 光子、AXTI 磷化铟衬底，并称 \"I also prob need to be more selectiv…。属个人观点，具体公司营收预测未核实。",
-      "url": "https://x.com/aleabitoreddit/status/2121918080293196209",
-      "label": "未核实"
-    },
-    {
-      "title": "老雷：Hi5 组合接近新高，TQQQ 组合靠对冲躲过大跌（老雷）",
-      "summary": "11/16 05:39：\"儘管這段時間美股市場腥風血雨，但是 Hi5 組合（圖1）依然接近新高。TQQQ 組合（圖2）則因採取了對沖，避免了災難性損失。\"并称\"DCA+BTD 是普通人累積財富最簡單有效的方式\"。回复网友：\"我不投資個股\"\"我基本上不投資加拿大股市\"。组合收益图未贴出（本人称忘贴图，见链接），数字未核实。",
-      "url": "https://x.com/TheMarketMemo/status/2122082029819044201",
-      "label": "未核实"
-    },
-    {
-      "title": "硅谷居士：SMH 里英伟达权重降到 17%，国会起草加强芯片出口管制（硅谷居士）",
-      "summary": "11/16 06:04：\"在半导体基金SMH里，英伟达的权重已经从高点的22%跌到了17%……至少，现在这个风险减少了。\" 11/15 23:19：\"美国国会两党正在紧锣密鼓起草新的法律，加强高端芯片的出口管制。\" 另发 X 文章《你不知道的英伟达和黄仁勋》。",
-      "url": "https://x.com/SVScholar/status/2122088286458200301",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "Invest",
+ "date": "2026-11-16",
+ "items": [
+  {
+   "title": "更新 FT：黄仁勋考虑回归，白毛股神喊\"救赎线\"（白毛股神）",
+   "summary": "白毛 11/16 03:19：\"It's time for Jensen's redemption arc at $NVDA. FT: Jensen Huang discusses comeback as Nvidia CEO.\" 11/15 23:01 称已签请愿：\"Jensen Huang is worth fighting for.\"",
+   "url": "https://www.straitstimes.com/business/companies-markets/jensen-huang-discusses-comeback-as-nvidia-ceo-with-allies-ft-reports",
+   "label": "已读原文"
+  },
+  {
+   "title": "白毛股神：上游\"卡脖子\"零部件采购会加速到 2027（白毛股神）",
+   "summary": "11/15 18:47：\"we're going to see game theory bottleneck supply procurement actually accelerate upstream through 2027, with or without him.\" 点名 SOI 光子、AXTI 磷化铟衬底，并称 \"I also prob need to be more selectiv…。属个人观点，具体公司营收预测未核实。",
+   "url": "https://x.com/aleabitoreddit/status/2121918080293196209",
+   "label": "未核实"
+  },
+  {
+   "title": "老雷：Hi5 组合接近新高，TQQQ 组合靠对冲躲过大跌（老雷）",
+   "summary": "11/16 05:39：\"儘管這段時間美股市場腥風血雨，但是 Hi5 組合（圖1）依然接近新高。TQQQ 組合（圖2）則因採取了對沖，避免了災難性損失。\"并称\"DCA+BTD 是普通人累積財富最簡單有效的方式\"。回复网友：\"我不投資個股\"\"我基本上不投資加拿大股市\"。组合收益图未贴出（本人称忘贴图，见链接），数字未核实。",
+   "url": "https://x.com/TheMarketMemo/status/2122082029819044201",
+   "label": "未核实"
+  },
+  {
+   "title": "硅谷居士：SMH 里英伟达权重降到 17%，国会起草加强芯片出口管制（硅谷居士）",
+   "summary": "11/16 06:04：\"在半导体基金SMH里，英伟达的权重已经从高点的22%跌到了17%……至少，现在这个风险减少了。\" 11/15 23:19：\"美国国会两党正在紧锣密鼓起草新的法律，加强高端芯片的出口管制。\" 另发 X 文章《你不知道的英伟达和黄仁勋》。",
+   "url": "https://x.com/SVScholar/status/2122088286458200301",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

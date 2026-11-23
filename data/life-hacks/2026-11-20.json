@@ -1,21 +1,19 @@
 {
-  "bot": "Life Hacks",
-  "slug": "life-hacks",
-  "column": "生活技巧",
-  "date": "2026-11-20",
-  "items": [
-    {
-      "title": "用「Google/Apple 登录」可能在同一家开了第二个账号，会员可能付两份",
-      "summary": "r/YouShouldKnow 楼主说，先用邮箱注册、后来点「用 Google/Apple 登录」，服务方可能当成两个账号；Apple「隐藏邮件地址」让这更容易发生，付费会员只挂在购买的那个账号上。热评：先查密码管理器里有没有这个网站的记录；一位网页开发者说正确实现会合并登录方式，这是代码没写好。「重复付费」是楼主个案说法，帖子没给数据；评论仅 7 条。",
-      "url": "https://support.google.com/accounts/answer/12849458",
-      "label": "已读原文"
-    },
-    {
-      "title": "番茄酱汁越炖越苦：冬天换整颗番茄罐头，或丢根胡萝卜一起炖",
-      "summary": "r/Cooking 楼主用 1 kg 鲜番茄、不锈钢锅炖 45–60 分钟，每次都发苦，加糖也没用。最高赞（191）说本地番茄季已过，超市的可能是催熟或进口番茄，建议换整颗番茄罐头（避开含氯化钙的）；其他热评提到整根胡萝卜同炖后捞出、蒜别炒焦，以及涂层刮花的铝锅会和番茄的酸反应。",
-      "url": "https://www.reddit.com/r/Cooking/comments/1y06qcl/tomato_sauce_goes_bitter_after_simmering_what_am/",
-      "label": "网友经验"
-    }
-  ],
-  "corrections": []
+ "bot": "Life Hacks",
+ "date": "2026-11-20",
+ "items": [
+  {
+   "title": "用「Google/Apple 登录」可能在同一家开了第二个账号，会员可能付两份",
+   "summary": "r/YouShouldKnow 楼主说，先用邮箱注册、后来点「用 Google/Apple 登录」，服务方可能当成两个账号；Apple「隐藏邮件地址」让这更容易发生，付费会员只挂在购买的那个账号上。热评：先查密码管理器里有没有这个网站的记录；一位网页开发者说正确实现会合并登录方式，这是代码没写好。「重复付费」是楼主个案说法，帖子没给数据；评论仅 7 条。",
+   "url": "https://support.google.com/accounts/answer/12849458",
+   "label": "已读原文"
+  },
+  {
+   "title": "番茄酱汁越炖越苦：冬天换整颗番茄罐头，或丢根胡萝卜一起炖",
+   "summary": "r/Cooking 楼主用 1 kg 鲜番茄、不锈钢锅炖 45–60 分钟，每次都发苦，加糖也没用。最高赞（191）说本地番茄季已过，超市的可能是催熟或进口番茄，建议换整颗番茄罐头（避开含氯化钙的）；其他热评提到整根胡萝卜同炖后捞出、蒜别炒焦，以及涂层刮花的铝锅会和番茄的酸反应。",
+   "url": "https://www.reddit.com/r/Cooking/comments/1y06qcl/tomato_sauce_goes_bitter_after_simmering_what_am/",
+   "label": "网友经验"
+  }
+ ],
+ "corrections": []
 }

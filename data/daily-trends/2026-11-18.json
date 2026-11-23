@@ -1,39 +1,37 @@
 {
-  "bot": "Daily Trends",
-  "slug": "daily-trends",
-  "column": "全球热点",
-  "date": "2026-11-18",
-  "items": [
-    {
-      "title": "Optimizely 被注入恶意脚本，178 家机构网站的访客受影响",
-      "summary": "安全研究员 Scott Helme 披露，11 月 16 日攻击者改写了 Optimizely（网站 A/B 测试平台）客户项目里的自定义 JS，让 Zoom、BBC、CNN、GitLab、IKEA 等 178 家机构的访客加载恶意代码：替换加密货币收款地址、盗刷银行卡、向 iPhone/iPad 投放攻击工具包。恶意代码已基本清除，攻击者如何获得写入权限尚不清楚。",
-      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-      "label": "官方说明"
-    },
-    {
-      "title": "加州限制 Waymo 无人车上高速",
-      "summary": "AP 标题称加州以「迫在眉睫的危险」为由禁止 Waymo 无人驾驶车辆上州内高速公路。X 新闻摘要称，起因是 Waymo 车辆驶入 101 公路施工区、在 280 公路与巡逻车交会，Waymo 已暂停全美高速载客，市区道路服务不变。AP 原文 403 未读到；X 摘要写限制自 11 月 11 日起生效，与 AP 报道 11/18 才上榜对不上，日期待核对。",
-      "url": "https://www.reddit.com/r/news/comments/1xyyvee/",
-      "label": "未核实"
-    },
-    {
-      "title": "黄仁勋辞职后首次发声：愿意回任，董事会据称不考虑",
-      "summary": "CNBC 报道，前英伟达 CEO 黄仁勋在书面声明中称「给董事会制造了问题，深感遗憾」，将配合独立调查，并说若董事会认为回任符合各方利益，他「愿意回来」。CNBC 另引消息人士称董事会目前不考虑让他回任，特朗普周一称对此持开放态度。",
-      "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-      "label": "已读原文"
-    },
-    {
-      "title": "NSA 内部保密网络中断，苹果多项服务同日故障",
-      "summary": "美国国家安全局（NSA）称其内部涉密网络在计划内维护期间出现暂时中断，关键任务能力正常；CNN 称总部人员因此错峰上班。同日苹果 App Store、iCloud 邮件等服务宕机数小时，苹果称起因是内部更新，傍晚已基本恢复。NSA 和苹果的故障原因都只有自述，未独立核实。",
-      "url": "https://wpde.com/news/nation-world/nsas-national-security-agency-classified-internal-network-is-down-sources-say-no-evidence-cyberattack-communications",
-      "label": "已读原文"
-    },
-    {
-      "title": "乌克兰打击克里米亚大桥，称首次不靠星链制导",
-      "summary": "据 United24 转述《泰晤士报》，乌军一名军官称，这次打击首次不依赖美国星链（Starlink）和星盾（Starshield）卫星通信，而是用一组无人机中继实时视频来制导导弹。泽连斯基称这是针对该桥「七阶段行动」的最后一步，克宫称会把桥修得「比以前更好」。「首次」和无人机中继制导仅为乌方军官经媒体转述；克宫表态只见 Reddit 转引的标题。",
-      "url": "https://united24media.com/war-in-ukraine/ukraine-uses-its-own-missile-guidance-system-to-strike-the-4-billion-crimean-bridge-without-starlink-or-starshield-24469",
-      "label": "媒体转述"
-    }
-  ],
-  "corrections": []
+ "bot": "Daily Trends",
+ "date": "2026-11-18",
+ "items": [
+  {
+   "title": "Optimizely 被注入恶意脚本，178 家机构网站的访客受影响",
+   "summary": "安全研究员 Scott Helme 披露，11 月 16 日攻击者改写了 Optimizely（网站 A/B 测试平台）客户项目里的自定义 JS，让 Zoom、BBC、CNN、GitLab、IKEA 等 178 家机构的访客加载恶意代码：替换加密货币收款地址、盗刷银行卡、向 iPhone/iPad 投放攻击工具包。恶意代码已基本清除，攻击者如何获得写入权限尚不清楚。",
+   "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+   "label": "官方说明"
+  },
+  {
+   "title": "加州限制 Waymo 无人车上高速",
+   "summary": "AP 标题称加州以「迫在眉睫的危险」为由禁止 Waymo 无人驾驶车辆上州内高速公路。X 新闻摘要称，起因是 Waymo 车辆驶入 101 公路施工区、在 280 公路与巡逻车交会，Waymo 已暂停全美高速载客，市区道路服务不变。AP 原文 403 未读到；X 摘要写限制自 11 月 11 日起生效，与 AP 报道 11/18 才上榜对不上，日期待核对。",
+   "url": "https://www.reddit.com/r/news/comments/1xyyvee/",
+   "label": "未核实"
+  },
+  {
+   "title": "黄仁勋辞职后首次发声：愿意回任，董事会据称不考虑",
+   "summary": "CNBC 报道，前英伟达 CEO 黄仁勋在书面声明中称「给董事会制造了问题，深感遗憾」，将配合独立调查，并说若董事会认为回任符合各方利益，他「愿意回来」。CNBC 另引消息人士称董事会目前不考虑让他回任，特朗普周一称对此持开放态度。",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
+   "label": "已读原文"
+  },
+  {
+   "title": "NSA 内部保密网络中断，苹果多项服务同日故障",
+   "summary": "美国国家安全局（NSA）称其内部涉密网络在计划内维护期间出现暂时中断，关键任务能力正常；CNN 称总部人员因此错峰上班。同日苹果 App Store、iCloud 邮件等服务宕机数小时，苹果称起因是内部更新，傍晚已基本恢复。NSA 和苹果的故障原因都只有自述，未独立核实。",
+   "url": "https://wpde.com/news/nation-world/nsas-national-security-agency-classified-internal-network-is-down-sources-say-no-evidence-cyberattack-communications",
+   "label": "已读原文"
+  },
+  {
+   "title": "乌克兰打击克里米亚大桥，称首次不靠星链制导",
+   "summary": "据 United24 转述《泰晤士报》，乌军一名军官称，这次打击首次不依赖美国星链（Starlink）和星盾（Starshield）卫星通信，而是用一组无人机中继实时视频来制导导弹。泽连斯基称这是针对该桥「七阶段行动」的最后一步，克宫称会把桥修得「比以前更好」。「首次」和无人机中继制导仅为乌方军官经媒体转述；克宫表态只见 Reddit 转引的标题。",
+   "url": "https://united24media.com/war-in-ukraine/ukraine-uses-its-own-missile-guidance-system-to-strike-the-4-billion-crimean-bridge-without-starlink-or-starshield-24469",
+   "label": "媒体转述"
+  }
+ ],
+ "corrections": []
 }

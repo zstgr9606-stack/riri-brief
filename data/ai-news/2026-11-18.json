@@ -1,45 +1,43 @@
 {
-  "bot": "AI News",
-  "slug": "ai-news",
-  "column": "AI 动态",
-  "date": "2026-11-18",
-  "items": [
-    {
-      "title": "OpenAI 发布 GPT-6.2 Astra / Sol：Astra API 价降 20%",
-      "summary": "11-18 01:54 发布。Astra 面向复杂专业任务，每百万 token 输入 $8、输出 $40，比 GPT-6 Astra 低 20%；Sol 是日常款，价格不变。OpenAI 称 Agents' Last Exam（多步专业工作测评）比 Claude Fable 5.2 高 5.5 分、成本 5%。官方对比榜单剔除了 9 个用了备用模型的任务；ARC Prize（抽象推理基准机构）复核的 ARC-AGI-3 达 100%，用的是「pro…",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "label": "官方自报"
-    },
-    {
-      "title": "Google AI Studio Build 上线自定义域名，Android 应用可发个人 Play 库",
-      "summary": "11-17 官方帖与博客：Build 的网页应用可在发布面板买域名并绑定；Android 应用可发到个人 Google Play 库（仅美国）。文档写明自定义域名需付费 Google Cloud 项目，免费账号用 xxx.ai.studio 子域名。 💬 我的推断：不写后端也能把 AI Studio 做的应用挂到自己域名。",
-      "url": "https://aistudio.google.com/docs/aistudio-deploying",
-      "label": "已读原文"
-    },
-    {
-      "title": "Replit 推出 Missions：设目标和预算，一群 Agent 干几天",
-      "summary": "11-17 博客：给目标、成功标准和预算上限，一组 Agent（多 Agent 并行）规划、开发、测试，由独立评审 Agent 验收，预算用完即停。Replit 称 2 天、$3,000 内做出监控平台 DataCat，并开源。 💬 待验证假设：「预算封顶 + 验收标准」更适合个人控成本；能否稳定出可用产品要等实测。DataCat 对比 Claude Code /goal 是 Replit 自己跑的，每种配置只跑一次；FAQ 未列价目和适用套餐。",
-      "url": "https://replit.com/blog/introducing-replit-missions",
-      "label": "官方自报"
-    },
-    {
-      "title": "Cognition 推出 Devin Bots：常驻 Agent 带一队 Devin 做长期目标",
-      "summary": "11-17 博客：Bot 有自己的记忆和工具，并行调度多个 Devin，长期跟进一个目标，只把需要人决定的事推给你。官方案例：Android Bot 44 天合并 1,134 个 PR。 💬 我的推断：产品从「派任务」转向「给目标」，值得看它的权限和审批设计。数字全是 Cognition 自述案例；博客没给基准测试和单独定价。 📊 累计：X @cognition 帖 3,498 赞 ✅ 来源/原话…",
-      "url": "https://devin.ai/blog/introducing-devin-bots",
-      "label": "官方自报"
-    },
-    {
-      "title": "RankSpot",
-      "summary": "给 Claude 等接 MCP（Agent 工具接口）的 SEO 与 AI 搜索执行层 — 按操作付费，注册送 $1，充值 $10 起 — PH 11-17 第 2，438 票",
-      "url": "https://rankspot.ai/pricing",
-      "label": "厂商自报"
-    },
-    {
-      "title": "Appxiom",
-      "summary": "给编码 Agent 提供线上崩溃上下文，帮它定位 bug — $10/月起，30 天试用 — PH 11-17 第 4，289 票",
-      "url": "https://appxiom.com/pricing",
-      "label": "厂商自报"
-    }
-  ],
-  "corrections": []
+ "bot": "AI News",
+ "date": "2026-11-18",
+ "items": [
+  {
+   "title": "OpenAI 发布 GPT-6.2 Astra / Sol：Astra API 价降 20%",
+   "summary": "11-18 01:54 发布。Astra 面向复杂专业任务，每百万 token 输入 $8、输出 $40，比 GPT-6 Astra 低 20%；Sol 是日常款，价格不变。OpenAI 称 Agents' Last Exam（多步专业工作测评）比 Claude Fable 5.2 高 5.5 分、成本 5%。官方对比榜单剔除了 9 个用了备用模型的任务；ARC Prize（抽象推理基准机构）复核的 ARC-AGI-3 达 100%，用的是「pro…",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "label": "官方自报"
+  },
+  {
+   "title": "Google AI Studio Build 上线自定义域名，Android 应用可发个人 Play 库",
+   "summary": "11-17 官方帖与博客：Build 的网页应用可在发布面板买域名并绑定；Android 应用可发到个人 Google Play 库（仅美国）。文档写明自定义域名需付费 Google Cloud 项目，免费账号用 xxx.ai.studio 子域名。 💬 我的推断：不写后端也能把 AI Studio 做的应用挂到自己域名。",
+   "url": "https://aistudio.google.com/docs/aistudio-deploying",
+   "label": "已读原文"
+  },
+  {
+   "title": "Replit 推出 Missions：设目标和预算，一群 Agent 干几天",
+   "summary": "11-17 博客：给目标、成功标准和预算上限，一组 Agent（多 Agent 并行）规划、开发、测试，由独立评审 Agent 验收，预算用完即停。Replit 称 2 天、$3,000 内做出监控平台 DataCat，并开源。 💬 待验证假设：「预算封顶 + 验收标准」更适合个人控成本；能否稳定出可用产品要等实测。DataCat 对比 Claude Code /goal 是 Replit 自己跑的，每种配置只跑一次；FAQ 未列价目和适用套餐。",
+   "url": "https://replit.com/blog/introducing-replit-missions",
+   "label": "官方自报"
+  },
+  {
+   "title": "Cognition 推出 Devin Bots：常驻 Agent 带一队 Devin 做长期目标",
+   "summary": "11-17 博客：Bot 有自己的记忆和工具，并行调度多个 Devin，长期跟进一个目标，只把需要人决定的事推给你。官方案例：Android Bot 44 天合并 1,134 个 PR。 💬 我的推断：产品从「派任务」转向「给目标」，值得看它的权限和审批设计。数字全是 Cognition 自述案例；博客没给基准测试和单独定价。 📊 累计：X @cognition 帖 3,498 赞 ✅ 来源/原话…",
+   "url": "https://devin.ai/blog/introducing-devin-bots",
+   "label": "官方自报"
+  },
+  {
+   "title": "RankSpot",
+   "summary": "给 Claude 等接 MCP（Agent 工具接口）的 SEO 与 AI 搜索执行层 — 按操作付费，注册送 $1，充值 $10 起 — PH 11-17 第 2，438 票",
+   "url": "https://rankspot.ai/pricing",
+   "label": "厂商自报"
+  },
+  {
+   "title": "Appxiom",
+   "summary": "给编码 Agent 提供线上崩溃上下文，帮它定位 bug — $10/月起，30 天试用 — PH 11-17 第 4，289 票",
+   "url": "https://appxiom.com/pricing",
+   "label": "厂商自报"
+  }
+ ],
+ "corrections": []
 }

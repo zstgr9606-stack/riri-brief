@@ -1,45 +1,43 @@
 {
-  "bot": "AI News",
-  "slug": "ai-news",
-  "column": "AI 动态",
-  "date": "2026-11-20",
-  "items": [
-    {
-      "title": "Gemini Mac 版上线「电脑操作」：在后台窗口替你点、输、填表",
-      "summary": "Google 11-19 发布，Mac 版 Gemini App 可跨本地文件、桌面应用和网页完成多步任务，在隔离的后台窗口运行，聊天里有实时预览，不占用户屏幕和光标；可选择开放哪些应用，关键操作前需批准。首批限美国、英文，需 Apple Silicon + macOS 15 以上，面向 Google AI Plus / Pro / Ultra 订阅用户。TNW 称 Google 提示它可能误删或误分享文件、欧洲和英国暂不可用（已读 TNW 转述，Google 帮助页原文未读）。",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-      "label": "媒体转述"
-    },
-    {
-      "title": "Genie 4 世界模型开放 API：约 0.1 美元/秒",
-      "summary": "继 11-18 发布 Genie 4 后，Google 11-19 把它开放到 Gemini API（Interactions API）和 AI Studio：用文字或参考图生成 720p、24 帧、带音频的可交互世界，可键盘移动、中途用文字改场景。仅付费层，官方更新日志写每百万视频输出 token 17.5 美元，约合 0.1 美元/秒（含音频）。PPC Land 称单次会话最长 120 秒、60–90 秒后画面可能变差（已读 PPC Land 转述，Google 文档原文未读）。",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
-      "label": "媒体转述"
-    },
-    {
-      "title": "OpenAI 语音模型 GPT-Live-1.1 上 API，新增低价「待机」",
-      "summary": "OpenAI 11-19 更新日志：GPT-Live-1.1（能边听边说的全双工语音模型）改进多语言发音、口音一致性和转写；GPT-Live-1 和 1.1 的 WebRTC 会话新增 standby，无人说话时暂停推理、有人说话再恢复。模型页价格：活跃 0.05 美元/分钟，待机 0.02 美元/分钟。 💬 我的推断：语音助手类应用挂机成本会降；中文效果要自己测。",
-      "url": "https://developers.openai.com/api/docs/models/gpt-live-1.1",
-      "label": "来源已标注"
-    },
-    {
-      "title": "OpenAI 公开内部「Performance Factory」：Codex Agent 自动排查 ChatGPT 变慢",
-      "summary": "OpenAI 工程博客 11-19：性能告警触发后，Codex Agent 开任务调查、记录结论、提交修复给工程师审核，上线后再由 Agent 核对是否恢复；团队把排查流程写成共享 skill（技能说明文件）「perf-forensics」。官方称三个多月追踪 1,700 多次调查、找到 600 多个根因。数字为 OpenAI 自报；VentureBeat 称最终上线的修复里约 15 个是 Codex 原样写的 PR（已读 VentureBea…",
-      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
-      "label": "来源已标注"
-    },
-    {
-      "title": "TestSprite 4.0",
-      "summary": "测试 Agent，记住应用该有的行为，代码 Agent 改一处后把全部功能再测一遍 — 免费 150 积分/月，付费 $19–$69/月，企业 $199+/月 — PH 11-19 当日第 1，275 票",
-      "url": "https://www.testsprite.com/pricing",
-      "label": "厂商自报"
-    },
-    {
-      "title": "Tabstack by Mozilla",
-      "summary": "给模型接网页的托管 API（调研、抽取、浏览器自动化），称数据不用于训练 — 免费 1 万积分，$10/$99/$499 每月 — PH 11-19 当日第 8，170 票",
-      "url": "https://tabstack.ai/pricing",
-      "label": "厂商自报"
-    }
-  ],
-  "corrections": []
+ "bot": "AI News",
+ "date": "2026-11-20",
+ "items": [
+  {
+   "title": "Gemini Mac 版上线「电脑操作」：在后台窗口替你点、输、填表",
+   "summary": "Google 11-19 发布，Mac 版 Gemini App 可跨本地文件、桌面应用和网页完成多步任务，在隔离的后台窗口运行，聊天里有实时预览，不占用户屏幕和光标；可选择开放哪些应用，关键操作前需批准。首批限美国、英文，需 Apple Silicon + macOS 15 以上，面向 Google AI Plus / Pro / Ultra 订阅用户。TNW 称 Google 提示它可能误删或误分享文件、欧洲和英国暂不可用（已读 TNW 转述，Google 帮助页原文未读）。",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+   "label": "媒体转述"
+  },
+  {
+   "title": "Genie 4 世界模型开放 API：约 0.1 美元/秒",
+   "summary": "继 11-18 发布 Genie 4 后，Google 11-19 把它开放到 Gemini API（Interactions API）和 AI Studio：用文字或参考图生成 720p、24 帧、带音频的可交互世界，可键盘移动、中途用文字改场景。仅付费层，官方更新日志写每百万视频输出 token 17.5 美元，约合 0.1 美元/秒（含音频）。PPC Land 称单次会话最长 120 秒、60–90 秒后画面可能变差（已读 PPC Land 转述，Google 文档原文未读）。",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+   "label": "媒体转述"
+  },
+  {
+   "title": "OpenAI 语音模型 GPT-Live-1.1 上 API，新增低价「待机」",
+   "summary": "OpenAI 11-19 更新日志：GPT-Live-1.1（能边听边说的全双工语音模型）改进多语言发音、口音一致性和转写；GPT-Live-1 和 1.1 的 WebRTC 会话新增 standby，无人说话时暂停推理、有人说话再恢复。模型页价格：活跃 0.05 美元/分钟，待机 0.02 美元/分钟。 💬 我的推断：语音助手类应用挂机成本会降；中文效果要自己测。",
+   "url": "https://developers.openai.com/api/docs/models/gpt-live-1.1",
+   "label": "来源已标注"
+  },
+  {
+   "title": "OpenAI 公开内部「Performance Factory」：Codex Agent 自动排查 ChatGPT 变慢",
+   "summary": "OpenAI 工程博客 11-19：性能告警触发后，Codex Agent 开任务调查、记录结论、提交修复给工程师审核，上线后再由 Agent 核对是否恢复；团队把排查流程写成共享 skill（技能说明文件）「perf-forensics」。官方称三个多月追踪 1,700 多次调查、找到 600 多个根因。数字为 OpenAI 自报；VentureBeat 称最终上线的修复里约 15 个是 Codex 原样写的 PR（已读 VentureBea…",
+   "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+   "label": "来源已标注"
+  },
+  {
+   "title": "TestSprite 4.0",
+   "summary": "测试 Agent，记住应用该有的行为，代码 Agent 改一处后把全部功能再测一遍 — 免费 150 积分/月，付费 $19–$69/月，企业 $199+/月 — PH 11-19 当日第 1，275 票",
+   "url": "https://www.testsprite.com/pricing",
+   "label": "厂商自报"
+  },
+  {
+   "title": "Tabstack by Mozilla",
+   "summary": "给模型接网页的托管 API（调研、抽取、浏览器自动化），称数据不用于训练 — 免费 1 万积分，$10/$99/$499 每月 — PH 11-19 当日第 8，170 票",
+   "url": "https://tabstack.ai/pricing",
+   "label": "厂商自报"
+  }
+ ],
+ "corrections": []
 }

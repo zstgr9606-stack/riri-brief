@@ -1,39 +1,37 @@
 {
-  "bot": "Go Global",
-  "slug": "go-global",
-  "column": "出海案例",
-  "date": "2026-11-18",
-  "items": [
-    {
-      "title": "猜演员小游戏 Actorle 广告收入约 $4k/月：一个游戏目录每月带 8,600 访客，218 条自动短视频只带来 25 个",
-      "summary": "作者 Laszlo 说网站约 7,000 日访，63% 是直接访问；他用 10 周自动发了 218 条短视频，累计约 5.1 万播放，近 30 天只带来 25 个访客。新游戏没对外发布，只在菜单加了个链接、给约 4,000 名注册玩家发了一封邮件，月访问从 8 月 16.3 万涨到 10 月 20.1 万。",
-      "url": "https://actorle.com/cinections",
-      "label": "作者自报"
-    },
-    {
-      "title": "AI 陪伴 App 测评站做了 100 天：订阅花 $386、写 47 篇、Google 点击 572 次，收入 $0",
-      "summary": "作者付费试用了 27 款 App，委托做了 2,150 人问卷，内容有被其他媒体引用；搜索曝光 8 月上涨、9 月初骤降，到现在还没恢复。他没有放联盟链接，但不断有开发者主动找他做测评。",
-      "url": "https://www.indiehackers.com/post/100-days-building-an-affiliate-site-386-spent-0-earned-AhJNgO3vNPpBGMDpvEM2",
-      "label": "作者自报"
-    },
-    {
-      "title": "被称作「廉价版 Clay」的 Bitscale：Clay 一涨价，月新增用户从约 60 跳到 1,297",
-      "summary": "Bitscale 是 3 个人起家的 B2B 数据工具，2025 年每月大约新增 60 个用户。2026 年 3 月 Clay 改了计费，团队在 Clay 社区盯抱怨帖、几分钟内私信对方，当月新增 1,297。「clay alternative」这个关键词做了 16 个月 SEO，点击很少；现在团队 15 人、已盈利，最近 12 个客户里有 8 个来自 Clay 或 ZoomInfo。标题里的 $10M 估值没有给出依据；内容是创始人自述，带营销意味。",
-      "url": "https://www.bitscale.ai/",
-      "label": "作者自报"
-    },
-    {
-      "title": "B2B 工具 BeReach：一周有 23 人进了要求绑卡的页面，14 人一次卡都没试就走了",
-      "summary": "这是 14 天试用、要求先绑卡的模式，离开的 14 人一次刷卡都没尝试。两封挽回邮件 30 天里分别只换来 3/138、1/86 的试用转化，后来发现都进了 Gmail「推广」标签页，改了主题行才进收件箱。",
-      "url": "https://www.reddit.com/r/SaaS/comments/1xx1v33/14_of_the_last_23_people_who_reached_our_trials/",
-      "label": "作者自报"
-    },
-    {
-      "title": "iOS 习惯 App 试投 Apple Ads，每天 $10：5 天花 $27.41，换来 4 个安装、1 个试用",
-      "summary": "出价 $1.50 时一次曝光都没有，提到 $2.50 才开始展示；竞品词「finch」7 次点击花了 $14.04，作者的曝光份额只有 3–9%。品类精确词 4 天合计约 20 次曝光，后来改投 9 个小精确词，第 5 天花 $7.69、5 次点击、1 个安装。",
-      "url": "https://www.reddit.com/r/indiehackers/comments/1xw7skr/week_1_of_apple_ads_on_10day_1_trial_subscriber/",
-      "label": "作者自报"
-    }
-  ],
-  "corrections": []
+ "bot": "Go Global",
+ "date": "2026-11-18",
+ "items": [
+  {
+   "title": "猜演员小游戏 Actorle 广告收入约 $4k/月：一个游戏目录每月带 8,600 访客，218 条自动短视频只带来 25 个",
+   "summary": "作者 Laszlo 说网站约 7,000 日访，63% 是直接访问；他用 10 周自动发了 218 条短视频，累计约 5.1 万播放，近 30 天只带来 25 个访客。新游戏没对外发布，只在菜单加了个链接、给约 4,000 名注册玩家发了一封邮件，月访问从 8 月 16.3 万涨到 10 月 20.1 万。",
+   "url": "https://actorle.com/cinections",
+   "label": "作者自报"
+  },
+  {
+   "title": "AI 陪伴 App 测评站做了 100 天：订阅花 $386、写 47 篇、Google 点击 572 次，收入 $0",
+   "summary": "作者付费试用了 27 款 App，委托做了 2,150 人问卷，内容有被其他媒体引用；搜索曝光 8 月上涨、9 月初骤降，到现在还没恢复。他没有放联盟链接，但不断有开发者主动找他做测评。",
+   "url": "https://www.indiehackers.com/post/100-days-building-an-affiliate-site-386-spent-0-earned-AhJNgO3vNPpBGMDpvEM2",
+   "label": "作者自报"
+  },
+  {
+   "title": "被称作「廉价版 Clay」的 Bitscale：Clay 一涨价，月新增用户从约 60 跳到 1,297",
+   "summary": "Bitscale 是 3 个人起家的 B2B 数据工具，2025 年每月大约新增 60 个用户。2026 年 3 月 Clay 改了计费，团队在 Clay 社区盯抱怨帖、几分钟内私信对方，当月新增 1,297。「clay alternative」这个关键词做了 16 个月 SEO，点击很少；现在团队 15 人、已盈利，最近 12 个客户里有 8 个来自 Clay 或 ZoomInfo。标题里的 $10M 估值没有给出依据；内容是创始人自述，带营销意味。",
+   "url": "https://www.bitscale.ai/",
+   "label": "作者自报"
+  },
+  {
+   "title": "B2B 工具 BeReach：一周有 23 人进了要求绑卡的页面，14 人一次卡都没试就走了",
+   "summary": "这是 14 天试用、要求先绑卡的模式，离开的 14 人一次刷卡都没尝试。两封挽回邮件 30 天里分别只换来 3/138、1/86 的试用转化，后来发现都进了 Gmail「推广」标签页，改了主题行才进收件箱。",
+   "url": "https://www.reddit.com/r/SaaS/comments/1xx1v33/14_of_the_last_23_people_who_reached_our_trials/",
+   "label": "作者自报"
+  },
+  {
+   "title": "iOS 习惯 App 试投 Apple Ads，每天 $10：5 天花 $27.41，换来 4 个安装、1 个试用",
+   "summary": "出价 $1.50 时一次曝光都没有，提到 $2.50 才开始展示；竞品词「finch」7 次点击花了 $14.04，作者的曝光份额只有 3–9%。品类精确词 4 天合计约 20 次曝光，后来改投 9 个小精确词，第 5 天花 $7.69、5 次点击、1 个安装。",
+   "url": "https://www.reddit.com/r/indiehackers/comments/1xw7skr/week_1_of_apple_ads_on_10day_1_trial_subscriber/",
+   "label": "作者自报"
+  }
+ ],
+ "corrections": []
 }

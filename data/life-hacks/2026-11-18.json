@@ -1,27 +1,25 @@
 {
-  "bot": "Life Hacks",
-  "slug": "life-hacks",
-  "column": "生活技巧",
-  "date": "2026-11-18",
-  "items": [
-    {
-      "title": "拍文件别靠太近：退后变焦，或直接用手机「扫描」",
-      "summary": "r/LifeProTips 楼主说，拍文件时人往后站再用变焦，比 1 倍加闪光灯更少阴影、也更容易对焦。最高赞（542）指出用系统自带的「扫描」功能就不会带上阴影；有人补充 iPhone 可在备忘录里走「新建笔记 → 回形针 → 扫描文档」，安卓相机对准文件时也常会弹出扫描，还有热评说 2 倍变焦能减轻纸张边缘变形。",
-      "url": "https://www.reddit.com/r/LifeProTips/comments/1xyppli/lpt_take_document_pictures_without_shadows/",
-      "label": "网友经验"
-    },
-    {
-      "title": "别点短信里的缴费链接，自己打开官方 App",
-      "summary": "楼主提醒，假缴费链接是常见骗术，多花十秒自己打开银行或公司官方 App 更稳妥。热评认同这是防钓鱼，也指出正规公司有时同样会发带链接的短信或邮件，但仍然不建议去点，习惯走自己打开的官方入口。",
-      "url": "https://www.reddit.com/r/LifeProTips/comments/1xyd76i/lpt_never_pay_a_bill_through_a_link_in_an_sms/",
-      "label": "已读原文"
-    },
-    {
-      "title": "煲汤中途出门：关火后别在室温下放很久",
-      "summary": "有人问高汤要炖好几小时，能不能关火去商店再回来继续炖。最高赞（147）说短时间可以、但不要离开好几小时，也可用慢炖锅维持温度；另有评论提到大约 63°C（145°F）的下限，并提醒危险温度区大约只能停留两小时。",
-      "url": "https://www.reddit.com/r/Cooking/comments/1xyqnzs/simmering_broth_for_hours_can_i_pause_the/",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "Life Hacks",
+ "date": "2026-11-18",
+ "items": [
+  {
+   "title": "拍文件别靠太近：退后变焦，或直接用手机「扫描」",
+   "summary": "r/LifeProTips 楼主说，拍文件时人往后站再用变焦，比 1 倍加闪光灯更少阴影、也更容易对焦。最高赞（542）指出用系统自带的「扫描」功能就不会带上阴影；有人补充 iPhone 可在备忘录里走「新建笔记 → 回形针 → 扫描文档」，安卓相机对准文件时也常会弹出扫描，还有热评说 2 倍变焦能减轻纸张边缘变形。",
+   "url": "https://www.reddit.com/r/LifeProTips/comments/1xyppli/lpt_take_document_pictures_without_shadows/",
+   "label": "网友经验"
+  },
+  {
+   "title": "别点短信里的缴费链接，自己打开官方 App",
+   "summary": "楼主提醒，假缴费链接是常见骗术，多花十秒自己打开银行或公司官方 App 更稳妥。热评认同这是防钓鱼，也指出正规公司有时同样会发带链接的短信或邮件，但仍然不建议去点，习惯走自己打开的官方入口。",
+   "url": "https://www.reddit.com/r/LifeProTips/comments/1xyd76i/lpt_never_pay_a_bill_through_a_link_in_an_sms/",
+   "label": "已读原文"
+  },
+  {
+   "title": "煲汤中途出门：关火后别在室温下放很久",
+   "summary": "有人问高汤要炖好几小时，能不能关火去商店再回来继续炖。最高赞（147）说短时间可以、但不要离开好几小时，也可用慢炖锅维持温度；另有评论提到大约 63°C（145°F）的下限，并提醒危险温度区大约只能停留两小时。",
+   "url": "https://www.reddit.com/r/Cooking/comments/1xyqnzs/simmering_broth_for_hours_can_i_pause_the/",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

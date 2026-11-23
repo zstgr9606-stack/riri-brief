@@ -1,33 +1,31 @@
 {
-  "bot": "Invest",
-  "slug": "invest",
-  "column": "投资观察",
-  "date": "2026-11-21",
-  "items": [
-    {
-      "title": "路透：SEC 调查聚焦英伟达会计问题，NVDA 周五收跌约 14%（白毛股神）",
-      "summary": "白毛 11/21 04:39：「$NVDA drops over -12%+, from a new report that the SEC is probing potential accounting issues at Nvidia… It's just wild to witness a $5T+ company crash -46%+ in weeks.」。调查焦点只来自匿名消息，未见 SEC 或英伟达文件；白毛「−46%」未给计算基准。",
-      "url": "https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
-      "label": "已读原文"
-    },
-    {
-      "title": "纳指 100 单日 −5.6%，收盘距纪录 −19.8%（硅谷居士、老雷）",
-      "summary": "居士 11/21 05:06：「纳斯达克100指数暴跌5.6%，正式进入技术性熊市。VGT大跌6.75%。半导体基金SMH更是跌去10.6%，已经从最高点跌了40%。」老雷 02:14：「今天盤中 -18% 的跌幅已經達到，但目前還沒有看到止跌的跡象。」。居士「正式进入技术性熊市」与 StockAnalysis「收盘差一点」不一致，口径不同；SMH「从最高点跌40%」未核实。",
-      "url": "https://stockanalysis.com/news/nasdaq-100-ends-just-short-of-bear-market/",
-      "label": "已读原文"
-    },
-    {
-      "title": "电子行业协会预警 PCB 短缺，已波及汽车、医疗、国防（白毛股神）",
-      "summary": "白毛 11/21 02:50：「other industries outside of AI are really starting to feel the pain now too.」并引协会原文：「Companies in automotive, industrial, medical, defense, and telecommunications report longer lead ti…。白毛称协会认为「2028 年中前难缓解」，我读到的官网摘要只写「Through 2027 and Beyond」，未核实。",
-      "url": "https://www.electronics.org/news-release/global-electronics-association-growing-shortages-across-pcb-supply-chain-threaten-next",
-      "label": "协会自报"
-    },
-    {
-      "title": "老雷：没有黄仁勋的英伟达只值 3000 亿美元；白毛转述「业内」称或现人才流失（更新）",
-      "summary": "老雷 11/20 12:10：「沒有黃仁勳的 $NVDA 我認為只值 3000 億美元市值……截至 2026 年 11 月 19 日輝達市值 3.5 兆」。人才流失、评级下调均未核实；下一步需要看英伟达官方披露或评级机构公告。",
-      "url": "https://x.com/TheMarketMemo/status/2123630031964647567",
-      "label": "作者观点"
-    }
-  ],
-  "corrections": []
+ "bot": "Invest",
+ "date": "2026-11-21",
+ "items": [
+  {
+   "title": "路透：SEC 调查聚焦英伟达会计问题，NVDA 周五收跌约 14%（白毛股神）",
+   "summary": "白毛 11/21 04:39：「$NVDA drops over -12%+, from a new report that the SEC is probing potential accounting issues at Nvidia… It's just wild to witness a $5T+ company crash -46%+ in weeks.」。调查焦点只来自匿名消息，未见 SEC 或英伟达文件；白毛「−46%」未给计算基准。",
+   "url": "https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
+   "label": "已读原文"
+  },
+  {
+   "title": "纳指 100 单日 −5.6%，收盘距纪录 −19.8%（硅谷居士、老雷）",
+   "summary": "居士 11/21 05:06：「纳斯达克100指数暴跌5.6%，正式进入技术性熊市。VGT大跌6.75%。半导体基金SMH更是跌去10.6%，已经从最高点跌了40%。」老雷 02:14：「今天盤中 -18% 的跌幅已經達到，但目前還沒有看到止跌的跡象。」。居士「正式进入技术性熊市」与 StockAnalysis「收盘差一点」不一致，口径不同；SMH「从最高点跌40%」未核实。",
+   "url": "https://stockanalysis.com/news/nasdaq-100-ends-just-short-of-bear-market/",
+   "label": "已读原文"
+  },
+  {
+   "title": "电子行业协会预警 PCB 短缺，已波及汽车、医疗、国防（白毛股神）",
+   "summary": "白毛 11/21 02:50：「other industries outside of AI are really starting to feel the pain now too.」并引协会原文：「Companies in automotive, industrial, medical, defense, and telecommunications report longer lead ti…。白毛称协会认为「2028 年中前难缓解」，我读到的官网摘要只写「Through 2027 and Beyond」，未核实。",
+   "url": "https://www.electronics.org/news-release/global-electronics-association-growing-shortages-across-pcb-supply-chain-threaten-next",
+   "label": "协会自报"
+  },
+  {
+   "title": "老雷：没有黄仁勋的英伟达只值 3000 亿美元；白毛转述「业内」称或现人才流失（更新）",
+   "summary": "老雷 11/20 12:10：「沒有黃仁勳的 $NVDA 我認為只值 3000 億美元市值……截至 2026 年 11 月 19 日輝達市值 3.5 兆」。人才流失、评级下调均未核实；下一步需要看英伟达官方披露或评级机构公告。",
+   "url": "https://x.com/TheMarketMemo/status/2123630031964647567",
+   "label": "作者观点"
+  }
+ ],
+ "corrections": []
 }

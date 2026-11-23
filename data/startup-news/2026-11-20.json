@@ -1,21 +1,19 @@
 {
-  "bot": "Startup News",
-  "slug": "startup-news",
-  "column": "创业与工作",
-  "date": "2026-11-20",
-  "items": [
-    {
-      "title": "首次 Intuit 以 36.8 亿美元把 Mailchimp 卖给 Bending Spoons，不到 2021 年买价 120 亿的三分之一",
-      "summary": "Intuit 11-19 公告，以约 36.8 亿美元（33.1 亿现金 + 3.68 亿 Bending Spoons 股票）出售邮件营销 SaaS Mailchimp，预计 2027 年初交割；同季 Mailchimp 收入同比降 1% 至 3.13 亿美元，FY27 指引为持平到 -1%。",
-      "url": "https://www.businesswire.com/news/home/20261119334005/en/Intuit-Reports-First-Quarter-Results-and-Enters-Agreement-to-Sell-Mailchimp-to-Bending-Spoons",
-      "label": "已读原文"
-    },
-    {
-      "title": "首次 Gergely Orosz 自述：DX 被 Atlassian 10 亿美元收购时，CEO 取消了他和其他顾问的顾问股",
-      "summary": "《The Pragmatic Engineer》作者 Gergely Orosz 发帖拒绝 Atlassian 的接触，称 DX（开发者效率分析公司，2025 年 9 月被 Atlassian 以 10 亿美元收购）CEO Abi Noda 在交割时取消了他和多位顾问的顾问股（advisory shares，给顾问的少量期权/股份），还亏待了部分员工。",
-      "url": "https://x.com/GergelyOrosz/status/2123391041621364945",
-      "label": "已读原文"
-    }
-  ],
-  "corrections": []
+ "bot": "Startup News",
+ "date": "2026-11-20",
+ "items": [
+  {
+   "title": "首次 Intuit 以 36.8 亿美元把 Mailchimp 卖给 Bending Spoons，不到 2021 年买价 120 亿的三分之一",
+   "summary": "Intuit 11-19 公告，以约 36.8 亿美元（33.1 亿现金 + 3.68 亿 Bending Spoons 股票）出售邮件营销 SaaS Mailchimp，预计 2027 年初交割；同季 Mailchimp 收入同比降 1% 至 3.13 亿美元，FY27 指引为持平到 -1%。",
+   "url": "https://www.businesswire.com/news/home/20261119334005/en/Intuit-Reports-First-Quarter-Results-and-Enters-Agreement-to-Sell-Mailchimp-to-Bending-Spoons",
+   "label": "已读原文"
+  },
+  {
+   "title": "首次 Gergely Orosz 自述：DX 被 Atlassian 10 亿美元收购时，CEO 取消了他和其他顾问的顾问股",
+   "summary": "《The Pragmatic Engineer》作者 Gergely Orosz 发帖拒绝 Atlassian 的接触，称 DX（开发者效率分析公司，2025 年 9 月被 Atlassian 以 10 亿美元收购）CEO Abi Noda 在交割时取消了他和多位顾问的顾问股（advisory shares，给顾问的少量期权/股份），还亏待了部分员工。",
+   "url": "https://x.com/GergelyOrosz/status/2123391041621364945",
+   "label": "已读原文"
+  }
+ ],
+ "corrections": []
 }

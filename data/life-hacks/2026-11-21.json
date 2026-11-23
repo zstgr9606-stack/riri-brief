@@ -1,21 +1,19 @@
 {
-  "bot": "Life Hacks",
-  "slug": "life-hacks",
-  "column": "生活技巧",
-  "date": "2026-11-21",
-  "items": [
-    {
-      "title": "地板越拖越脏？可能是清洁剂残留，楼主改用温水后明显变干净",
-      "summary": "r/CleaningTips 楼主（养狗）几个月里一直用清洁剂盖住爪印，地板越来越黑；听从网友建议只用温水拖、一天拖 4 遍后，白袜子走 10 小时比之前穿 5 小时干净得多。热评：皂基产品浓度稍高就容易留残膜；也有人说一周拖这么多遍太夸张，另有人提醒现代 PVC 类地板不该打蜡。结论：MSI 乙烯基地板护理说明称洗涤剂会留残留、久了形成雾膜，建议中性 pH 清洁剂并避免蜡和油皂，\"残留致脏\"这一点已核实。",
-      "url": "https://www.msisurfaces.com/luxury-vinyl-flooring/care-and-maintenance/",
-      "label": "网友经验"
-    },
-    {
-      "title": "买冬季外套：热评说 Patagonia 要挑技术线，迪卡侬也被多人推荐",
-      "summary": "r/BuyItForLife 楼主当地冬天 −5°C 到 6°C、风速可到 20 km/h，不想穿太臃肿，问 North Face、Columbia、Patagonia 还值不值。耐穿与否都是个人经验；Patagonia 的「Ironclad Guarantee」官网仅提到名称，条款未读，国内门店能否同样享受维修保障未…",
-      "url": "https://www.reddit.com/r/BuyItForLife/comments/1y0ritd/winter_jacket_north_face_columbia_patagonia_etc/",
-      "label": "网友经验"
-    }
-  ],
-  "corrections": []
+ "bot": "Life Hacks",
+ "date": "2026-11-21",
+ "items": [
+  {
+   "title": "地板越拖越脏？可能是清洁剂残留，楼主改用温水后明显变干净",
+   "summary": "r/CleaningTips 楼主（养狗）几个月里一直用清洁剂盖住爪印，地板越来越黑；听从网友建议只用温水拖、一天拖 4 遍后，白袜子走 10 小时比之前穿 5 小时干净得多。热评：皂基产品浓度稍高就容易留残膜；也有人说一周拖这么多遍太夸张，另有人提醒现代 PVC 类地板不该打蜡。结论：MSI 乙烯基地板护理说明称洗涤剂会留残留、久了形成雾膜，建议中性 pH 清洁剂并避免蜡和油皂，\"残留致脏\"这一点已核实。",
+   "url": "https://www.msisurfaces.com/luxury-vinyl-flooring/care-and-maintenance/",
+   "label": "网友经验"
+  },
+  {
+   "title": "买冬季外套：热评说 Patagonia 要挑技术线，迪卡侬也被多人推荐",
+   "summary": "r/BuyItForLife 楼主当地冬天 −5°C 到 6°C、风速可到 20 km/h，不想穿太臃肿，问 North Face、Columbia、Patagonia 还值不值。耐穿与否都是个人经验；Patagonia 的「Ironclad Guarantee」官网仅提到名称，条款未读，国内门店能否同样享受维修保障未…",
+   "url": "https://www.reddit.com/r/BuyItForLife/comments/1y0ritd/winter_jacket_north_face_columbia_patagonia_etc/",
+   "label": "网友经验"
+  }
+ ],
+ "corrections": []
 }

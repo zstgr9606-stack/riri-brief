@@ -1,45 +1,43 @@
 {
-  "bot": "AI News",
-  "slug": "ai-news",
-  "column": "AI 动态",
-  "date": "2026-11-21",
-  "items": [
-    {
-      "title": "ChatGPT Space 开放给 Plus：可做会自动更新的页面和幻灯片",
-      "summary": "OpenAI 11-20 发布说明：Space 面向全球 18 岁以上 Plus 用户推出，可用 ChatGPT 做可交互的页面和演示稿，可邀请他人协作，页面能按已连接的应用自动更新；替代侧栏的 Library。对方需有 Plus 及以上账号才能打开，免费用户不行，没有公开链接。 💬 我的推断：Plus 用户可拿来做自动更新的选题表；不能公开分享，不适合当对外发布页。",
-      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "label": "来源已标注"
-    },
-    {
-      "title": "Thinking Machines 开源 Inkling 2 Mini：约 20GB，可在笔记本上跑的编程 Agent 模型",
-      "summary": "Thinking Machines 11-20 发布开放权重模型 Inkling 2 Mini：MoE（混合专家）架构，总参数 26.4B、激活 3.4B，是「循环 Transformer」（中间层每个 token 跑三遍）；内存占用约 20GB，官方演示在 48GB MacBook 上离线写出飞行模拟器。测评官方自报且各模型设置不同；部分测评落后 Qwen3.8-27B。",
-      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-      "label": "官方自报"
-    },
-    {
-      "title": "AI 数学证明续：同一团队还用 AI 给出 Navier–Stokes 爆破证明，黎曼证明只有 Lean 代码",
-      "summary": "（黎曼声明今早【热点】已发，只补新增）陶哲轩 11-20 博客：Alpöge、Buckmaster 等「在大量 AI 辅助下」还给出三维 Euler 和 Navier–Stokes 方程有限时间爆破的证明，附 Lean（机器可检查的证明语言）形式化；广义黎曼猜想证明是「巨大的、只有 Lean」的版本。Scott Aaronson 称约 1740 万行 Lean。",
-      "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
-      "label": "来源已标注"
-    },
-    {
-      "title": "OpenAI 公布防「蒸馏」措施：攻击成功率从 54% 降到 0.2%",
-      "summary": "OpenAI 11-20 博客：蒸馏（用一个模型的输出训练另一个模型）能复制能力却不带安全限制；内部实验显示完整推理过程比推理摘要更能传递网络安全能力。新防护下，从早先请求中提取受保护推理的平均攻击成功率由 54.0%（GPT-6 Astra 原防护）降到 0.2%（GPT-6.2 Astra）；每周封禁数千到数万个账号，点名 DeepSeek、Moonshot（Kimi）。数字为 OpenAI 自报的内部测试；点名指控未见对方回应。",
-      "url": "https://openai.com/index/combatting-adversarial-distillation/",
-      "label": "来源已标注"
-    },
-    {
-      "title": "Docker Sandboxes（Docker 新版发布）",
-      "summary": "在 microVM（轻量虚拟机）里隔离运行 Claude Code、Codex 等 Agent，默认禁网 — 本地免费，云端 $0.07/小时 — PH 11-20 当日第 3，207 票",
-      "url": "https://www.docker.com/pricing/",
-      "label": "厂商自报"
-    },
-    {
-      "title": "OpenComputer",
-      "summary": "开源的 Devin 替代，云端 Agent 改代码并开 PR，可自托管 — 开源 Apache-2.0；云版 3 天试用，付费价未公开 — Show HN 39 分",
-      "url": "https://github.com/diggerhq/opencomputer",
-      "label": "厂商自报"
-    }
-  ],
-  "corrections": []
+ "bot": "AI News",
+ "date": "2026-11-21",
+ "items": [
+  {
+   "title": "ChatGPT Space 开放给 Plus：可做会自动更新的页面和幻灯片",
+   "summary": "OpenAI 11-20 发布说明：Space 面向全球 18 岁以上 Plus 用户推出，可用 ChatGPT 做可交互的页面和演示稿，可邀请他人协作，页面能按已连接的应用自动更新；替代侧栏的 Library。对方需有 Plus 及以上账号才能打开，免费用户不行，没有公开链接。 💬 我的推断：Plus 用户可拿来做自动更新的选题表；不能公开分享，不适合当对外发布页。",
+   "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "label": "来源已标注"
+  },
+  {
+   "title": "Thinking Machines 开源 Inkling 2 Mini：约 20GB，可在笔记本上跑的编程 Agent 模型",
+   "summary": "Thinking Machines 11-20 发布开放权重模型 Inkling 2 Mini：MoE（混合专家）架构，总参数 26.4B、激活 3.4B，是「循环 Transformer」（中间层每个 token 跑三遍）；内存占用约 20GB，官方演示在 48GB MacBook 上离线写出飞行模拟器。测评官方自报且各模型设置不同；部分测评落后 Qwen3.8-27B。",
+   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "label": "官方自报"
+  },
+  {
+   "title": "AI 数学证明续：同一团队还用 AI 给出 Navier–Stokes 爆破证明，黎曼证明只有 Lean 代码",
+   "summary": "（黎曼声明今早【热点】已发，只补新增）陶哲轩 11-20 博客：Alpöge、Buckmaster 等「在大量 AI 辅助下」还给出三维 Euler 和 Navier–Stokes 方程有限时间爆破的证明，附 Lean（机器可检查的证明语言）形式化；广义黎曼猜想证明是「巨大的、只有 Lean」的版本。Scott Aaronson 称约 1740 万行 Lean。",
+   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+   "label": "来源已标注"
+  },
+  {
+   "title": "OpenAI 公布防「蒸馏」措施：攻击成功率从 54% 降到 0.2%",
+   "summary": "OpenAI 11-20 博客：蒸馏（用一个模型的输出训练另一个模型）能复制能力却不带安全限制；内部实验显示完整推理过程比推理摘要更能传递网络安全能力。新防护下，从早先请求中提取受保护推理的平均攻击成功率由 54.0%（GPT-6 Astra 原防护）降到 0.2%（GPT-6.2 Astra）；每周封禁数千到数万个账号，点名 DeepSeek、Moonshot（Kimi）。数字为 OpenAI 自报的内部测试；点名指控未见对方回应。",
+   "url": "https://openai.com/index/combatting-adversarial-distillation/",
+   "label": "来源已标注"
+  },
+  {
+   "title": "Docker Sandboxes（Docker 新版发布）",
+   "summary": "在 microVM（轻量虚拟机）里隔离运行 Claude Code、Codex 等 Agent，默认禁网 — 本地免费，云端 $0.07/小时 — PH 11-20 当日第 3，207 票",
+   "url": "https://www.docker.com/pricing/",
+   "label": "厂商自报"
+  },
+  {
+   "title": "OpenComputer",
+   "summary": "开源的 Devin 替代，云端 Agent 改代码并开 PR，可自托管 — 开源 Apache-2.0；云版 3 天试用，付费价未公开 — Show HN 39 分",
+   "url": "https://github.com/diggerhq/opencomputer",
+   "label": "厂商自报"
+  }
+ ],
+ "corrections": []
 }

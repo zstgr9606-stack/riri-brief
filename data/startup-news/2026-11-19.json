@@ -1,27 +1,25 @@
 {
-  "bot": "Startup News",
-  "slug": "startup-news",
-  "column": "创业与工作",
-  "date": "2026-11-19",
-  "items": [
-    {
-      "title": "埃塞俄比亚创业者称 Wise 关停其个人账户、9,000 美元取不出，原帖 1,900 赞",
-      "summary": "Natnael Zeleke（自称 AWS 全球创新奖得主）11-18 22:11 发帖称，Wise 关闭了他的个人账户，里面的 9,000 美元取不出，下月房租付不起。Wise 官方回复说不能公开谈具体安全决定，让他走邮件里的申诉链接，完成尽职调查后再退款；他称申诉、退款银行信息和投诉都已提交。被关原因 Wise 未公开，金额和奖项只有当事人自述；这是个人账户案例，不能推出 Wise 对商业账户的做法。",
-      "url": "https://x.com/Zea1shama/status/2123056619550306340",
-      "label": "作者自报"
-    },
-    {
-      "title": "Nadella 谈向 6 万人提买断：为了「让员工有选择权」；做 Cowork 的团队只有 11 名开发者",
-      "summary": "Nadella 11-18 在纽约时报 DealBook 峰会上说，微软 10 月向约 6 万名员工提供自愿买断（自愿离职并拿补偿），是为了让大家「对自己的选择有自主权」。他称软件工程不会消失，但团队组织和工作内容要变；做 Microsoft 365 里 AI 智能体 Cowork 的团队只有 11 名开发者，他们「造的是造产品的软件工厂」，未来各行业员工都会变成智能体的管理者。「11 人」和「买断是为了选择权」都是 Nadella 自述，无独立核实；6 万是获得买断资格的人数，实际离职人数未见披露。",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-      "label": "作者自报"
-    },
-    {
-      "title": "KPMG 英国用 100 多个 AI 智能体试做审计，称有时比人类审计员问得更深",
-      "summary": "《金融时报》11-18 报道，KPMG 英国用 100 多个 AI 智能体，与人类团队并行审计一家未具名的 FTSE 250（伦敦上市的中型公司）企业，系统开发约 4 个月，审计主管称智能体有时挖得更深。试验结果不作为正式审计依据，KPMG 计划扩展到最多 20 个更大的审计项目，也没说节省的成本会不会降低审计费。「问得更好」是 KPMG 自评，被查公司和问题清单未公开；试验中有智能体把法规和公司文件对错，需要人工介入。",
-      "url": "https://www.itpro.com/technology/artificial-intelligence/kpmg-says-ai-asks-better-questions-than-auditors-during-trial-scheme-but-concerns-remain",
-      "label": "作者自报"
-    }
-  ],
-  "corrections": []
+ "bot": "Startup News",
+ "date": "2026-11-19",
+ "items": [
+  {
+   "title": "埃塞俄比亚创业者称 Wise 关停其个人账户、9,000 美元取不出，原帖 1,900 赞",
+   "summary": "Natnael Zeleke（自称 AWS 全球创新奖得主）11-18 22:11 发帖称，Wise 关闭了他的个人账户，里面的 9,000 美元取不出，下月房租付不起。Wise 官方回复说不能公开谈具体安全决定，让他走邮件里的申诉链接，完成尽职调查后再退款；他称申诉、退款银行信息和投诉都已提交。被关原因 Wise 未公开，金额和奖项只有当事人自述；这是个人账户案例，不能推出 Wise 对商业账户的做法。",
+   "url": "https://x.com/Zea1shama/status/2123056619550306340",
+   "label": "作者自报"
+  },
+  {
+   "title": "Nadella 谈向 6 万人提买断：为了「让员工有选择权」；做 Cowork 的团队只有 11 名开发者",
+   "summary": "Nadella 11-18 在纽约时报 DealBook 峰会上说，微软 10 月向约 6 万名员工提供自愿买断（自愿离职并拿补偿），是为了让大家「对自己的选择有自主权」。他称软件工程不会消失，但团队组织和工作内容要变；做 Microsoft 365 里 AI 智能体 Cowork 的团队只有 11 名开发者，他们「造的是造产品的软件工厂」，未来各行业员工都会变成智能体的管理者。「11 人」和「买断是为了选择权」都是 Nadella 自述，无独立核实；6 万是获得买断资格的人数，实际离职人数未见披露。",
+   "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+   "label": "作者自报"
+  },
+  {
+   "title": "KPMG 英国用 100 多个 AI 智能体试做审计，称有时比人类审计员问得更深",
+   "summary": "《金融时报》11-18 报道，KPMG 英国用 100 多个 AI 智能体，与人类团队并行审计一家未具名的 FTSE 250（伦敦上市的中型公司）企业，系统开发约 4 个月，审计主管称智能体有时挖得更深。试验结果不作为正式审计依据，KPMG 计划扩展到最多 20 个更大的审计项目，也没说节省的成本会不会降低审计费。「问得更好」是 KPMG 自评，被查公司和问题清单未公开；试验中有智能体把法规和公司文件对错，需要人工介入。",
+   "url": "https://www.itpro.com/technology/artificial-intelligence/kpmg-says-ai-asks-better-questions-than-auditors-during-trial-scheme-but-concerns-remain",
+   "label": "作者自报"
+  }
+ ],
+ "corrections": []
 }
