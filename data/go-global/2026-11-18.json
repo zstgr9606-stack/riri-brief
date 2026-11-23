@@ -1,6 +1,8 @@
 {
  "bot": "Go Global",
  "date": "2026-11-18",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "猜演员小游戏 Actorle 广告收入约 $4k/月：一个游戏目录每月带 8,600 访客，218 条自动短视频只带来 25 个",
@@ -32,7 +34,5 @@
    "url": "https://www.reddit.com/r/indiehackers/comments/1xw7skr/week_1_of_apple_ads_on_10day_1_trial_subscriber/",
    "label": "作者自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

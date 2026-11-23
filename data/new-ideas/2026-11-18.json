@@ -1,6 +1,8 @@
 {
  "bot": "New Ideas",
  "date": "2026-11-18",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Tyler Cowen｜专栏：Don’t Be Fooled By Randomness（一周内几起大宕机，先别当成“一个模式”）",
@@ -50,7 +52,5 @@
    "url": "https://www.lesswrong.com/posts/YgKhExegrhax5efrJ/the-idiot-s-reductio",
    "label": "作者观点"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

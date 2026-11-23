@@ -1,6 +1,8 @@
 {
  "bot": "New Ideas",
  "date": "2026-11-22",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Morgan Housel｜播客（The Morgan Housel Podcast，11-20，21 分钟，已拿到全文转写）：低息房贷的真实成本是「利率 + 失去的行动自由」；好得不像真的东西，往往是一笔迟早到期的「心理债」",
@@ -20,7 +22,5 @@
    "url": "https://www.helsinki.fi/en/news/equality/gender-differences-values-are-not-widening-europe-after-all",
    "label": "作者自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

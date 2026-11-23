@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-20",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Anthropic 上市首日收 97.17 美元，较发行价 +17%，较开盘 −13%（硅谷居士/白毛股神/老雷）",
@@ -26,7 +28,5 @@
    "url": "https://www.sec.gov/Archives/edgar/data/820318/0001193125-26-467737.txt",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

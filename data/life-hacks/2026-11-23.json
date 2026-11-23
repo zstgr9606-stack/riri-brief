@@ -1,6 +1,8 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-23",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "卫生间突然有下水道味：先往每个地漏倒一盆水",
@@ -20,7 +22,5 @@
    "url": "https://www.reddit.com/r/LifeProTips/comments/1y2yful/lpt_before_you_leave_a_rental_car_take_a_30/",
    "label": "网友经验"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

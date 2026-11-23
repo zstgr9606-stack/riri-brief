@@ -1,6 +1,8 @@
 {
  "bot": "New Ideas",
  "date": "2026-11-20",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Nassim Taleb｜X 长文：《论死语言美丽却恼人的刚性》（只写不说的语言，才能让抽象知识跨时代保存）",
@@ -20,7 +22,5 @@
    "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
    "label": "作者自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

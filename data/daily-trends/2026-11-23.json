@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-23",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "韩国教育部长因 AI 作弊风波辞职",
@@ -20,7 +22,5 @@
    "url": "https://www.yahoo.com/news/science/articles/cop31-fails-reach-climate-deal-124907599.html",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

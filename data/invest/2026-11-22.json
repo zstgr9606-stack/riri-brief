@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-22",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "老雷：尚未见到止跌迹象，熊市反弹通常过不了前次急跌起点（老雷）",
@@ -26,7 +28,5 @@
    "url": "https://xueqiu.com/1247347556/417968652",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

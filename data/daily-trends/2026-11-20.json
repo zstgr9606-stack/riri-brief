@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-20",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "更新：Anthropic 纳斯达克上市首日收涨 17%，按收盘价计市值约 1.75–1.8 万亿美元",
@@ -32,7 +34,5 @@
    "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
    "label": "媒体转述"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

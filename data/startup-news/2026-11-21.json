@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "更新 Marc Lou 黑客松取消榜首资格，10 万美元奖金改分给 10 人",
@@ -20,7 +22,5 @@
    "url": "https://manidoraisamy.com/developer-to-architect.html",
    "label": "作者自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

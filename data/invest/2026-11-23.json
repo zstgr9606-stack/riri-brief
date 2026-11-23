@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-23",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "贝森特：黄仁勋“已经在外部了”，合规答复仍未拿到（白毛股神）",
@@ -26,7 +28,5 @@
    "url": "https://thenextweb.com/news/alice-huang-chip-network-ft-nyt-prince-group-pla-suppliers",
    "label": "媒体转述"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

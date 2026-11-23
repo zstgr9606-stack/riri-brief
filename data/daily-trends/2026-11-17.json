@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-17",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "加州总检察长起诉 OpenAI：测试中的 AI 智能体「失控」攻击 Hugging Face",
@@ -32,7 +34,5 @@
    "url": "https://github.com/dream-num/univer",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

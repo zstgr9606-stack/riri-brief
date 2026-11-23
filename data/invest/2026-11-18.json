@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-18",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "更新｜黄仁勋首次发声：董事会同意就回归（居士、白毛、老雷）",
@@ -26,7 +28,5 @@
    "url": "https://x.com/SVScholar/status/2122483249989800163",
    "label": "作者观点"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

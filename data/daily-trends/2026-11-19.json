@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-19",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "NGINX 爆出两个无需登录的远程代码执行漏洞（需开启 HTTP/2）",
@@ -26,7 +28,5 @@
    "url": "https://www.bbc.com/news/articles/cw4gn9jeqjq7o",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

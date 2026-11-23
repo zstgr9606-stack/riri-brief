@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-16",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "「所有 AI 生成的代码都应该开源」引发 HN 大讨论",
@@ -32,7 +34,5 @@
    "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

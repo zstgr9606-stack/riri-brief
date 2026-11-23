@@ -1,6 +1,10 @@
 {
  "bot": "AI Tools",
  "date": "2026-11-23",
+ "status": "",
+ "corrections": [
+  "11/16 期 YouArt Desktop App 的「PH 周榜第 9，343 票」来自滞后的 productlist.info，「周榜第 9」无法核实；hunted.space 显示它是 11-12 当日第 2（现 349 票）。Skillbox 补名次：11-11 当日第 5（现 155 票）。CALL-E（11-11 第 3）、Shot.video（11-11 第 8）名次无误，票数只是累计增长（现 259 / 118）。"
+ ],
  "items": [
   {
    "title": "Creatify Max：AI 广告智能体，从调研、做片到投放一条龙",
@@ -26,9 +30,5 @@
    "url": "https://github.com/kobimusic/dettato",
    "label": "作者自报"
   }
- ],
- "corrections": [
-  "11/16 期 YouArt Desktop App 的「PH 周榜第 9，343 票」来自滞后的 productlist.info，「周榜第 9」无法核实；hunted.space 显示它是 11-12 当日第 2（现 349 票）。Skillbox 补名次：11-11 当日第 5（现 155 票）。CALL-E（11-11 第 3）、Shot.video（11-11 第 8）名次无误，票数只是累计增长（现 259 / 118）。"
- ],
- "status": ""
+ ]
 }

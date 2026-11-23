@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-20",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "首次 Intuit 以 36.8 亿美元把 Mailchimp 卖给 Bending Spoons，不到 2021 年买价 120 亿的三分之一",
@@ -14,7 +16,5 @@
    "url": "https://x.com/GergelyOrosz/status/2123391041621364945",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

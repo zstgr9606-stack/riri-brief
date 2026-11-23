@@ -1,6 +1,8 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "地板越拖越脏？可能是清洁剂残留，楼主改用温水后明显变干净",
@@ -14,7 +16,5 @@
    "url": "https://www.reddit.com/r/BuyItForLife/comments/1y0ritd/winter_jacket_north_face_columbia_patagonia_etc/",
    "label": "网友经验"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

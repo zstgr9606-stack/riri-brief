@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-23",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Stripe 称 AI 代理付款 2 个半月涨近 80 倍，过半用户会再买第二次",
@@ -20,7 +22,5 @@
    "url": "https://www.reddit.com/r/cscareerquestions/comments/1y2yhv6/",
    "label": "作者自述"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

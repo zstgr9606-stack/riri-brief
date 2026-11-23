@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "ChatGPT Space 开放给 Plus：可做会自动更新的页面和幻灯片",
@@ -38,7 +40,5 @@
    "url": "https://github.com/diggerhq/opencomputer",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

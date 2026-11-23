@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-23",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "OpenRouter 官方：下架 3 家服务商，125 个端点撤销「零数据保留」",
@@ -26,7 +28,5 @@
    "url": "https://yoroll.ai",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

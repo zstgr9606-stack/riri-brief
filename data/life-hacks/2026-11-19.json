@@ -1,6 +1,8 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-19",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "换卡号不一定能停掉订阅，银行可能会把新卡号同步给商家",
@@ -14,7 +16,5 @@
    "url": "https://www.reddit.com/r/Cooking/comments/1xzellv/how_do_you_keep_coriander_from_going_slimy_in_two/",
    "label": "网友经验"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

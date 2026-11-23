@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-17",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "段永平：13F 显示 Q3 已减持英伟达六成，雪球称\"不想急着逃\"",
@@ -32,7 +34,5 @@
    "url": "https://www.patreon.com/TheMarketMemo/posts/xi-wang-shi-bei-175535307",
    "label": "作者自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

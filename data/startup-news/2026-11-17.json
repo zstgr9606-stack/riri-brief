@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-17",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "前 Freshworks 高管做 AI 原生 CRM，融资 5300 万美元挑战 Salesforce",
@@ -26,7 +28,5 @@
    "url": "https://hunted.space/",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

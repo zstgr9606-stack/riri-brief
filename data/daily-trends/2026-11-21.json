@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Anthropic 数学家称与 Claude 合作证明黎曼猜想，尚待数学界验证",
@@ -26,7 +28,5 @@
    "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
    "label": "媒体转述"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-20",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Gemini Mac 版上线「电脑操作」：在后台窗口替你点、输、填表",
@@ -38,7 +40,5 @@
    "url": "https://tabstack.ai/pricing",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

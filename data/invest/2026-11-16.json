@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-16",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "更新 FT：黄仁勋考虑回归，白毛股神喊\"救赎线\"（白毛股神）",
@@ -26,7 +28,5 @@
    "url": "https://x.com/SVScholar/status/2122088286458200301",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

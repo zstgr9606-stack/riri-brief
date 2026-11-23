@@ -1,6 +1,8 @@
 {
  "bot": "New Ideas",
  "date": "2026-11-19",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Paul Graham｜推文：“我每次发现自己身处人群中，就觉得哪里不对”（把“拥挤”当检查信号）",
@@ -14,7 +16,5 @@
    "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
    "label": "作者观点"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

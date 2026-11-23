@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-22",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "NBER 论文：用 AI 编程工具后提交量最多涨 240%，真正发布的版本只多 30%；新 App 数量翻倍，总使用量没涨",
@@ -20,7 +22,5 @@
    "url": "https://news.ycombinator.com/item?id=50583761",
    "label": "网友自述"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

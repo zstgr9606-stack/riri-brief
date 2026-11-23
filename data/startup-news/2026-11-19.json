@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-19",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "埃塞俄比亚创业者称 Wise 关停其个人账户、9,000 美元取不出，原帖 1,900 赞",
@@ -20,7 +22,5 @@
    "url": "https://www.itpro.com/technology/artificial-intelligence/kpmg-says-ai-asks-better-questions-than-auditors-during-trial-scheme-but-concerns-remain",
    "label": "作者自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

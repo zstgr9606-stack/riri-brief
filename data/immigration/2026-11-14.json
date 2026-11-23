@@ -1,6 +1,8 @@
 {
  "bot": "Immigration",
  "date": "2026-11-14",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "加拿大：农村社区移民试点 11/9 转为永久项目，2027-01-01 起按新项目递交 PR",
@@ -14,7 +16,5 @@
    "url": "https://www.reddit.com/r/expats/comments/1xsr23o/ive_decided_to_leave_germany_if_youre_planning_to/",
    "label": "个人经历"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

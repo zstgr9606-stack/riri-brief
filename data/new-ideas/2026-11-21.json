@@ -1,6 +1,8 @@
 {
  "bot": "New Ideas",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Shane Parrish｜推文（转述播客片段）：做重大决定先倒推，用 5 步问清「到底要什么」再算机会成本",
@@ -14,7 +16,5 @@
    "url": "https://x.com/paulg/status/2123538835598381150",
    "label": "作者观点"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

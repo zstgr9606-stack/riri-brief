@@ -1,6 +1,8 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-18",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Optimizely 被注入恶意脚本，178 家机构网站的访客受影响",
@@ -32,7 +34,5 @@
    "url": "https://united24media.com/war-in-ukraine/ukraine-uses-its-own-missile-guidance-system-to-strike-the-4-billion-crimean-bridge-without-starlink-or-starshield-24469",
    "label": "媒体转述"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

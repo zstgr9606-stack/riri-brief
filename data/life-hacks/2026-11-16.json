@@ -1,6 +1,8 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-16",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "锅里的油别冲进水槽，先擦掉或倒进罐子再洗",
@@ -32,7 +34,5 @@
    "url": "https://www.reddit.com/r/CleaningTips/comments/1xx0ga7/im_stunned_by_how_well_clean_my_oven_is_now/",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

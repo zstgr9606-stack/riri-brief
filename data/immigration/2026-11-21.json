@@ -1,6 +1,8 @@
 {
  "bot": "Immigration",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "西班牙数字游民签证：2027 年起收入门槛随最低工资上调，按官方公式主申请人约 €2,572/月",
@@ -20,7 +22,5 @@
    "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

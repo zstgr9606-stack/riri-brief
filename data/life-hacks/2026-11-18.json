@@ -1,6 +1,8 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-18",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "拍文件别靠太近：退后变焦，或直接用手机「扫描」",
@@ -20,7 +22,5 @@
    "url": "https://www.reddit.com/r/Cooking/comments/1xyqnzs/simmering_broth_for_hours_can_i_pause_the/",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

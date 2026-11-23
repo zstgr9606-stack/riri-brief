@@ -1,6 +1,10 @@
 {
  "bot": "Startup News",
  "date": "2026-11-18",
+ "status": "",
+ "corrections": [
+  "11-16 第 5 条「Templify AI 拿下 PH 11-15 日榜第 1」引用的 productlist.info 数据滞后约两天，名次不可靠，以 PH 官方为准。"
+ ],
  "items": [
   {
    "title": "SaaS 新客断崖：HubSpot、monday 新增客户一年内大跌，levelsio 称「多数 SaaS 没法活」",
@@ -26,9 +30,5 @@
    "url": "https://www.bunnings.com.au/media-centre/media-releases/2026/bunnings-establishes-new-technology-partnership-to-better-support-customers-into-the-future",
    "label": "已读原文"
   }
- ],
- "corrections": [
-  "11-16 第 5 条「Templify AI 拿下 PH 11-15 日榜第 1」引用的 productlist.info 数据滞后约两天，名次不可靠，以 PH 官方为准。"
- ],
- "status": ""
+ ]
 }

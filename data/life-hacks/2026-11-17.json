@@ -1,6 +1,8 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-17",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "iPhone 相册搜“passport”“password”：护照、密码截图可能就躺在相册里",
@@ -32,7 +34,5 @@
    "url": "https://www.reddit.com/r/LifeProTips/comments/1xxmqh9/lpt_make_sure_your_ceiling_fan_is_spinning_in_the/",
    "label": "官方说明"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

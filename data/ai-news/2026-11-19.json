@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-19",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "Google 发布 Gemini 4 Neon：每任务成本比 Carbon 低，Google 称 32%、第三方测约 17%",
@@ -20,7 +22,5 @@
    "url": "http://s.space",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

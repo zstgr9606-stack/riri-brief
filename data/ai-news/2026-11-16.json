@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-16",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "旧帖再传播｜AI Engineer 演讲爆火：Grok Bot 团队怎么防止 AI 代码变「屎山」",
@@ -50,7 +52,5 @@
    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

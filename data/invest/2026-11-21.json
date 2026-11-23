@@ -1,6 +1,8 @@
 {
  "bot": "Invest",
  "date": "2026-11-21",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "路透：SEC 调查聚焦英伟达会计问题，NVDA 周五收跌约 14%（白毛股神）",
@@ -26,7 +28,5 @@
    "url": "https://x.com/TheMarketMemo/status/2123630031964647567",
    "label": "作者观点"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

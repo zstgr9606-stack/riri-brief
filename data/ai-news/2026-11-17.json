@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-17",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "阿里发布 Qwen4-Max：1M 上下文，API 价格比上代更低",
@@ -50,7 +52,5 @@
    "url": "https://github.com/withcoral/coral",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

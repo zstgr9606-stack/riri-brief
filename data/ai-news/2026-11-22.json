@@ -1,6 +1,8 @@
 {
  "bot": "AI News",
  "date": "2026-11-22",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "OpenRouter 通知用户：经它发给 MiniMax 模型的请求可能被第三方读过",
@@ -32,7 +34,5 @@
    "url": "https://exa.ai/pricing",
    "label": "厂商自报"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }

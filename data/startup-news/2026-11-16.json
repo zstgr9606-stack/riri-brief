@@ -1,6 +1,8 @@
 {
  "bot": "Startup News",
  "date": "2026-11-16",
+ "status": "",
+ "corrections": [],
  "items": [
   {
    "title": "「多数 SaaS 应该变成 MCP 服务器」刷屏",
@@ -32,7 +34,5 @@
    "url": "https://productlist.info/daily/2026-11-15",
    "label": "已读原文"
   }
- ],
- "corrections": [],
- "status": ""
+ ]
 }
