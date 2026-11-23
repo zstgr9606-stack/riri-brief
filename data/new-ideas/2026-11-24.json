@@ -1,0 +1,70 @@
+{
+ "bot": "New Ideas",
+ "date": "2026-11-24",
+ "status": "已检查 16 位思想者的 X、博客、播客来源和 HN、LessWrong、Works in Progress、Reddit：多数思想者窗口内无合格新内容；Ridley 官网、Dobelli 人物稿、JAMA 论文页与 AEA 页面读取被拦（403），相关内容只列为未读或未核实。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Paul Graham（X 短帖）：遇到「不好听但可能是真的」的说法，应当更好奇而不是反驳",
+   "summary": "PG 在 11-23 发帖称，人们遇到不好听但可能为真的说法时，第一反应常是拒绝或攻击；他认为这应该引发好奇，因为不好听的真话「相对更少被探索」，所以特别有价值。帖子只是观点，没有数据或案例；「可能为真」如何判断未说明，「不好听」也不等于真。回复中有人质疑 PG 有时把主观想法当作真理（低互动回复）。热度（X API，2026-11-24 06:38 北京时间采集）：1748 赞、156 转、248 回复。",
+   "url": "https://x.com/paulg/status/2124834732303327654",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Paul Graham",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/paulg/status/2124834732303327654"
+    }
+   ]
+  },
+  {
+   "title": "Tyler Cowen 转引 Chris Dalla Riva：选项按字母排序时，格莱美提名者名字靠前的占便宜（数据为 Dalla Riva 自报）",
+   "summary": "Cowen 在 11-23 的博客里重提「字母排序的暴政」：经济学作者按字母排序，姓氏靠前者更可能获终身教职等（Cowen 自述，未复核）。他引用 Dalla Riva（11-19）的格莱美分析：提名者中名字以 A–E 开头的占比，2001–2020 年中位 31.1%，2021–2025 年中位 38.8%（2022 年 46.9%），改为随机排序后 2026 年 28.0%、2027 年 24.3%；对照基准用 Billboard 榜单。原因（会员扩招、取消专家委员会）是 Dalla Riva 的推断；随机化后只有两年数据，只适用于评委信息少、选项多、按固定顺序列出的场景。",
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/11/94257.html",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Tyler Cowen",
+     "platform": "Marginal Revolution",
+     "published": "2026-11-23",
+     "url": "https://marginalrevolution.com/marginalrevolution/2026/11/94257.html"
+    },
+    {
+     "author": "Chris Dalla Riva",
+     "platform": "Substack（Can't Get Much Higher）",
+     "published": "2026-11-19",
+     "url": "https://www.cantgetmuchhigher.com/p/the-alphabet-broke-the-grammys"
+    }
+   ]
+  },
+  {
+   "title": "Ben Pace（LessWrong）：真答案常让人「不满意」，因为它由平凡零件组成，配不上提问时的敬畏感",
+   "summary": "Pace 在 11-23 读图灵 1950 年论文后提出：人们提问时带着情绪预期，当真答案由不起眼的机制拼成，就觉得「不对」并继续找答案。例子包括 PG 讲融资「就是发邮件、开会」、Dennett 讲意识被拆成部件，以及一则关于电器与社会关系的推特争论。这是随笔式论证，没有数据，例子经过挑选。评论区有真反方：dominicq 认为电器例子里「真话不满意」的说法本身不成立（多数人会选更少技术、更多社会关系）；XelaP 认为资本主义与科学解释不类比（人们抱怨的是缺少亲近关系，而不是反对省力的技术）。Pace 文中未回应这两点。热度（LessWrong，2026-11-24 06:45 北京时间采集）：59 分、5 条评论。",
+   "url": "https://www.lesswrong.com/posts/uK7buQSGjSrbyFw5k/the-disappointment-of-a-satisfying-explanation",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Ben Pace",
+     "platform": "LessWrong",
+     "published": "2026-11-23",
+     "url": "https://www.lesswrong.com/posts/uK7buQSGjSrbyFw5k/the-disappointment-of-a-satisfying-explanation"
+    }
+   ]
+  },
+  {
+   "title": "转述（据哥伦比亚大学新闻稿，论文原文未读）：美加大学生的「不确定性不耐受」近 30 年上升，2012 年后加速",
+   "summary": "新闻稿称，研究汇总 2007–2025 年发表的 138 项美国、加拿大大学生研究（共 35,296 人，用 27 题或 12 题的不确定性不耐受量表，该倾向是焦虑的核心认知过程之一），平均分 1992–2023 年每年约升 0.65 分，2012–2023 年上升速度约为之前的 3 倍。作者称这个概念对公众较陌生，因此不太容易用「大家更会说焦虑所以报告更多」来解释（这是对立观点及作者回应）。限制：对象仅为美加大学生，是对已发表研究的汇总而非追踪同一批人，新闻稿并未证明因果，成因只是「可能」；数字来自新闻稿，未对照论文（JAMA 页面 403）。Reddit r/science 热度（2026-11-24 06:42 北京时间采集）：5299 分、308 评论。",
+   "url": "https://www.publichealth.columbia.edu/news/sharp-rise-key-psychological-risk-factor-may-help-explain-growing-anxiety-among-young-adults",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "哥伦比亚大学 Mailman 公共卫生学院",
+     "platform": "官方新闻稿",
+     "published": "2026-11-18",
+     "url": "https://www.publichealth.columbia.edu/news/sharp-rise-key-psychological-risk-factor-may-help-explain-growing-anxiety-among-young-adults"
+    }
+   ]
+  }
+ ]
+}
