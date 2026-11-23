@@ -21,13 +21,15 @@ jobs:
           cp -R data index.html mobile-columns.js site/
           node --check site/mobile-columns.js
           python3 - <<'PY'
+          from hashlib import sha256
           from pathlib import Path
           page = Path('site/index.html')
           html = page.read_text(encoding='utf-8')
           marker = '</body>'
           if html.count(marker) != 1:
               raise ValueError('Expected one closing body tag in the generated briefing')
-          script = '<script src="./mobile-columns.js" defer></script>'
+          version = sha256(Path('site/mobile-columns.js').read_bytes()).hexdigest()[:12]
+          script = f'<script src="./mobile-columns.js?v={version}" defer></script>'
           page.write_text(html.replace(marker, script + '\n' + marker), encoding='utf-8')
           PY
       - uses: actions/upload-pages-artifact@v4
