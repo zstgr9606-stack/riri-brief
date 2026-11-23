@@ -8,7 +8,22 @@
    "title": "OpenRouter 官方：下架 3 家服务商，125 个端点撤销「零数据保留」",
    "summary": "OpenRouter 11-22 发博客称，已从平台下架 3 家推理服务商，把 125 个端点移出 ZDR（零数据保留，承诺不存提示词）资格（含研究员点名的和预防性移除），并通知了所有可能受影响的客户；称 OpenRouter 自身未被入侵。页面列出 Atlas Cloud、Novita、Phala、Together 已发的安全公告。被下架的 3 家名字未公开；3 家、125 个均为 OpenRouter 自报。",
    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
-   "label": "官方自报"
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "OpenRouter",
+     "platform": "官方博客",
+     "published": "2026-11-22",
+     "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers"
+    }
+   ],
+   "new_since": "公告称已下架 3 家推理服务商，125 个端点不再符合零数据保留（ZDR）资格。",
+   "prior": [
+    {
+     "title": "Ars Technica：OpenRouter 通知用户，经它发给 MiniMax 模型的请求可能被第三方读过（11-22 AI News）",
+     "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+    }
+   ]
   },
   {
    "title": "OpenAI 首次公布内部预训练困惑度曲线，提议按此设行业共同上限",
