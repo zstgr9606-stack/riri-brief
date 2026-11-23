@@ -1,0 +1,33 @@
+{
+  "bot": "New Ideas",
+  "slug": "new-ideas",
+  "column": "观点与认知",
+  "date": "2026-11-17",
+  "items": [
+    {
+      "title": "Cal Newport｜播客：Beware of “Efficiency Theater”（别拿“效率”比值当成果：效率有上限的是机器，知识工作该看“有效性”）",
+      "summary": "11-16 Deep Questions。Cal 借 2009 年科学史论文讲：“效率”本义是机械输出÷燃料输入，上限 100%；后来被搬到管理上，变成没有上限的任意比值（每人填表数、每天写码行数）。他认为这解释了为何 AI 工具能力在涨、企业回报却参差（他引 Deloitte 报告和 Goldman 缩减编码工具名额）；替代标准是“有效性”：只看产出了多少有价值的东西，不管怎么做到的。",
+      "url": "https://exa.ai/library/podcast/lb4nd76yph5/episode/42gct6hd2ts",
+      "label": "作者自报"
+    },
+    {
+      "title": "Tyler Cowen｜播客：EconTalk《The Wisdom of Montaigne》（好老师该“脑子成形”还是“脑子装满”？）",
+      "summary": "11-16 EconTalk（录制于 10-26，64 分钟，有全文转录）。Montaigne 说选导师要“脑子成形而非装满”；Cowen 大体同意，说导师该教孩子怎么学，但又自称“拿不准”：维多利亚时代孩子背长诗，也许正是那样塞满脑子才写得好。主持人 Roberts 补充反方：没有事实储备就连不起想法。",
+      "url": "https://www.econtalk.org/the-wisdom-of-montaigne-with-tyler-cowen/",
+      "label": "已读原文"
+    },
+    {
+      "title": "为什么“人性”总吵得这么凶？因为人是“魔方”，不是“石头”，而且信什么会变成什么（Anna Salamon，LessWrong）",
+      "summary": "11-16 发表。作者说人像可变形的魔方而非固定形状的石头：该问“人能稳定处在哪些形态”，而不是“哪个才是天然的”；而一个社会/个人相信的“人性模型”本身会让人往那个形态靠，所以“人性是什么”成了政治争夺。反方（评论）：localdeity（得分 10）认为多数争吵只是人们预设了政治立场、攻击不利证据；pjohn 认为作者的“人性”定义与吵架双方不同，且人脑像是失控的优化结果而非“够用就行”。",
+      "url": "https://www.lesswrong.com/posts/JoCHxFZDQuBXZAm3t/why-so-many-arguments-about-human-nature",
+      "label": "作者观点"
+    },
+    {
+      "title": "亚马逊黑五/网一“特价”：近 1/3 并没更便宜（“折扣标签”不是证据，要看参照价）",
+      "summary": "11-16 智库 Groundwork Collaborative 报告称，分析了亚马逊 2024、2025 年黑五/网一官方特价页上 350+ 件商品：近 1/3 的价格与活动前一个月相同或更低价可买到；近 1/10 比活动前更贵（这批“更差”的中位数高 19%）。数字来自该智库新闻稿，完整报告我没打开；样本是亚马逊美国站，“特价页”已被亚马逊下线；是否适用于中国的双十一未核实。",
+      "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+      "label": "作者自报"
+    }
+  ],
+  "corrections": []
+}

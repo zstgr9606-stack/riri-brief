@@ -1,0 +1,35 @@
+{
+  "bot": "Invest",
+  "slug": "invest",
+  "column": "投资观察",
+  "date": "2026-11-19",
+  "items": [
+    {
+      "title": "新｜英伟达财报（以官方为准）：营收 1158 亿美元（居士、白毛）",
+      "summary": "官方新闻稿（11/17 美东）：营收 $115.8B，同比 +103%；GAAP 毛利率 74.8%；净利润 $65.3B，同比 +105%；Q4 指引营收 $130.0B ±3%，毛利率 71.0%–72.0%，不含中国数据中心计算收入。居士 11/18 08:51：\"这家公司每天净赚7.2亿美元\"。",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+      "label": "已读原文"
+    },
+    {
+      "title": "更新｜黄仁勋回归：董事长称\"不打算复职\"，段永平仍觉得\"他会回来\"（段永平、白毛）",
+      "summary": "董事长 Harvey Jones 11/17 电话会：\"The Nvidia board unanimously accepted his resignation and does not intend to reinstate Jensen as CEO.\" 段永平：11/18 08:01\"可能性变得稍微大了一点点\"；11/19 08:29\"看上去黄大概率是回不来了，市场目前的共识大概如此吧\"。",
+      "url": "https://www.theverge.com/tech/1036160/nvidia-earnings-harvey-c-jones-jensen-huang",
+      "label": "已读原文"
+    },
+    {
+      "title": "新｜段永平：苹果\"已经不便宜了\"，\"AI不是泡沫\"（窗口后）",
+      "summary": "11/19 12:21：\"苹果是我懂得非常透的公司，所以每次大掉我都是加仓的，直到接近全仓（95%）。现在的苹果已经不便宜了……我最难的时候可能是现在这种时候，因为找不到像苹果这样敢下重手的公司。\" 11:21：\"互联网有泡沫但互联网不是泡沫！……Ai本身不是泡沫。\" 10:53：\"以后尽量不回答关于个股的问题了。\"",
+      "url": "https://xueqiu.com/1247347556/417580685",
+      "label": "已读原文"
+    },
+    {
+      "title": "新｜Anthropic 定价 83 美元、估值 1.5 万亿（居士、白毛）",
+      "summary": "居士 11/19 06:36：\"Anthropic IPO的价格定在83美元，高于先前给出的价格区间。按照这个价格，公司的估值为1.5万亿美元。\" 白毛 11/19 00:01：\"Some HFs as you've seen sold off $NVDA and others to put capital into this IPO.\"（HF=对冲基金）",
+      "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": [
+    "11/18 期第 1 条标题「董事会同意就回归」易误读：黄原话是「若董事会认为合适，我愿意回归」，董事会并未同意（见第 2 条）。"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "bot": "Daily Trends",
+  "slug": "daily-trends",
+  "column": "全球热点",
+  "date": "2026-11-16",
+  "items": [
+    {
+      "title": "「所有 AI 生成的代码都应该开源」引发 HN 大讨论",
+      "summary": "开发者 Jakub Jankiewicz 发文称，AI 模型靠抓取开源代码和 Stack Overflow 训练，生成的代码再闭源等于「许可证洗白」；且纯 AI 代码不应享有版权，主张用开源许可或 CC0 发布。",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "label": "已读原文"
+    },
+    {
+      "title": "腾讯开源 LoopForge：给编程智能体编排工作流",
+      "summary": "Tencent/LoopForge 是自托管的编程智能体交付工作流，可用脚本串联 CodeBuddy、Codex、Claude Code，并加人工审批关卡，用 Go 编写。仓库创建时间和实际企业落地情况未核实（GitHub API 被限流）。",
+      "url": "https://github.com/Tencent/LoopForge",
+      "label": "未核实"
+    },
+    {
+      "title": "纽约时报：美商务部长卢特尼克被指为家族生意放松 AI 芯片出口规则",
+      "summary": "NYT 调查称，卢特尼克曾推动放宽对东南亚数据中心的 AI 芯片出口限制，其中部分数据中心与其儿子掌管的 Cantor Fitzgerald 有关、并服务中国客户；多名参议员要求他作证。「服务中国客户」等细节出自报道和 X 摘要，卢特尼克方面回应未见原文。",
+      "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+      "label": "已读原文"
+    },
+    {
+      "title": "美国全国停飞次日，迈阿密机场两架飞机滑行道相撞",
+      "summary": "当地时间周六晚，一架 UPS 波音 767 货机与一架 Copa 航空波音 737 客机在迈阿密国际机场滑行道交叉口相撞，客机翼尖撞上货机机头，2 名乘客轻伤；FAA 已介入调查。",
+      "url": "https://www.cnn.com/2026/11/14/us/miami-airport-planes-collide-ups-copa-hnk",
+      "label": "已读原文"
+    },
+    {
+      "title": "更新：微软 365 故障致德国酒店泳池氯气超标，15 人受伤",
+      "summary": "德国 Phantasialand 旗下酒店泳池加药系统故障导致氯超标，自动报警邮件因同期微软 365 宕机未能送达，15 名住客吸入不适，4 人送医；泳池已换水重开。",
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": []
+}

@@ -1,0 +1,39 @@
+{
+  "bot": "Daily Trends",
+  "slug": "daily-trends",
+  "column": "全球热点",
+  "date": "2026-11-20",
+  "items": [
+    {
+      "title": "更新：Anthropic 纳斯达克上市首日收涨 17%，按收盘价计市值约 1.75–1.8 万亿美元",
+      "summary": "Anthropic 以每股 83 美元发行、募资 813 亿美元，是史上最大 IPO；11/19 以代码 ANT 开盘 111.50 美元，收于 97.17 美元。同日美股科技股大跌。",
+      "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
+      "label": "已读原文"
+    },
+    {
+      "title": "更新：中美俄元首深圳会晤后发表「和平宣言」，称核战争打不赢也打不得",
+      "summary": "BBC 报道，三国元首在 APEC 期间会谈 90 分钟，宣言写明「核战争打不赢也绝不能打」、计划增加石油生产和供应、致力于改革联合国，并称国际刑事法院等机构不得滥用管辖权。另据 IBTimes 转述中国官方媒体，特朗普在与习近平会面时说美国不支持「台独」。「不支持台独」一句目前只看到中国官方媒体的说法，美方原话未见。",
+      "url": "https://www.bbc.com/news/articles/c623j4ln97x7o",
+      "label": "已读原文"
+    },
+    {
+      "title": "摩根大通、Visa、万事达确认供应商遭攻击，部分客户邮箱和电话泄露",
+      "summary": "三家公司 11/19 确认，各自的第三方服务商被攻击，泄露的是营销数据（姓名、邮箱，部分有电话），称卡号和支付数据未受影响，服务没有中断。Visa 说涉事服务商在亚太；Reuters 查看泄露文件，看到约 1.6 万个摩根大通客户邮箱，Visa 数据涉及香港、台湾、日本、新加坡等地。服务商名称和被攻破时间均未公布；勒索团伙 n0n 所发数据真伪未核实。",
+      "url": "https://www.investing.com/news/stock-market-news/jpmorgan-says-thirdparty-vendors-targeted-in-cyberattack-5039129",
+      "label": "已读原文"
+    },
+    {
+      "title": "自管 Rails、GitLab 服务器的人看：Ruby 漏洞可让未登录者远程执行代码（RCE），11/25 公开攻击代码",
+      "summary": "Veria Labs 披露 Ruby 自 2.4.0 起处理部分单字节编码时有一字节堆溢出，默认配置的 Rails 和 Sinatra 受影响。修复版本为 Ruby 3.3.14、3.4.13、4.0.10；截至 11/20 06:29（北京时间），自托管 GitLab、GitHub Enterprise Server 仍无修复版。",
+      "url": "https://verialabs.com/ruby2shell/",
+      "label": "已读原文"
+    },
+    {
+      "title": "英国调查权力法庭裁定：政府必须承认曾向苹果下达秘密加密令",
+      "summary": "英国调查权力法庭（IPT，审理情报监控投诉的专门法庭）11/19 驳回政府保密请求，要求其承认曾依《调查权力法》向苹果发出技术能力通知（TCN，可要求科技公司修改服务以便监控）。苹果此前已停止向英国新用户提供 iCloud「高级数据保护」。只读到 MacAnorak（苹果资讯博客）的报道，法庭裁决原文未读。",
+      "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+      "label": "媒体转述"
+    }
+  ],
+  "corrections": []
+}

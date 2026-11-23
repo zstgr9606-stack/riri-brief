@@ -1,0 +1,35 @@
+{
+  "bot": "Startup News",
+  "slug": "startup-news",
+  "column": "创业与工作",
+  "date": "2026-11-18",
+  "items": [
+    {
+      "title": "SaaS 新客断崖：HubSpot、monday 新增客户一年内大跌，levelsio 称「多数 SaaS 没法活」",
+      "summary": "SaaStr 的 Jason Lemkin 按财报算出：HubSpot 季度净新增客户从 10,752（26Q1）降到 5,258（26Q3），降 51%，但 NRR（净收入留存率）仍有 101%；monday.com 10 人以上付费客户季度净增从 1,272 降到 182。",
+      "url": "https://x.com/levelsio/status/2122807280198463986",
+      "label": "已读原文"
+    },
+    {
+      "title": "Optimizely 被投毒：Zoom、GitLab 等 178 家网站经第三方脚本向访客发恶意代码",
+      "summary": "Report URI 的 Scott Helme 披露，11-16（UTC）攻击者改写了多家客户在 Optimizely Web（A/B 测试工具）里的自定义脚本，经官方 CDN 下发盗卡、偷 cookie 等恶意代码，波及 Zoom、Salesforce、GitLab、BBC 等 178 家机构。",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "label": "已读原文"
+    },
+    {
+      "title": "Marc Lou 10 万美元黑客松开跑：4,334 人已上线产品，比的是 30 天利润",
+      "summary": "Marc Lou 与 Jack Friks 办的 $100K Hackathon 11-16 开始，要求单人从零做数字产品，30 天内利润（收入减退款、手续费、广告费）最高者得 10 万美元，赞助方 Higgsfield。参赛需付 99–149 美元，主办方有商业利益；榜首金额来自 X 的 AI 新闻摘要，未见原始榜单。",
+      "url": "https://x.com/marclou/status/2122684997643468874",
+      "label": "作者自报"
+    },
+    {
+      "title": "澳洲 Bunnings 裁 350 个技术岗，外包给 TCS",
+      "summary": "澳洲最大五金零售商 Bunnings 官方宣布与 TCS（塔塔咨询服务，印度 IT 外包巨头）合作，约 230 个正式技术岗被裁、120 个合同工到期，工作转给 TCS 在澳洲、印度、菲律宾的团队，保留约 500 人核心团队，2026-12 到 2027-06 过渡。澳洲绿党参议员 David Shoebridge 发帖批评「把工作送去海外和 AI」。",
+      "url": "https://www.bunnings.com.au/media-centre/media-releases/2026/bunnings-establishes-new-technology-partnership-to-better-support-customers-into-the-future",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": [
+    "11-16 第 5 条「Templify AI 拿下 PH 11-15 日榜第 1」引用的 productlist.info 数据滞后约两天，名次不可靠，以 PH 官方为准。"
+  ]
+}

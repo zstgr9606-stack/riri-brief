@@ -1,0 +1,33 @@
+{
+  "bot": "Daily Trends",
+  "slug": "daily-trends",
+  "column": "全球热点",
+  "date": "2026-11-19",
+  "items": [
+    {
+      "title": "NGINX 爆出两个无需登录的远程代码执行漏洞（需开启 HTTP/2）",
+      "summary": "Wiz 等团队披露 NGINX 的两个严重漏洞 CVE-2026-123007 和 CVE-2026-123633（CVE 即漏洞编号），评分均为 9.2（满分 10）：开启 HTTP/2 时，攻击者无需登录就能在服务器上执行代码，前者连只托管静态文件的 NGINX 也受影响。",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "label": "已读原文"
+    },
+    {
+      "title": "微软官方 Python 包 agent-framework 被投毒，盗取云凭证",
+      "summary": "Wiz 称，11/18 凌晨 4:35（北京时间）有人向 PyPI（Python 官方包仓库）发布了带凭证窃取代码的 agent-framework 1.26.1，随后又发 1.26.2，约一小时后两版被下架；最后的安全版本是 1.26.0。证书如何泄露尚不清楚；Wiz 称攻击工具自报为开源 AI 渗透测试框架 Cairn，只是线索，不能据此推断幕后身份。",
+      "url": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
+      "label": "作者自报"
+    },
+    {
+      "title": "官员称近期宕机与「集中打补丁」有关，AI 找漏洞被认为是推手之一",
+      "summary": "CyberScoop 报道，美国官员在 11/18 的众议院听证会上称，近期多起宕机没有证据表明是网络攻击，并多次把原因指向补丁节奏加快。Washington Sun 引三名匿名信源称，银行高管和 NSA 私下告诉国会，是修补 AI 模型发现的漏洞时补丁过多压垮了系统。Rapid7 的 Christiaan Beek 对 Bloomberg 称未见公开证据显示仓促更新导致宕机（TNW 转述）。",
+      "url": "https://cyberscoop.com/tech-outages-ai-vulnerability-patching/",
+      "label": "已读原文"
+    },
+    {
+      "title": "美军袭击伊朗岛上导弹阵地后，伊朗无人机袭击科威特和巴林基地",
+      "summary": "BBC 报道，美军 11/17 晚空袭了霍尔木兹海峡盖什姆岛上的伊朗革命卫队导弹发射场，11/18 凌晨伊朗向科威特阿里萨勒姆空军基地和巴林发射无人机，两国称已拦截、未报告损失，这是科威特两个多月来首次遭袭。卡塔尔称这是「危险的升级」。伊朗称瞄准科威特基地的爱国者防空系统，未获独立证实；The Hill 原文 403 未读到。",
+      "url": "https://www.bbc.com/news/articles/cw4gn9jeqjq7o",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": []
+}

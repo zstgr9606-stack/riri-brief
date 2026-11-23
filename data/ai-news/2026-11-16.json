@@ -1,0 +1,57 @@
+{
+  "bot": "AI News",
+  "slug": "ai-news",
+  "column": "AI 动态",
+  "date": "2026-11-16",
+  "items": [
+    {
+      "title": "旧帖再传播｜AI Engineer 演讲爆火：Grok Bot 团队怎么防止 AI 代码变「屎山」",
+      "summary": "Lauren Tan（poteto，据宝玉介绍负责 Grok Bot 桌面版）演讲《All Code Is Slop (Except Mine)》：每纠正 AI 一次就写成 lint 规则，而不是往 agents.md 里加话；禁掉 99% 注释；让 AI 自己跑应用、交录屏截图自查。她称团队上月合并 1.1 万个 PR，回滚约 0.5%。视频 11/14 上传，略超 24h，本期为中文圈再次走热；PR 数据为自述。",
+      "url": "https://youtu.be/O_zcc6Xl12g",
+      "label": "已读原文"
+    },
+    {
+      "title": "开源「Grok Bot 平替」Rakazo 登顶 Product Hunt",
+      "summary": "Rakazo 是开源 Agent 助理平台，可以开多个 bot 分工（收件箱、销售外联等），支持 Claude、ChatGPT、OpenRouter、Ollama，Web、桌面、iOS/Android 都能用。Apache-2.0 协议，自托管免费，托管版 $15/月（年付 $12/月），有 7 天试用。官网展示的任务效果属于演示，未见独立测评。",
+      "url": "https://github.com/elie222/rakazo",
+      "label": "已读原文"
+    },
+    {
+      "title": "真实外包活测评 RLI：Claude Fable 5.2 完成 41.25%，约为第二名的两倍",
+      "summary": "Scale 的 Remote Labor Index 榜单上，Fable 5.2 完成 41.25% 的真实付费外包项目，Opus 5.5 是 21.25%，GPT-6 Astra 是 20.83%。博主 kimmonismus 称 13 个月前最好成绩只有 2.5%，这些项目人类平均要做 29 小时。",
+      "url": "https://scale.com/leaderboard/rli",
+      "label": "已读原文"
+    },
+    {
+      "title": "GitHub Copilot 应用上线安全扩展（公测）",
+      "summary": "GitHub 在 Copilot 应用推出 security extension 公测：在 Security 画布里看代码扫描告警，让 Copilot 查找、解释、修复或忽略告警，提 PR 前也能检查本地改动有没有新漏洞。所有 Copilot 套餐都能用。",
+      "url": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts",
+      "label": "已读原文"
+    },
+    {
+      "title": "Claude 写出能装进软盘的 DOS 语言模型",
+      "summary": "r/ClaudeAI 用户称，他让 Fable 5.2 自己写 transformer，用 Opus 5.5 生成约 3500 条训练问答。模型 36.7 万参数、8bit 量化，程序加权重约 435KB，能在奔腾 DOS 机上逐字输出，问题超出范围就会胡言乱语。只有作者自述和视频，代码和权重都没公开，无法复现。",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xwpenj/",
+      "label": "作者自述"
+    },
+    {
+      "title": "Talyn",
+      "summary": "在云沙箱里并行跑 Claude Code 和 Codex，用你已有的订阅 — 免费版每月 10 box-小时，Pro $40/月",
+      "url": "https://talyn.dev",
+      "label": "厂商自报"
+    },
+    {
+      "title": "Frevana Multiplayer",
+      "summary": "让团队一起用的增长类 AI 智能体应用 — 定价未公开（官网写 7 天免费试用）",
+      "url": "https://www.producthunt.com/products/frevana-2",
+      "label": "厂商自报"
+    },
+    {
+      "title": "Turbo-Browser-MCP",
+      "summary": "高速 Playwright MCP 服务器，支持多标签批量操作、DOM 增量快照、防误提交表单 — 开源免费（MIT）",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "label": "厂商自报"
+    }
+  ],
+  "corrections": []
+}

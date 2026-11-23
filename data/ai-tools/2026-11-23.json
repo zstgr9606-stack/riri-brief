@@ -1,0 +1,35 @@
+{
+  "bot": "AI Tools",
+  "slug": "ai-tools",
+  "column": "AI 工具",
+  "date": "2026-11-23",
+  "items": [
+    {
+      "title": "Creatify Max：AI 广告智能体，从调研、做片到投放一条龙",
+      "summary": "Creatify（老牌 AI 广告视频平台）的新产品 Max，官网说它会调研市场、做广告、投到各渠道并 24 小时盯数据，可在 Creatify 或 Slack 里用，每次改动都要你批准。Max 从 Pro 档起包含（$55/月，年付 $38/月，280 credits，接 3 个广告账户）；免费档每月 10 credits，不含 Max。「端到端跑广告」「24/7 监测」均仅厂商自报；Creatify 是老品牌，新的是 Max 这个智能体。",
+      "url": "https://creatify.ai/max",
+      "label": "价格已核实，功能厂商自报"
+    },
+    {
+      "title": "Adside：一组 AI 智能体替你管付费广告",
+      "summary": "官网称它能调研竞品广告、监测 X/Reddit/G2 舆情、生成静态和视频广告、在 Google、Meta、LinkedIn、Reddit、X 上运营投放；可在 Claude Code、ChatGPT 里通过 MCP（让 AI 助手调用外部工具的协议）操作。按品牌收费：$990/月，年付 $490/月，含每月 $100 生成额度；另有真人托管服务，$2,500/月起或广告花费的 10%。首页的「4.5 小时→3.5 分钟」对比仅厂商自报，没有测试条件。",
+      "url": "https://www.adside.ai/",
+      "label": "价格已核实，功能厂商自报"
+    },
+    {
+      "title": "Foolscap：读懂整本书、但一个字都不替你写的写作 App",
+      "summary": "官网称它会在你写作时梳理人物、观点、线索和没收尾的伏笔，在原文里标出来；侧边有一个对话智能体，可以问书里的内容，但「从不替你写一个字」。官网说写作内容不用于训练 AI，设为私密的书完全不发给 AI。作者在 HN 说有免费档，第一个产品。付费价格未公开；隐私承诺仅厂商自报。",
+      "url": "https://foolscap.works/",
+      "label": "厂商自报"
+    },
+    {
+      "title": "Dettato：开源音频转 MIDI 模型，20M 参数",
+      "summary": "作者称给一段录音，它输出 MIDI 文件，每种乐器一条音轨，外加鼓轨；在九个公开测评集上综合 F1 59.2，开放模型 MuScriptor 1.3B 是 45.1，而 Dettato 只有约 20M 参数，小约 65 倍。代码和权重都是 Apache-2.0，可商用；训练数据只用合成录音和 CC（知识共享）授权素材，没用版权录音。",
+      "url": "https://github.com/kobimusic/dettato",
+      "label": "作者自报"
+    }
+  ],
+  "corrections": [
+    "11/16 期 YouArt Desktop App 的「PH 周榜第 9，343 票」来自滞后的 productlist.info，「周榜第 9」无法核实；hunted.space 显示它是 11-12 当日第 2（现 349 票）。Skillbox 补名次：11-11 当日第 5（现 155 票）。CALL-E（11-11 第 3）、Shot.video（11-11 第 8）名次无误，票数只是累计增长（现 259 / 118）。"
+  ]
+}

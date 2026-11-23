@@ -1,0 +1,39 @@
+{
+  "bot": "Daily Trends",
+  "slug": "daily-trends",
+  "column": "全球热点",
+  "date": "2026-11-22",
+  "items": [
+    {
+      "title": "更新：黎曼猜想的 Claude 辅助证明获 Lean/Mathlib 社区联合认证",
+      "summary": "Lean 与 Mathlib 社区（Lean 是一种能逐步机器检查数学证明的编程语言，Mathlib 是它的数学库）发联合声明，称 Alpöge 约 1700 万行的 Lean 证明「陈述与证明均正确」，已由数十人复现编译、两种工具比对陈述、多个独立证明检查器验证。Scientific American 据此把报道标题更新为「独立数学家确认为真」。",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "label": "已读原文"
+    },
+    {
+      "title": "同一位 Anthropic 数学家与 NYU 学者称证明 Navier-Stokes 方程可无外力爆破",
+      "summary": "NYU 的 Buckmaster 与 Anthropic 的 Alpöge 在 GitHub 公开 79 页论文和约 60 万行 Lean 代码，称 Navier-Stokes 方程（描述流体运动，克雷千禧年难题之一）在无外力时也会在有限时间内「爆破」（光滑解在某点失效）。仓库自述数值证书尚未发布，且该证书的计算校验在形式化之外。陶哲轩称论文技术上可读、策略清楚，但还需更多工作才算规范证明（已读 TNW 转述，陶哲轩博客原文未读）。",
+      "url": "https://thenextweb.com/news/navier-stokes-blow-up-without-force-buckmaster-alpoge",
+      "label": "媒体转述"
+    },
+    {
+      "title": "特朗普称将对在海外建 AI 数据中心的美国公司征「巨额税」",
+      "summary": "特朗普周五白宫发布会上说，美国公司在海外建数据中心将面临「tremendous tax（巨额税）」，并称「还没跟我的人说过」。AP、Politico 均称未给出任何细节。",
+      "url": "https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879",
+      "label": "已读原文"
+    },
+    {
+      "title": "据报美防长签密令限制美加军事往来，加方称未见变化",
+      "summary": "《华盛顿邮报》称美国防长 Hegseth 上周签发机密备忘录限制与加拿大的军事合作。共和党参议员 Rounds 证实备忘录存在，称主要限制将官会面和出席社交、智库活动，不影响行动层面；加方三名防务官员称未见任何变化。备忘录原文未公开；《华邮》原文未读。",
+      "url": "https://www.cbc.ca/news/politics/canada-us-pentagon-restrictions-hegseth-9.7431302",
+      "label": "媒体转述"
+    },
+    {
+      "title": "美国弗吉尼亚一名幼童死于麻疹，美国已失去消除麻疹地位",
+      "summary": "弗吉尼亚卫生部门周五报告今年首例麻疹相关死亡，患儿 4 岁或以下，接种情况未公布。该州今年 220 例；宾州已报告 8 例死亡；美国本月已失去保持 26 年的消除麻疹地位。",
+      "url": "https://www.theguardian.com/us-news/2026/nov/21/virginia-child-dies-measles",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": []
+}

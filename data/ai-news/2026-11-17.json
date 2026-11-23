@@ -1,0 +1,57 @@
+{
+  "bot": "AI News",
+  "slug": "ai-news",
+  "column": "AI 动态",
+  "date": "2026-11-17",
+  "items": [
+    {
+      "title": "阿里发布 Qwen4-Max：1M 上下文，API 价格比上代更低",
+      "summary": "Qwen 官方 11/16 10:01 发帖，称 Qwen4-Max 为新 MoE 架构、原生视觉、1M token 上下文；内部评测比 Qwen3.8-Max 少用约 50% token、单任务平均成本降 60% 以上。",
+      "url": "https://www.qwencloud.com/models/qwen4-max",
+      "label": "已读原文"
+    },
+    {
+      "title": "Claude Code 桌面版支持 iPhone Duo 模拟器（公测）",
+      "summary": "ClaudeDevs 11/17 05:18 发帖：桌面版 iOS 模拟器支持 iPhone Duo（公测），App 在对话旁运行，Claude 可自行折叠、展开设备测试各布局。",
+      "url": "https://x.com/ClaudeDevs/status/2122439098740674839",
+      "label": "已读原文"
+    },
+    {
+      "title": "Hugging Face 推理改走 OpenRouter 路由",
+      "summary": "HF 博客 11/16 发文：Inference Providers 的语言模型请求改由 OpenRouter 路由，按实时价格、速度、可靠性选服务商，失败时自动换一家重试；一个 HF token 调用 Hub 上有服务商的开源模型，兼容 OpenAI/Anthropic 接口，附 Claude Code 等接入教程，HF 不加价。",
+      "url": "https://huggingface.co/blog/openrouter",
+      "label": "已读原文"
+    },
+    {
+      "title": "Claude Code 团队公开 Agent「自我验证」方法",
+      "summary": "claude.dev 11/16 发布 Addy Osmani 的文章：Claude Code 团队约 90% 的代码由 Claude 编写和审查；文章讲用端到端、属性、差分测试让 Agent 拿证据自证；内部结构化文件生成测试中，独立评分器按标准检查使任务成功率最多提升 10 个百分点。90% 和提升 10 个百分点都是团队自述，测试集没有公开。",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "label": "已读原文"
+    },
+    {
+      "title": "Perplexity 上线 Monitor API：定时盯话题和网页，用 webhook 推送",
+      "summary": "@perplexitydevs 11/17 03:16 发帖：Monitor API 按计划跟踪话题新进展或网页变化，用 webhook 推送更新，即日可用，$1/1000 次运行或抓取 URL。",
+      "url": "https://x.com/perplexitydevs/status/2122408441042149853",
+      "label": "已读原文"
+    },
+    {
+      "title": "OpenBot（CopilotKit）",
+      "summary": "可自托管的 Agent 工作台，接 Slack/Teams — 个人免费，商业版最高 $29/人/月",
+      "url": "https://open.bot/pricing",
+      "label": "厂商自报"
+    },
+    {
+      "title": "readywhen",
+      "summary": "住在邮箱和消息里的个人助理 — 可免费开始，付费定价未公开",
+      "url": "https://readywhen.ai",
+      "label": "厂商自报"
+    },
+    {
+      "title": "Coral",
+      "summary": "开源 Agent 网关，Agent 写代码调用工具并存成自定义工具，调用过策略审批 — 开源免费（Apache-2.0）",
+      "url": "https://github.com/withcoral/coral",
+      "label": "厂商自报"
+    }
+  ],
+  "corrections": []
+}

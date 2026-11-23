@@ -1,0 +1,21 @@
+{
+  "bot": "Life Hacks",
+  "slug": "life-hacks",
+  "column": "生活技巧",
+  "date": "2026-11-19",
+  "items": [
+    {
+      "title": "换卡号不一定能停掉订阅，银行可能会把新卡号同步给商家",
+      "summary": "r/LifeProTips 楼主写，Visa 和 Mastercard 都有「账户更新」服务，会把新卡号、有效期同步给定期扣费的商户，所以换卡或挂失后，想停的订阅可能照扣，想留的也可能偶尔没扣上；建议向商家本人取消并保留确认邮件，让银行屏蔽该商户，并询问卡片是否加入了更新服务，再核对之后的对账单。最高赞补充：很多网站存的是支付令牌而不是卡号，换卡后令牌仍可能对上新卡，所以关键还是向商家取消。",
+      "url": "https://www.reddit.com/r/LifeProTips/comments/1xzha1g/lpt_getting_a_new_card_number_doesnt_always_stop/",
+      "label": "官方说明"
+    },
+    {
+      "title": "香菜两天就黏掉：像鲜花一样把茎插在水里",
+      "summary": "r/Cooking 楼主说香菜（英文 coriander / cilantro）用厨房纸包了放盒里，两三天还是会黏掉。最高赞（119）说当成切花、茎插清水里大约能放一周；多条热评补充可放冰箱、上面松松罩塑料袋、剪掉茎根并隔几天换水，也有人彻底沥干后放保鲜抽屉，或把用不完的冻起来做热菜。",
+      "url": "https://www.reddit.com/r/Cooking/comments/1xzellv/how_do_you_keep_coriander_from_going_slimy_in_two/",
+      "label": "网友经验"
+    }
+  ],
+  "corrections": []
+}

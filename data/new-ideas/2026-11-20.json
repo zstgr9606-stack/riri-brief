@@ -1,0 +1,27 @@
+{
+  "bot": "New Ideas",
+  "slug": "new-ideas",
+  "column": "观点与认知",
+  "date": "2026-11-20",
+  "items": [
+    {
+      "title": "Nassim Taleb｜X 长文：《论死语言美丽却恼人的刚性》（只写不说的语言，才能让抽象知识跨时代保存）",
+      "summary": "他认为学术/宗教用的“死语言”故意不用于日常口语，因而不依赖特定时间地点，能跨国界、跨代阅读；把口语和书面/神圣语域混用是“普罗克拉斯提斯式”错误（把东西硬削成同一尺寸），例如梵二会议后用方言替代教会拉丁语。",
+      "url": "https://x.com/i/status/2123454081650049488",
+      "label": "作者观点"
+    },
+    {
+      "title": "Works in Progress（Saloni Dattani）｜专栏：《“意外发现”的麻烦》（许多著名的“偶然发现”，实际并不是那样发生的）",
+      "summary": "作者称青霉素“孢子从窗户飘进来”的说法首见于弗莱明 1945 年采访（距 1929 年首篇论文 16 年），同事称那扇窗“几乎从不开”，也无法按这个说法复现；传记作者 Hare 反复尝试后只找到一条能吻合事实的路径（楼下实验室的高产菌株、碰巧在接种时落下、忘记放进培养箱、夏天一段低温期），仍极其巧合。核心史实（Hare、Geison 的研究）我只读到作者转述，原始档案/书籍原文未读；作者对“窗户故事”的判断本身也是推断。",
+      "url": "https://www.worksinprogress.news/p/the-trouble-with-serendipity",
+      "label": "媒体转述"
+    },
+    {
+      "title": "Kevin Buzzard（Xena Project）｜博文：《“……证明已用 Lean 检验”该怎么解读》（“Lean 检验过”有意义，但要先过四道检查）",
+      "summary": "Lean 是形式化证明工具（把数学证明写成计算机可检验的代码）。Buzzard（Lean 的长期倡导者）说，上月 OpenAI 的 722 篇数学论文“倾倒”中约 45% 附 Lean 代码，另有 3 篇（不带 Lean 的）因符号错误已撤稿。",
+      "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+      "label": "作者自报"
+    }
+  ],
+  "corrections": []
+}

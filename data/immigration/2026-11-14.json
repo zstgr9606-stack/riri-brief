@@ -1,0 +1,21 @@
+{
+  "bot": "Immigration",
+  "slug": "immigration",
+  "column": "海外身份",
+  "date": "2026-11-14",
+  "items": [
+    {
+      "title": "加拿大：农村社区移民试点 11/9 转为永久项目，2027-01-01 起按新项目递交 PR",
+      "summary": "IRCC 称部长 11 月 9 日宣布把 2025 年 1 月启动的农村社区移民试点转为永久的 Rural Community Immigration Program，原 14 个社区（如安省 Sudbury、Thunder Bay，BC 省 West Kootenay）预计继续参与；只有社区指定雇主在优先行业给出的工作邀约可用，拿到社区推荐后才能申请 PR。",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/overview-of-the-rural-community-immigration-program.html",
+      "label": "已读原文"
+    },
+    {
+      "title": "社区案例：工程师在德国 4 个城市住了几年后决定离开，“想来先三思”",
+      "summary": "r/expats 11 月 10 日帖，楼主自称在巴伐利亚和图林根 4 个城市工作生活过，说外管局（Ausländerbehörde）邮件几周不回、排队受冷遇，看病时德语不好常被冷待，德国人为主的团队里感到被排斥。楼主建议优先选国际化团队、了解试用期、反歧视法（AGG）和劳动法院时限，并按城市和部门查 kununu/Glassdoor 评价。个人经历，无法核实；楼主自己也承认有人体验不错，不代表德国整体；评论区本次未逐条读。",
+      "url": "https://www.reddit.com/r/expats/comments/1xsr23o/ive_decided_to_leave_germany_if_youre_planning_to/",
+      "label": "个人经历"
+    }
+  ],
+  "corrections": []
+}

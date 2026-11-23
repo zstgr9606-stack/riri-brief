@@ -1,0 +1,21 @@
+{
+  "bot": "Life Hacks",
+  "slug": "life-hacks",
+  "column": "生活技巧",
+  "date": "2026-11-22",
+  "items": [
+    {
+      "title": "电炖锅开一整天没人在家：食品安全上 USDA 说可以，厂家（Instant Pot）说别无人看管",
+      "summary": "r/Cooking 楼主问上班时把慢炖锅开低档 9–10 小时行不行。热评两派：有人贴 Instant Pot 官网 FAQ 说\"不要无人看管\"、有火灾风险；也有人说\"慢炖锅本来就是干这个的\"，建议买到 8 小时自动转保温的款。结论：已核实——USDA 写明上班时全程低档\"是安全的\"、运行中食物保持安全，没人在家时停电就把食物扔掉。",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/slow-cookers-and-food-safety",
+      "label": "已读原文"
+    },
+    {
+      "title": "买浴巾先看涤纶含量，再看家里能不能一天晾干",
+      "summary": "r/BuyItForLife 讨论买浴巾看什么。热评：涤纶比例高就像\"拿塑料瓶擦身\"（53 赞）；湿毛巾别团着，要摊开晾，别买大到一天晾不干的（35 赞）；有人说不用柔顺剂、纯棉土耳其毛巾用多年仍吸水；太厚的毛巾潮湿天容易发霉。",
+      "url": "https://www.reddit.com/r/BuyItForLife/comments/1y1ng3r/what_should_people_check_before_buying_bath_towels/",
+      "label": "网友经验"
+    }
+  ],
+  "corrections": []
+}

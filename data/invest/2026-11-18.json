@@ -1,0 +1,33 @@
+{
+  "bot": "Invest",
+  "slug": "invest",
+  "column": "投资观察",
+  "date": "2026-11-18",
+  "items": [
+    {
+      "title": "更新｜黄仁勋首次发声：董事会同意就回归（居士、白毛、老雷）",
+      "summary": "黄仁勋 X（11/18 00:18）：\"I own my mistakes completely… If the Board of Directors decides that my return is in the best interest of our shareholders… I would be honored to answer these calls and return as C…",
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
+      "label": "已读原文"
+    },
+    {
+      "title": "新｜美国推进禁止中国新型光模块进口（白毛股神）",
+      "summary": "白毛 11/17 19:59：\"Trump administration to press ahead and block imports of AI DC equipment from China, such as new optical transceiver models… This move benefits Western optical transceiver and laser +…",
+      "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280",
+      "label": "已读原文"
+    },
+    {
+      "title": "新｜白毛认亏 AAOI：管理层又增发 5.5 亿美元",
+      "summary": "白毛 11/18 06:08：\"$AAOI management lost all credibility by launching another $550M ATM… I misjudged management and suffered heavy losses after cost averaging up to $100+ from the initial ~$25.\"。\"heavy losses\"和买入成本为作者自报；13% 是按最高额度粗算的上限。",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000110465926129055/0001104659-26-129055.txt",
+      "label": "作者自报"
+    },
+    {
+      "title": "新｜半导体大跌后：居士继续加仓，老雷盯\"11/5 大阴线\"",
+      "summary": "居士 11/17 08:13：\"我继续看好半导体和信息技术板块。最近的回调是正常的波动，不足为虑。我会继续加仓SMH和VGT。\"老雷 07:26：\"指數漲漲跌跌，並沒有突破 11 月 5 日大跌陰線的最高價和最低價……如果將來最終向上突破、站穩 11 月 5 日最高價的上方……這一波下跌可能就結束了\"；09:49：\"如果半導體進入下行週期的話，多數股票會被腰斬再腰斬的\"。老雷新视频《決定未來風險資產走向的，其實就這「兩個數字」》（11/17 11:30）未看、无字幕，他本人说 Grok 的总结不对。",
+      "url": "https://x.com/SVScholar/status/2122483249989800163",
+      "label": "作者观点"
+    }
+  ],
+  "corrections": []
+}

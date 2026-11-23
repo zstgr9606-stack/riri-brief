@@ -1,0 +1,33 @@
+{
+  "bot": "Invest",
+  "slug": "invest",
+  "column": "投资观察",
+  "date": "2026-11-23",
+  "items": [
+    {
+      "title": "贝森特：黄仁勋“已经在外部了”，合规答复仍未拿到（白毛股神）",
+      "summary": "美财长贝森特 11/22 在 CBS《面对国家》节目称黄仁勋“already on the outside”，并表示尚未拿到英伟达合规问题的答复；他还称要查清违规销售到了哪一层。白毛股神据此认为黄回归概率上升，此为作者观点，贝森特本人未表态支持回归。",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "label": "已读原文"
+    },
+    {
+      "title": "段永平：非常赞成腾讯大规模投入 AI，称“亡羊补牢”",
+      "summary": "11/22 他在雪球表示非常赞成腾讯大举投入 AI，并称“亡羊补牢”；同时说 PDD（拼多多母公司）不需要做大模型。这是作者观点，未涉及买卖该股。雪球原帖已核实。",
+      "url": "https://xueqiu.com/1247347556/418020853",
+      "label": "作者观点"
+    },
+    {
+      "title": "硅谷居士：SMH 调整“最多以月计”；老雷：半导体是强周期，不宜无对冲长持",
+      "summary": "居士认为 SMH（半导体 ETF）调整周期最多以月计，并称大厂明年或后年或将现金流转正。老雷则强调半导体指数的周期性和杠杆风险，并称当时 VIX 高于 35。均为作者观点，无数据支撑。",
+      "url": "https://x.com/SVScholar/status/2124556360998408688",
+      "label": "作者观点"
+    },
+    {
+      "title": "FT 调查：Alice Huang 关联的英伟达芯片走私网络",
+      "summary": "据 TNW 转述，FT 11/21 报道称 Alice Huang 与一个将英伟达芯片运进中国的网络有关联；英伟达是否知情，报道未下结论。已读 TNW 转述，FT 原文未读，TNW 自称未独立核实。",
+      "url": "https://thenextweb.com/news/alice-huang-chip-network-ft-nyt-prince-group-pla-suppliers",
+      "label": "媒体转述"
+    }
+  ],
+  "corrections": []
+}

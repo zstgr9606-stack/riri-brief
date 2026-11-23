@@ -1,0 +1,39 @@
+{
+  "bot": "Life Hacks",
+  "slug": "life-hacks",
+  "column": "生活技巧",
+  "date": "2026-11-17",
+  "items": [
+    {
+      "title": "iPhone 相册搜“passport”“password”：护照、密码截图可能就躺在相册里",
+      "summary": "r/LifeProTips 帖子说，iPhone 照片搜索能识别图片里的文字。搜出证件、密码、银行卡照片后，删掉的要再清空“最近删除”，留着的移到“已隐藏”（受 Face ID 锁保护），并把 App 的照片权限改成“有限访问”。",
+      "url": "https://www.reddit.com/r/LifeProTips/comments/1xxpaf8/lpt_search_your_iphone_photos_for_passport_and/",
+      "label": "已读原文"
+    },
+    {
+      "title": "公寓保洁员的“来客前”清洁清单",
+      "summary": "r/CleaningTips 一位职业保洁员建议：烤箱自清洁提前一周做（温度很高，有的烤箱做完就坏）；提前两天用热水、洗洁精加小苏打泡油烟机滤网。洒了东西先吸不要搓：红酒用冷水加洗洁精，油渍先撒小苏打或玉米淀粉 15 分钟再吸。",
+      "url": "https://www.reddit.com/r/CleaningTips/comments/1xxuj8h/a_few_thanksgiving_prep_cleaning_tips_from/",
+      "label": "官方说明"
+    },
+    {
+      "title": "干豆比罐头豆省多少？热评：省钱但费时间",
+      "summary": "r/Frugal 楼主算了一笔账：一罐木豆 $1.92 只够做 1 次，一袋干豆 $4.38 够做 8 次，每次约 $0.55。最高赞（25）反驳说要泡两天反而懒得做；也有人说用 Instant Pot 多加 10 分钟就能直接煮干豆，不用泡。价格是美国超市、楼主自报；国内干豆本来就便宜，罐头豆反而少见。",
+      "url": "https://www.reddit.com/r/Frugal/comments/1xxw8n1/dried_beans_are_more_economical_than_canned_beans/",
+      "label": "作者自报"
+    },
+    {
+      "title": "退租要把墙刷回“原来的颜色”，没人记得是哪个色号",
+      "summary": "r/HomeImprovement 楼主两年前经房东同意把客厅刷成深绿色，现在退租要刷回去，房东只记得是“浅灰”。高赞建议：拆下开关面板，后面的墙一般是原漆，可以切一小块拿去油漆店配色；另有人说大概率是 SW 的 Agreeable Gray，而且要先上底漆，不然绿色会透出来。",
+      "url": "https://www.reddit.com/r/HomeImprovement/comments/1xxq5r4/landlord_wants_the_walls_back_to_the_original/",
+      "label": "网友经验"
+    },
+    {
+      "title": "冬天吊扇该往哪个方向转？评论区吵起来了",
+      "summary": "r/LifeProTips 帖子说冬天把吊扇调成顺时针，把热空气往下推；夏天逆时针，有风感。评论反驳：两个方向都会让空气上下循环，区别只在人有没有吹风感；还有人说转向取决于具体型号。",
+      "url": "https://www.reddit.com/r/LifeProTips/comments/1xxmqh9/lpt_make_sure_your_ceiling_fan_is_spinning_in_the/",
+      "label": "官方说明"
+    }
+  ],
+  "corrections": []
+}

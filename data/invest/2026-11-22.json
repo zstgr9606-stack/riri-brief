@@ -1,0 +1,33 @@
+{
+  "bot": "Invest",
+  "slug": "invest",
+  "column": "投资观察",
+  "date": "2026-11-22",
+  "items": [
+    {
+      "title": "老雷：尚未见到止跌迹象，熊市反弹通常过不了前次急跌起点（老雷）",
+      "summary": "11/22 06:23 回复：「經驗上看，熊市中的反彈通常不會超過最近一次快速下跌的起點。比如之前我說要觀察 11 月 5 日大跌這根K線，連續反彈了 6 個交易日，沒有能夠超越這根大 K 線的起點，然後空頭反撲，創出新低，這就是熊市特徵。」Patreon（付费订阅平台）11/21 06:54 新标题《尚未見到止跌跡象｜交易筆記 2026-11-20》。「通常不會超過」是他的经验规律，未给统计；Patreon 正文付费未读，「哪些迹象值得关注」不详。",
+      "url": "https://www.patreon.com/cw/TheMarketMemo",
+      "label": "作者观点"
+    },
+    {
+      "title": "甲骨文官方：OpenAI 合同所需资金已全部到位（硅谷居士转）",
+      "summary": "Oracle（甲骨文）11/20 声明：「Oracle has secured all the funding we need to fulfill our contract with OpenAI.」并称「Any media reports that will come out and say the contrary are incorrect and wrong.」居士 11/22 04:0…。声明 11/21 05:01（北京时间）发布，早于本窗口，居士在窗口内转发；声明预先否认「将出现的」相反报道，所指何报道现有材料无法判断，下…",
+      "url": "https://www.oracle.com/news/announcement/oracle-statement-2026-11-20/",
+      "label": "作者自报"
+    },
+    {
+      "title": "Burry 卖出一半英伟达、SMH 看跌期权，纳指 100 看跌未动（硅谷居士转）",
+      "summary": "居士 11/22 02:12：「大空头 Michael Burry 已经卖出了一半的英伟达空头头寸，以兑现部分收益。但他仍保留了较长期限的看空头寸。」。只读到媒体转述，Burry 原文付费未读；减仓属于止盈还是看法变化，材料无法判断。",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-locks-gains-nvidia-183241854.html",
+      "label": "媒体转述"
+    },
+    {
+      "title": "段永平：出来澄清是因为有人私下找他卖字节股份（段永平）",
+      "summary": "11/21 14:27 雪球回复：「最近好几个私底下想办法找我要卖给我的人，这是我出来说明一下的原因。我只投上市公司的一个很重要的原因就是简单省事，不需要私底下跟任何人打交道。」14:28 回「怎么毛估估字节」：「你不知道你就认为我不知道？」",
+      "url": "https://xueqiu.com/1247347556/417968652",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": []
+}

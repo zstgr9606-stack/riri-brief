@@ -1,0 +1,39 @@
+{
+  "bot": "Startup News",
+  "slug": "startup-news",
+  "column": "创业与工作",
+  "date": "2026-11-16",
+  "items": [
+    {
+      "title": "「多数 SaaS 应该变成 MCP 服务器」刷屏",
+      "summary": "Fintool 创始人、现在在微软 AI 的 Nicolas Bustamante 发帖说，AI 创业公司自己做聊天界面，等于低毛利甚至负毛利地转卖大模型 token；SaaS 应该把数据、业务逻辑和权限做成 MCP 工具，对话交给 ChatGPT、Claude、Copilot，token 由客户付，自己照收订阅费。他用 HR 软件举例：薪酬对标、调薪模拟、审批都做成工具。",
+      "url": "https://x.com/i/status/2121690979904446885",
+      "label": "已读原文"
+    },
+    {
+      "title": "Marc Lou：TrustMRR 上 55% 的创业项目近 30 天零收入",
+      "summary": "Marc Lou 统计了 TrustMRR 上 10,646 个项目（收入通过 Stripe 等直连验证）近 30 天的收入：$0 的 5,845 个，不到 $1k 的 3,744 个，$1k–10k 的 816 个，$10k–100k 的 217 个，$100k 以上只有 24 个。",
+      "url": "https://x.com/i/status/2121974507544183216",
+      "label": "已读原文"
+    },
+    {
+      "title": "Loom 被收购后续费：一家公司年费从 $3,456 涨到 $21,420",
+      "summary": "电商创始人 Sean Frank 晒出 Loom 新账单：计费人数从 36 人变成 119 人，单价从每人每月 $8 涨到 $15，年费从 $3,456 涨到 $21,420。评论区有人说，自己的工程师一晚上用 AI 写了个替代品，已经退订 Loom。",
+      "url": "https://x.com/i/status/2121748160972517463",
+      "label": "已读原文"
+    },
+    {
+      "title": "Business Insider：AI 编程热带动的是资深工程师需求，不是初级",
+      "summary": "Business Insider 11-15 报道，资深软件工程师的就业在增长，初级岗位快速减少，企业倾向于少招新人，让资深工程师用 AI 写代码。r/cscareerquestions 网友讨论：初级到资深的晋升通道断了，资深工程师的薪资会不会因此上涨。",
+      "url": "https://www.businessinsider.com/ai-coding-boom-fuels-demand-senior-engineers-not-junior-developers-2026-11",
+      "label": "已读原文"
+    },
+    {
+      "title": "Templify AI 拿下 PH 11-15 日榜第 1",
+      "summary": "Templify AI 是 iPhone 上的视频编辑器，面向不想学时间轴剪辑的内容创作者，以模板方式处理视频片段和图片。11-15 以 375 票排第 1，第 2、3 名是 Filament（300 票）和 Claude Meetings（281 票）。",
+      "url": "https://productlist.info/daily/2026-11-15",
+      "label": "已读原文"
+    }
+  ],
+  "corrections": []
+}

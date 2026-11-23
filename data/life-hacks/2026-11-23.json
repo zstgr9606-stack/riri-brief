@@ -1,0 +1,27 @@
+{
+  "bot": "Life Hacks",
+  "slug": "life-hacks",
+  "column": "生活技巧",
+  "date": "2026-11-23",
+  "items": [
+    {
+      "title": "卫生间突然有下水道味：先往每个地漏倒一盆水",
+      "summary": "r/CleaningTips 楼主新搬家，卫生间很臭。最高赞（179）说给地漏加水封住存水弯就能挡味，没用再查马桶底座密封圈；楼主倒了一盆水后反馈\"味道好像没了\"，但过几分钟又回来一点。另有热评建议加满水后滴少许矿物油减缓蒸发。\"滴矿物油防蒸发\"是网友经验，未见官方说明；楼主的味道没完全消失，原因未定。",
+      "url": "https://www.chp.gov.hk/files/pdf/make_sure_the_trap_is_not_dry.pdf",
+      "label": "官方说明"
+    },
+    {
+      "title": "热汤能不能直接进冰箱：能，但一大锅要先分装",
+      "summary": "r/Cooking 楼主问约 3 夸脱（约 2.8 升）的汤要不要放凉再进冰箱。热评：现代冰箱扛得住（111 赞）；但也有人说取决于量和容器，\"两加仑汤再好的冰箱也凉不下来\"（15 赞）；还有人贴出加拿大 FoodSafe 冷却表：2 小时内从 60°C 降到 20°C，总共 6 小时内降到 4°C。结论：已核实——USDA 写明剩菜须在烹饪后 2 小时内冷藏，大量食物应分装到浅容器以快速降温，一大锅汤冷却慢会让细菌繁殖。",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety",
+      "label": "已读原文"
+    },
+    {
+      "title": "出国租车：取车、还车各绕车拍 30 秒视频",
+      "summary": "r/LifeProTips 楼主还车时没拍照，两周后被索赔 400 美元后保险杠划痕，争了三周最后付了一半。热评补充：视频里拍到里程表和油量（有人被收过\"没加满油\"的费用）、口述日期时间；有人在纽瓦克拿出取车视频后对方当场撤销索赔；也有人觉得这是常识。400 美元索赔和撤销索赔都是个人经历，未核实。",
+      "url": "https://www.reddit.com/r/LifeProTips/comments/1y2yful/lpt_before_you_leave_a_rental_car_take_a_30/",
+      "label": "网友经验"
+    }
+  ],
+  "corrections": []
+}

@@ -1,0 +1,27 @@
+{
+  "bot": "Startup News",
+  "slug": "startup-news",
+  "column": "创业与工作",
+  "date": "2026-11-23",
+  "items": [
+    {
+      "title": "Stripe 称 AI 代理付款 2 个半月涨近 80 倍，过半用户会再买第二次",
+      "summary": "Stripe 的 Ernie Tedeschi 发文称，Link Agent Wallet（Stripe 一键支付钱包 Link 里供 Muse、Grok 等个人 AI 代理付款的功能）11 月中旬日均消费是 9 月初的近 80 倍（7 日滚动平均），近一个月翻倍；上周 40% 以上花在机票酒店，约三分之一零售。",
+      "url": "https://x.com/patrickc/status/2124471707738231047",
+      "label": "作者自报"
+    },
+    {
+      "title": "匿名工程师称公司因 Claude 续约涨价 10 倍，一周内被迫换模型",
+      "summary": "r/cscareerquestions 一名自称在约 400 名程序员公司的高级工程师发帖：公司邮件通知因新合同价格是旧合同 10 倍，一周后停用 Claude，替代方案未定，而所有 AI 工作流都按 Claude 搭建；作者问 Anthropic 是否真会一年后涨价 10 倍。公司名、合同细节均未披露，「10 倍」无法核实，可能含折扣到期或用量档位变化；现有材料无法判断是否普遍，下一步需要看其他企业客户或 Anth…",
+      "url": "https://www.reddit.com/r/cscareerquestions/comments/1y2tg08/",
+      "label": "网友自述"
+    },
+    {
+      "title": "「AI 优先」裁员 8 个月后，前员工自述被以半薪召回救火",
+      "summary": "一名突尼斯远程后端工程师自述，美国某 SaaS 公司 3 月以「一名工程师 + AI 工具就够」裁掉 4 人平台组中的 3 人，只留最便宜的初级；此后 3 次重大故障，其中 2 次是 AI 生成的 Prisma（Node.js 数据库工具）迁移在高峰期锁住 3 亿行的表，初级也离职了；CTO 现以月薪 2,500 美元（原 5,000）、3 个月合同请他回来。",
+      "url": "https://www.reddit.com/r/cscareerquestions/comments/1y2yhv6/",
+      "label": "作者自述"
+    }
+  ],
+  "corrections": []
+}

@@ -1,0 +1,33 @@
+{
+  "bot": "Daily Trends",
+  "slug": "daily-trends",
+  "column": "全球热点",
+  "date": "2026-11-21",
+  "items": [
+    {
+      "title": "Anthropic 数学家称与 Claude 合作证明黎曼猜想，尚待数学界验证",
+      "summary": "Anthropic 员工、数学家 Levent Alpöge 11/20 在个人网站发文，称「与 Claude 合作」证明了黎曼猜想（1859 年提出的素数分布猜想，克雷研究所悬赏百万美元）及其推广形式 GRH（广义黎曼猜想），并已写成完整的 Lean 证明（Lean：能让机器逐步检查证明的形式化语言）。",
+      "url": "https://alpo.ge/remark.pdf",
+      "label": "已读原文"
+    },
+    {
+      "title": "据报美国 SEC 调查英伟达会计问题，股价单日跌近 14%",
+      "summary": "雅虎财经援引路透社称，SEC（美国证券交易委员会）对英伟达的调查正在审查潜在会计问题；《华尔街日报》此前报道调查还涉及其信息披露是否误导投资者。英伟达 11/20 跌近 14%，连跌七天，自 10/6 高点累计蒸发约 2.7 万亿美元市值。路透原文未读；SEC 拒绝置评，英伟达未回应。HN 标题写「2.5 万亿」，雅虎写「2.7 万亿」，口径不同。",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
+      "label": "媒体转述"
+    },
+    {
+      "title": "俄罗斯大规模空袭乌克兰，两枚导弹和一架无人机落入波兰",
+      "summary": "波兰国防部长 Kosiniak-Kamysz 11/20 称，俄方空袭乌克兰期间有三个飞行物落在波兰境内：一枚 Kh-101 巡航导弹（卢布林省 Nowy Lipowiec）、另一枚导弹和一架喷气式无人机，无人员伤亡。AP 标题称，波兰总理认为导弹坠落「很可能是蓄意挑衅」。「蓄意挑衅」只读到 AP 标题和 X 新闻摘要，AP 原文打不开；X 摘要称俄方此次发射 400 余架无人机和 110 枚导弹，未核实。",
+      "url": "https://united24media.com/world/two-russian-missiles-including-kh-101-and-jet-powered-drone-fall-in-poland-during-attack-on-ukraine-24556",
+      "label": "媒体转述"
+    },
+    {
+      "title": "胰腺癌口服药 daraxonrasib 早期试验：61 名晚期患者一年生存率 76.6%",
+      "summary": "《卫报》报道，纪念斯隆-凯特琳癌症中心医生在巴塞罗那会议上公布：61 名新确诊的转移性胰腺癌患者服用 KRAS 抑制剂（阻断胰腺癌常见 KRAS 基因突变的药）daraxonrasib，约 8% 肿瘤在 CT 上消失，一年生存率 76.6%，报道称单纯化疗通常为 40–45%。英国癌症研究会称这是「几十年来最大进步」。40–45% 是报道给的常规参考值，不是同一试验的对照组；试验阶段和设计报道没写明，会议原始数据未读。",
+      "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+      "label": "媒体转述"
+    }
+  ],
+  "corrections": []
+}
