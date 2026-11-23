@@ -1,0 +1,82 @@
+{
+ "bot": "Startup News",
+ "date": "2026-11-24",
+ "status": "已检查 Hacker News、X、Reddit（arctic-shift）、Product Hunt（feed / hunted.space）、Indie Hackers、YouTube；Reddit 官方接口与 Product Hunt 官网 403，已用备用渠道；YouTube 播放数未能读取",
+ "corrections": [],
+ "items": [
+  {
+   "title": "独立开发者自述：FSNotes 上架 9 年后被苹果从全部欧盟商店下架，客服 3 周未回复",
+   "summary": "开源笔记应用 FSNotes 的乌克兰个体户开发者称，10 月销售款未到账，11-05、11-17 两次提交工单均无回复；他已补交欧盟《数字服务法》(DSA) 要求的商家身份合规信息和乌克兰营业登记文件，应用仍在欧盟全部下架。仅开发者单方说法，苹果未回应，下架确切原因未公开。HN 412 分 / 84 评论（采集时）。",
+   "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "glushchenko",
+     "platform": "GitHub",
+     "published": "2026-11-23",
+     "url": "https://github.com/glushchenko/fsnotes/discussions/2056"
+    },
+    {
+     "author": "",
+     "platform": "Hacker News",
+     "published": "",
+     "url": "https://news.ycombinator.com/item?id=50616933"
+    }
+   ]
+  },
+  {
+   "title": "App 创始人自述：年收入 20 万美元全靠短视频，用 Claude Code + ffmpeg 把 30 条素材剪成 180 条试投",
+   "summary": "Nicholas Calez 在 X 长文称其 App ARR（年度经常性收入）超 20 万美元，全部来自 Instagram 试用 Reels 和 TikTok：2–3 天拍完一个月约 30 条，Claude Code 调 ffmpeg 每条自动剪 6 个版本（换开头钩子、时长、片段顺序、字幕），在 Instagram Edits 里配音，用 Postiz 排满全月，每两天把试投播放最高的一条重发到主号。ARR 与日均 100 万播放均为作者自报，未披露 App 名称；文中推荐 Postiz，可能有合作关系。",
+   "url": "https://x.com/nicholascalez/status/2124850775109054960",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Nicholas Calez",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/nicholascalez/status/2124850775109054960"
+    }
+   ]
+  },
+  {
+   "title": "转述：Inc. 称前 Forbes 记者的创业媒体 Upstarts 今年毛收入约 80 万美元，主要靠赞助（未读到 Inc 原文）",
+   "summary": "据 Digg 摘要和 Talking Biz News 转引，Inc. 报道 Alex Konrad 2025 年 3 月离开 Forbes 创办 Upstarts Media（Newsletter + 播客 + 活动），约 1.3 万订阅、约 1,000 人在 Substack 付费，今年毛收入约 80 万美元，多数来自 Newsletter 与播客赞助；Konrad 称目前工作量不可持续，想组建团队。毛收入口径，成本与利润未披露。",
+   "url": "https://talkingbiznews.com/media-news/biz-journalist-konrad-finds-success-in-covering-startups/",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "Talking Biz News",
+     "platform": "网站",
+     "published": "2026-11-23",
+     "url": "https://talkingbiznews.com/media-news/biz-journalist-konrad-finds-success-in-covering-startups/"
+    },
+    {
+     "author": "Alex Konrad",
+     "platform": "X",
+     "published": "2026-11-24",
+     "url": "https://x.com/alexrkonrad/status/2124919671795159514"
+    }
+   ]
+  },
+  {
+   "title": "Atlassian AI 负责人称：试行「人人都是 AI builder」的无 PM 团队，一个月后成员纷纷回到原岗位",
+   "summary": "Lenny's Podcast 访谈中，Atlassian AI 与产品技艺负责人 Sherif Mansour 称，公司组了几支不设 PM 和设计师、所有人都用 AI 直接做产品的小队，头几周「比以往都快」，约一个月后成员回到原角色，一位 PM 的解释是「吞吐量不是问题，方向才是问题」。内部试验，团队数与产出数据未公开。",
+   "url": "https://www.youtube.com/watch?v=hRtmV1mCBSE",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Lenny's Podcast",
+     "platform": "YouTube",
+     "published": "",
+     "url": "https://www.youtube.com/watch?v=hRtmV1mCBSE"
+    },
+    {
+     "author": "Lenny Rachitsky",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/lennysan/status/2124880663149002996"
+    }
+   ]
+  }
+ ]
+}
