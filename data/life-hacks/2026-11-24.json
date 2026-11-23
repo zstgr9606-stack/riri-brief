@@ -1,0 +1,42 @@
+{
+ "bot": "Life Hacks",
+ "date": "2026-11-24",
+ "status": "已检查 8 个 Reddit 生活版块和 HN；Reddit 官方接口 403、RSS 404/429，已改用 arctic-shift 读取；HN 无生活技巧帖。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "不锈钢锅烧糊的油垢：用 Bar Keepers Friend 调糊擦，别上钢丝球和烤箱清洁剂",
+   "summary": "r/CleaningTips 楼主的不锈钢锅烧糊，泡水、小苏打煮都无效。热评多推 Bar Keepers Friend（草酸类去污粉）配海绵擦，也有人推钢丝球、烤箱清洁剂并争论伤不伤锅。All-Clad 官方保养页写明：烧焦残留先用小苏打加水煮开，仍去不掉可用 Bar Keeper's Friend 等非研磨、不含氯的清洁剂调糊擦，不要用烤箱清洁剂、钢丝球和钢制百洁布。不粘锅、涂层锅不适用。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y32r98/any_thoughts_on_how_to_get_rid_of_this_burnt_in/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主及热评",
+     "platform": "Reddit",
+     "published": "2026-11-23",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y32r98/any_thoughts_on_how_to_get_rid_of_this_burnt_in/"
+    },
+    {
+     "author": "All-Clad",
+     "platform": "官方保养说明",
+     "published": "",
+     "url": "https://www.all-clad.com/care-use"
+    }
+   ]
+  },
+  {
+   "title": "餐椅划地板：毛毡垫总掉，多半是胶太差或没擦干净椅脚",
+   "summary": "r/HomeImprovement 楼主抱怨毛毡垫很快脱落。热评建议买 3M 背胶的毛毡垫、贴前把椅脚擦干净，约一年更换；也有人推椅脚套（自称用了 7 年）、可钉入的特氟龙滑垫、硅胶套，或在餐桌下铺足够大的地毯。寿命说法均为个人经历，无对比数据。",
+   "url": "https://www.reddit.com/r/HomeImprovement/comments/1y3avu8/how_do_you_stop_dining_room_chairs_from_creating/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/HomeImprovement 楼主及热评",
+     "platform": "Reddit",
+     "published": "2026-11-23",
+     "url": "https://www.reddit.com/r/HomeImprovement/comments/1y3avu8/how_do_you_stop_dining_room_chairs_from_creating/"
+    }
+   ]
+  }
+ ]
+}
