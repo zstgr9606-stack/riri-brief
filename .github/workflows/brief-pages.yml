@@ -1,0 +1,48 @@
+name: Publish daily briefing
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: briefing-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Assemble public site
+        run: |
+          mkdir site
+          cp -R data index.html mobile-columns.js site/
+          node --check site/mobile-columns.js
+          python3 - <<'PY'
+          from pathlib import Path
+          page = Path('site/index.html')
+          html = page.read_text(encoding='utf-8')
+          marker = '</body>'
+          if html.count(marker) != 1:
+              raise ValueError('Expected one closing body tag in the generated briefing')
+          script = '<script src="./mobile-columns.js" defer></script>'
+          page.write_text(html.replace(marker, script + '\n' + marker), encoding='utf-8')
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy briefing
+        id: deployment
+        uses: actions/deploy-pages@v4
