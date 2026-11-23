@@ -1,0 +1,116 @@
+{
+ "bot": "AI News",
+ "date": "2026-11-24",
+ "status": "6 个平台均已检查（X、Reddit、Hacker News、GitHub、Product Hunt、YouTube）；Product Hunt 票数来自第三方 hunted.space 实时榜",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Claude 把连接器和技能合并成「插件」，免费版已可用",
+   "summary": "Claude 帮助中心称，侧边栏的 Customize 改名为 Plugins，一个页面统一管理插件、技能（Skills，可复用的操作说明包）和连接器（Connectors，接外部工具）；Free、Pro、Max、Ultra 现已上线，Team 计划 11-30 起推送，Enterprise 随后几周。已安装的内容保留；删除打包了连接器的插件不会自动断开连接器。官方 X 帖称可浏览 10,000+ 插件，该数字帮助中心页未写，属官方自报。",
+   "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Anthropic",
+     "platform": "Claude 帮助中心",
+     "published": "",
+     "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page"
+    },
+    {
+     "author": "Claude（@claudeai）",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/claudeai/status/2124970294523945328"
+    }
+   ]
+  },
+  {
+   "title": "ChatGPT 聊天页换上 GPT-6.2（Sol 版本），Plus 及以上推送",
+   "summary": "OpenAI 11-23 更新说明：聊天页开始推送为日常对话调优的 GPT-6.2（基于 GPT-6.2 Sol），面向 Plus、Pro、Business、Enterprise；称更会按价格、地点等偏好比较选项，并会主动提议降价提醒；Work 和 Codex 背后的模型不变。OpenAI 内部测试：图像理解 71.7%（GPT-6 为 47.4%），内部版 BrowseComp（网页检索难题集）最高档 64.5%（GPT-6 为 54.4%）。分数均为内部评测，任务集未公开，无独立复测。",
+   "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "OpenAI",
+     "platform": "ChatGPT 更新说明",
+     "published": "2026-11-23",
+     "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    },
+    {
+     "author": "ChatGPT（@ChatGPT）",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/ChatGPT/status/2124942186425069836"
+    }
+   ]
+  },
+  {
+   "title": "Anthropic 推出 Claude Ship（beta）：自动审 PR、修 PR、按团队规则批准合并",
+   "summary": "Anthropic 博客称，Claude Ship 由已正式上线的 Code Review 和两个 beta 代理组成：PR Steward 修失败的 CI、合并冲突和评审意见（设计上不批准、不合并），Claude Approvals 按仓库里的策略文件决定能否自动批准；开发者可在 Claude Code 用 /ship 命令推送并开 PR。仅限 Team、Enterprise 计划的 GitHub 仓库，按 token 计费。博客称 Claude Code 团队 6–9 月合并 PR 数翻倍以上、被回滚比例降 40% 以上，属官方自报，未拆分各环节作用。",
+   "url": "https://claude.com/blog/introducing-claude-ship",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Anthropic",
+     "platform": "官方博客",
+     "published": "2026-11-23",
+     "url": "https://claude.com/blog/introducing-claude-ship"
+    },
+    {
+     "author": "Claude Devs（@ClaudeDevs）",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/ClaudeDevs/status/2124959436640858475"
+    }
+   ]
+  },
+  {
+   "title": "智谱 Z.ai 发布 GLM-5.4：首个 Loop Transformer 旗舰，API 暂未开放",
+   "summary": "Z.ai 博客称，GLM-5.4 把 GLM-5 基座中的 28 层共享权重循环执行两遍（Loop Transformer：同一组层重复运行，加深推理而不增加参数），称智能水平相当于 2–3 万亿参数模型，高峰期 70–80 token/秒；已上 GLM Coding Plan、ZCode 和网页聊天，API「即将开放」，权重计划在安全加固后开源。博客自认模型容易陷入过长思考。性能说法为官方自报。",
+   "url": "https://z.ai/blog/glm-5.4",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Z.ai",
+     "platform": "官方博客",
+     "published": "2026-11-23",
+     "url": "https://z.ai/blog/glm-5.4"
+    },
+    {
+     "author": "Z.ai（@Zai_org）",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/Zai_org/status/2124811995912286352"
+    }
+   ]
+  },
+  {
+   "title": "新工具：Motionflare",
+   "summary": "把网站做成产品发布视频。Pro 版 $29/月（黑五首月半价，至 12-1），另有免费预览。Product Hunt 当日第 3（hunted.space 实时榜 227 票，北京时间 11-24 07:14 采）。",
+   "url": "https://motionflare.ai/pricing",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Motionflare",
+     "platform": "官网定价页",
+     "published": "",
+     "url": "https://motionflare.ai/pricing"
+    }
+   ]
+  },
+  {
+   "title": "新工具：Gauth Personal Study Agent",
+   "summary": "AI 学习代理，记录学生在拍题、小测中的薄弱点，生成每日复习计划（闪卡、分步讲解、小测），内置于 Gauth App。定价未公开。Product Hunt 当日第 2（hunted.space 实时榜 243 票，北京时间 11-24 07:14 采）。",
+   "url": "https://www.producthunt.com/products/gauth-ai-course",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Gauth",
+     "platform": "Product Hunt",
+     "published": "",
+     "url": "https://www.producthunt.com/products/gauth-ai-course"
+    }
+   ]
+  }
+ ]
+}
