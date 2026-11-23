@@ -164,6 +164,53 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
 .xline a { color: var(--green); }
 .xline.new { color: #24382f; }
 .chip.also { background: #fff3d6; color: #6b4e00; }
+.m-bar, .sum-tg { display: none; }
+@media (max-width: 700px) {
+  .wrap { padding: 10px 14px 32px; }
+  header.top { padding: 4px 0 8px; }
+  header.top h1 { font-size: 20px; }
+  header.top .sub { display: none; }
+  .toolbar { position: static; padding: 8px 0; }
+  .toolbar .row, .toolbar .filters { display: none; }
+  .m-bar { display: flex; gap: 8px; width: 100%; }
+  .m-bar label { flex: 1 1 0; min-width: 0; display: block; }
+  .m-bar select {
+    width: 100%; min-width: 0; height: 44px; font: inherit; font-size: 15px; font-weight: 600;
+    color: var(--green); background: #fff; border: 1px solid var(--green); border-radius: 8px;
+    padding: 0 8px; text-overflow: ellipsis;
+  }
+  .cols { display: block; margin-top: 4px; }
+  .col { border: 0; border-radius: 0; overflow: visible; margin-top: 18px; }
+  .col-h {
+    background: transparent; color: var(--green); padding: 4px 0 6px 10px;
+    border-left: 4px solid var(--green); border-bottom: 1px solid var(--line);
+    font-size: 15px; font-weight: 700;
+  }
+  .badge { background: var(--chip); color: var(--green); }
+  .item { padding: 12px 0; }
+  .item:first-child { border-top: 0; }
+  .item .title { font-size: 17.5px; line-height: 1.4; }
+  .sum, .sum.full {
+    font-size: 15px; line-height: 1.7; color: #2a2a2a; margin-top: 5px;
+    white-space: pre-line; overflow: hidden; text-overflow: clip;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  }
+  .sum.open { display: block; -webkit-line-clamp: unset; overflow: visible; }
+  .sum-tg {
+    font: inherit; font-size: 13px; color: var(--green); background: none; border: 0;
+    padding: 6px 0; min-height: 32px; cursor: pointer; text-decoration: underline;
+  }
+  .sum-tg.on { display: inline-block; }
+  .xline { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .xline.new { color: #24382f; font-size: 13px; }
+  .xline.src { font-size: 11.5px; }
+  .xline.src a { color: var(--muted); }
+  .meta { font-size: 11px; }
+  .meta .own { display: none; }
+  .corr, .status { padding: 8px 10px; margin-top: 8px; }
+  .empty { padding: 12px 0; }
+  .foot { padding: 6px 0 4px; }
+}
 </style>
 </head>
 <body>
@@ -182,6 +229,10 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
       <span class="sub" id="date-hint"></span>
     </div>
     <div class="filters" id="filters" aria-label="按栏目筛选"></div>
+    <div class="m-bar">
+      <label><span class="hidden">日期</span><select id="m-date" aria-label="选择日期"></select></label>
+      <label><span class="hidden">栏目</span><select id="m-col" aria-label="选择栏目"></select></label>
+    </div>
   </div>
   <div class="cols" id="cols"></div>
   <p class="page-foot">静态页，无跟踪、无外部脚本。同一链接只显示一次，标注「也见」栏目。投资与移民栏目仅供阅读，不构成建议。</p>
@@ -303,6 +354,19 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
     });
   }
   fillSelect();
+  // mobile: two native selects (date, column)
+  var mDate = document.getElementById("m-date"), mCol = document.getElementById("m-col");
+  allDates.forEach(function (d) {
+    var o = document.createElement("option");
+    o.value = d;
+    o.textContent = md(d) + (relName[d] ? " " + relName[d] : "") + (issueDates[d] ? "" : " 无刊");
+    mDate.appendChild(o);
+  });
+  ["all"].concat(bots.map(function (b) { return b.slug; })).forEach(function (s) {
+    var o = document.createElement("option"); o.value = s; mCol.appendChild(o);
+  });
+  mDate.addEventListener("change", function () { state.date = mDate.value; render(); window.scrollTo(0, 0); });
+  mCol.addEventListener("change", function () { state.slug = mCol.value; render(); window.scrollTo(0, 0); });
   sel.addEventListener("change", function () { state.date = sel.value; render(); });
   document.getElementById("prev-date").addEventListener("click", function () {
     var i = allDates.indexOf(state.date);
@@ -327,7 +391,18 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
     var it = e.item, row = el("article", "item");
     row.dataset.key = norm(it.url) || "";
     row.appendChild(it.url ? link(it.title, it.url, "title") : el("span", "title nolink", it.title));
-    if (e.summary) row.appendChild(el("div", e.owners.length > 1 ? "sum full" : "sum", e.summary));
+    if (e.summary) {
+      var sm = el("div", e.owners.length > 1 ? "sum full" : "sum", e.summary);
+      row.appendChild(sm);
+      var tg = el("button", "sum-tg", "展开");
+      tg.type = "button"; tg.setAttribute("aria-expanded", "false");
+      tg.addEventListener("click", function () {
+        var open = sm.classList.toggle("open");
+        tg.textContent = open ? "收起" : "展开";
+        tg.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      row.appendChild(tg);
+    }
     if (e.new_since) {
       var ns = el("div", "xline new"); ns.appendChild(el("b", "", "本次新增：")); ns.appendChild(document.createTextNode(e.new_since));
       row.appendChild(ns);
@@ -354,7 +429,7 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
     }
     var meta = el("div", "meta");
     if (it.label) meta.appendChild(el("span", "chip", it.label));
-    meta.appendChild(el("span", "", botBy[e.owner].column + " · " + e.date));
+    meta.appendChild(el("span", e.owner === colSlug ? "own" : "", botBy[e.owner].column + " · " + e.date));
     var others = e.owners.filter(function (s) { return s !== colSlug; }).map(function (s) { return botBy[s].column; });
     if (others.length) meta.appendChild(el("span", "chip also", (colSlug === e.owner ? "也见：" : "同见：") + others.join("、")));
     row.appendChild(meta);
@@ -363,7 +438,7 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
 
   function render() {
     var view = buildView(state.date);
-    sel.value = state.date;
+    sel.value = state.date; mDate.value = state.date; mCol.value = state.slug;
     var i = allDates.indexOf(state.date);
     document.getElementById("prev-date").disabled = i >= allDates.length - 1;
     document.getElementById("next-date").disabled = i <= 0;
@@ -381,6 +456,7 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
         label = bot.column + " " + n + (bot.weekly ? (is ? " · 周刊 " + md(is.date) : " · 周刊") : "");
       }
       b.textContent = label; b.dataset.count = n;
+      var mo = mCol.querySelector('option[value="' + s + '"]'); if (mo) { mo.textContent = label; mo.dataset.count = n; }
       b.setAttribute("aria-pressed", s === state.slug ? "true" : "false");
     });
 
@@ -415,6 +491,20 @@ label[for="date-pick"] { font-size: 13px; color: var(--muted); }
       cols.appendChild(col);
     });
   }
+  // mobile: show 展开/收起 only where the 3-line clamp actually hides text
+  var mq = window.matchMedia("(max-width: 700px)");
+  function measureClamps() {
+    Array.prototype.forEach.call(document.querySelectorAll("#cols .sum"), function (sm) {
+      var tg = sm.nextElementSibling;
+      if (!tg || !tg.classList.contains("sum-tg")) return;
+      if (!mq.matches) { tg.classList.remove("on"); return; }
+      var over = sm.classList.contains("open") || sm.scrollHeight > sm.clientHeight + 2;
+      tg.classList.toggle("on", over);
+    });
+  }
+  var baseRender = render;
+  render = function () { baseRender(); measureClamps(); };
+  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(measureClamps, 120); });
   render();
 })();
 </script>
