@@ -1,0 +1,88 @@
+{
+ "bot": "Go Global",
+ "date": "2026-11-24",
+ "status": "已检查 Reddit（官方 JSON 七个板块均 403；old.reddit RSS 不稳定，一次 200、补抓 403；改用 arctic-shift 分页 + WebFetch 核实原文）、Indie Hackers（列表页 curl 200，帖文 WebFetch）、Hacker News Algolia、X、Starter Story、Lenny’s Newsletter。SideProject 全量只覆盖到 11-22，11-17 至 11-22 缺口已用关键词补抓。本期 4 条；X 上未选入足够核实的实操复盘，Starter Story 近期文章无法确认日期，Lenny 窗口内无出海获客或定价案例。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "作者称 Mac 应用 Tapelark 首月 54 名客户、略超 €2,100：德语页约 30/365 人购买，英语页约 3/400",
+   "summary": "开发者 Victor（复盘博客署名 Victor A，ifun.de 写作 Victor Antofica）在 2026-11-19 的博客中写道：Tapelark 于 10 月 10 日上线，一次性买断、14 天试用；首月销售窗口为 10 月 12 日至 11 月 12 日，56 笔付款、54 名客户，合计略超 €2,100（含增值税，未扣支付手续费）。前 4 天 26 笔，其中 10 月 13 日一天 13 笔；作者称那天是德国苹果博客 ifun.de 发文之日（该文已打开，刊登日期为 2026-10-13）。作者按落地页手工对应销售：约 10 月 8–21 日，德语首页约 365 名访客、约 30 人购买；英语首页约 400 名访客、约 3 人购买。英国 Reddit 广告 3 天花 €134，88 次点击、1 次下载、0 销售。11 月 1–12 日只有 4 笔，作者称无法判断是因为 11 月 1 日首发价结束，还是介绍文章已过约一个月。上述销售与转化数字仅作者自报。",
+   "url": "https://victorantos.com/posts/tapelark-first-month/",
+   "label": "作者自报|已读原文",
+   "sources": [
+    {
+     "author": "Victor A",
+     "platform": "作者博客",
+     "published": "2026-11-19",
+     "url": "https://victorantos.com/posts/tapelark-first-month/"
+    },
+    {
+     "author": "tapelark（r/SideProject）",
+     "platform": "Reddit",
+     "published": "2026-11-20",
+     "url": "https://www.reddit.com/r/SideProject/comments/1y0hhn8/first_month_of_my_mac_app_54_customers_about_2100/"
+    },
+    {
+     "author": "Nicolas",
+     "platform": "ifun.de",
+     "published": "2026-10-13",
+     "url": "https://www.ifun.de/tapelark-neuer-audio-rekorder-fuer-musik-und-radio-am-mac-292457/"
+    }
+   ]
+  },
+  {
+   "title": "作者称英语口语课 Studify Today 在海湾和新加坡投 YouTube 广告 17 天：花 $785.36，24 次试听、0 笔销售",
+   "summary": "Pavel Slapovski 2026-11-22 在 Indie Hackers 写道，这是他为 Studify Today（和 AI 导师视频通话的英语口语课）做的第一轮 YouTube 广告的收尾。投放至 11 月 18 日、共 17 天，花费 $785.36，买到 474,994 次展示、4,435 次点击、24 次试听课、0 笔销售；单次试听约 $33，7 人上完 15 分钟并拿到级别，对应每人约 $112 广告花费。他选择阿联酋、卡塔尔、科威特、巴林、阿曼和新加坡；称阿曼展示最便宜但只带来 2 次试听，阿联酋展示贵约 3 倍却带来 10 次，新加坡千次展示 $10、几乎没量。广告类型为没有关键词的 Demand Gen（需求开发广告）；信息流位置 1,530 次点击、0 次试听。作者并列了三个自己也分不清的原因：定向过宽、地区需求不足、以及转化量还不够让出价模型稳定。他称即使上完课的人都买，单笔销售的广告成本也会高于第一笔付款。搜索广告称前三天单次试听低于 $4，但作者写明还太早、不能算数。上述数字仅作者自报。",
+   "url": "https://www.indiehackers.com/post/day-17-no-go-785-on-youtube-ads-24-trials-0-sales-YpJxicdqxrXfZVb6xEcs",
+   "label": "作者自报|已读原文",
+   "sources": [
+    {
+     "author": "Pavel Slapovski",
+     "platform": "Indie Hackers",
+     "published": "2026-11-22",
+     "url": "https://www.indiehackers.com/post/day-17-no-go-785-on-youtube-ads-24-trials-0-sales-YpJxicdqxrXfZVb6xEcs"
+    },
+    {
+     "author": "Studify Today",
+     "platform": "产品站",
+     "published": "",
+     "url": "https://studify.today/"
+    }
+   ]
+  },
+  {
+   "title": "HelpRange 作者称把试用从 3 天改到 7 天后，约 20 个新团队尚无付费；既有 8 名付费客户都在第 0–3 天付款（样本很小）",
+   "summary": "Wiktor 2026-11-22 在 Indie Hackers 写道，HelpRange 是做保密文档追踪链接和数据室的小型 B2B 工具，并写明数字很小，「当作信号，不是证明」。11 月 6–11 日为 3 天试用：约 35 个新团队，7 个付费；11 月 12–15 日改成 7 天试用：约 20 个新团队，发帖时仍 0 个付费。他核对全部 8 名付费客户，都在第 0–3 天付款。11 月 23 日起新注册改回 3 天，并预先设定终止条件：约 150 个新团队里至少 3 个付费，否则改回 7 天，12 月 20 日复查。他还发现部分试用用户在自己身上测试防护（约 13 个活跃试用用户里有 6 人），随后改为团队成员自己的浏览不计入限额，并增加「以读者身份预览」。上述数字仅作者自报。",
+   "url": "https://www.indiehackers.com/post/we-cut-our-free-trial-from-7-days-to-3-every-paying-customer-had-paid-within-3-days-anyway-XTUjvKXVEbzA5OPXcQWH",
+   "label": "作者自报|已读原文",
+   "sources": [
+    {
+     "author": "Wiktor",
+     "platform": "Indie Hackers",
+     "published": "2026-11-22",
+     "url": "https://www.indiehackers.com/post/we-cut-our-free-trial-from-7-days-to-3-every-paying-customer-had-paid-within-3-days-anyway-XTUjvKXVEbzA5OPXcQWH"
+    },
+    {
+     "author": "HelpRange",
+     "platform": "产品站",
+     "published": "",
+     "url": "https://www.helprange.com/"
+    }
+   ]
+  },
+  {
+   "title": "某文件分享 SaaS 作者称单日 86 个注册里有 34 个来自 ChatGPT/Perplexity 类回答，超过当日 Google 自然搜索",
+   "summary": "Reddit 用户 No-Career1273 在 2026-11-21 的帖子里自称做了一款文件分享小工具，大约 5 个月、约 5,000 名用户、$200 MRR（月经常性收入）、4 个买断用户。他称「昨天」86 个注册里有 34 个来自 ChatGPT/Perplexity 一类回答，多于 Google 自然搜索。他列出的做法包括：按用户要完成的任务建页而不是按功能建页；把答案放在开头两行；对比页写明竞品更好的地方；并称这些页面是先在 Google 有排名之后，才出现在 AI 回答里。没起作用的是免费计划（称几千名免费用户几乎没人升级）和到处发链接。这是单日来源切分，产品未具名，数字仅作者自报，不能外推为稳定超过 Google。",
+   "url": "https://www.reddit.com/r/SaaS/comments/1y1dgqe/ai_assistants_now_send_me_more_signups_than/",
+   "label": "作者自报|已读原文",
+   "sources": [
+    {
+     "author": "No-Career1273",
+     "platform": "Reddit",
+     "published": "2026-11-21",
+     "url": "https://www.reddit.com/r/SaaS/comments/1y1dgqe/ai_assistants_now_send_me_more_signups_than/"
+    }
+   ]
+  }
+ ]
+}
