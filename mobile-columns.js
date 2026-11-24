@@ -341,7 +341,7 @@
       .status, .corr { margin:8px 0; }
       .wrap .toolbar :focus-visible { outline:2px solid var(--accent); }
     }
-    .col .item.is-read .brief-detail:not([open]) > .brief-title {font-weight:500;color:var(--ink)}
+    .col .item.is-read .brief-detail:not([open]) > .brief-title {font-weight:500;color:#586b74}
     .source-bar {display:flex;align-items:baseline;gap:0 12px;flex-wrap:wrap;margin-top:4px;color:var(--muted);font-size:.86rem}
     .source-bar .primary-source {max-width:100%;overflow-wrap:anywhere;color:inherit;text-decoration:none;padding:4px 0}
     .source-bar button,.share-story {font:inherit;font-size:.86rem;color:var(--muted);background:none;border:0;cursor:pointer;padding:4px 0}
@@ -698,8 +698,7 @@
     const mark = {
       y: pane.scrollTop,
       anchor: anchor ? itemKey(anchor) : '',
-      offset: anchor ? anchor.getBoundingClientRect().top - top : 0,
-      open: items.filter(item => item.querySelector('details[open]')).map(itemKey)
+      offset: anchor ? anchor.getBoundingClientRect().top - top : 0
     };
     positions[viewKey] = mark;
     try {
@@ -713,11 +712,6 @@
     const mark = positions[viewKey];
     if (!mark) { pane.scrollTop = 0; return; }
     const items = [...feed.querySelectorAll('.item')];
-    const opened = new Set(mark.open);
-    for (const item of items) {
-      const detail = item.querySelector('details');
-      if (detail) detail.open = opened.has(itemKey(item));
-    }
     const anchor = items.find(item => itemKey(item) === mark.anchor);
     pane.scrollTop = anchor && mark.y > 0
       ? pane.scrollTop + anchor.getBoundingClientRect().top - pane.getBoundingClientRect().top - mark.offset
@@ -730,7 +724,19 @@
     saveTimer = setTimeout(savePosition, 180);
   }, { passive: true });
   window.addEventListener('pagehide', savePosition);
-  document.addEventListener('visibilitychange', () => { if (document.hidden) savePosition(); });
+  function collapseStories() {
+    for (const detail of feed.querySelectorAll('.brief-detail[open]')) {
+      markRead(detail.closest('.item'));
+      detail.open = false;
+    }
+  }
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) collapseStories();
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) savePosition();
+    else collapseStories();
+  });
 
   function groupProductPicks(col, issue) {
     const section = document.createElement('section');
