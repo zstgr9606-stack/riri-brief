@@ -268,6 +268,9 @@
     .col-h h2.name::before {width:.39em;height:.68em;vertical-align:0;margin-right:.38em}
     .swipe-hint {display:none}
     @media(max-width:700px) {
+      .col .col-h {column-gap:5px}
+      .col .col-h h2.name {font-size:clamp(1.25rem,5.65vw,1.55rem)}
+      .col .col-h .badge {padding-inline:0;white-space:nowrap;flex-shrink:0;font-size:.73rem}
       .wrap .toolbar .filters {gap:4px;padding:0 0 3px}
       .wrap .toolbar .filters button[data-slug] {min-height:40px;padding:0 9px;border-radius:8px}
       .wrap .toolbar .filters button[data-slug][aria-pressed=true] {
