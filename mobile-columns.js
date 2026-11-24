@@ -195,7 +195,7 @@
     .col .column-more, .weekly-shortcuts button { color:var(--ink); }
     .col .column-more { text-decoration:underline; text-underline-offset:3px; text-decoration-color:var(--rule); }
     @media (max-width:700px) {
-      .wrap .toolbar { padding-inline:16px; border-bottom:1px solid var(--line); }
+      .wrap .toolbar { padding-inline:16px; border-bottom:0; }
       .wrap .m-bar { min-height:47px; }
       .wrap .m-bar select { font-size:16px; width:auto; max-width:48vw; border:0; box-shadow:none; background:var(--bg); color:var(--ink); }
       .toolbar .filters { gap:18px; margin:0; border:0; }
@@ -204,27 +204,34 @@
       .reading-pane { background:var(--bg); padding-inline:16px; }
       .cols { margin-top:0; }
       .col { margin:24px 0 0; border:0; }
-      .col .col-h { padding:0 0 8px; min-height:36px; border-bottom:1px solid var(--rule); }
+      .col .col-h { padding:0 0 8px; min-height:36px; border:0; }
       .col-h .name { font-size:1.05rem; font-weight:700; }
       .col-h .badge { padding-right:0; font-size:.78rem; }
       .item .src { font-size:.86rem; }
-      .col .item { padding:13px 0; }
-      .col .column-more, .col .foot, .col .empty { padding-inline:0; }
+      .col .item { padding:14px 0; border:0; }
+      .col .column-more, .col .foot, .col .empty { padding-inline:0; border:0; }
       .col .brief-title { line-height:1.5; }
       .status, .corr { margin:8px 0; }
       .wrap .toolbar :focus-visible { outline:2px solid var(--accent); }
     }
     .source-bar {display:flex;align-items:baseline;gap:0 12px;flex-wrap:wrap;margin-top:4px;color:var(--muted);font-size:.86rem}
-    .source-bar .primary-source {max-width:100%;overflow-wrap:anywhere;color:inherit;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px;padding:4px 0}
+    .source-bar .primary-source {max-width:100%;overflow-wrap:anywhere;color:inherit;text-decoration:none;padding:4px 0}
     .source-bar button,.share-story {font:inherit;font-size:.86rem;color:var(--muted);background:none;border:0;cursor:pointer;padding:4px 0}
-    .share-story {display:inline-block;margin:7px 0 0;text-decoration:underline;text-underline-offset:3px}
+    .share-story {display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;
+      vertical-align:middle;text-decoration:none;border-radius:8px}
+    .share-story:hover,.share-story:focus-visible {color:var(--accent);background:var(--chip)}
+    .share-story svg {width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .share-feedback {font-size:.86rem;color:var(--muted)}
+    .source-bar .primary-source:hover,.source-bar .primary-source:focus-visible {text-decoration:underline}
     .brief-detail[open] + .source-bar {display:none}
     .share-address {width:100%;font:inherit}
-    .collection-status {margin:0;padding:4px 0;color:var(--muted);font-size:.86rem;border-bottom:1px solid var(--line)}
-    .collection-status summary {cursor:pointer;padding:6px 10px}
+    .collection-status,.correction-note {margin:0;padding:0;color:var(--muted);font-size:.86rem}
+    .collection-status summary,.correction-note summary {cursor:pointer;padding:8px 10px}
+    .correction-note .corr {line-height:1.6;background:transparent;border:0;padding:4px 10px;margin:0}
+    .correction-note .corr:last-child {padding-bottom:10px}
     .collection-status .status {margin:0 6px 6px;line-height:1.55}
     .item[id] {scroll-margin-top:10rem}
-    @media(max-width:700px) {.item[id]{scroll-margin-top:8px}.collection-status summary{padding-inline:0}}
+    @media(max-width:700px) {.item[id]{scroll-margin-top:8px}.collection-status summary,.correction-note summary,.correction-note .corr{padding-inline:0}}
   `;
   document.head.append(css);
 
@@ -314,7 +321,13 @@
     const link = document.createElement('a');
     link.className = 'share-story';
     link.href = url.href;
-    link.textContent = '分享这条';
+    link.setAttribute('aria-label', '分享这条');
+    link.title = '分享这条';
+    link.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 15V3m-4 4 4-4 4 4M7.5 10H5v11h14V10h-2.5"/></svg>';
+    const feedback = document.createElement('span');
+    feedback.className = 'share-feedback';
+    feedback.setAttribute('role', 'status');
+    let feedbackTimer;
     link.addEventListener('click', async event => {
       if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
@@ -324,8 +337,9 @@
       }
       try {
         await navigator.clipboard.writeText(url.href);
-        link.textContent = '链接已复制';
-        setTimeout(() => { link.textContent = '分享这条'; }, 2200);
+        feedback.textContent = '链接已复制';
+        clearTimeout(feedbackTimer);
+        feedbackTimer = setTimeout(() => { feedback.textContent = ''; }, 2200);
       } catch {
         let field = article.querySelector('.share-address');
         if (!field) {
@@ -340,7 +354,9 @@
         field.select();
       }
     });
-    return link;
+    const controls = document.createElement('div');
+    controls.append(link, feedback);
+    return controls;
   }
 
   function formatArticle(article, slug) {
@@ -374,6 +390,17 @@
       for (const match of part.matchAll(named)) names.add(match[0]);
     }
     return '部分来源受限' + (names.size ? ' · ' + [...names].join('、') : '');
+  }
+
+  function foldCorrections(col) {
+    const notes = [...col.querySelectorAll(':scope > .corr')];
+    if (!notes.length) return;
+    const details = document.createElement('details');
+    details.className = 'correction-note';
+    const label = document.createElement('summary');
+    label.textContent = notes.length === 1 ? '本期更正' : '本期更正（' + notes.length + ' 条）';
+    notes[0].before(details);
+    details.append(label, ...notes);
   }
 
   function foldStatus(col, note) {
@@ -492,6 +519,7 @@
         continue;
       }
       foldStatus(col, issue?.status);
+      foldCorrections(col);
       if (!issue && !all) col.querySelector('.state-missing').textContent = '待更新';
       const limit = all ? (order.slice(0, 2).includes(slug) ? 3 : 1) : articles.length;
       articles.forEach((item, index) => {
