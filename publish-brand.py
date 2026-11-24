@@ -55,6 +55,19 @@ html, titles = re.subn(r'<title>[^<]*</title>', "<title>" + name + " · " + shor
 html, headings = re.subn(r'<h1>[^<]*</h1>', "<h1>" + name + "</h1>", html, count=1)
 if not titles or not headings:
     raise ValueError("Missing masthead or document title")
+# Keep the publishing bot and archive URLs stable while updating its public name.
+def update_columns(match):
+    payload = json.loads(match[2])
+    for column in payload.get("bots", []):
+        if column["slug"] == "ai-tools":
+            column["column"] = "Product Radar"
+    data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
+    return match[1] + data + match[3]
+
+html, payload_count = re.subn(r'(<script id="payload" type="application/json">)(.*?)(</script>)',
+                              update_columns, html, count=1, flags=re.S)
+if not payload_count:
+    raise ValueError("Missing briefing payload")
 page.write_text(html, encoding="utf-8")
 
 

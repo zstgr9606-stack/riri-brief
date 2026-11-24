@@ -225,6 +225,10 @@
       vertical-align:middle;text-decoration:none;border-radius:8px}
     .share-story:hover,.share-story:focus-visible {color:var(--accent);background:var(--chip)}
     .share-story svg {width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .product-picks {margin:14px 0 4px}
+    .product-picks h3 {margin:0;padding:0 12px;font-size:1rem;color:var(--ink)}
+    .product-picks .empty {margin:4px 0 0;padding:0 12px;color:var(--muted);font-size:.875rem}
+    @media(max-width:700px){.product-picks h3,.product-picks .empty{padding-inline:0}}
     .share-feedback {font-size:.86rem;color:var(--muted)}
     .source-bar .primary-source:hover,.source-bar .primary-source:focus-visible {text-decoration:underline}
     .brief-detail[open] + .source-bar {display:none}
@@ -512,6 +516,26 @@
   window.addEventListener('pagehide', savePosition);
   document.addEventListener('visibilitychange', () => { if (document.hidden) savePosition(); });
 
+  function groupProductPicks(col, all) {
+    const picks = Array.from(col.querySelectorAll('.item')).filter(article => {
+      const label = article.querySelector('.meta .chip')?.textContent.trim() || '';
+      return /^AI 产品精选\s*·\s*(实际试用|独立实测)/.test(label);
+    });
+    if (all && !picks.length) return;
+    const section = document.createElement('section');
+    section.className = 'product-picks';
+    const heading = document.createElement('h3');
+    heading.textContent = 'AI 产品精选';
+    section.append(heading, ...picks);
+    if (!picks.length) {
+      const empty = document.createElement('p');
+      empty.className = 'empty';
+      empty.textContent = '本期未收录经过实测的产品。';
+      section.append(empty);
+    }
+    col.insertBefore(section, col.querySelector('.foot'));
+  }
+
   function render() {
     observer.disconnect();
     for (const button of filters.querySelectorAll('button[data-slug]')) {
@@ -570,6 +594,7 @@
         if (index < limit) formatArticle(item, slug, issue?.date || date.value);
         else item.remove();
       });
+      if (slug === 'ai-news' && issue) groupProductPicks(col, all);
       if (all && count) {
         col.querySelector('.foot')?.remove();
         col.append(action('查看全部 ' + count + ' 条', 'column-more', slug));
