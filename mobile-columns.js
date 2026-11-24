@@ -25,6 +25,9 @@
   style.textContent = `
     .reading-pane { display: contents; }
     .mobile-masthead { display: none; }
+    @media (min-width: 701px) {
+      .wrap > header.top .sub, .toolbar #rel-row { display: none; }
+    }
     @media (max-width: 700px) {
       .wrap {
         display: flex; flex-direction: column; height: 100vh; height: 100dvh;
