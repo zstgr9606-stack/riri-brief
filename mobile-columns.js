@@ -150,23 +150,15 @@
   }
   const intro = document.querySelector('.top .sub');
   if (intro) intro.textContent = '公开版 · 点标题读摘要，点来源看原文 · 北京时间';
-  const shortcuts = document.createElement('div');
-  shortcuts.className = 'weekly-shortcuts';
   const phone = matchMedia('(max-width: 700px)');
-  function placeShortcuts() {
-    if (phone.matches) feed.before(shortcuts);
-    else filters.before(shortcuts);
-  }
-  placeShortcuts();
-  phone.addEventListener('change', placeShortcuts);
   const css = document.createElement('style');
   css.textContent = `
-    .weekly-shortcuts:empty {display:none}
-    .weekly-shortcuts {display:flex;flex-wrap:wrap;gap:4px 12px;margin:4px 0}
-    .weekly-shortcuts button,.column-more {color:var(--green);background:none;border:0;font:inherit;font-size:.875rem;cursor:pointer}
-    .weekly-shortcuts button {text-decoration:underline;text-underline-offset:3px;padding:6px 0}
-    .col-h .name {display:flex;align-items:baseline;gap:.55em}
-    .col-h small {font-size:.85rem;font-weight:500}
+    .column-more {color:var(--ink);background:none;border:0;font:inherit;font-size:.875rem;cursor:pointer}
+    .col-h .name {
+      margin:0; color:var(--accent); font-family:Georgia,'Times New Roman',serif;
+      font-size:clamp(1.55rem,2.8vw,1.85rem); font-weight:700;
+      line-height:1.12; letter-spacing:-.035em; overflow-wrap:break-word;
+    }
     .col .column-more {display:block;padding:10px 12px;min-height:44px;font-weight:600}
     .col .brief-state {margin-left:auto;font-size:.875rem;font-weight:500}
     .col .brief-title {display:block;position:relative;padding-right:1.2em;cursor:pointer;list-style:none;overflow-wrap:anywhere}
@@ -192,14 +184,12 @@
     .col { background:var(--bg); border:1px solid var(--line); border-radius:0; }
     .col .col-h { background:var(--bg); color:var(--ink); border:0; border-bottom:1px solid var(--line); }
     .col-h .badge { background:transparent; color:var(--muted); }
-    .col-h small { color:var(--muted); }
     .col .brief-title { color:var(--ink); font-weight:600; }
     .item .src, .item .src b, .item .src a { color:var(--muted); font-weight:400; }
     .item .src a { text-decoration-color:var(--rule); }
     .status, .corr, .chip, .chip.also { background:var(--chip); color:var(--ink); }
     .status, .corr { border-left-color:var(--rule); }
     .xline.new, .brief-detail .sum { color:var(--ink); }
-    .col .column-more, .weekly-shortcuts button { color:var(--ink); }
     .col .column-more { text-decoration:underline; text-underline-offset:3px; text-decoration-color:var(--rule); }
     @media (max-width:700px) {
       .wrap .toolbar { padding-inline:16px; border-bottom:0; }
@@ -212,7 +202,7 @@
       .cols { margin-top:0; }
       .col { margin:24px 0 0; border:0; }
       .col .col-h { padding:0 0 8px; min-height:36px; border:0; }
-      .col-h .name { font-size:1.05rem; font-weight:700; }
+      .col-h .name { font-size:clamp(1.55rem,6.4vw,1.75rem); }
       .col-h .badge { padding-right:0; font-size:.78rem; }
       .wrap .mobile-masthead {letter-spacing:-.015em;text-shadow:none}
       .item .src { font-size:.86rem; }
@@ -552,7 +542,6 @@
     }
     const all = filters.querySelector('[aria-pressed="true"]')?.dataset.slug === 'all';
     sortChildren(feed);
-    shortcuts.replaceChildren();
     for (const col of feed.children) {
       const slug = col.dataset.slug;
       const head = col.querySelector('.col-h');
@@ -564,14 +553,10 @@
       const badge = head.querySelector('.badge');
       if (schedule && badge) badge.textContent = schedule + (issue ? ' · ' + issue.date.slice(5) : '');
       const articles = Array.from(col.querySelectorAll('.item'));
-      const text = document.createElement('small');
-      text.textContent = count + ' 条';
-      const label = name.textContent;
-      name.className = 'name';
-      if (count) name.append(text);
-      if (all && isWeekly && issue?.date === date.value) {
-        shortcuts.append(action(label + ' 已更新 · ' + count + ' 条', '', slug));
-      }
+      const title = document.createElement('h2');
+      title.className = 'name';
+      title.textContent = columnNames.get(slug) || name.textContent;
+      name.replaceWith(title);
       if (all && (count === 0 || (isWeekly && issue?.date !== date.value))) {
         const state = document.createElement('span');
         state.className = 'brief-state';
