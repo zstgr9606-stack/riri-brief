@@ -17,18 +17,7 @@
   pane.append(content);
   const footer = wrap.querySelector('.page-foot');
   if (footer) pane.append(footer);
-  const siteName = wrap.querySelector('.top h1').textContent.trim();
-  document.title = siteName;
-  wrap.querySelector('.top h1').textContent = siteName;
-  for (const [name, value] of [['theme-color', '#11493e'], ['apple-mobile-web-app-title', siteName]]) {
-    let meta = document.querySelector('meta[name="' + name + '"]');
-    if (!meta) {
-      meta = document.createElement('meta');
-      meta.name = name;
-      document.head.append(meta);
-    }
-    meta.content = value;
-  }
+  if (navigator.standalone) document.documentElement.classList.add('home-screen');
   const title = wrap.querySelector('.top h1').cloneNode(true);
   title.className = 'mobile-masthead';
   dateBar.prepend(title);
@@ -395,5 +384,6 @@
   const observer = new MutationObserver(render);
   render();
 })();
+
 
 
