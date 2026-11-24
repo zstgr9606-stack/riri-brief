@@ -271,10 +271,10 @@
       .col .col-h h2.name {font-size:clamp(1.25rem,5.65vw,1.55rem)}
       .col .col-h .badge {padding-inline:0;white-space:nowrap;flex-shrink:0;font-size:.73rem}
       .wrap #filters {
-        display:grid; grid-auto-flow:column; grid-auto-columns:minmax(max-content,25%);
+        display:grid; grid-auto-flow:column; grid-auto-columns:max(25%,92px);
         width:calc(100% + 32px); max-width:none; margin:0 -16px; scrollbar-width:none;
       }
-      .wrap #filters button[data-slug] {font-size:15px;padding:0 8px}
+      .wrap #filters button[data-slug] {font-size:15px;min-width:0;padding:0 2px}
       .reading-pane {overflow-x:hidden}
       .swipe-outgoing {position:fixed;z-index:4;pointer-events:none;box-sizing:border-box;overflow:hidden}
       .swipe-hint:not([hidden]) {display:block;position:fixed;left:0;z-index:2;pointer-events:none;
