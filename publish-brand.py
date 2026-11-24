@@ -8,6 +8,7 @@ import sys
 site = Path(sys.argv[1])
 page = site / "index.html"
 html = page.read_text(encoding="utf-8")
+html = re.sub(r'<p class="page-foot">[^<]*</p>', "", html)
 
 name = "ShaoYao Daily"
 short_name = "芍药日报"
