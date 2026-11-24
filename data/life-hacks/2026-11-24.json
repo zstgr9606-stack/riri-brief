@@ -1,12 +1,12 @@
 {
  "bot": "Life Hacks",
  "date": "2026-11-24",
- "status": "已检查 8 个 Reddit 生活版块和 HN；Reddit 官方接口 403、RSS 404/429，已改用 arctic-shift 读取；HN 无生活技巧帖。",
+ "status": "复检 8 个 Reddit 生活版块、HN 和 YouTube 今日上传搜索；Reddit 官方接口仍 403、RSS 429，已改用 arctic-shift（Cooking 一度 422 超时，稍后重试成功并翻页）。HN 无生活技巧帖；YouTube 多为合集，未收录。今早 CleaningTips 窗口内超过 100 条未翻页，补入发梳清洁一条。",
  "corrections": [],
  "items": [
   {
    "title": "不锈钢锅烧糊的油垢：用 Bar Keepers Friend 调糊擦，别上钢丝球和烤箱清洁剂",
-   "summary": "r/CleaningTips 楼主的不锈钢锅烧糊，泡水、小苏打煮都无效。热评多推 Bar Keepers Friend（草酸类去污粉）配海绵擦，也有人推钢丝球、烤箱清洁剂并争论伤不伤锅。All-Clad 官方保养页写明：烧焦残留先用小苏打加水煮开，仍去不掉可用 Bar Keeper's Friend 等非研磨、不含氯的清洁剂调糊擦，不要用烤箱清洁剂、钢丝球和钢制百洁布。不粘锅、涂层锅不适用。",
+   "summary": "r/CleaningTips 楼主的不锈钢锅烧糊，泡水、小苏打煮都无效。热评多推 Bar Keepers Friend（草酸类去污粉）配海绵擦，也有人推钢丝球、烤箱清洁剂并争论伤不伤锅。All-Clad 官方保养页写明：烧焦残留先用小苏打加水煮开，仍去不掉可用 Bar Keeper's Friend 等非研磨、不含氯的清洁剂调糊擦，不要用烤箱清洁剂、钢丝球和钢制百洁布。不粘锅、涂层锅不适用。复检时该页表述未变。",
    "url": "https://www.reddit.com/r/CleaningTips/comments/1y32r98/any_thoughts_on_how_to_get_rid_of_this_burnt_in/",
    "label": "网友经验",
    "sources": [
@@ -35,6 +35,32 @@
      "platform": "Reddit",
      "published": "2026-11-23",
      "url": "https://www.reddit.com/r/HomeImprovement/comments/1y3avu8/how_do_you_stop_dining_room_chairs_from_creating/"
+    }
+   ]
+  },
+  {
+   "title": "发梳积垢不必扔掉：剔净头发后用温水加洗发液刷净晾干",
+   "summary": "r/CleaningTips 楼主因气垫圆珠梳每隔几个月积满白色垢（发胶、皮脂、灰尘）就丢掉重买。热评指圆珠头易攒垢，可换无圆珠刷；或用热水加洗发液浸泡约 30 分钟再冲洗，也有人用旧牙刷刷齿缝后晾干，或放进洗碗机（有人反对，担心头发堵住排水）。Wet Brush 官方说明：先用梳子去掉头发，在温水加中性洗涤剂中浸搅约 3 分钟，必要时用小牙刷刷缝，甩干后刷毛朝下晾干。Tangle Teezer 官方说明：去掉头发后，用温肥皂水和牙刷刷齿缝与底座，冲净后齿朝上自然晾干，原款不要用吹风机。木柄或气垫梳不宜长时间整把浸泡。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y3v10q/how_to_keep_a_hairbrush_clean/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主及热评",
+     "platform": "Reddit",
+     "published": "2026-11-24",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y3v10q/how_to_keep_a_hairbrush_clean/"
+    },
+    {
+     "author": "Wet Brush",
+     "platform": "官方清洁说明",
+     "published": "",
+     "url": "https://wetbrushbbi-jjwk8jpw0eg.gorgias.help/en-US/how-do-i-clean-my-brush-249165"
+    },
+    {
+     "author": "Tangle Teezer",
+     "platform": "官方清洁说明",
+     "published": "",
+     "url": "https://tangleteezer.com/blogs/inspiration/how-to-clean-your-tangle-teezer-products"
     }
    ]
   }
