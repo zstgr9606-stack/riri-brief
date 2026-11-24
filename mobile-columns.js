@@ -27,7 +27,7 @@
   const editionNav = document.createElement('div');
   editionNav.className = 'edition-nav';
   editionNav.append(document.getElementById('prev-date'), desktopDate, document.getElementById('next-date'));
-  masthead.append(editionNav);
+  masthead.prepend(editionNav);
   const title = masthead.querySelector('h1').cloneNode(true);
   title.className = 'mobile-masthead';
   dateBar.prepend(title);
@@ -37,7 +37,7 @@
     .mobile-masthead { display: none; }
     .toolbar .row[hidden] { display: none; }
     @media (min-width: 701px) {
-      .wrap > header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .wrap > header.top { display: flex; align-items: center; justify-content: flex-start; gap: 20px; }
       .edition-nav { display: flex; align-items: center; gap: 4px; }
       .edition-nav .nav-btn { background: transparent; color: var(--ink); border: 0; font-size: 20px; }
       .edition-nav .nav-btn:enabled:hover { background: var(--chip); }
