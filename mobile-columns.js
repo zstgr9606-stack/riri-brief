@@ -24,7 +24,10 @@
   for (const option of desktopDate.options) {
     option.textContent = option.textContent.replace(/ (?:今天|昨天|前天)/, '');
   }
-  masthead.append(desktopDate);
+  const editionNav = document.createElement('div');
+  editionNav.className = 'edition-nav';
+  editionNav.append(document.getElementById('prev-date'), desktopDate, document.getElementById('next-date'));
+  masthead.append(editionNav);
   const title = masthead.querySelector('h1').cloneNode(true);
   title.className = 'mobile-masthead';
   dateBar.prepend(title);
@@ -35,6 +38,9 @@
     .toolbar .row[hidden] { display: none; }
     @media (min-width: 701px) {
       .wrap > header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .edition-nav { display: flex; align-items: center; gap: 4px; }
+      .edition-nav .nav-btn { background: transparent; color: var(--ink); border: 0; font-size: 20px; }
+      .edition-nav .nav-btn:enabled:hover { background: var(--chip); }
       header.top #date-select { min-width: 0; padding: 4px 6px; background: transparent; color: var(--ink); border: 0; cursor: pointer; font-variant-numeric: tabular-nums; }
       .wrap > header.top .sub, .toolbar #rel-row { display: none; }
     }
