@@ -125,6 +125,8 @@
     'life-hacks', 'ai-tools', 'go-global', 'immigration'];
   const rank = slug => slug === 'all' ? -1 : (order.includes(slug) ? order.indexOf(slug) : order.length);
   const { issues, bots } = JSON.parse(payload.textContent);
+  const columnNames = new Map(bots.map(bot => [bot.slug, bot.column]));
+  columnNames.set('all', '全部');
   const weekly = new Set(bots.filter(bot => bot.weekly).map(bot => bot.slug));
   const latest = (slug, day) => issues.filter(issue => issue.slug === slug &&
     (weekly.has(slug) ? issue.date <= day : issue.date === day))
@@ -477,6 +479,13 @@
 
   function render() {
     observer.disconnect();
+    for (const button of filters.querySelectorAll('button[data-slug]')) {
+      const label = columnNames.get(button.dataset.slug);
+      if (label) button.textContent = label;
+    }
+    if (phone.matches) {
+      filters.querySelector('[aria-pressed="true"]')?.scrollIntoView({block:'nearest', inline:'nearest'});
+    }
     const all = filters.querySelector('[aria-pressed="true"]')?.dataset.slug === 'all';
     sortChildren(feed);
     shortcuts.replaceChildren();
