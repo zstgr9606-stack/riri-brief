@@ -18,14 +18,24 @@
   const footer = wrap.querySelector('.page-foot');
   if (footer) pane.append(footer);
   if (navigator.standalone) document.documentElement.classList.add('home-screen');
-  const title = wrap.querySelector('.top h1').cloneNode(true);
+  const masthead = wrap.querySelector('header.top');
+  const desktopDate = document.getElementById('date-select');
+  desktopDate.closest('.row').hidden = true;
+  for (const option of desktopDate.options) {
+    option.textContent = option.textContent.replace(/ (?:今天|昨天|前天)/, '');
+  }
+  masthead.append(desktopDate);
+  const title = masthead.querySelector('h1').cloneNode(true);
   title.className = 'mobile-masthead';
   dateBar.prepend(title);
   const style = document.createElement('style');
   style.textContent = `
     .reading-pane { display: contents; }
     .mobile-masthead { display: none; }
+    .toolbar .row[hidden] { display: none; }
     @media (min-width: 701px) {
+      .wrap > header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      header.top #date-select { min-width: 0; padding: 4px 6px; background: transparent; color: var(--ink); border: 0; cursor: pointer; font-variant-numeric: tabular-nums; }
       .wrap > header.top .sub, .toolbar #rel-row { display: none; }
     }
     @media (max-width: 700px) {
