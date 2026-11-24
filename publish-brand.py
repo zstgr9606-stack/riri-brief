@@ -1,5 +1,6 @@
 """Apply the publication identity after each bot generates its daily HTML."""
 from pathlib import Path
+from shutil import copyfile
 import json
 import re
 import sys
@@ -10,21 +11,36 @@ html = page.read_text(encoding="utf-8")
 
 name = "ShaoYao Daily"
 short_name = "芍药日报"
+for size in (180, 512):
+    icon = f"sy-monogram-{size}.png"
+    copyfile(Path(__file__).with_name(icon), site / icon)
 manifest = {"id": "./", "start_url": "./", "scope": "./", "display": "standalone",
             "name": name + " · " + short_name, "short_name": short_name, "lang": "zh-CN",
-            "theme_color": "#11493e", "background_color": "#11493e"}
+            "theme_color": "#460c25", "background_color": "#460c25",
+            "icons": [{"src": "./sy-monogram-512.png", "sizes": "512x512", "type": "image/png"}]}
 (site / "site.webmanifest").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
 head = f"""
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#11493e">
+<meta name="theme-color" content="#460c25">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="{short_name}">
+<link rel="apple-touch-icon" sizes="180x180" href="./sy-monogram-180.png">
+<link rel="icon" type="image/png" href="./sy-monogram-180.png">
 <link rel="manifest" href="./site.webmanifest">
 <style>
+.top h1::before, .mobile-masthead::before {{
+  content:""; display:inline-block; vertical-align:-.1em; width:.94em; height:.94em;
+  margin-right:.24em; border-radius:20%; background:#460c25 url('./sy-monogram-180.png') center/cover;
+}}
+html body .top h1 {{color:#460c25}}
+
 @media (max-width:700px) {{
   html .wrap .mobile-masthead {{font-size:clamp(1.35rem,6.2vw,1.8rem);white-space:nowrap}}
   .wrap .m-bar {{gap:.35rem}}
+  html body .wrap, html body .wrap .toolbar, html body .wrap .m-bar select {{background:#460c25}}
+  html body .wrap .mobile-masthead, html body .wrap .toolbar .filters button {{color:#fff4e5}}
+  html body .toolbar .filters button[aria-pressed="true"] {{box-shadow:inset 0 -3px #ebcdac}}
   html .wrap .toolbar {{padding-top:8px}}
   html.home-screen .wrap .toolbar {{padding-top:36px}}
   html.home-screen .wrap {{padding-top:env(safe-area-inset-top,0px)}}
