@@ -11,28 +11,27 @@ html = page.read_text(encoding="utf-8")
 html = re.sub(r'<p class="page-foot">[^<]*</p>', "", html)
 
 name = "ShaoYao Daily"
-short_name = "芍药日报"
 for size in (180, 512):
-    icon = f"sy-monogram-{size}.png"
+    icon = f"sy-navy-{size}.png"
     copyfile(Path(__file__).with_name(icon), site / icon)
 manifest = {"id": "./", "start_url": "./", "scope": "./", "display": "standalone",
-            "name": name + " · " + short_name, "short_name": short_name, "lang": "zh-CN",
+            "name": name, "short_name": name, "lang": "zh-CN",
             "theme_color": "#fbfaf7", "background_color": "#fbfaf7",
-            "icons": [{"src": "./sy-monogram-512.png", "sizes": "512x512", "type": "image/png"}]}
+            "icons": [{"src": "./sy-navy-512.png", "sizes": "512x512", "type": "image/png"}]}
 (site / "site.webmanifest").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
 head = f"""
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#fbfaf7">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="{short_name}">
-<link rel="apple-touch-icon" sizes="180x180" href="./sy-monogram-180.png">
-<link rel="icon" type="image/png" href="./sy-monogram-180.png">
-<link rel="manifest" href="./site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="{name}">
+<link rel="apple-touch-icon" sizes="180x180" href="./sy-navy-180.png">
+<link rel="icon" type="image/png" href="./sy-navy-180.png">
+<link rel="manifest" href="./site.webmanifest?v=navy">
 <style>
 .top h1::before, .mobile-masthead::before {{
   content:""; display:inline-block; vertical-align:-.1em; width:.94em; height:.94em;
-  margin-right:.24em; border-radius:20%; background:#294966 url('./sy-monogram-180.png') center/cover; background-blend-mode:luminosity;
+  margin-right:.24em; border-radius:20%; background:#214c63 url('./sy-navy-180.png') center/cover;
 }}
 html:root {{
   color-scheme:light; --bg:#fbfaf7; --ink:#233344; --muted:#586572; --line:#dfe3e4;
@@ -52,7 +51,7 @@ html body, html body .wrap {{background:var(--bg); color:var(--ink)}}
 html, count = re.subn(r'<meta name="viewport"[^>]*>', lambda _: head, html, count=1)
 if not count:
     raise ValueError("Viewport metadata missing in generated page")
-html, titles = re.subn(r'<title>[^<]*</title>', "<title>" + name + " · " + short_name + "</title>", html, count=1)
+html, titles = re.subn(r'<title>[^<]*</title>', "<title>" + name + "</title>", html, count=1)
 html, headings = re.subn(r'<h1>[^<]*</h1>', "<h1>" + name + "</h1>", html, count=1)
 if not titles or not headings:
     raise ValueError("Missing masthead or document title")
