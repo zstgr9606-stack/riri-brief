@@ -27,9 +27,12 @@
   const formatDate = new Intl.DateTimeFormat('en-US', {
     year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'
   });
+  const currentYear = document.querySelector('#rel-row button[data-date]')?.dataset.date.slice(0, 4);
+  const shortDate = new Intl.DateTimeFormat('en-US', {month: 'short', day: 'numeric', timeZone: 'UTC'});
   for (const picker of [desktopDate, mobileDate]) {
     for (const option of picker.options) {
-      const calendarDate = formatDate.format(new Date(option.value + 'T00:00:00Z'));
+      const sameYearOnPhone = picker === mobileDate && option.value.slice(0, 4) === currentYear;
+      const calendarDate = (sameYearOnPhone ? shortDate : formatDate).format(new Date(option.value + 'T00:00:00Z'));
       const relative = relativeDays.get(option.value);
       const noIssue = option.textContent.includes('无刊');
       option.dataset.calendarDate = calendarDate;
@@ -53,7 +56,15 @@
   new MutationObserver(syncCaption).observe(content, {childList:true});
   const editionNav = document.createElement('div');
   editionNav.className = 'edition-nav';
-  editionNav.append(document.getElementById('prev-date'), desktopDate, document.getElementById('next-date'));
+  const picker = document.createElement('span');
+  picker.className = 'edition-picker';
+  const icon = document.createElement('span');
+  icon.className = 'edition-calendar';
+  icon.setAttribute('aria-hidden', 'true');
+  icon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="15.5" rx="2.6"/><path d="M7.5 3v5M16.5 3v5M4 10.5h16"/></svg>';
+  caption.prepend(icon.cloneNode(true));
+  picker.append(icon, desktopDate);
+  editionNav.append(document.getElementById('prev-date'), picker, document.getElementById('next-date'));
   masthead.append(editionNav);
   const title = masthead.querySelector('h1').cloneNode(true);
   title.className = 'mobile-masthead';
@@ -62,13 +73,24 @@
   style.textContent = `
     .reading-pane { display: contents; }
     .mobile-masthead { display: none; }
+    .edition-calendar { display:inline-flex; align-items:center; color:var(--muted); pointer-events:none; }
+    .edition-calendar svg { display:block; width:16px; height:16px; }
     .toolbar .row[hidden] { display: none; }
     @media (min-width: 701px) {
       .wrap > header.top { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-      .edition-nav { display: flex; align-items: center; gap: 4px; }
-      .edition-nav .nav-btn { background: transparent; color: var(--ink); border: 0; font-size: 20px; }
-      .edition-nav .nav-btn:enabled:hover { background: var(--chip); }
-      header.top #date-select { field-sizing: content; min-width: 0; padding: 4px 6px; background: transparent; color: var(--ink); border: 0; cursor: pointer; font-variant-numeric: tabular-nums; }
+      .edition-nav { display:flex; align-items:center; gap:7px; }
+      .edition-picker { position:relative; display:flex; align-items:center; border-radius:5px; }
+      .edition-picker .edition-calendar { position:absolute; left:7px; }
+      header.top #date-select { appearance:none; -webkit-appearance:none; field-sizing:content; min-width:0; height:36px;
+        padding:0 6px 0 30px; background:transparent; color:var(--ink); border:0; cursor:pointer; font-variant-numeric:tabular-nums; }
+      .edition-nav .nav-btn { display:grid; place-items:center; width:32px; height:32px; min-width:32px; padding:0;
+        border:1px solid var(--line); border-radius:50%; background:transparent; color:var(--ink); font-size:0; }
+      .edition-nav .nav-btn::before { content:''; box-sizing:border-box; width:7px; height:7px;
+        border:solid currentColor; border-width:1.5px 1.5px 0 0; transform:translateX(-1px) rotate(45deg); }
+      .edition-nav #prev-date::before { transform:translateX(1px) rotate(-135deg); }
+      .edition-nav .nav-btn:disabled { opacity:.42; cursor:default; }
+      .edition-nav .nav-btn:enabled:hover, .edition-picker:hover { background:var(--chip); }
+      .edition-nav :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
       .wrap > header.top .sub, .toolbar #rel-row { display: none; }
     }
     @media (max-width: 700px) {
@@ -370,12 +392,12 @@
       .wrap .toolbar { padding-inline:16px; border-bottom:0; }
       .wrap .m-bar { min-height:47px; }
       .wrap .m-bar label:has(#m-date) { position:relative; display:grid; align-content:center; min-height:44px; }
-      .edition-caption { display:grid; position:relative; padding-inline-end:15px; text-align:right;
+      .edition-caption { display:grid; position:relative; padding-inline-start:20px; text-align:right;
         color:var(--ink); font-size:14px; font-weight:600; line-height:1.3; }
       .edition-caption small { font-size:12px; font-weight:500; color:var(--muted); }
       .edition-caption small:empty { display:none; }
-      .edition-caption::after { content:''; position:absolute; right:2px; top:calc(50% - 4px);
-        width:5px; height:5px; border:solid currentColor; border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
+      .edition-caption .edition-calendar { position:absolute; left:0; top:0.12em; }
+      .edition-caption .edition-calendar svg {width:14px; height:14px;}
       .wrap .m-bar #m-date { position:absolute; inset:0; opacity:0; width:100%; height:100%; max-width:none; }
       .m-bar label:has(#m-date:focus-visible) { outline:2px solid var(--accent); outline-offset:2px; }
       @media (max-width:360px) { .wrap .toolbar .mobile-masthead {font-size:1.15rem} }
