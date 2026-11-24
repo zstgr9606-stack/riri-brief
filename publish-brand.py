@@ -17,12 +17,12 @@ for size in (180, 512):
     copyfile(Path(__file__).with_name(icon), site / icon)
 manifest = {"id": "./", "start_url": "./", "scope": "./", "display": "standalone",
             "name": name + " · " + short_name, "short_name": short_name, "lang": "zh-CN",
-            "theme_color": "#faf9f6", "background_color": "#faf9f6",
+            "theme_color": "#fbfaf7", "background_color": "#fbfaf7",
             "icons": [{"src": "./sy-monogram-512.png", "sizes": "512x512", "type": "image/png"}]}
 (site / "site.webmanifest").write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
 head = f"""
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#faf9f6">
+<meta name="theme-color" content="#fbfaf7">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="{short_name}">
@@ -32,11 +32,11 @@ head = f"""
 <style>
 .top h1::before, .mobile-masthead::before {{
   content:""; display:inline-block; vertical-align:-.1em; width:.94em; height:.94em;
-  margin-right:.24em; border-radius:20%; background:#460c25 url('./sy-monogram-180.png') center/cover;
+  margin-right:.24em; border-radius:20%; background:#294966 url('./sy-monogram-180.png') center/cover; background-blend-mode:luminosity;
 }}
 html:root {{
-  color-scheme:light; --bg:#faf9f6; --ink:#252321; --muted:#625e59; --line:#e4e0da;
-  --rule:#b8b1aa; --chip:#efede8; --accent:#651c35;
+  color-scheme:light; --bg:#fbfaf7; --ink:#233344; --muted:#586572; --line:#dfe3e4;
+  --rule:#abb4b8; --chip:#edf0ee; --accent:#294966;
   --green:var(--ink); --green-2:var(--rule); --warn:var(--chip); --warn-bar:var(--rule);
   background:var(--bg);
 }}

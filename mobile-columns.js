@@ -81,36 +81,119 @@
   document.getElementById('m-date').addEventListener('change', revealSelection);
   revealSelection();
 
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const hint = document.createElement('div');
+  hint.className = 'swipe-hint';
+  hint.setAttribute('aria-hidden', 'true');
+  hint.hidden = true;
+  wrap.append(hint);
   let start = null;
-  pane.addEventListener('touchstart', event => {
+  let motion = null;
+  let outgoing = null;
+
+  function stopMotion() {
+    motion?.cancel();
+    motion = null;
+    outgoing?.remove();
+    outgoing = null;
+  }
+
+  function clearDrag() {
     start = null;
+    hint.hidden = true;
+    content.style.removeProperty('transform');
+  }
+
+  function neighbor(dx) {
+    const current = activeButton();
+    if (!current) return null;
+    return dx > 0 ? current.previousElementSibling || rail.lastElementChild
+                  : current.nextElementSibling || rail.firstElementChild;
+  }
+
+  function snapBack() {
+    const dx = start?.offset || 0;
+    clearDrag();
+    if (dx && !reduceMotion.matches) {
+      motion = content.animate([{transform:'translateX(' + dx + 'px)'}, {transform:'none'}],
+        {duration:150, easing:'ease-out'});
+    }
+  }
+
+  pane.addEventListener('touchstart', event => {
+    stopMotion();
+    clearDrag();
     if (!mobile.matches || event.touches.length !== 1 || window.getSelection()?.toString()) return;
-    const touch = event.touches[0];
-    if (touch.clientX < 22 || touch.clientX > document.documentElement.clientWidth - 22) return;
-    start = { x: touch.clientX, y: touch.clientY };
-  }, { passive: true });
+    const t = event.touches[0];
+    const width = pane.clientWidth;
+    if (t.clientX < 22 || t.clientX > width - 22) return;
+    start = {x:t.clientX, y:t.clientY, width, offset:0, horizontal:false};
+  }, {passive:true});
+
   pane.addEventListener('touchmove', event => {
     if (!start) return;
-    const touch = event.touches[0];
-    if (event.touches.length !== 1 || Math.abs(touch.clientY - start.y) >
-        Math.max(16, Math.abs(touch.clientX - start.x))) start = null;
-  }, { passive: true });
-  pane.addEventListener('touchcancel', () => { start = null; });
-  pane.addEventListener('touchend', event => {
-    const origin = start;
-    start = null;
-    if (!origin || event.touches.length || !event.changedTouches.length || window.getSelection()?.toString()) return;
-    const touch = event.changedTouches[0];
-    const dx = touch.clientX - origin.x;
-    const dy = touch.clientY - origin.y;
-    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
-    const selected = activeButton();
-    if (!selected) return;
-    const next = dx < 0 ? selected.nextElementSibling || rail.firstElementChild
-                        : selected.previousElementSibling || rail.lastElementChild;
+    if (event.touches.length !== 1 || window.getSelection()?.toString()) { snapBack(); return; }
+    const t = event.touches[0];
+    const dx = t.clientX - start.x, dy = t.clientY - start.y;
+    if (!start.horizontal) {
+      if (Math.abs(dy) > 9 && Math.abs(dy) >= Math.abs(dx)) { clearDrag(); return; }
+      if (Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      start.horizontal = true;
+    }
     if (event.cancelable) event.preventDefault();
+    if (reduceMotion.matches) return;
+    start.offset = Math.sign(dx) * Math.min(Math.abs(dx), start.width * .78);
+    content.style.transform = 'translateX(' + start.offset + 'px)';
+    const next = neighbor(dx);
+    if (!next) return;
+    hint.dataset.slug = next.dataset.slug;
+    hint.textContent = next.textContent;
+    hint.classList.toggle('from-right', dx < 0);
+    hint.style.top = Math.min(pane.getBoundingClientRect().bottom - 36,
+      Math.max(pane.getBoundingClientRect().top + 12, start.y - 16)) + 'px';
+    hint.style.width = Math.max(0, Math.abs(start.offset) - 6) + 'px';
+    hint.hidden = Math.abs(dx) < 28;
+  }, {passive:false});
+
+  pane.addEventListener('touchcancel', snapBack);
+  pane.addEventListener('touchend', event => {
+    if (!start) return;
+    if (event.touches.length || !event.changedTouches.length || window.getSelection()?.toString()) {
+      snapBack(); return;
+    }
+    const t = event.changedTouches[0];
+    const dx = t.clientX - start.x, dy = t.clientY - start.y;
+    const next = neighbor(dx);
+    if (!next || Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy) * 1.5) { snapBack(); return; }
+    if (event.cancelable) event.preventDefault();
+    const {offset, width} = start;
+    clearDrag();
+    if (reduceMotion.matches) { next.click(); return; }
+
+    // Keep the outgoing viewport at its reading position while the live column takes over.
+    const rect = pane.getBoundingClientRect();
+    const old = pane.cloneNode(true);
+    old.classList.add('swipe-outgoing');
+    old.inert = true;
+    old.setAttribute('aria-hidden','true');
+    old.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+    Object.assign(old.style, {top:rect.top+'px', left:rect.left+'px', width:rect.width+'px',
+      height:rect.height+'px'});
+    wrap.append(old);
+    outgoing = old;
+    old.scrollTop = pane.scrollTop;
     next.click();
-  }, { passive: false });
+    const end = Math.sign(dx) * width;
+    const timing = {duration:215, easing:'cubic-bezier(.22,.72,.24,1)'};
+    const slide = (el, from, to) => el.animate(
+      [{transform:'translateX(' + from + 'px)'}, {transform:'translateX(' + to + 'px)'}], timing);
+    const exit = slide(old, offset, end);
+    motion = slide(pane, offset - end, 0);
+    exit.onfinish = () => { old.remove(); if (outgoing === old) outgoing = null; };
+  }, {passive:false});
+
+  mobile.addEventListener('change', () => { stopMotion(); clearDrag(); });
+
 })();
 
 (() => {
@@ -167,6 +250,36 @@
   phone.addEventListener('change', updateFilterLabels);
   const css = document.createElement('style');
   css.textContent = `
+    [data-slug="all"] {--section-color:#344c61}
+    [data-slug="ai-news"] {--section-color:#4975a1}
+    [data-slug="ai-tools"] {--section-color:#b26c42}
+    [data-slug="creator-watch"] {--section-color:#ac6576}
+    [data-slug="new-ideas"] {--section-color:#a88439}
+    [data-slug="startup-news"] {--section-color:#a85845}
+    [data-slug="go-global"] {--section-color:#4e8286}
+    [data-slug="invest"] {--section-color:#63806b}
+    [data-slug="daily-trends"] {--section-color:#6b80a5}
+    [data-slug="life-hacks"] {--section-color:#8c8956}
+    [data-slug="immigration"] {--section-color:#877593}
+    .filters button[data-slug]::before, .col-h h2.name::before, .swipe-hint::before {
+      content:""; display:inline-block; flex:none; width:.55em; height:.55em;
+      vertical-align:.04em; margin-right:.42em; background:var(--section-color,var(--accent)); border-radius:2px;
+    }
+    .col-h h2.name::before {width:.39em;height:.68em;vertical-align:0;margin-right:.38em}
+    .swipe-hint {display:none}
+    @media(max-width:700px) {
+      .wrap .toolbar .filters {gap:4px;padding:0 0 3px}
+      .wrap .toolbar .filters button[data-slug] {min-height:40px;padding:0 9px;border-radius:8px}
+      .wrap .toolbar .filters button[data-slug][aria-pressed=true] {
+        color:var(--ink);background:#e9eef1;background:color-mix(in srgb,var(--section-color) 12%,var(--bg));box-shadow:none
+      }
+      .reading-pane {overflow-x:hidden}
+      .swipe-outgoing {position:fixed;z-index:4;pointer-events:none;box-sizing:border-box;overflow:hidden}
+      .swipe-hint:not([hidden]) {display:block;position:fixed;left:0;z-index:2;pointer-events:none;
+        overflow:hidden;white-space:nowrap;padding:5px 0;text-indent:10px;
+        font-weight:600;font-size:.875rem;color:var(--ink)}
+      .swipe-hint.from-right {left:auto;right:0;text-align:right;text-indent:0;padding-right:8px;box-sizing:border-box}
+    }
     .column-more {color:var(--ink);background:none;border:0;font:inherit;font-size:.875rem;cursor:pointer}
     .col-h .name {
       margin:0; color:var(--accent); font-family:Georgia,'Times New Roman',serif;
