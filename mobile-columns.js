@@ -444,9 +444,8 @@
     }
   });
   function recordInteraction(event) {
-    const target = event.target.closest('a.primary-source, .src a, .brief-title, .source-bar button');
-    if (!target || (event.type === 'auxclick' && (event.button !== 1 || !target.matches('a')))) return;
-    if (target.matches('.brief-title') && target.parentElement.open) return;
+    const target = event.target.closest('a.primary-source[href], .src a[href]');
+    if (!target || event.defaultPrevented || (event.type === 'auxclick' && event.button !== 1)) return;
     markRead(target.closest('.item'));
   }
   feed.addEventListener('click', recordInteraction);
@@ -499,6 +498,7 @@
     article.querySelector('.sum-tg')?.remove();
     const details = document.createElement('details');
     details.className = 'brief-detail';
+    details.addEventListener('toggle', () => { if (details.open) markRead(article); });
     const summary = document.createElement('summary');
     summary.className = 'title brief-title';
     summary.textContent = title.textContent;
