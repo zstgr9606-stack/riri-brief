@@ -1,15 +1,29 @@
 {
  "bot": "Daily Trends",
  "date": "2026-11-24",
- "status": "已检查 8 个来源，各源正常（Reddit、Product Hunt、微博官方接口受限，已用备用渠道读取）",
- "corrections": [],
+ "status": "下午复核已检查 8 个来源。Reddit 官方接口与 RSS、Product Hunt 官网、微博官方接口受限，已用备用渠道读取；路透英伟达报道 401、Nielsen PhilArchive 论文 403 未读。",
+ "corrections": [
+  "更正：早间稿「这是首批起诉 SpaceX 的州」并非两州官方新闻稿原话，已删除。"
+ ],
  "items": [
   {
-   "title": "🔄 英伟达董事会恢复黄仁勋 CEO 职务（据 CNBC 报道，董事会声明原文未读）",
-   "summary": "据 CNBC，英伟达 11/23 宣布董事会一致投票恢复黄仁勋总裁、CEO 及董事职务，即日生效；董事会称听取了「美国政府高层」意见，确信其复职「不构成国家安全风险」。黄仁勋 11/13 因婚外情报道（其一对象被指与中国间谍有关）辞职；复职当天英伟达股价收涨 31%。",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-   "label": "转述",
+   "title": "🔄 英伟达董事会恢复黄仁勋总裁、CEO 及董事职务（已读官方声明与 8-K）",
+   "summary": "英伟达 11/23 官方声明：董事会一致投票，即日起恢复黄仁勋总裁、CEO 及董事职务；声明称听取了「美国政府高层」意见，确信复职「不构成国家安全风险」。向 SEC 提交的 8-K 载明投票发生在 11/22；针对其遭外国情报机构针对的报道，独立董事调查将继续，黄仁勋承诺配合；董事会新设国家安全与出口管制委员会，并寻聘首席合规官；克雷斯不再任临时 CEO，留任 CFO。据已读 CNBC，消息公布后股价收涨 31%。微博热搜第一为「万斯介入黄仁勋复职」，官方声明未点名；路透标题称特朗普介入，路透原文 401 未读。",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+   "label": "官方自报",
    "sources": [
+    {
+     "author": "NVIDIA",
+     "platform": "官方新闻稿",
+     "published": "2026-11-23",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+    },
+    {
+     "author": "NVIDIA",
+     "platform": "SEC 8-K",
+     "published": "2026-11-23",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
+    },
     {
      "author": "CNBC",
      "platform": "CNBC",
@@ -17,7 +31,7 @@
      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
     }
    ],
-   "new_since": "相比 11/18「愿意回任」：董事会已正式恢复其职务，并称听取了美国政府高层意见。",
+   "new_since": "相比 11/18「愿意回任」：董事会已正式恢复其职务。本午已读官方声明与 8-K：投票日期为 11/22，声明发布于 11/23；独立调查将继续；新设国家安全与出口管制委员会并寻聘首席合规官。",
    "prior": [
     {
      "title": "2026-11-13 黄仁勋辞去英伟达 CEO",
@@ -30,8 +44,35 @@
    ]
   },
   {
+   "title": "弗吉尼亚、俄勒冈总检察长分别起诉 SpaceX 等：指 Grok 生成非自愿性影像并虚假宣传安全",
+   "summary": "弗吉尼亚总检察长 Jay Jones、俄勒冈总检察长 Dan Rayfield 于 11/23 分别声明，已在里士满巡回法院、穆尔特诺马县巡回法院起诉 SpaceX、X Corp、SpaceX Super Intelligence（声明称 xAI 现用此名）等，指其宣传平台与 Grok「安全」却未阻止 Grok 生成未经同意的性化图像（含 CSAM），并推广「spicy mode」。两份声明均引用 CCDH 研究估计：2025-12-29 至 2026-01-08，Grok 在 X 上生成约 300 万张性化图像，其中约 2.3 万张「看起来像儿童」。已读俄勒冈起诉书：依《不正当交易行为法》（UTPA）请求永久禁令、追缴所得及按次计民事罚款（具体金额留待庭审提出）。弗吉尼亚起诉书原文未读；官方声明中未见被告回应。CCDH 数字为起诉方引用，并非法院认定。",
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Virginia Attorney General Jay Jones",
+     "platform": "弗吉尼亚总检察长新闻稿",
+     "published": "2026-11-23",
+     "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"
+    },
+    {
+     "author": "Oregon Attorney General Dan Rayfield",
+     "platform": "俄勒冈司法部新闻稿",
+     "published": "2026-11-23",
+     "url": "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/"
+    },
+    {
+     "author": "Oregon Department of Justice",
+     "platform": "俄勒冈起诉书",
+     "published": "2026-11-22",
+     "url": "https://www.doj.state.or.us/wp-content/uploads/2026/11/ODOJ-Grok-Complaint-Final-Submitted-2026-11-22.pdf"
+    }
+   ],
+   "new_since": "本午已读两州总检察长新闻稿及俄勒冈起诉书，替换早间仅转述 CNBC 的写法；已删除「首批起诉」这一未经官方文本支持的表述。"
+  },
+  {
    "title": "🔄 黎曼猜想 Lean 证明遭质疑，Alpöge 回应「代码满是垃圾但能编译」（质疑论文为转述，Nielsen 原文未读）",
-   "summary": "Alpöge 在 X 发文称「25 万+页」是玩笑；Lean 代码「显然满是垃圾，但能编译」，相关批评「完全合理、接受」，但未承认结论错误。此前 J. L. Nielsen 在 PhilArchive 发文称该证明「不包含证明」：几何条件被定义为恒真（True），几何侧与解析侧按定义是同一对象。据 aiciety 转述，该文并未否认最终定理就是 Mathlib 的 RiemannHypothesis，且代码中没有 sorry/axiom。",
+   "summary": "Alpöge 在 X 发文称「25 万+页」是玩笑；Lean 代码「显然满是垃圾，但能编译」，相关批评「完全合理、接受」，但未承认结论错误。此前 J. L. Nielsen 在 PhilArchive 发文称该证明「不包含证明」：几何条件被定义为恒真（True）。据 aiciety 转述，该文并未否认最终定理就是 Mathlib 的 RiemannHypothesis，且代码中没有 sorry/axiom。本午再试 PhilArchive 仍为 403，Nielsen 原文仍未读到。",
    "url": "https://x.com/__alpoge__/status/2124987173439209561",
    "label": "已读原文",
    "sources": [
@@ -48,7 +89,7 @@
      "url": "https://aiciety.net/riemann-lean-proof-anygeometry-true-critique/"
     }
    ],
-   "new_since": "相比 11/22 Lean/Mathlib 社区认证：出现「几何条件恒真」的质疑论文，作者回应承认代码质量问题。",
+   "new_since": "相比 11/22 Lean/Mathlib 社区认证：出现「几何条件恒真」的质疑论文，作者回应承认代码质量问题。本午复核：Alpöge 原帖仍在，Nielsen 原文仍未读到。",
    "prior": [
     {
      "title": "2026-11-21 Anthropic 数学家称与 Claude 合作证明黎曼猜想",
@@ -61,22 +102,22 @@
    ]
   },
   {
-   "title": "弗吉尼亚、俄勒冈起诉 SpaceX：指 Grok 生成深伪色情并虚假宣称安全（据 CNBC，起诉书原文未读）",
-   "summary": "据 CNBC，两州总检察长 11/23 分别在州法院起诉 SpaceX，称其未设足够防护，任由用户用 Grok 和 X 生成、传播未经同意的露骨深度伪造图像（含涉儿童内容），又把产品宣传为「总体安全」，违反两州消费者保护法；要求民事罚款并强制加严防护。这是首批起诉 SpaceX 的州。",
-   "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html",
+   "title": "据 ABC 报道：澳洲工党与绿党达成协议，拟赋予个人起诉社交媒体公司的权利（法案原文未读）",
+   "summary": "据已读的 ABC News，澳大利亚工党 11/24 与绿党达成协议，以推动「数字注意义务」（digital duty of care）法案在参议院通过。协议拟给予个人「私人诉权」，可就线上伤害直接起诉社交媒体公司；违规最高罚金拟提高到平台全球营收的 5%（工党原方案为最高 1.092 亿澳元）；平台须在风险评估中考虑「上瘾式」设计；16 岁及以上用户可关闭算法推荐。ABC 写法案「将在绿党支持下于参议院通过」，并未写已经通过。法案与协议原文未读。",
+   "url": "https://www.abc.net.au/news/2026-11-24/federal-politics-labor-makes-deal-greens-on-digital-duty-of-care/107420982",
    "label": "转述",
    "sources": [
     {
-     "author": "CNBC",
-     "platform": "CNBC",
-     "published": "2026-11-23",
-     "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"
+     "author": "ABC News",
+     "platform": "ABC News",
+     "published": "2026-11-24",
+     "url": "https://www.abc.net.au/news/2026-11-24/federal-politics-labor-makes-deal-greens-on-digital-duty-of-care/107420982"
     }
    ]
   },
   {
    "title": "开发者自述：FSNotes 被苹果下架全部欧盟 App Store，工单两周无回复",
-   "summary": "开源笔记应用 FSNotes 作者（乌克兰注册个体户）11/23 在 GitHub 发文称，上架 9 年的应用被苹果从全部欧洲 App Store 移除；起因是 10 月销售回款未到账，11/5、11/17 两次开工单均无回复。他称已补齐欧盟《数字服务法》（DSA）交易者合规信息并提交营业登记文件。仅作者自述，苹果未回应，下架原因不明。",
+   "summary": "开源笔记应用 FSNotes 作者（乌克兰注册个体户）11/23 在 GitHub 发文称，上架 9 年的应用被苹果从全部欧洲 App Store 移除；起因是 10 月销售回款未到账，他称已补齐欧盟《数字服务法》（DSA）交易者合规信息并提交营业登记文件，两次开工单无回复。本午复查该讨论页，作者原述仍在，页面未见苹果官方回复。仅作者自述，下架原因不明。",
    "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
    "label": "作者自报",
    "sources": [
