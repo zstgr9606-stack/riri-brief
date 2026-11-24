@@ -220,10 +220,14 @@
       vertical-align:middle;text-decoration:none;border-radius:8px}
     .share-story:hover,.share-story:focus-visible {color:var(--accent);background:var(--chip)}
     .share-story svg {width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-    .product-picks {margin:14px 0 4px}
-    .product-picks h3 {margin:0;padding:0 12px;font-size:1rem;color:var(--ink)}
-    .product-picks .empty {margin:4px 0 0;padding:0 12px;color:var(--muted);font-size:.875rem}
-    @media(max-width:700px){.product-picks h3,.product-picks .empty{padding-inline:0}}
+    .product-picks {margin:20px 0 4px}
+    .product-picks h3 {
+      display:flex;align-items:center;gap:8px;margin:0 12px 4px;
+      font-size:1.1rem;font-weight:600;line-height:1.4;color:var(--accent);
+    }
+    .product-picks h3::before {content:"";width:3px;height:1em;border-radius:2px;background:currentColor}
+    .product-picks .review-credit {font-size:.8125rem;color:var(--muted);line-height:1.5}
+    @media(max-width:700px){.product-picks h3{margin-inline:0}}
     .share-feedback {font-size:.86rem;color:var(--muted)}
     .source-bar .primary-source:hover,.source-bar .primary-source:focus-visible {text-decoration:underline}
     .brief-detail[open] + .source-bar {display:none}
@@ -511,24 +515,42 @@
   window.addEventListener('pagehide', savePosition);
   document.addEventListener('visibilitychange', () => { if (document.hidden) savePosition(); });
 
-  function groupProductPicks(col, all) {
-    const picks = Array.from(col.querySelectorAll('.item')).filter(article => {
-      const label = article.querySelector('.meta .chip')?.textContent.trim() || '';
-      return /^AI 产品精选\s*·\s*(实际试用|独立实测)/.test(label);
-    });
-    if (all && !picks.length) return;
+  function groupProductPicks(col, issue) {
     const section = document.createElement('section');
     section.className = 'product-picks';
     const heading = document.createElement('h3');
-    heading.textContent = 'AI 产品精选';
-    section.append(heading, ...picks);
-    if (!picks.length) {
-      const empty = document.createElement('p');
-      empty.className = 'empty';
-      empty.textContent = '本期未收录经过实测的产品。';
-      section.append(empty);
+    heading.textContent = 'AI 产品实测';
+    section.append(heading);
+    let count = 0;
+    for (const article of col.querySelectorAll('.item')) {
+      const chip = article.querySelector('.meta .chip');
+      const label = chip?.textContent.trim();
+      const archived = issue.date <= '2026-11-24' && label === 'AI 产品精选 · 实际试用';
+      if (!archived && !/^AI 产品(?:实测|精选)\s*·\s*独立实测$/.test(label || '')) continue;
+      const bar = article.querySelector('.source-bar');
+      if (!bar || count >= 2) continue;
+      if (archived) {
+        const credit = document.createElement('span');
+        credit.className = 'review-credit';
+        credit.textContent = 'AI News bot 试用 · 历史记录';
+        bar.prepend(credit);
+        chip.textContent = credit.textContent;
+      } else {
+        const title = article.querySelector('.brief-title').textContent;
+        const item = issue.items.find(entry => entry.title === title && entry.label === label);
+        const source = item?.sources?.find(entry => entry.url === item.url && entry.author?.trim());
+        const original = bar.querySelector('a.primary-source');
+        if (!source || !original || !/^https?:$/.test(original.protocol) ||
+            original.href !== new URL(source.url, location.href).href) continue;
+        original.textContent = '实测：' + source.author + ' ↗';
+        original.classList.add('review-credit');
+        original.setAttribute('aria-label', '阅读' + source.author + '的实测原文');
+        chip.textContent = '实测：' + source.author;
+      }
+      section.append(article);
+      count++;
     }
-    col.insertBefore(section, col.querySelector('.foot'));
+    if (count) col.insertBefore(section, col.querySelector('.foot'));
   }
 
   function render() {
@@ -587,7 +609,7 @@
         if (index < limit) formatArticle(item, slug, issue?.date || date.value);
         else item.remove();
       });
-      if (slug === 'ai-news' && issue) groupProductPicks(col, all);
+      if (slug === 'ai-news' && issue) groupProductPicks(col, issue);
       if (all && count) {
         col.querySelector('.foot')?.remove();
         col.append(action('查看全部 ' + count + ' 条', 'column-more', slug));
