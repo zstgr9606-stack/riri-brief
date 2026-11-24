@@ -304,6 +304,7 @@
     const entries = full ? [...full.querySelectorAll('a, span')] : [];
     const sameUrl = entries.find(node => node.href && node.href === title.href);
     const main = title.href ? sameUrl || title : entries.find(node => node.href);
+    const useHostname = main === title && !sameUrl;
     const bar = document.createElement('div');
     bar.className = 'source-bar';
     const sources = new Map();
@@ -318,9 +319,9 @@
     }
     if (main) {
       const primary = main.cloneNode(false);
-      const name = main === title ? main.hostname.replace(/^www\./, '') : shortSource(main);
+      const name = useHostname ? main.hostname.replace(/^www\./, '') : shortSource(main);
       primary.className = 'primary-source';
-      primary.title = main === title ? main.hostname : main.textContent;
+      primary.title = useHostname ? main.hostname : main.textContent;
       const short = document.createElement('span');
       short.className = 'source-short';
       short.textContent = name + ' ↗';
@@ -488,7 +489,7 @@
     }));
   }
 
-  function formatArticle(article, slug, issueDate) {
+  function formatArticle(article, slug, issueDate, item) {
     const title = article.querySelector('.title');
     if (!title) return;
     article.dataset.readKey = readPrefix + issueDate + '/' + shareId(article.dataset.key || slug + '/' + title.textContent);
@@ -507,7 +508,8 @@
       if (child !== details) details.append(child);
     }
     const controls = shareLink(article, summary.textContent, slug);
-    compactSources(article, full, title, controls);
+    const review = item?.reviewUrl && [...(full?.querySelectorAll('a') || [])].find(a => a.href === item.reviewUrl);
+    compactSources(article, full, review || title, controls);
   }
 
   const limited = /(?:\b(?:403|404|429|5\d\d|failed|unavailable|blocked|partial)\b|失败|未能|受限|读不到|不完整|未完成|无法|超时|被拦|防火墙|需登录|未直读|未读到|播放数未|小红书未读)/i;
@@ -628,7 +630,7 @@
       const archived = issue.date <= '2026-11-24' && label === 'AI 产品精选 · 实际试用';
       if (!archived && !/^AI 产品(?:实测|精选)\s*·\s*独立实测$/.test(label || '')) continue;
       const bar = article.querySelector('.source-bar');
-      if (!bar || count >= 2) continue;
+      if (!bar) continue;
       if (archived) {
         const credit = document.createElement('span');
         credit.className = 'review-credit';
@@ -638,7 +640,7 @@
       } else {
         const title = article.querySelector('.brief-title').textContent;
         const item = issue.items.find(entry => entry.title === title && entry.label === label);
-        const source = item?.sources?.find(entry => entry.url === item.url && entry.author?.trim());
+        const source = item?.sources?.find(entry => entry.url === (item.reviewUrl || item.url) && entry.author?.trim());
         const original = bar.querySelector('a.primary-source');
         if (!source || !original || !/^https?:$/.test(original.protocol) ||
             original.href !== new URL(source.url, location.href).href) continue;
@@ -703,7 +705,10 @@
       if (!issue && !all) col.querySelector('.state-missing').textContent = '待更新';
       const limit = all ? (order.slice(0, 2).includes(slug) ? 3 : 1) : articles.length;
       articles.forEach((item, index) => {
-        if (index < limit) formatArticle(item, slug, issue?.date || date.value);
+        if (index < limit) {
+          const sourceItem = issue?.items.find(entry => entry.title === item.querySelector('.title')?.textContent);
+          formatArticle(item, slug, issue?.date || date.value, sourceItem);
+        }
         else item.remove();
       });
       if (slug === 'ai-news' && issue) groupProductPicks(col, issue);
@@ -719,6 +724,13 @@
   render();
 
   const request = new URLSearchParams(location.search);
+  // Follow the original shared link after the November 24 Gauth story moved to Products.
+  if (request.get('date') === '2026-11-24' && request.get('col') === 'ai-news' &&
+      request.get('story') === shareId('producthunt.com/products/gauth-ai-course')) {
+    request.set('col', 'ai-tools');
+    location.replace(location.pathname + '?' + request.toString());
+    return;
+  }
   if (request.has('story')) {
     const story = document.getElementById('story-' + request.get('col') + '-' + request.get('story'));
     if (story) {
