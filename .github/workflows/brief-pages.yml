@@ -19,6 +19,7 @@ jobs:
         run: |
           mkdir site
           cp -R data index.html mobile-columns.js site/
+          python3 publish-brand.py site
           node --check site/mobile-columns.js
           python3 - <<'PY'
           from hashlib import sha256
@@ -120,4 +121,5 @@ jobs:
       - name: Deploy briefing
         id: deployment
         uses: actions/deploy-pages@v4
+
 
