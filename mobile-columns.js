@@ -151,6 +151,20 @@
   const intro = document.querySelector('.top .sub');
   if (intro) intro.textContent = '公开版 · 点标题读摘要，点来源看原文 · 北京时间';
   const phone = matchMedia('(max-width: 700px)');
+  const mobileLabels = new Map([
+    ['startup-news', 'Startups'],
+    ['daily-trends', 'Trends'],
+    ['ai-tools', 'Products'],
+    ['creator-watch', '创作者']
+  ]);
+  function updateFilterLabels() {
+    for (const button of filters.querySelectorAll('button[data-slug]')) {
+      const slug = button.dataset.slug;
+      const fullName = columnNames.get(slug);
+      if (fullName) button.textContent = (phone.matches && mobileLabels.get(slug)) || fullName;
+    }
+  }
+  phone.addEventListener('change', updateFilterLabels);
   const css = document.createElement('style');
   css.textContent = `
     .column-more {color:var(--ink);background:none;border:0;font:inherit;font-size:.875rem;cursor:pointer}
@@ -555,10 +569,7 @@
 
   function render() {
     observer.disconnect();
-    for (const button of filters.querySelectorAll('button[data-slug]')) {
-      const label = columnNames.get(button.dataset.slug);
-      if (label) button.textContent = label;
-    }
+    updateFilterLabels();
     if (phone.matches) {
       filters.querySelector('[aria-pressed="true"]')?.scrollIntoView({block:'nearest', inline:'nearest'});
     }
