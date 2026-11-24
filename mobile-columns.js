@@ -64,7 +64,14 @@
   icon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="15.5" rx="2.6"/><path d="M7.5 3v5M16.5 3v5M4 10.5h16"/></svg>';
   caption.prepend(icon.cloneNode(true));
   picker.append(icon, desktopDate);
-  editionNav.append(document.getElementById('prev-date'), picker, document.getElementById('next-date'));
+  const previous = document.getElementById('prev-date');
+  const next = document.getElementById('next-date');
+  for (const button of [previous, next]) {
+    const path = button === previous ? 'M10 3.5 6 8l4 4.5' : 'M6 3.5 10 8l-4 4.5';
+    button.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="' + path +
+      '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  }
+  editionNav.append(previous, picker, next);
   masthead.append(editionNav);
   const title = masthead.querySelector('h1').cloneNode(true);
   title.className = 'mobile-masthead';
@@ -83,13 +90,12 @@
       .edition-picker .edition-calendar { position:absolute; left:7px; }
       header.top #date-select { appearance:none; -webkit-appearance:none; field-sizing:content; min-width:0; height:36px;
         padding:0 6px 0 30px; background:transparent; color:var(--ink); border:0; cursor:pointer; font-variant-numeric:tabular-nums; }
-      .edition-nav .nav-btn { display:grid; place-items:center; width:32px; height:32px; min-width:32px; padding:0;
-        border:1px solid var(--line); border-radius:50%; background:transparent; color:var(--ink); font-size:0; }
-      .edition-nav .nav-btn::before { content:''; box-sizing:border-box; width:7px; height:7px;
-        border:solid currentColor; border-width:1.5px 1.5px 0 0; transform:translateX(-1px) rotate(45deg); }
-      .edition-nav #prev-date::before { transform:translateX(1px) rotate(-135deg); }
-      .edition-nav .nav-btn:disabled { opacity:.42; cursor:default; }
-      .edition-nav .nav-btn:enabled:hover, .edition-picker:hover { background:var(--chip); }
+      .edition-nav .nav-btn { display:grid; place-items:center; box-sizing:border-box; width:32px; height:32px;
+        min-width:32px; padding:0; border:0; border-radius:50%; background:#214d64; color:white; cursor:pointer; }
+      .edition-nav .nav-btn svg { display:block; }
+      .edition-nav .nav-btn:enabled:hover { background:#163a50; }
+      .edition-nav .nav-btn:disabled { background:#80939e; opacity:1; cursor:default; }
+      .edition-picker:hover { background:var(--chip); }
       .edition-nav :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
       .wrap > header.top .sub, .toolbar #rel-row { display: none; }
     }
