@@ -109,6 +109,26 @@
      "url": "https://hunted.space/dashboard/bookella"
     }
    ]
+  },
+  {
+   "title": "Gauth：把学生拍过的错题变成每天的复习清单，漏练后还能调整",
+   "summary": "据 Gauth 发布说明，学生在 App 里拍题、做小测后，系统会按薄弱点安排闪卡、分步讲解和小测。值得关注的是它怎样用前一天的作答安排第二天的练习：学生漏练或提前掌握某个知识点，复习计划会随之调整。\n11 月 23 日在 Product Hunt 上榜。现有来源能说明产品设计和上榜情况，学习效果尚缺独立试用数据。",
+   "url": "https://www.producthunt.com/products/gauth-ai-course",
+   "label": "功能由发布方说明 · 学习效果待验证",
+   "sources": [
+    {
+     "author": "Gauth",
+     "platform": "Product Hunt",
+     "published": "",
+     "url": "https://www.producthunt.com/products/gauth-ai-course"
+    },
+    {
+     "author": "hunted.space",
+     "platform": "发布榜记录",
+     "published": "2026-11-23",
+     "url": "https://hunted.space/dashboard/gauth-ai-course"
+    }
+   ]
   }
  ]
 }
