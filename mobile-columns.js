@@ -226,7 +226,7 @@
       .status, .corr { margin:8px 0; }
       .wrap .toolbar :focus-visible { outline:2px solid var(--accent); }
     }
-    .col .item.is-read .brief-title {color:var(--muted)}
+    .col .item.is-read .brief-detail:not([open]) > .brief-title {font-weight:500;color:var(--ink)}
     .source-bar {display:flex;align-items:baseline;gap:0 12px;flex-wrap:wrap;margin-top:4px;color:var(--muted);font-size:.86rem}
     .source-bar .primary-source {max-width:100%;overflow-wrap:anywhere;color:inherit;text-decoration:none;padding:4px 0}
     .source-bar button,.share-story {font:inherit;font-size:.86rem;color:var(--muted);background:none;border:0;cursor:pointer;padding:4px 0}
@@ -244,7 +244,22 @@
     @media(max-width:700px){.product-picks h3{margin-inline:0}}
     .share-feedback {font-size:.86rem;color:var(--muted)}
     .source-bar .primary-source:hover,.source-bar .primary-source:focus-visible {text-decoration:underline}
-    .brief-detail[open] + .source-bar {display:none}
+    .brief-detail .sum p {margin:0}
+    .brief-detail .sum p + p {margin-top:.65em}
+    .source-bar {align-items:center;gap:0 6px}
+    .source-bar .source-citation, .brief-detail[open] + .source-bar .source-short {display:none}
+    .brief-detail[open] + .source-bar .source-citation {display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .source-bar .primary-source {flex:0 1 auto;min-width:0;max-width:calc(100% - 95px)}
+    .source-bar .more-sources {min-width:32px;min-height:32px;font-variant-numeric:tabular-nums}
+    .source-bar .share-controls {display:none;margin-left:auto}
+    .brief-detail[open] + .source-bar .share-controls {display:flex;align-items:center}
+    .item .source-list[hidden], .col .status[hidden] {display:none}
+    .item .source-list {margin:4px 0 0;padding-left:1.1em;color:var(--muted)}
+    .item .source-list li {margin:.15em 0;overflow-wrap:anywhere}
+    .col-h .badge {margin-left:auto}
+    .col-h .info-toggle {font:inherit;font-size:1rem;color:var(--muted);border:0;background:none;
+      padding:0;min-width:32px;min-height:36px;cursor:pointer}
+    .col-h .info-toggle[aria-expanded=true] {color:var(--accent)}
     .share-address {width:100%;font:inherit}
     .collection-status,.correction-note {margin:0;padding:0;color:var(--muted);font-size:.86rem}
     .collection-status summary,.correction-note summary {cursor:pointer;padding:8px 10px}
@@ -282,46 +297,70 @@
   function shortSource(anchor) {
     const parts = [...new Set(anchor.textContent.split(' · ').map(s => s.trim())
       .filter(s => s && !/^\d{4}-\d{2}-\d{2}/.test(s)))];
-    return parts.join(' · ') || anchor.hostname;
+    return parts[0] || anchor.hostname;
   }
 
-  function compactSources(article, full, title) {
+  function compactSources(article, full, title, controls) {
     const entries = full ? [...full.querySelectorAll('a, span')] : [];
-    const links = entries.filter(node => node.tagName === 'A');
-    const main = title.href ? links.find(a => a.href === title.href) || title : links[0];
-    if (!main) return null;
-    const primary = main.cloneNode(false);
-    primary.className = 'primary-source';
-    primary.textContent = (main === title ? main.hostname.replace(/^www\./, '') : shortSource(main)) + ' ↗';
-    primary.setAttribute('aria-label', '打开原文：' + primary.textContent.slice(0, -2));
+    const sameUrl = entries.find(node => node.href && node.href === title.href);
+    const main = title.href ? sameUrl || title : entries.find(node => node.href);
     const bar = document.createElement('div');
     bar.className = 'source-bar';
-    bar.append(primary);
-    if (main === title && !full) {
-      full = document.createElement('div');
-      full.className = 'xline src';
-      article.append(full);
+    const sources = new Map();
+    for (const entry of entries) {
+      const key = entry.href || entry.textContent;
+      if (key && !sources.has(key)) sources.set(key, entry);
     }
-    if (main === title) {
-      const original = primary.cloneNode(true);
-      original.textContent = primary.hostname;
-      full.append(full.textContent ? '；' : '来源：', original);
+    if (!main && full) {
+      article.append(bar);
+      bar.append(controls);
+      return;
     }
-    const extra = new Set(entries.filter(e => e.href !== main.href).map(e => e.href || e.textContent));
-    if (extra.size) {
-      const more = document.createElement('button');
-      more.type = 'button';
-      more.textContent = '另有 ' + extra.size + ' 个来源';
-      more.addEventListener('click', () => {
-        const detail = article.querySelector('.brief-detail');
-        detail.open = true;
-        const destination = links.find(a => a.href !== main.href) || full.querySelector('a') || detail.querySelector('summary');
-        destination.focus({preventScroll:true});
-        full.scrollIntoView({block:'nearest'});
-      });
-      bar.append(more);
+    if (main) {
+      const primary = main.cloneNode(false);
+      const name = main === title ? main.hostname.replace(/^www\./, '') : shortSource(main);
+      primary.className = 'primary-source';
+      primary.title = main === title ? main.hostname : main.textContent;
+      const short = document.createElement('span');
+      short.className = 'source-short';
+      short.textContent = name + ' ↗';
+      const citation = document.createElement('span');
+      citation.className = 'source-citation';
+      citation.textContent = primary.title + ' ↗';
+      primary.append(short, citation);
+      primary.setAttribute('aria-label', '打开原文：' + primary.title);
+      bar.append(primary);
+      sources.delete(main.href);
     }
-    return bar;
+    bar.append(controls);
+    article.append(bar);
+    if (!sources.size) {
+      full?.remove();
+      return;
+    }
+    const list = document.createElement('ul');
+    list.id = article.id + '-sources';
+    list.className = 'src source-list';
+    list.hidden = true;
+    for (const source of sources.values()) {
+      const row = document.createElement('li');
+      row.append(source);
+      list.append(row);
+    }
+    full?.remove();
+    const more = document.createElement('button');
+    more.type = 'button';
+    more.className = 'more-sources';
+    more.textContent = '+' + sources.size;
+    more.setAttribute('aria-label', '另有 ' + sources.size + ' 个来源');
+    more.setAttribute('aria-controls', list.id);
+    more.setAttribute('aria-expanded', 'false');
+    more.addEventListener('click', () => {
+      list.hidden = !list.hidden;
+      more.setAttribute('aria-expanded', String(!list.hidden));
+    });
+    controls.before(more);
+    article.append(list);
   }
 
   // Use the stable article URL where available, so edits to headlines preserve shared links.
@@ -376,7 +415,8 @@
       }
     });
     const controls = document.createElement('div');
-    controls.append(link, feedback);
+    controls.className = 'share-controls';
+    controls.append(feedback, link);
     return controls;
   }
 
@@ -411,12 +451,50 @@
   feed.addEventListener('click', recordInteraction);
   feed.addEventListener('auxclick', recordInteraction);
 
+  // Preserve the original wording, dates, and qualifications when laying out old issues.
+  function formatSummary(node, product) {
+    if (!node || node.children.length) return;
+    const paragraphs = [];
+    const evidence = /^(?:[^。；]{0,16}(?:统计页|数据显示|截至|累计|榜单|下载|付费|收入|星标|票数)|Show HN|Product Hunt)/i;
+    for (const line of node.textContent.trim().split(/\n+/)) {
+      let paragraph = '';
+      for (const sentence of line.match(/[^。！？]+[。！？]*|[。！？]+/gu) || []) {
+        if (paragraph && (paragraph.length >= 95 ||
+            (line.length > 105 && paragraph.length >= line.length / 3 && paragraph.length + sentence.length > 100) ||
+            (product && paragraph.length >= 22 && evidence.test(sentence.trim())))) {
+          paragraphs.push(paragraph);
+          paragraph = '';
+        }
+        paragraph += sentence;
+      }
+      if (paragraph) paragraphs.push(paragraph);
+    }
+    node.replaceChildren(...paragraphs.map(text => {
+      const p = document.createElement('p');
+      p.textContent = text;
+      if (product) {
+        const metric = /(?:访问|下载|付费用户|活跃用户|注册用户|收入)\s*[约近超]?\s*[¥￥$€]?\s*\d[\d,.]*(?:万|千|亿)?\s*(?:次|名|人|美元|元|欧元)/gu;
+        let end = 0;
+        const parts = [];
+        for (const match of text.matchAll(metric)) {
+          const strong = document.createElement('strong');
+          strong.textContent = match[0];
+          parts.push(text.slice(end, match.index), strong);
+          end = match.index + match[0].length;
+        }
+        if (parts.length) p.replaceChildren(...parts, text.slice(end));
+      }
+      return p;
+    }));
+  }
+
   function formatArticle(article, slug, issueDate) {
     const title = article.querySelector('.title');
     if (!title) return;
     article.dataset.readKey = readPrefix + issueDate + '/' + shareId(article.dataset.key || slug + '/' + title.textContent);
     refreshRead(article);
-    const bar = compactSources(article, article.querySelector('.src'), title);
+    const full = article.querySelector('.src');
+    formatSummary(article.querySelector('.sum'), slug === 'ai-tools');
     article.querySelector('.sum-tg')?.remove();
     const details = document.createElement('details');
     details.className = 'brief-detail';
@@ -428,8 +506,8 @@
     for (const child of [...article.children]) {
       if (child !== details) details.append(child);
     }
-    if (bar) article.append(bar);
-    details.append(shareLink(article, summary.textContent, slug));
+    const controls = shareLink(article, summary.textContent, slug);
+    compactSources(article, full, title, controls);
   }
 
   const limited = /(?:\b(?:403|404|429|5\d\d|failed|unavailable|blocked|partial)\b|失败|未能|受限|读不到|不完整|未完成|无法|超时|被拦|防火墙|需登录|未直读|未读到|播放数未|小红书未读)/i;
@@ -460,13 +538,21 @@
   function foldStatus(col, note) {
     const node = col.querySelector('.status');
     if (!node || !note) return;
-    const details = document.createElement('details');
-    details.className = 'collection-status';
-    const summary = document.createElement('summary');
-    summary.textContent = statusLabel(note);
-    details.append(summary);
-    node.replaceWith(details);
-    details.append(node);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'info-toggle';
+    button.textContent = 'ⓘ';
+    button.title = statusLabel(note);
+    button.setAttribute('aria-label', '栏目采集说明 · ' + (columnNames.get(col.dataset.slug) || col.dataset.slug));
+    button.setAttribute('aria-expanded', 'false');
+    node.hidden = true;
+    node.id = 'collection-note-' + col.dataset.slug;
+    button.setAttribute('aria-controls', node.id);
+    button.addEventListener('click', () => {
+      node.hidden = !node.hidden;
+      button.setAttribute('aria-expanded', String(!node.hidden));
+    });
+    col.querySelector('.col-h').append(button);
   }
   const pane = feed.closest('.reading-pane');
   const storageKey = 'brief-reading-v1';
