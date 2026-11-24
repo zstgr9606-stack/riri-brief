@@ -17,6 +17,18 @@
   pane.append(content);
   const footer = wrap.querySelector('.page-foot');
   if (footer) pane.append(footer);
+  const siteName = wrap.querySelector('.top h1').textContent.trim();
+  document.title = siteName;
+  wrap.querySelector('.top h1').textContent = siteName;
+  for (const [name, value] of [['theme-color', '#11493e'], ['apple-mobile-web-app-title', siteName]]) {
+    let meta = document.querySelector('meta[name="' + name + '"]');
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.name = name;
+      document.head.append(meta);
+    }
+    meta.content = value;
+  }
   const title = wrap.querySelector('.top h1').cloneNode(true);
   title.className = 'mobile-masthead';
   dateBar.prepend(title);
@@ -75,13 +87,9 @@
     if (item.left < bounds.left) rail.scrollLeft += item.left - bounds.left - 10;
     if (item.right > bounds.right) rail.scrollLeft += item.right - bounds.right + 10;
   }
-  function resetReadingPosition() {
-    if (mobile.matches) pane.scrollTop = 0;
-    revealSelection();
-  }
-  rail.addEventListener('click', resetReadingPosition);
+  rail.addEventListener('click', revealSelection);
   window.addEventListener('resize', revealSelection);
-  document.getElementById('m-date').addEventListener('change', resetReadingPosition);
+  document.getElementById('m-date').addEventListener('change', revealSelection);
   revealSelection();
 
   let start = null;
@@ -178,6 +186,45 @@
       .col-h {min-height:36px}
       .item .brief-title {font-size:1.07rem;line-height:1.45}
     }
+    :root {
+      --green: #124c41; --green-2: #185d50; --ink: #182a26; --muted: #465d55;
+      --line: #d9e3df; --chip: #edf4f0; --bg: #f4f7f5;
+    }
+    body { background: #f4f7f5; color: var(--ink); }
+    .top h1, .wrap .mobile-masthead {
+      font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.045em;
+      line-height: 1.05; font-weight: 700;
+    }
+    .col { background: white; border-radius: 12px; border: 1px solid #d4dfda; }
+    .col-h { background: #e4eee8; color: #164c3d; }
+    .col-h .badge { background: white; color: #345d51; }
+    .col .column-more { text-decoration: underline; text-underline-offset: 3px; }
+    .col .brief-title { color: #172e27; }
+    header.top { border: 0; padding: 15px 0; }
+    header.top h1 { font-size: 2.35rem; }
+    .wrap .toolbar { background: #fff; filter:none; -webkit-backdrop-filter:none; backdrop-filter:none; opacity:1; }
+    @media (max-width: 700px) {
+      html, body, .wrap { background: #11493e; }
+      .wrap .toolbar { background: #11493e; color:white; padding: 2px 16px 0; border: 0; }
+      .wrap .mobile-masthead { color: #fff; font-size: 1.8rem; }
+      .wrap .m-bar { min-height: 47px; }
+      .wrap .m-bar select { font-size: 16px; width:auto; max-width: 48vw; border:0; box-shadow:none; border-radius: 6px; color:#fff; background:#11493e; }
+      .toolbar .filters { gap: 18px; border: 0; margin: 0; }
+      .toolbar .filters button { color:#e1ede8; font-size:15px; }
+      .toolbar .filters button[aria-pressed="true"] { color:white; box-shadow:inset 0 -3px #c6e5a1; }
+      .reading-pane { background:#f4f7f5; padding-inline:12px; }
+      .cols { margin-top: 0; }
+      .col { background:white; margin:12px 0 0; border:1px solid #d4dfda; border-radius:12px; overflow:clip; }
+      .col .col-h { padding:10px 14px; min-height:40px; border:0; border-bottom:1px solid #d4dfda; color:#164c3d; background:#e4eee8; }
+      .col-h .name { font-size:1rem; font-weight:700; }
+      .col .item { padding:12px 14px; }
+      .item .src { font-size:.86rem; }
+      .item .src a { color:#265c49; }
+      .col .column-more, .col .foot, .col .empty { padding-inline:14px; }
+      .col .brief-title { line-height:1.5; }
+      .status, .corr { margin:7px 10px; }
+      .wrap .toolbar button:focus-visible, .wrap .toolbar select:focus-visible { outline:2px solid #fff; }
+    }
   `;
   document.head.append(css);
 
@@ -190,7 +237,7 @@
       if (heading) {
         heading.tabIndex = -1;
         heading.focus({ preventScroll: true });
-        heading.scrollIntoView({ block: 'nearest' });
+        if (!phone.matches) heading.scrollIntoView({ block: 'nearest' });
       }
     });
   }
@@ -232,6 +279,67 @@
       if (child !== details && child !== source) details.append(child);
     }
   }
+
+  const pane = feed.closest('.reading-pane');
+  const storageKey = 'brief-reading-v1';
+  const visitDay = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
+  let positions = {};
+  let viewKey = '';
+  let saveTimer;
+  function readPositions() {
+    try {
+      const record = JSON.parse(localStorage.getItem(storageKey));
+      return record?.day === visitDay ? record.views || {} : {};
+    } catch { return {}; }
+  }
+  positions = readPositions();
+
+  function itemKey(item) {
+    return item.closest('.col').dataset.slug + '/' +
+      (item.dataset.key || item.querySelector('summary')?.textContent || '');
+  }
+  function savePosition() {
+    clearTimeout(saveTimer);
+    if (!phone.matches || !pane || !viewKey) return;
+    const items = [...feed.querySelectorAll('.item')];
+    const top = pane.getBoundingClientRect().top;
+    const anchor = items.find(item => item.getBoundingClientRect().bottom > top);
+    const mark = {
+      y: pane.scrollTop,
+      anchor: anchor ? itemKey(anchor) : '',
+      offset: anchor ? anchor.getBoundingClientRect().top - top : 0,
+      open: items.filter(item => item.querySelector('details[open]')).map(itemKey)
+    };
+    positions[viewKey] = mark;
+    try {
+      positions = { ...positions, ...readPositions(), [viewKey]: mark };
+      localStorage.setItem(storageKey, JSON.stringify({ day: visitDay, views: positions }));
+    } catch { /* This tab retains positions when storage is unavailable. */ }
+  }
+  function restorePosition() {
+    if (!phone.matches || !pane) return;
+    viewKey = date.value + '/' + filters.querySelector('[aria-pressed="true"]').dataset.slug;
+    const mark = positions[viewKey];
+    if (!mark) { pane.scrollTop = 0; return; }
+    const items = [...feed.querySelectorAll('.item')];
+    const opened = new Set(mark.open);
+    for (const item of items) {
+      const detail = item.querySelector('details');
+      if (detail) detail.open = opened.has(itemKey(item));
+    }
+    const anchor = items.find(item => itemKey(item) === mark.anchor);
+    pane.scrollTop = anchor && mark.y > 0
+      ? pane.scrollTop + anchor.getBoundingClientRect().top - pane.getBoundingClientRect().top - mark.offset
+      : mark.y;
+  }
+  filters.addEventListener('click', savePosition, true);
+  date.addEventListener('change', savePosition, true);
+  pane?.addEventListener('scroll', () => {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(savePosition, 180);
+  }, { passive: true });
+  window.addEventListener('pagehide', savePosition);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) savePosition(); });
 
   function render() {
     observer.disconnect();
@@ -281,9 +389,11 @@
         col.append(action('查看全部 ' + count + ' 条', 'column-more', slug));
       }
     }
+    restorePosition();
     observer.observe(feed, { childList: true });
   }
   const observer = new MutationObserver(render);
   render();
 })();
+
 
