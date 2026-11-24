@@ -61,6 +61,9 @@ def update_columns(match):
     for column in payload.get("bots", []):
         if column["slug"] == "ai-tools":
             column["column"] = "Product Radar"
+        cadence = {"ai-tools": "周一、周四", "new-ideas": "周三、周六"}.get(column["slug"])
+        if cadence:
+            column.update(cadence=cadence, cadenceFrom="2026-11-24")
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
     return match[1] + data + match[3]
 
@@ -68,6 +71,9 @@ html, payload_count = re.subn(r'(<script id="payload" type="application/json">)(
                               update_columns, html, count=1, flags=re.S)
 if not payload_count:
     raise ValueError("Missing briefing payload")
+# The generated reader normally fetches only that day's issue for a daily column.
+html = html.replace("weekly = botBy[slug].weekly;", """weekly = botBy[slug].weekly ||
+      (botBy[slug].cadenceFrom && date >= botBy[slug].cadenceFrom);""")
 page.write_text(html, encoding="utf-8")
 
 

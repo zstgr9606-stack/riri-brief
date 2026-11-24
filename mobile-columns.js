@@ -128,8 +128,13 @@
   const columnNames = new Map(bots.map(bot => [bot.slug, bot.column]));
   columnNames.set('all', '全部');
   const weekly = new Set(bots.filter(bot => bot.weekly).map(bot => bot.slug));
+  const cadence = new Map(bots.filter(bot => bot.cadence).map(bot => [bot.slug, bot]));
+  function scheduleOn(slug, day) {
+    const bot = cadence.get(slug);
+    return bot && day >= bot.cadenceFrom ? bot.cadence : '';
+  }
   const latest = (slug, day) => issues.filter(issue => issue.slug === slug &&
-    (weekly.has(slug) ? issue.date <= day : issue.date === day))
+    ((weekly.has(slug) || scheduleOn(slug, day)) ? issue.date <= day : issue.date === day))
     .sort((a, b) => b.date.localeCompare(a.date))[0];
 
   function sortChildren(parent) {
@@ -554,7 +559,10 @@
       const name = head.firstElementChild;
       const count = Number(filters.querySelector('[data-slug="' + CSS.escape(slug) + '"]').dataset.count);
       const issue = latest(slug, date.value);
-      const isWeekly = weekly.has(slug);
+      const schedule = scheduleOn(slug, date.value);
+      const isWeekly = weekly.has(slug) || Boolean(schedule);
+      const badge = head.querySelector('.badge');
+      if (schedule && badge) badge.textContent = schedule + (issue ? ' · ' + issue.date.slice(5) : '');
       const articles = Array.from(col.querySelectorAll('.item'));
       const text = document.createElement('small');
       text.textContent = count + ' 条';
