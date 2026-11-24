@@ -1,12 +1,12 @@
 {
  "bot": "AI News",
  "date": "2026-11-24",
- "status": "6 个平台均已检查（X、Reddit、Hacker News、GitHub、Product Hunt、YouTube）；Product Hunt 票数来自第三方 hunted.space 实时榜",
+ "status": "北京时间 11-24 16:13–16:40 重新采集：6 个平台均已检查（X、Reddit、Hacker News、GitHub、Product Hunt、YouTube）；Product Hunt 票数来自第三方 hunted.space 的 11-23 日榜收榜数据；AI 产品精选 1 个，为本栏实际试用",
  "corrections": [],
  "items": [
   {
    "title": "Claude 把连接器和技能合并成「插件」，免费版已可用",
-   "summary": "Claude 帮助中心称，侧边栏的 Customize 改名为 Plugins，一个页面统一管理插件、技能（Skills，可复用的操作说明包）和连接器（Connectors，接外部工具）；Free、Pro、Max、Ultra 现已上线，Team 计划 11-30 起推送，Enterprise 随后几周。已安装的内容保留；删除打包了连接器的插件不会自动断开连接器。官方 X 帖称可浏览 10,000+ 插件，该数字帮助中心页未写，属官方自报。",
+   "summary": "Claude 帮助中心称，侧边栏的 Customize 改名为 Plugins，一个页面统一管理插件、技能（Skills，可复用的操作说明包）和连接器（Connectors，接外部工具）；Free、Pro、Max、Ultra 现已上线，Team 计划 11-30 起推送，Enterprise 随后几周。已安装的内容保留；11-30 起，组织若关闭了 Skills，Claude 桌面版里的插件也会被一并禁用，管理员需在此前打开 Skills；删除打包了连接器的插件不会自动断开连接器。官方 X 帖称可浏览 10,000+ 插件，该数字帮助中心页未写，属官方自报。",
    "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page",
    "label": "官方自报",
    "sources": [
@@ -65,8 +65,8 @@
    ]
   },
   {
-   "title": "智谱 Z.ai 发布 GLM-5.4：首个 Loop Transformer 旗舰，API 暂未开放",
-   "summary": "Z.ai 博客称，GLM-5.4 把 GLM-5 基座中的 28 层共享权重循环执行两遍（Loop Transformer：同一组层重复运行，加深推理而不增加参数），称智能水平相当于 2–3 万亿参数模型，高峰期 70–80 token/秒；已上 GLM Coding Plan、ZCode 和网页聊天，API「即将开放」，权重计划在安全加固后开源。博客自认模型容易陷入过长思考。性能说法为官方自报。",
+   "title": "智谱 Z.ai 发布 GLM-5.4：首个 Loop Transformer 旗舰，普通 API 暂未开放",
+   "summary": "Z.ai 博客称，GLM-5.4 把 GLM-5 基座中的 28 层共享权重循环执行两遍（Loop Transformer：同一组层重复运行，加深推理而不增加参数），称智能水平相当于 2–3 万亿参数模型，高峰期 70–80 token/秒；已上 GLM Coding Plan、ZCode 和网页聊天，API「即将开放」，权重计划在安全加固后开源。博客自认模型容易陷入过长思考。性能说法为官方自报。独立开发者 Simon Willison 11-23 实测：普通 API 暂不能调用 5.4，但 Coding Plan 订阅的 API key 可通过同一个 Responses 接口（api.z.ai/api/v1）调用；他用低、高、最高三档跑了「鹈鹕骑自行车」SVG 测试，称 5.4 与 5.3 画风相近。",
    "url": "https://z.ai/blog/glm-5.4",
    "label": "官方自报",
    "sources": [
@@ -81,12 +81,44 @@
      "platform": "X",
      "published": "2026-11-23",
      "url": "https://x.com/Zai_org/status/2124811995912286352"
+    },
+    {
+     "author": "Simon Willison",
+     "platform": "个人博客",
+     "published": "2026-11-23",
+     "url": "https://simonwillison.net/2026/Nov/23/glm-54/"
+    }
+   ]
+  },
+  {
+   "title": "OCRia-nano-1：LlamaIndex 放出 8.1M 参数 OCR 权重，在普通 CPU 上把扫描页转成 Markdown",
+   "summary": "本栏试用（北京时间 11-24 16:20，8 核 Linux 云主机）：pip 安装 LiteParse 2.21.1，运行 lit models pull ocria-nano（下载约 60 MB），输入一张自制的扫描风格单页 PDF（纯图片、略倾斜、加噪点，含英文段落、一行中文备注和 4 行 4 列带框表格），输出 Markdown。观察：表格行列结构和 12 个金额全部正确，中文句子全对；错 2 处（「up 12%」多出一个点，「Travel」认成「Fravel」），并把中文备注行误标成标题；总耗时 580 ms，其中 OCR 421 ms。同一页换 Tesseract 后端（默认只带英文）：英文全对，中文行成乱码，耗时 1.1 秒。局限：只测了 1 页合成样张，不是真实扫描件；官方 ParseBench-2 59.2 分、单核 426 ms/页为自报。权重许可证不是开源许可：上一年营收或融资超过 200 万美元的机构商用、或做竞品服务，需另获授权（个人和研究用途除外）。",
+   "url": "https://www.llamaindex.ai/blog/introducing-ocria-nano-1",
+   "label": "AI 产品精选 · 实际试用",
+   "sources": [
+    {
+     "author": "LlamaIndex",
+     "platform": "官方博客",
+     "published": "2026-11-23",
+     "url": "https://www.llamaindex.ai/blog/introducing-ocria-nano-1"
+    },
+    {
+     "author": "LlamaIndex",
+     "platform": "Hugging Face 模型页（含许可证）",
+     "published": "",
+     "url": "https://huggingface.co/llamaindex/OCRia-nano-1"
+    },
+    {
+     "author": "Jerry Liu（@jerryjliu0）",
+     "platform": "X",
+     "published": "2026-11-23",
+     "url": "https://x.com/jerryjliu0/status/2124909031999553926"
     }
    ]
   },
   {
    "title": "新工具：Motionflare",
-   "summary": "把网站做成产品发布视频。Pro 版 $29/月（黑五首月半价，至 12-1），另有免费预览。Product Hunt 当日第 3（hunted.space 实时榜 227 票，北京时间 11-24 07:14 采）。",
+   "summary": "把网站做成产品发布视频。Pro 版 $29/月（黑五首月半价，至 12-1），另有免费预览。Product Hunt 11-23 日榜第 2（hunted.space 收榜数据 330 票，北京时间 11-24 16:20 采）。",
    "url": "https://motionflare.ai/pricing",
    "label": "官方自报",
    "sources": [
@@ -100,7 +132,7 @@
   },
   {
    "title": "新工具：Gauth Personal Study Agent",
-   "summary": "AI 学习代理，记录学生在拍题、小测中的薄弱点，生成每日复习计划（闪卡、分步讲解、小测），内置于 Gauth App。定价未公开。Product Hunt 当日第 2（hunted.space 实时榜 243 票，北京时间 11-24 07:14 采）。",
+   "summary": "AI 学习代理，记录学生在拍题、小测中的薄弱点，生成每日复习计划（闪卡、分步讲解、小测），内置于 Gauth App。定价未公开。Product Hunt 11-23 日榜第 3（hunted.space 收榜数据 305 票，北京时间 11-24 16:20 采）。",
    "url": "https://www.producthunt.com/products/gauth-ai-course",
    "label": "官方自报",
    "sources": [
