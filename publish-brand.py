@@ -44,12 +44,8 @@ html body, html body .wrap {{background:var(--bg); color:var(--ink)}}
 @media (max-width:700px) {{
   html .wrap .mobile-masthead {{font-size:clamp(1.35rem,6.2vw,1.8rem);white-space:nowrap}}
   .wrap .m-bar {{gap:.35rem}}
-  html .wrap .toolbar {{padding-top:8px}}
-  html.home-screen .wrap .toolbar {{padding-top:36px}}
-  html.home-screen .wrap {{padding-top:env(safe-area-inset-top,0px)}}
-}}
-@media (max-width:700px) and (display-mode:standalone) {{
-  html body .wrap .toolbar {{padding-top:36px}}
+  html .wrap .toolbar {{padding-top:2px}}
+  #cols > .col:first-child {{margin-top:12px}}
 }}
 </style>"""
 html, count = re.subn(r'<meta name="viewport"[^>]*>', lambda _: head, html, count=1)
