@@ -122,7 +122,7 @@
   if (!feed || !filters || !date || !payload) return;
 
   const order = ['ai-news', 'new-ideas', 'invest', 'startup-news', 'daily-trends',
-    'life-hacks', 'ai-tools', 'go-global', 'immigration'];
+    'life-hacks', 'ai-tools', 'go-global', 'immigration', 'creator-watch'];
   const rank = slug => slug === 'all' ? -1 : (order.includes(slug) ? order.indexOf(slug) : order.length);
   const { issues, bots } = JSON.parse(payload.textContent);
   const columnNames = new Map(bots.map(bot => [bot.slug, bot.column]));
