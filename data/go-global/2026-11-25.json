@@ -1,0 +1,48 @@
+{
+ "bot": "Go Global",
+ "date": "2026-11-25",
+ "status": "已检查 Reddit 七个板块（官方 JSON 与 old.reddit RSS 均 403，改用 arctic-shift 分页 + 关键词补抓，部分关键词查询 422）、Indie Hackers（curl 被 Cloudflare 403，改用 WebFetch 与搜索定位帖子）、Hacker News Algolia、X、Starter Story（无法确认近 7 天日期，跳过）、Lenny’s Newsletter（窗口内无跨市场案例）。本期 2 条：符合「写清市场差异、做法和结果」的案例不多，不凑数。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "作者称 iOS 应用 ReMaster 把界面和 App Store 商品页本地化成多语言后，前后各 14 天下载从 18 到 115（与新版本同日上线，无法单独归因）",
+   "summary": "MW Products 的 Masa 在 2026-11-22 的博客中写道：ReMaster（设备端 AI 修复模糊视频/照片的 App，2026-07-21 上架）于 9 月 16 日同时把 App 界面本地化成 35 种语言（1.1.0 版），并重写提交各语言商品页的副标题、描述、关键词和推广文本；作者称此前很多语言的副标题仍是英文，现商品页登记 39 种语言。前后各 14 天：展示 1,453→4,171（约 2.9 倍），商品页浏览 51→288，下载 18→115（约 6.4 倍），转化率（下载÷展示）1.24%→2.76%；前后各 26 天下载 29→230；新增展示大多来自 App Store 搜索。反例：11 月 3 日改写文案后展示 5,405→7,981，下载仅 266→275，转化率 4.92%→3.45%。作者写明界面翻译与商品页本地化同日上线，无法拆开效果；文中未给分国家数据；作者同时在介绍自家 App Store 数据工具 StoreMetrics。数字仅作者自报，数据截至 2026-11-20。",
+   "url": "https://mwproducts.biz/en/2026/11/22/app-store-localization-results/",
+   "label": "作者自报|已读原文",
+   "sources": [
+    {
+     "author": "Masa（MW Products）",
+     "platform": "作者博客",
+     "published": "2026-11-22",
+     "url": "https://mwproducts.biz/en/2026/11/22/app-store-localization-results/"
+    },
+    {
+     "author": "M. Wada（@MW_Products）",
+     "platform": "X",
+     "published": "2026-11-22",
+     "url": "https://x.com/MW_Products/status/2124353773569290679"
+    }
+   ]
+  },
+  {
+   "title": "达喀尔沙龙预约 Zalya 创始人称：按「WhatsApp 确认 + Mobile Money 付定金 + 对沙龙免费」做本地化，已有 200 多家商户入驻",
+   "summary": "Reddit 用户 Financial_Grape_7376 在 2026-11-20（北京时间）发帖称，Fresha、Booksy、Treatwell 等美容预约平台按欧美习惯设计（刷卡、月订阅、店主在电脑上管日历），而在非洲预约发生在 WhatsApp 聊天里，付款用 Mobile Money（手机钱包，如塞内加尔的 Wave、Orange Money），现金流按周，多数沙龙是靠一部手机经营的非正规小店。Zalya 从塞内加尔达喀尔起步：顾客找店订时段，用 Wave 或 Orange Money 付定金；沙龙在 WhatsApp 收到预约后直接回复确认，无需 App 和登录；App 供需要更多功能的店使用；对沙龙免费，从支付中赚钱而不收订阅。作者称达喀尔已有 200 多家商户入驻，并表示正在开第一轮融资。官网 zalya.app 为法语界面，按达喀尔街区找店。「200+」为入驻数，未给活跃、成交或收入口径，仅作者自报。",
+   "url": "https://www.reddit.com/r/SideProject/comments/1y0f5uu/unpopular_opinion_africa_doesnt_need_another/",
+   "label": "作者自报|已读原文",
+   "sources": [
+    {
+     "author": "Financial_Grape_7376",
+     "platform": "Reddit",
+     "published": "2026-11-20",
+     "url": "https://www.reddit.com/r/SideProject/comments/1y0f5uu/unpopular_opinion_africa_doesnt_need_another/"
+    },
+    {
+     "author": "Zalya",
+     "platform": "产品站",
+     "published": "",
+     "url": "https://zalya.app/"
+    }
+   ]
+  }
+ ]
+}
