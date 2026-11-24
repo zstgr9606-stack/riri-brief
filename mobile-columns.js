@@ -9,11 +9,37 @@
 
   // The existing filter buttons own the selection and counts on both layouts.
   dateBar.after(rail);
+  const toolbar = dateBar.closest('.toolbar');
+  const wrap = toolbar.parentElement;
+  const pane = document.createElement('div');
+  pane.className = 'reading-pane';
+  content.before(pane);
+  pane.append(content);
+  const footer = wrap.querySelector('.page-foot');
+  if (footer) pane.append(footer);
+  const title = wrap.querySelector('.top h1').cloneNode(true);
+  title.className = 'mobile-masthead';
+  dateBar.prepend(title);
   const style = document.createElement('style');
   style.textContent = `
+    .reading-pane { display: contents; }
+    .mobile-masthead { display: none; }
     @media (max-width: 700px) {
+      .wrap {
+        display: flex; flex-direction: column; height: 100vh; height: 100dvh;
+        padding: env(safe-area-inset-top, 0px) 0 0; overflow: hidden;
+      }
+      .wrap > header.top { display: none; }
+      .mobile-masthead { display: block; margin: 0; font-size: 1.2rem; color: var(--green); }
+      .wrap .toolbar { flex: none; padding-inline: 14px; }
+      .wrap .m-bar { justify-content: space-between; align-items: center; }
+      .m-bar label { flex: none; width: auto; }
+      .reading-pane {
+        display: block; flex: 1 1 0%; min-height: 0; overflow-y: auto;
+        overscroll-behavior-y: contain; touch-action: pan-y pinch-zoom;
+        padding: 0 14px max(24px, env(safe-area-inset-bottom));
+      }
       .toolbar { padding: 2px 0 0; border-bottom: 0; }
-      .toolbar .m-bar { justify-content: flex-start; }
       .toolbar .m-bar label:first-child { flex: none; }
       .toolbar .filters {
         display: flex; flex-wrap: nowrap; align-items: stretch; gap: 16px;
@@ -49,40 +75,44 @@
     if (item.left < bounds.left) rail.scrollLeft += item.left - bounds.left - 10;
     if (item.right > bounds.right) rail.scrollLeft += item.right - bounds.right + 10;
   }
-  rail.addEventListener('click', revealSelection);
+  function resetReadingPosition() {
+    if (mobile.matches) pane.scrollTop = 0;
+    revealSelection();
+  }
+  rail.addEventListener('click', resetReadingPosition);
   window.addEventListener('resize', revealSelection);
-  document.getElementById('m-date').addEventListener('change', revealSelection);
+  document.getElementById('m-date').addEventListener('change', resetReadingPosition);
   revealSelection();
 
   let start = null;
-  content.addEventListener('touchstart', event => {
+  pane.addEventListener('touchstart', event => {
     start = null;
     if (!mobile.matches || event.touches.length !== 1 || window.getSelection()?.toString()) return;
     const touch = event.touches[0];
-    if (touch.clientX < 24 || touch.clientX > document.documentElement.clientWidth - 24) return;
+    if (touch.clientX < 22 || touch.clientX > document.documentElement.clientWidth - 22) return;
     start = { x: touch.clientX, y: touch.clientY };
   }, { passive: true });
-  content.addEventListener('touchmove', event => {
+  pane.addEventListener('touchmove', event => {
     if (!start) return;
     const touch = event.touches[0];
     if (event.touches.length !== 1 || Math.abs(touch.clientY - start.y) >
         Math.max(16, Math.abs(touch.clientX - start.x))) start = null;
   }, { passive: true });
-  content.addEventListener('touchcancel', () => { start = null; });
-  content.addEventListener('touchend', event => {
+  pane.addEventListener('touchcancel', () => { start = null; });
+  pane.addEventListener('touchend', event => {
     const origin = start;
     start = null;
     if (!origin || event.touches.length || !event.changedTouches.length || window.getSelection()?.toString()) return;
     const touch = event.changedTouches[0];
     const dx = touch.clientX - origin.x;
     const dy = touch.clientY - origin.y;
-    if (Math.abs(dx) < 52 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
     const selected = activeButton();
-    const next = dx < 0 ? selected?.nextElementSibling : selected?.previousElementSibling;
-    if (!next) return;
+    if (!selected) return;
+    const next = dx < 0 ? selected.nextElementSibling || rail.firstElementChild
+                        : selected.previousElementSibling || rail.lastElementChild;
     if (event.cancelable) event.preventDefault();
     next.click();
-    window.scrollTo(0, 0);
   }, { passive: false });
 })();
 
@@ -118,7 +148,13 @@
   if (intro) intro.textContent = '公开版 · 点标题读摘要，点来源看原文 · 北京时间';
   const shortcuts = document.createElement('div');
   shortcuts.className = 'weekly-shortcuts';
-  filters.before(shortcuts);
+  const phone = matchMedia('(max-width: 700px)');
+  function placeShortcuts() {
+    if (phone.matches) feed.before(shortcuts);
+    else filters.before(shortcuts);
+  }
+  placeShortcuts();
+  phone.addEventListener('change', placeShortcuts);
   const css = document.createElement('style');
   css.textContent = `
     .weekly-shortcuts:empty {display:none}
@@ -250,3 +286,4 @@
   const observer = new MutationObserver(render);
   render();
 })();
+
