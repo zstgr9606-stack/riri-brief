@@ -1,12 +1,14 @@
 {
  "bot": "New Ideas",
  "date": "2026-11-24",
- "status": "已检查 16 位思想者的 X、博客、播客来源和 HN、LessWrong、Works in Progress、Reddit：多数思想者窗口内无合格新内容；Ridley 官网、Dobelli 人物稿、JAMA 论文页与 AEA 页面读取被拦（403），相关内容只列为未读或未核实。",
- "corrections": [],
+ "status": "11-24 16:30 北京时间重新采集：已检查 16 位思想者的 X、博客、播客来源和 HN、LessWrong、Works in Progress、Reddit，保留早版 4 条（链接复查均 200），新增 1 条（Falkovich）。多数思想者窗口内无合格新内容；Reddit 官方接口 403，改用 arctic-shift 存档；JAMA 论文页此前 403，相关数字只来自新闻稿。",
+ "corrections": [
+  "更正：本期早版第 2 条把 Marginal Revolution「The Tyranny of the Alphabet 2」的作者写成 Tyler Cowen，页面署名实为 Alex Tabarrok，已改。"
+ ],
  "items": [
   {
    "title": "Paul Graham（X 短帖）：遇到「不好听但可能是真的」的说法，应当更好奇而不是反驳",
-   "summary": "PG 在 11-23 发帖称，人们遇到不好听但可能为真的说法时，第一反应常是拒绝或攻击；他认为这应该引发好奇，因为不好听的真话「相对更少被探索」，所以特别有价值。帖子只是观点，没有数据或案例；「可能为真」如何判断未说明，「不好听」也不等于真。回复中有人质疑 PG 有时把主观想法当作真理（低互动回复）。热度（X API，2026-11-24 06:38 北京时间采集）：1748 赞、156 转、248 回复。",
+   "summary": "Paul Graham 认为，这类说法之所以值得好奇，正是因为人们第一反应是拒绝或攻击，于是不好听的真话被探索得相对更少，弄清它的增量价值也就更高。帖子没有给例子或数据，只针对「可能为真」的说法；怎样判断可能为真，他没有说明，不好听本身也不等于真。",
    "url": "https://x.com/paulg/status/2124834732303327654",
    "label": "作者自报",
    "sources": [
@@ -19,13 +21,13 @@
    ]
   },
   {
-   "title": "Tyler Cowen 转引 Chris Dalla Riva：选项按字母排序时，格莱美提名者名字靠前的占便宜（数据为 Dalla Riva 自报）",
-   "summary": "Cowen 在 11-23 的博客里重提「字母排序的暴政」：经济学作者按字母排序，姓氏靠前者更可能获终身教职等（Cowen 自述，未复核）。他引用 Dalla Riva（11-19）的格莱美分析：提名者中名字以 A–E 开头的占比，2001–2020 年中位 31.1%，2021–2025 年中位 38.8%（2022 年 46.9%），改为随机排序后 2026 年 28.0%、2027 年 24.3%；对照基准用 Billboard 榜单。原因（会员扩招、取消专家委员会）是 Dalla Riva 的推断；随机化后只有两年数据，只适用于评委信息少、选项多、按固定顺序列出的场景。",
+   "title": "Alex Tabarrok 转引 Chris Dalla Riva：选项按字母排序时，格莱美提名者名字靠前的占便宜（数据为 Dalla Riva 自报）",
+   "summary": "Tabarrok 认为，按字母排列这个看似中性的惯例会系统性地偏袒名字靠前的人：他早年引用的研究发现，按字母署名的经济学里姓氏靠前者更易获终身教职，不守此惯例的心理学则没有这种效应。他转引 Dalla Riva 的例子：格莱美 2021–2025 年基本按字母列提名时，A–E 开头的提名者占比中位 38.8%（2001–2020 年为 31.1%），改为随机排序后 2026、2027 年降到 28.0%、24.3%，不过随机化后只有两年数据。",
    "url": "https://marginalrevolution.com/marginalrevolution/2026/11/94257.html",
    "label": "作者自报",
    "sources": [
     {
-     "author": "Tyler Cowen",
+     "author": "Alex Tabarrok",
      "platform": "Marginal Revolution",
      "published": "2026-11-23",
      "url": "https://marginalrevolution.com/marginalrevolution/2026/11/94257.html"
@@ -40,7 +42,7 @@
   },
   {
    "title": "Ben Pace（LessWrong）：真答案常让人「不满意」，因为它由平凡零件组成，配不上提问时的敬畏感",
-   "summary": "Pace 在 11-23 读图灵 1950 年论文后提出：人们提问时带着情绪预期，当真答案由不起眼的机制拼成，就觉得「不对」并继续找答案。例子包括 PG 讲融资「就是发邮件、开会」、Dennett 讲意识被拆成部件，以及一则关于电器与社会关系的推特争论。这是随笔式论证，没有数据，例子经过挑选。评论区有真反方：dominicq 认为电器例子里「真话不满意」的说法本身不成立（多数人会选更少技术、更多社会关系）；XelaP 认为资本主义与科学解释不类比（人们抱怨的是缺少亲近关系，而不是反对省力的技术）。Pace 文中未回应这两点。热度（LessWrong，2026-11-24 06:45 北京时间采集）：59 分、5 条评论。",
+   "summary": "Pace 认为，人们带着敬畏去问大问题，期待答案配得上这种情绪；真答案若由不起眼的部件拼成，就会被觉得「不对」，人们于是继续找下去。例子有 PG 说融资「就是发邮件、开会」，以及 Dennett 把意识拆成工作记忆、视野、身体感觉、反思等部件时人们的不快；评论区有人反驳他举的电器与社会关系一例本身不成立。",
    "url": "https://www.lesswrong.com/posts/uK7buQSGjSrbyFw5k/the-disappointment-of-a-satisfying-explanation",
    "label": "作者自报",
    "sources": [
@@ -54,7 +56,7 @@
   },
   {
    "title": "转述（据哥伦比亚大学新闻稿，论文原文未读）：美加大学生的「不确定性不耐受」近 30 年上升，2012 年后加速",
-   "summary": "新闻稿称，研究汇总 2007–2025 年发表的 138 项美国、加拿大大学生研究（共 35,296 人，用 27 题或 12 题的不确定性不耐受量表，该倾向是焦虑的核心认知过程之一），平均分 1992–2023 年每年约升 0.65 分，2012–2023 年上升速度约为之前的 3 倍。作者称这个概念对公众较陌生，因此不太容易用「大家更会说焦虑所以报告更多」来解释（这是对立观点及作者回应）。限制：对象仅为美加大学生，是对已发表研究的汇总而非追踪同一批人，新闻稿并未证明因果，成因只是「可能」；数字来自新闻稿，未对照论文（JAMA 页面 403）。Reddit r/science 热度（2026-11-24 06:42 北京时间采集）：5299 分、308 评论。",
+   "summary": "研究作者认为，作为焦虑核心认知过程之一的「不确定性不耐受」在美加大学生中持续上升，可能是年轻人焦虑增多的一个机制：汇总 2007–2025 年发表的 138 项研究（35,296 人），平均分 1992–2023 年每年约升 0.65 分，2012–2023 年升速约为此前的 3 倍。适用条件：只针对美加大学生，是对已发表研究的汇总而非追踪同一批人，没有证明因果；数字来自新闻稿，JAMA 原文未读到。",
    "url": "https://www.publichealth.columbia.edu/news/sharp-rise-key-psychological-risk-factor-may-help-explain-growing-anxiety-among-young-adults",
    "label": "官方自报",
    "sources": [
@@ -63,6 +65,26 @@
      "platform": "官方新闻稿",
      "published": "2026-11-18",
      "url": "https://www.publichealth.columbia.edu/news/sharp-rise-key-psychological-risk-factor-may-help-explain-growing-anxiety-among-young-adults"
+    }
+   ]
+  },
+  {
+   "title": "Jacob Falkovich：思考难在「开始」而不在费力——利害越大，大脑越早用现成答案叫停",
+   "summary": "Falkovich 认为，人能连续解题几个小时，真正难的是在利害最大时开始想，因为想清楚可能逼你行动、认错或显得另类，于是大脑提前发出「停止」信号、拿现成答案收工；他把 System 2 定义为跳出单一显著性过滤、把整体目标和背景整合进来的能力。他举的例子是自己选伴侣：列出 15 项想要的品质并各给权重，给两位约会对象逐项打分，11 年后与得分更高的那位结婚（个人轶事，不是研究证据）。",
+   "url": "https://www.secondperson.dating/p/thinking-is-hard-for-humans",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Jacob Falkovich",
+     "platform": "Substack（Second Person）",
+     "published": "2026-11-23",
+     "url": "https://www.secondperson.dating/p/thinking-is-hard-for-humans"
+    },
+    {
+     "author": "Jacob Falkovich",
+     "platform": "LessWrong（转载）",
+     "published": "2026-11-23",
+     "url": "https://www.lesswrong.com/posts/NyCFKxR74RgRbs7SM/thinking-is-hard-for-humans"
     }
    ]
   }
