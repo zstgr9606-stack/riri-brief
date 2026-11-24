@@ -1,0 +1,56 @@
+{
+ "bot": "New Ideas",
+ "date": "2026-11-25",
+ "status": "11-25 06:50 北京时间采集：已检查 13 个思想者的 X、博客/播客 RSS、HN、LessWrong、Works in Progress；多数思想者窗口内无合格新内容。Mastroianni 与 Commoncog 新文为付费/会员文，只列待读线索。ACX feed 默认请求 404、换域名后 200；LessWrong 帖子网页 403，改用其 API 读全文；NBER 论文只读到摘要。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Gambling for Goals（NBER 工作论文，Tyler Cowen 转引）：目标显得够不着时，年轻人更愿意拿金融赌博去搏（仅读摘要）",
+   "summary": "论文作者认为，年轻人对经济前景悲观、同时类赌博金融活动增多，二者由 Friedman-Savage（1948）动机相连：买房、结婚等目标遥不可及时，人会去赌。依据是一份原创问卷加韩国信用局、电信商、信用卡公司的数百万条关联记录：越看重难达目标的人冒险越多，同一人失业期间加密货币 App 使用上升，抽签获得限价房购买权后下降。适用条件：只读到摘要，样本是韩国，App 使用不等于亏损。",
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/11/gambling-for-goals.html",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Tyler Cowen（转引）",
+     "platform": "Marginal Revolution",
+     "published": "2026-11-24",
+     "url": "https://marginalrevolution.com/marginalrevolution/2026/11/gambling-for-goals.html"
+    },
+    {
+     "author": "Arkolakis 等",
+     "platform": "NBER 工作论文",
+     "published": "",
+     "url": "https://www.nber.org/papers/w36010"
+    }
+   ]
+  },
+  {
+   "title": "Paul Graham（X 短帖）：只在乎质量的话，稀有的东西永远定价过高",
+   "summary": "Paul Graham 认为，稀有品多了一个别人愿意花大钱买的特性（稀有本身），所以只看质量的买家总会觉得它定价过高。帖子只有这一句，没有例子或数据；对看重收藏或社交价值的买家，稀有恰恰是买点，不算高估；「永远」是他的绝对化说法。",
+   "url": "https://x.com/paulg/status/2125300446978101642",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Paul Graham",
+     "platform": "X",
+     "published": "2026-11-24",
+     "url": "https://x.com/paulg/status/2125300446978101642"
+    }
+   ]
+  },
+  {
+   "title": "Girish Gupta（LessWrong）：事实很少单独改变什么，沟通要让人「有感觉」（演讲整理，针对 AI 安全圈）",
+   "summary": "Gupta 是物理学出身的调查记者，他说自己揭露过哥伦比亚的准军事屠杀、IS 武器来源和委内瑞拉选举结果被改，登上大媒体头版却「什么都没变」，因此主张向研究者和公众沟通时讲个人故事、说出自己相信什么和害怕什么，免责细节放附录。最高赞评论反驳：即使写得更动人，那些国家的结果也未必改变，「事实没用」的归因不成立；Gupta 回应称底层认知质量不变，只改沟通方式。这是演讲稿，没有数据，例子都来自 AI 安全场景。",
+   "url": "https://www.lesswrong.com/posts/TvdRkp6spZtSbf44H/being-right-is-not-a-strategy-make-them-feel-something",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Girish Gupta",
+     "platform": "LessWrong",
+     "published": "2026-11-21",
+     "url": "https://www.lesswrong.com/posts/TvdRkp6spZtSbf44H/being-right-is-not-a-strategy-make-them-feel-something"
+    }
+   ]
+  }
+ ]
+}
