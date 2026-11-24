@@ -214,6 +214,17 @@
       .status, .corr { margin:8px 0; }
       .wrap .toolbar :focus-visible { outline:2px solid var(--accent); }
     }
+    .source-bar {display:flex;align-items:baseline;gap:0 12px;flex-wrap:wrap;margin-top:4px;color:var(--muted);font-size:.86rem}
+    .source-bar .primary-source {max-width:100%;overflow-wrap:anywhere;color:inherit;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px;padding:4px 0}
+    .source-bar button,.share-story {font:inherit;font-size:.86rem;color:var(--muted);background:none;border:0;cursor:pointer;padding:4px 0}
+    .share-story {display:inline-block;margin:7px 0 0;text-decoration:underline;text-underline-offset:3px}
+    .brief-detail[open] + .source-bar {display:none}
+    .share-address {width:100%;font:inherit}
+    .collection-status {margin:0;padding:4px 0;color:var(--muted);font-size:.86rem;border-bottom:1px solid var(--line)}
+    .collection-status summary {cursor:pointer;padding:6px 10px}
+    .collection-status .status {margin:0 6px 6px;line-height:1.55}
+    .item[id] {scroll-margin-top:10rem}
+    @media(max-width:700px) {.item[id]{scroll-margin-top:8px}.collection-status summary{padding-inline:0}}
   `;
   document.head.append(css);
 
@@ -240,22 +251,102 @@
     return button;
   }
 
-  function formatArticle(article) {
+  function shortSource(anchor) {
+    const parts = [...new Set(anchor.textContent.split(' · ').map(s => s.trim())
+      .filter(s => s && !/^\d{4}-\d{2}-\d{2}/.test(s)))];
+    return parts.join(' · ') || anchor.hostname;
+  }
+
+  function compactSources(article, full, title) {
+    const entries = full ? [...full.querySelectorAll('a, span')] : [];
+    const links = entries.filter(node => node.tagName === 'A');
+    const main = title.href ? links.find(a => a.href === title.href) || title : links[0];
+    if (!main) return null;
+    const primary = main.cloneNode(false);
+    primary.className = 'primary-source';
+    primary.textContent = (main === title ? main.hostname.replace(/^www\./, '') : shortSource(main)) + ' ↗';
+    primary.setAttribute('aria-label', '打开原文：' + primary.textContent.slice(0, -2));
+    const bar = document.createElement('div');
+    bar.className = 'source-bar';
+    bar.append(primary);
+    if (main === title && !full) {
+      full = document.createElement('div');
+      full.className = 'xline src';
+      article.append(full);
+    }
+    if (main === title) {
+      const original = primary.cloneNode(true);
+      original.textContent = primary.hostname;
+      full.append(full.textContent ? '；' : '来源：', original);
+    }
+    const extra = new Set(entries.filter(e => e.href !== main.href).map(e => e.href || e.textContent));
+    if (extra.size) {
+      const more = document.createElement('button');
+      more.type = 'button';
+      more.textContent = '另有 ' + extra.size + ' 个来源';
+      more.addEventListener('click', () => {
+        const detail = article.querySelector('.brief-detail');
+        detail.open = true;
+        const destination = links.find(a => a.href !== main.href) || full.querySelector('a') || detail.querySelector('summary');
+        destination.focus({preventScroll:true});
+        full.scrollIntoView({block:'nearest'});
+      });
+      bar.append(more);
+    }
+    return bar;
+  }
+
+  // Use the stable article URL where available, so edits to headlines preserve shared links.
+  function shareId(key) {
+    let value = 14695981039346656037n;
+    for (const character of key) {
+      value = BigInt.asUintN(64, (value ^ BigInt(character.codePointAt(0))) * 1099511628211n);
+    }
+    return value.toString(36);
+  }
+
+  function shareLink(article, headline, slug) {
+    const key = article.dataset.key || headline;
+    const id = shareId(key);
+    article.id = 'story-' + slug + '-' + id;
+    const url = new URL(location.pathname, location.origin);
+    url.search = new URLSearchParams({date: date.value, col: slug, story: id});
+    const link = document.createElement('a');
+    link.className = 'share-story';
+    link.href = url.href;
+    link.textContent = '分享这条';
+    link.addEventListener('click', async event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      if (navigator.share) {
+        try { await navigator.share({title: headline, url: url.href}); return; }
+        catch (error) { if (error.name === 'AbortError') return; }
+      }
+      try {
+        await navigator.clipboard.writeText(url.href);
+        link.textContent = '链接已复制';
+        setTimeout(() => { link.textContent = '分享这条'; }, 2200);
+      } catch {
+        let field = article.querySelector('.share-address');
+        if (!field) {
+          field = document.createElement('input');
+          field.className = 'share-address';
+          field.readOnly = true;
+          field.setAttribute('aria-label', '复制本条简报链接');
+          field.value = url.href;
+          link.after(field);
+        }
+        field.focus();
+        field.select();
+      }
+    });
+    return link;
+  }
+
+  function formatArticle(article, slug) {
     const title = article.querySelector('.title');
     if (!title) return;
-    let source = article.querySelector('.src');
-    const original = title.getAttribute('href');
-    if (original && !Array.from(source?.querySelectorAll('a') || []).some(a => a.href === title.href)) {
-      if (!source) {
-        source = document.createElement('div');
-        source.className = 'xline src';
-        article.append(source);
-      }
-      const link = title.cloneNode(false);
-      link.removeAttribute('class');
-      link.textContent = '原文';
-      source.append(source.textContent ? ' · ' : '', link);
-    }
+    const bar = compactSources(article, article.querySelector('.src'), title);
     article.querySelector('.sum-tg')?.remove();
     const details = document.createElement('details');
     details.className = 'brief-detail';
@@ -264,11 +355,38 @@
     summary.textContent = title.textContent;
     title.replaceWith(details);
     details.append(summary);
-    for (const child of Array.from(article.children)) {
-      if (child !== details && child !== source) details.append(child);
+    for (const child of [...article.children]) {
+      if (child !== details) details.append(child);
     }
+    if (bar) article.append(bar);
+    details.append(shareLink(article, summary.textContent, slug));
   }
 
+  const limited = /(?:\b(?:403|404|429|5\d\d|failed|unavailable|blocked|partial)\b|失败|未能|受限|读不到|不完整|未完成|无法|超时|被拦|防火墙|需登录|未直读|未读到|播放数未|小红书未读)/i;
+  function statusLabel(note) {
+    const clauses = note.split(/[；;，,。！!：（()）]/);
+    const affected = clauses.filter(part => limited.test(part) && !/无异常|没有失败|无失败|未发现异常/.test(part));
+    if (!affected.length) return '采集说明';
+    const names = new Set();
+    // Only name a source when the clause containing it actually reports a limitation.
+    const named = /Reddit|Product Hunt|YouTube|GitHub|Hacker News|RSS|微博|雪球|知识星球|小红书|Ridley|Dobelli|JAMA|AEA|Patreon|Substack|LessWrong/gi;
+    for (const part of affected) {
+      for (const match of part.matchAll(named)) names.add(match[0]);
+    }
+    return '部分来源受限' + (names.size ? ' · ' + [...names].join('、') : '');
+  }
+
+  function foldStatus(col, note) {
+    const node = col.querySelector('.status');
+    if (!node || !note) return;
+    const details = document.createElement('details');
+    details.className = 'collection-status';
+    const summary = document.createElement('summary');
+    summary.textContent = statusLabel(note);
+    details.append(summary);
+    node.replaceWith(details);
+    details.append(node);
+  }
   const pane = feed.closest('.reading-pane');
   const storageKey = 'brief-reading-v1';
   const visitDay = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
@@ -364,16 +482,23 @@
         state.replaceChildren(link);
         head.lastElementChild.replaceWith(state);
         col.replaceChildren(head);
+        if (issue?.date === date.value && issue.status) {
+          const note = document.createElement('div');
+          note.className = 'status';
+          note.textContent = issue.status;
+          col.append(note);
+          foldStatus(col, issue.status);
+        }
         continue;
       }
+      foldStatus(col, issue?.status);
       if (!issue && !all) col.querySelector('.state-missing').textContent = '待更新';
       const limit = all ? (order.slice(0, 2).includes(slug) ? 3 : 1) : articles.length;
       articles.forEach((item, index) => {
-        if (index < limit) formatArticle(item);
+        if (index < limit) formatArticle(item, slug);
         else item.remove();
       });
       if (all && count) {
-        col.querySelector('.status')?.remove();
         col.querySelector('.foot')?.remove();
         col.append(action('查看全部 ' + count + ' 条', 'column-more', slug));
       }
@@ -383,7 +508,27 @@
   }
   const observer = new MutationObserver(render);
   render();
+
+  const request = new URLSearchParams(location.search);
+  if (request.has('story')) {
+    const story = document.getElementById('story-' + request.get('col') + '-' + request.get('story'));
+    if (story) {
+      story.querySelector('.brief-detail').open = true;
+      requestAnimationFrame(() => {
+        story.scrollIntoView({block:'start'});
+        story.querySelector('summary').focus({preventScroll:true});
+      });
+    } else {
+      const message = document.createElement('p');
+      message.className = 'empty';
+      message.textContent = '这条简报已从本期移除，可继续浏览本栏。';
+      feed.before(message);
+      filters.addEventListener('click', () => message.remove(), {once:true});
+      date.addEventListener('change', () => message.remove(), {once:true});
+    }
+  }
 })();
+
 
 
 
