@@ -209,6 +209,7 @@
       .col .col-h { padding:0 0 8px; min-height:36px; border:0; }
       .col-h .name { font-size:1.05rem; font-weight:700; }
       .col-h .badge { padding-right:0; font-size:.78rem; }
+      .wrap .mobile-masthead {letter-spacing:-.015em;text-shadow:none}
       .item .src { font-size:.86rem; }
       .col .item { padding:14px 0; border:0; }
       .col .column-more, .col .foot, .col .empty { padding-inline:0; border:0; }
@@ -216,6 +217,7 @@
       .status, .corr { margin:8px 0; }
       .wrap .toolbar :focus-visible { outline:2px solid var(--accent); }
     }
+    .col .item.is-read .brief-title {color:var(--muted)}
     .source-bar {display:flex;align-items:baseline;gap:0 12px;flex-wrap:wrap;margin-top:4px;color:var(--muted);font-size:.86rem}
     .source-bar .primary-source {max-width:100%;overflow-wrap:anywhere;color:inherit;text-decoration:none;padding:4px 0}
     .source-bar button,.share-story {font:inherit;font-size:.86rem;color:var(--muted);background:none;border:0;cursor:pointer;padding:4px 0}
@@ -361,9 +363,42 @@
     return controls;
   }
 
-  function formatArticle(article, slug) {
+  // Store each mark separately so another tab cannot overwrite a reader's progress.
+  const readPrefix = 'shaoyao-read-v1/';
+  const sessionRead = new Set();
+  function markRead(article) {
+    const key = article?.dataset.readKey;
+    if (!key || article.classList.contains('is-read')) return;
+    sessionRead.add(key);
+    article.classList.add('is-read');
+    try { localStorage.setItem(key, '1'); } catch { /* Keep the in-memory mark. */ }
+  }
+  function refreshRead(article) {
+    const key = article.dataset.readKey;
+    let read = sessionRead.has(key);
+    try { read ||= localStorage.getItem(key) === '1'; } catch { /* Storage is optional. */ }
+    article.classList.toggle('is-read', read);
+  }
+  window.addEventListener('storage', event => {
+    if (!event.key || event.key.startsWith(readPrefix)) {
+      if (!event.key) sessionRead.clear();
+      for (const article of feed.querySelectorAll('.item[data-read-key]')) refreshRead(article);
+    }
+  });
+  function recordInteraction(event) {
+    const target = event.target.closest('a.primary-source, .src a, .brief-title, .source-bar button');
+    if (!target || (event.type === 'auxclick' && (event.button !== 1 || !target.matches('a')))) return;
+    if (target.matches('.brief-title') && target.parentElement.open) return;
+    markRead(target.closest('.item'));
+  }
+  feed.addEventListener('click', recordInteraction);
+  feed.addEventListener('auxclick', recordInteraction);
+
+  function formatArticle(article, slug, issueDate) {
     const title = article.querySelector('.title');
     if (!title) return;
+    article.dataset.readKey = readPrefix + issueDate + '/' + shareId(article.dataset.key || slug + '/' + title.textContent);
+    refreshRead(article);
     const bar = compactSources(article, article.querySelector('.src'), title);
     article.querySelector('.sum-tg')?.remove();
     const details = document.createElement('details');
@@ -532,7 +567,7 @@
       if (!issue && !all) col.querySelector('.state-missing').textContent = '待更新';
       const limit = all ? (order.slice(0, 2).includes(slug) ? 3 : 1) : articles.length;
       articles.forEach((item, index) => {
-        if (index < limit) formatArticle(item, slug);
+        if (index < limit) formatArticle(item, slug, issue?.date || date.value);
         else item.remove();
       });
       if (all && count) {
