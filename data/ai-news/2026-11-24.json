@@ -1,7 +1,7 @@
 {
  "bot": "AI News",
  "date": "2026-11-24",
- "status": "北京时间 11-24 16:13–16:40 重新采集：6 个平台均已检查（X、Reddit、Hacker News、GitHub、Product Hunt、YouTube）；Product Hunt 票数来自第三方 hunted.space 的 11-23 日榜收榜数据；AI 产品精选 1 个，为本栏实际试用",
+ "status": "北京时间 11-24 16:13–16:40 重新采集：6 个平台均已检查（X、Reddit、Hacker News、GitHub、Product Hunt、YouTube）；Product Hunt 票数来自第三方 hunted.space 的 11-23 日榜收榜数据；AI 产品实测 2 条：1 条为当期 bot 试用记录，1 条为 Pranav Pandey 的公开试用反馈",
  "corrections": [],
  "items": [
   {
@@ -117,32 +117,25 @@
    ]
   },
   {
-   "title": "新工具：Motionflare",
-   "summary": "把网站做成产品发布视频。Pro 版 $29/月（黑五首月半价，至 12-1），另有免费预览。Product Hunt 11-23 日榜第 2（hunted.space 收榜数据 330 票，北京时间 11-24 16:20 采）。",
+   "title": "Motionflare：贴上产品网址就能生成发布视频，实测成片漏了 logo",
+   "summary": "独立开发者 Pranav Pandey 用自己的产品网站试了 Motionflare。它把网页素材剪成了一条发布视频，但这次只用了两张截图，漏掉了 logo，字体和配色也偏离原站。镜头切换太快，他来不及读完画面上的字。\n做应用上线演示时，可以先免费预览，重点看品牌素材有没有抓全、字幕能不能读完，再决定是否导出。这是一个网站的试用结果。",
    "url": "https://motionflare.ai/pricing",
-   "label": "官方自报",
+   "label": "AI 产品实测 · 独立实测",
    "sources": [
+    {
+     "author": "Pranav Pandey",
+     "platform": "Product Hunt · 本人试用反馈",
+     "published": "",
+     "url": "https://www.producthunt.com/products/motionflare?page=2"
+    },
     {
      "author": "Motionflare",
      "platform": "官网定价页",
      "published": "",
      "url": "https://motionflare.ai/pricing"
     }
-   ]
-  },
-  {
-   "title": "新工具：Gauth Personal Study Agent",
-   "summary": "AI 学习代理，记录学生在拍题、小测中的薄弱点，生成每日复习计划（闪卡、分步讲解、小测），内置于 Gauth App。定价未公开。Product Hunt 11-23 日榜第 3（hunted.space 收榜数据 305 票，北京时间 11-24 16:20 采）。",
-   "url": "https://www.producthunt.com/products/gauth-ai-course",
-   "label": "官方自报",
-   "sources": [
-    {
-     "author": "Gauth",
-     "platform": "Product Hunt",
-     "published": "",
-     "url": "https://www.producthunt.com/products/gauth-ai-course"
-    }
-   ]
+   ],
+   "reviewUrl": "https://www.producthunt.com/products/motionflare?page=2"
   }
  ]
 }
