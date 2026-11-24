@@ -1,0 +1,54 @@
+{
+ "bot": "Life Hacks",
+ "date": "2026-11-25",
+ "status": "已检查 8 个 Reddit 生活版块、HN、X 和 YouTube 今日上传搜索；Reddit 官方接口 403、RSS 404/429，已改用 arctic-shift（CleaningTips 首次 422，重试成功）。HN、X、YouTube 无合格生活技巧帖。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "马桶内壁一道道黄褐色水痕：多半来自圈口出水孔的水垢，用除垢剂对准圈下，别往水箱里放清洁剂",
+   "summary": "r/CleaningTips 楼主用 Bar Keepers Friend 马桶清洁剂和浮石都去不掉圈下垂痕。最高赞建议把清洁剂放进水箱冲，其他热评推浮石、柠檬酸敷、CLR 等除垢剂，也有人说浮石无效。Sterling（Kohler 旗下）保养说明：硬水垢会堵圈口出水孔，应选专用除垢剂并按包装使用，不要用水箱清洁剂（会损坏冲水阀等部件）；TOTO FAQ 也不建议往水箱放清洁剂，顽固水垢可按包装用醋或 CLR。TOTO 部分特殊釉面不宜用研磨或酸碱清洁剂，先看说明书。柠檬酸敷属网友经验。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y45git/how_to_clean_ive_tried/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主及热评",
+     "platform": "Reddit",
+     "published": "2026-11-24",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y45git/how_to_clean_ive_tried/"
+    },
+    {
+     "author": "Sterling（Kohler 旗下）",
+     "platform": "官方保养说明",
+     "published": "",
+     "url": "https://sterling.kohler.com/en/support/care-and-cleaning/how-to-clean-and-care-toilets"
+    },
+    {
+     "author": "TOTO USA",
+     "platform": "官方 FAQ",
+     "published": "",
+     "url": "https://www.totousa.com/product-faq"
+    }
+   ]
+  },
+  {
+   "title": "蘑菇一下锅就出水：先单独炒干水分（可先加少量水焖软），再放进菜里",
+   "summary": "r/Cooking 楼主往焗菜里加蘑菇后整盘出水。最高赞建议先把切片蘑菇中火干炒到失水收缩再加；另一高赞推荐 America's Test Kitchen（ATK）方法：先加少量水焖软、水分蒸发后再放少量油煎。ATK 2018 年文章写明先加水蒸能让蘑菇快速塌下并逼出水分，之后只需约半茶匙油。早放盐是否有助出水热评有争论，有人认为会让口感偏韧。",
+   "url": "https://www.reddit.com/r/Cooking/comments/1y42kzl/how_to_make_my_casserole_not_water_when_i_put/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/Cooking 楼主及热评",
+     "platform": "Reddit",
+     "published": "2026-11-24",
+     "url": "https://www.reddit.com/r/Cooking/comments/1y42kzl/how_to_make_my_casserole_not_water_when_i_put/"
+    },
+    {
+     "author": "Lan Lam / America's Test Kitchen",
+     "platform": "ATK 文章",
+     "published": "2018-12-05",
+     "url": "https://www.americastestkitchen.com/articles/1196-new-school-sauteed-mushrooms"
+    }
+   ]
+  }
+ ]
+}
