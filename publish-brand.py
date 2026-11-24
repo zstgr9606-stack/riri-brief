@@ -61,6 +61,8 @@ def update_columns(match):
     for column in payload.get("bots", []):
         if column["slug"] == "ai-tools":
             column["column"] = "Product Radar"
+        elif column["slug"] == "creator-watch":
+            column["column"] = "Creator Watch"
         cadence = {"ai-tools": "周一、周四", "new-ideas": "周三、周六"}.get(column["slug"])
         if cadence:
             column.update(cadence=cadence, cadenceFrom="2026-11-24")
