@@ -1,0 +1,22 @@
+{
+ "bot": "Startup News",
+ "date": "2026-11-25",
+ "status": "已检查 X、Reddit、Hacker News、Product Hunt、YouTube、Indie Hackers；Reddit 官方接口与 Product Hunt 官网返回 403，已改用 arctic-shift、PH feed 和 hunted.space；仅 1 条达到收录标准。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Postiz 创始人自述：不靠 SEO 和广告，靠追 X 热点、网红长期合作和一稿多发做到 500 万美元 ARR",
+   "summary": "开源社交排期工具 Postiz 创始人 Nevo David 发帖称 Postiz 达到 500 万美元 ARR（年度经常性收入）、100% 自筹、一个月新增 200 万美元 ARR，并附视频讲做法：每天找 X 上走热话题，选用例（TikTok 图文轮播、AI UGC、AI 视频），写 X 长文并把结果写进标题，与真实创作者长期合作同一位，付费让账号转发助推，再把长文改成博客做 SEO、做带「评论领取」号召的 Shorts 引流、用 HeyGen 数字人视频多平台分发。存疑：ARR 和月增数字仅作者自报，未见第三方收入核对；视频仅读到章节目录；付费转发是否标注广告未说明。",
+   "url": "https://x.com/wickedguro/status/2125220184948699631",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Nevo David",
+     "platform": "X",
+     "published": "2026-11-24",
+     "url": "https://x.com/wickedguro/status/2125220184948699631"
+    }
+   ]
+  }
+ ]
+}
