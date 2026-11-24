@@ -1,0 +1,83 @@
+{
+ "bot": "Daily Trends",
+ "date": "2026-11-25",
+ "status": "已检查 X、Reddit、GitHub、HN、Product Hunt、知乎、微信、微博 8 个来源；Reddit 官方接口 403 改用 arctic-shift，Product Hunt 官网 403 改用官方 Atom，微博官方 403 改用 tophub；产品类条目已让给其他栏目",
+ "corrections": [],
+ "items": [
+  {
+   "title": "中共中央政治局委员、上海市委书记陈吉宁接受审查调查",
+   "summary": "新华社 11 月 24 日电：陈吉宁涉嫌严重违纪违法，目前正接受中央纪委国家监委审查调查；上海市委常委会当晚举行扩大会议表态拥护。通报未说明具体指控。",
+   "url": "https://www.news.cn/20261124/c9efb02bd8be4a4cbbbee2102cfbc657/c.html",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "新华社",
+     "platform": "新华网",
+     "published": "2026-11-24",
+     "url": "https://www.news.cn/20261124/c9efb02bd8be4a4cbbbee2102cfbc657/c.html"
+    },
+    {
+     "author": "上海发布",
+     "platform": "上海市政府网",
+     "published": "2026-11-24",
+     "url": "https://cdn.shanghai.gov.cn/nw4411/20261124/6cfdc616e03346b58169acd131048c96.html"
+    }
+   ]
+  },
+  {
+   "title": "据 CBS 报道：美陆军定于当地周三 9 时在艾奥瓦受控引爆约 5 吨老化叠氮化铅",
+   "summary": "代理陆军部长 Telle 称将于美国中部时间周三 9 时（北京时间周三 23 时）在艾奥瓦陆军弹药厂引爆含叠氮化铅（一种起爆药）的爆炸物，称其老化后可能自发爆炸；第 8 巡回上诉法院周一驳回环保团体的阻止请求。环保团体和两州政界人士担心铅尘污染。采集时尚未引爆；「约 5 吨」为 CBS 口径，法院裁决原文未读。",
+   "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "CBS News",
+     "platform": "CBS News",
+     "published": "2026-11-24",
+     "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
+    }
+   ]
+  },
+  {
+   "title": "Quad9 官方：停止向法国用户提供 DNS 解析",
+   "summary": "瑞士非营利公共 DNS 服务 Quad9 称，11 月 24 日巴黎时间 9 时起拒绝来自法国的全部查询。起因是体育版权方 beIN 要求其屏蔽盗版流媒体域名，法国法院支持该要求并已对其罚款；Quad9 拒绝在递归 DNS 层面屏蔽内容，并承认按 IP 判定法国用户会有误伤和漏判。此为 Quad9 单方说法，法院判决原文未读。",
+   "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Quad9",
+     "platform": "官方博客",
+     "published": "2026-11-24",
+     "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/"
+    }
+   ]
+  },
+  {
+   "title": "🔄 转述：路透称微软内部宣布「Code Red」应对 11 月 12–13 日 Microsoft 365 大故障",
+   "summary": "路透独家称看到内部备忘录：M365 Core 总裁 Henderson 称这是 Exchange Online 史上影响客户最多的事故并宣布 Code Red（最高优先级）；应急时工程师在 11 个 Teams 群发了 1.1 万多条消息；新目标是今后故障一小时内全球恢复，并用 AI 智能体辅助诊断。备忘录原文未公开，路透原站未能读取，已读转载的路透稿。",
+   "url": "https://www.theglobeandmail.com/business/article-microsoft-code-red-outage/",
+   "label": "转述",
+   "new_since": "相比 11 月 13 日首发的故障消息，新增内部备忘录披露的整改内容：宣布 Code Red、1.1 万多条应急消息、一小时全球恢复目标",
+   "prior": [
+    {
+     "title": "11-13 微软 365 全球故障",
+     "url": "https://globalnews.ca/news/12148204/microsoft-outage-2026/"
+    }
+   ]
+  },
+  {
+   "title": "转述：据路透、Politico 报道，美国贸易代表办公室拟对 16 个经济体提议新关税（官方尚未公布）",
+   "summary": "两家媒体援引知情人士称，USTR 将公布对 16 个贸易伙伴「产能过剩」的 301 调查结果并提议新关税，部分替代 2 月被最高法院推翻的关税；名单含中国、欧盟、日本、韩国、印度、越南、墨西哥等，税率按国别定，知情人称会遵守已签协议上限（欧日韩 15%）。北京时间 11 月 25 日 06:48 查看 USTR 新闻稿页未见公告，税率未定。",
+   "url": "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "Politico",
+     "platform": "Politico",
+     "published": "2026-11-24",
+     "url": "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685"
+    }
+   ]
+  }
+ ]
+}
