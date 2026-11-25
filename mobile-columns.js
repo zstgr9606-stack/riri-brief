@@ -472,6 +472,7 @@
     .brief-detail .sum p + p {margin-top:.65em}
     .source-bar {align-items:center;gap:0 6px}
     .source-bar .primary-source {display:flex;align-items:center;gap:8px;flex:1 1 110px;min-width:0;max-width:100%;min-height:48px;box-sizing:border-box;padding:7px 10px;border-radius:6px;background:#edf1f2}
+    .item .meta .evidence-note {display:inline-block;font-size:.78rem;font-weight:500;color:var(--muted);line-height:1.5}
     .source-action {font-weight:650;color:var(--accent)}
     .source-citation {font-size:.82em;overflow-wrap:anywhere}
     .brief-detail[open] + .source-bar .primary-source {flex-direction:column;align-items:flex-start;justify-content:center;gap:2px}
@@ -889,6 +890,37 @@
     if (count) col.insertBefore(section, col.querySelector('.foot'));
   }
 
+  function showEvidenceLabel(article, slug) {
+    const chip = article.querySelector('.meta .chip:not(.also)');
+    if (!chip) return;
+    const raw = chip.textContent.trim();
+    const title = article.querySelector('.brief-title').textContent;
+    const link = article.querySelector('a.primary-source');
+    const statement = /自述|自报|个人经历|网友经验/;
+    let label = '';
+    if (article.closest('.product-picks') && link?.classList.contains('review-credit')) {
+      label = '独立实测';
+    } else if (/未核实|未验证|转述/.test(raw)) {
+      // Keep uncertainty visible as a note rather than turning it into an endorsement.
+      if (!/转述|未核实|未验证/.test(title)) label = raw;
+    } else if (raw === '作者观点' || (slug === 'new-ideas' && /^Paul Graham（X 短帖）/.test(title))) {
+      if (!/作者观点|认为|建议/.test(title)) label = '作者观点';
+    } else if (/厂商自报|官方自报|协会自报|作者自测|观察，/.test(raw)) {
+      if (!title.includes(raw)) label = raw;
+    } else if (statement.test(raw)) {
+      if (!statement.test(title)) label = '作者自述';
+    } else if (/^数据结果$/.test(raw) || link?.hostname === 'blog.google' &&
+               link.pathname.endsWith('/humanitys-first-exam/')) {
+      if (!title.includes('数据结果')) label = '数据结果';
+    }
+    if (label) {
+      chip.textContent = label;
+      chip.className = 'evidence-note';
+    } else {
+      chip.remove();
+    }
+  }
+
   function render() {
     observer.disconnect();
     updateFilterLabels();
@@ -946,6 +978,7 @@
         else item.remove();
       });
       if (slug === 'ai-news' && issue) groupProductPicks(col, issue);
+      col.querySelectorAll('.item').forEach(article => showEvidenceLabel(article, slug));
       if (all && count) {
         col.querySelector('.foot')?.remove();
         col.append(action('查看全部 ' + count + ' 条', 'column-more', slug));
@@ -983,6 +1016,7 @@
     }
   }
 })();
+
 
 
 
