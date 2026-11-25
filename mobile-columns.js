@@ -471,10 +471,13 @@
     .brief-detail .sum p {margin:0}
     .brief-detail .sum p + p {margin-top:.65em}
     .source-bar {align-items:center;gap:0 6px}
-    .source-bar .primary-source {display:flex;align-items:center;gap:8px;flex:1 1 110px;min-width:0;max-width:100%;min-height:48px;box-sizing:border-box;padding:7px 10px;border-radius:6px;background:#edf1f2}
+    .source-bar .primary-source {display:flex;align-items:center;gap:8px;flex:1 1 110px;min-width:0;max-width:100%;min-height:48px;box-sizing:border-box;padding:7px 10px;border-radius:6px;background:#f0f3f3}
     .item .meta .evidence-note {display:inline-block;font-size:.78rem;font-weight:500;color:var(--muted);line-height:1.5}
-    .source-action {font-weight:650;color:var(--accent)}
-    .source-citation {font-size:.82em;overflow-wrap:anywhere}
+    .source-action {white-space:nowrap;flex:none;font-weight:650;color:var(--accent)}
+    .source-citation,.source-byline {font-size:.82em;color:var(--muted)}
+    .source-byline {min-width:0;margin-left:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .source-citation,.brief-detail[open] + .source-bar .source-byline {display:none}
+    .brief-detail[open] + .source-bar .source-citation {display:block;overflow-wrap:anywhere}
     .brief-detail[open] + .source-bar .primary-source {flex-direction:column;align-items:flex-start;justify-content:center;gap:2px}
     .source-bar .more-sources {min-width:44px;min-height:44px;font-variant-numeric:tabular-nums}
     .source-bar .share-controls {display:none;margin-left:auto}
@@ -557,7 +560,10 @@
       const citation = document.createElement('span');
       citation.className = 'source-citation';
       citation.textContent = primary.title || name;
-      primary.append(short, citation);
+      const byline = document.createElement('span');
+      byline.className = 'source-byline';
+      byline.textContent = name;
+      primary.append(short, byline, citation);
       primary.setAttribute('aria-label', short.textContent.replace(' ↗', '') + '：' + primary.title);
       bar.append(primary);
       sources.delete(main.href);
@@ -1016,6 +1022,7 @@
     }
   }
 })();
+
 
 
 
