@@ -471,10 +471,11 @@
     .brief-detail .sum p {margin:0}
     .brief-detail .sum p + p {margin-top:.65em}
     .source-bar {align-items:center;gap:0 6px}
-    .source-bar .source-citation, .brief-detail[open] + .source-bar .source-short {display:none}
-    .brief-detail[open] + .source-bar .source-citation {display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-    .source-bar .primary-source {flex:0 1 auto;min-width:0;max-width:calc(100% - 95px)}
-    .source-bar .more-sources {min-width:32px;min-height:32px;font-variant-numeric:tabular-nums}
+    .source-bar .primary-source {display:flex;align-items:center;gap:8px;flex:1 1 110px;min-width:0;max-width:100%;min-height:48px;box-sizing:border-box;padding:7px 10px;border-radius:6px;background:#edf1f2}
+    .source-action {font-weight:650;color:var(--accent)}
+    .source-citation {font-size:.82em;overflow-wrap:anywhere}
+    .brief-detail[open] + .source-bar .primary-source {flex-direction:column;align-items:flex-start;justify-content:center;gap:2px}
+    .source-bar .more-sources {min-width:44px;min-height:44px;font-variant-numeric:tabular-nums}
     .source-bar .share-controls {display:none;margin-left:auto}
     .brief-detail[open] + .source-bar .share-controls {display:flex;align-items:center}
     .item .source-list[hidden], .col .status[hidden] {display:none}
@@ -547,13 +548,16 @@
       primary.className = 'primary-source';
       primary.title = useHostname ? main.hostname : main.textContent;
       const short = document.createElement('span');
-      short.className = 'source-short';
-      short.textContent = name + ' ↗';
+      short.className = 'source-action';
+      const host = main.hostname.toLowerCase();
+      const post = /(^|\.)(x\.com|twitter\.com)$/.test(host) && /\/status(?:es)?\/\d+/.test(main.pathname);
+      const video = host === 'youtu.be' || (/(^|\.)youtube\.com$/.test(host) && /^\/(watch|shorts\/|live\/)/.test(main.pathname));
+      short.textContent = (post ? '查看 X 原帖' : video ? '观看视频' : '阅读原文') + ' ↗';
       const citation = document.createElement('span');
       citation.className = 'source-citation';
-      citation.textContent = primary.title + ' ↗';
+      citation.textContent = primary.title || name;
       primary.append(short, citation);
-      primary.setAttribute('aria-label', '打开原文：' + primary.title);
+      primary.setAttribute('aria-label', short.textContent.replace(' ↗', '') + '：' + primary.title);
       bar.append(primary);
       sources.delete(main.href);
     }
@@ -874,7 +878,7 @@
         const original = bar.querySelector('a.primary-source');
         if (!source || !original || !/^https?:$/.test(original.protocol) ||
             original.href !== new URL(source.url, location.href).href) continue;
-        original.textContent = '实测：' + source.author + ' ↗';
+        original.querySelector('.source-citation').textContent = '实测：' + source.author;
         original.classList.add('review-credit');
         original.setAttribute('aria-label', '阅读' + source.author + '的实测原文');
         chip.textContent = '实测：' + source.author;
@@ -979,6 +983,7 @@
     }
   }
 })();
+
 
 
 
