@@ -1,0 +1,88 @@
+{
+  "ai-news": {
+    "status": "已核对 Anthropic 产品公告、Claude 帮助中心与 Google DeepMind 原文，并与上一期去重。",
+    "corrections": [],
+    "items": [
+      {
+        "title": "Claude 的连接器开始自带操作指南，Shopify 商家搭店时可按需调用",
+        "summary": "过去，连接器能告诉 Claude 可以调用哪些工具，具体流程往往还要另行说明。现在服务端可以把操作指南和工具一起提供，Claude 需要时再读取。Anthropic 列出的例子包括用 Shopify 调整网店。Skills over MCP 仍在公开测试，Team 需管理员启用。",
+        "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+        "label": "已读原文",
+        "sources": [
+          {
+            "author": "Anthropic",
+            "platform": "产品公告",
+            "published": "2026-11-24",
+            "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+          }
+        ]
+      },
+      {
+        "title": "Claude 做的 Artifact 可以装成桌面应用，打开时仍需联网",
+        "summary": "在 Mac 或 Windows 版 Claude 中，可把做好的小工具安装为带独立窗口和图标的应用，例如菜单栏番茄钟。原 Artifact 更新后应用会同步变化。该功能处于测试阶段，需要 Claude Desktop 6.28899.0 或更新版本，打开时要联网并登录。",
+        "url": "https://support.claude.com/en/articles/18516354-install-an-artifact-as-an-app",
+        "label": "已读原文",
+        "sources": [
+          {
+            "author": "Anthropic",
+            "platform": "Claude 帮助中心",
+            "published": "2026-11-24",
+            "url": "https://support.claude.com/en/articles/18516354-install-an-artifact-as-an-app"
+          },
+          {
+            "author": "Anthropic",
+            "platform": "更新日志",
+            "published": "2026-11-24",
+            "url": "https://support.claude.com/en/articles/12138966-release-notes"
+          }
+        ]
+      },
+      {
+        "title": "Google DeepMind 用 544 道日常题测模型：题目稍作变化，还能答对吗？",
+        "summary": "Humanity’s First Exam 包含文字和图片题，覆盖 20 项基础能力。例如，给模型一张霓虹招牌照片，请它按单词顺序报出每个词第三个字母的颜色。评测关心同一类简单问题能否稳定答对；读者也可以在 Kaggle 提交仍能难住模型的日常问题。",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/",
+        "label": "已读原文",
+        "sources": [
+          {
+            "author": "Oran Kelly",
+            "platform": "Google DeepMind 官方博客",
+            "published": "2026-11-24",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/"
+          }
+        ]
+      }
+    ]
+  },
+  "creator-watch": {
+    "status": "检索本栏五位创作者的公开动态。收录一条可核对作者和发布时间的转发。部分平台的时间线读取受限，其余四位未取得本期可验证的新作。",
+    "corrections": [],
+    "items": [
+      {
+        "title": "Zara Zhang 再次分享设计视频：没有设计背景，怎样减少 AI 作品的模板感？",
+        "summary": "Zara 在 11 月 24 日的 X 引用帖里重新给出了视频入口，面向用 AI 做界面和视觉作品的非设计师。此次更新是作者再次推荐已有视频。原帖文案和时间可在她维护的公开 GitHub 记录中核对。",
+        "url": "https://x.com/zarazhangrui/status/2125074988210463019",
+        "label": "作者动态",
+        "sources": [
+          {
+            "author": "Zara Zhang",
+            "platform": "X",
+            "published": "2026-11-24",
+            "url": "https://x.com/zarazhangrui/status/2125074988210463019"
+          },
+          {
+            "author": "Zara Zhang",
+            "platform": "YouTube",
+            "published": "",
+            "url": "https://www.youtube.com/watch?v=xLwau2tf45k"
+          },
+          {
+            "author": "Zara Zhang",
+            "platform": "GitHub 公开记录",
+            "published": "",
+            "url": "https://github.com/zarazhangrui/follow-builders/blob/main/feed-x.json"
+          }
+        ]
+      }
+    ]
+  }
+}

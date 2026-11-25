@@ -58,6 +58,26 @@ if not titles or not headings:
 # Keep the publishing bot and archive URLs stable while updating its public name.
 def update_columns(match):
     payload = json.loads(match[2])
+    # Guest editions only fill missing slots; a normal bot's edition always takes precedence.
+    columns = {column["slug"]: column for column in payload["bots"]}
+    covered = {(issue["date"], issue["slug"]) for issue in payload["issues"]}
+    for day in ("2026-11-25", "2026-11-26"):
+        supplement = Path(__file__).with_name(f"guest-{day}.json")
+        if not supplement.exists():
+            continue
+        for slug, guest in json.loads(supplement.read_text(encoding="utf-8")).items():
+            column = columns[slug]
+            if (day, slug) in covered:
+                continue
+            archive = site / "data" / slug / f"{day}.json"
+            if archive.exists():
+                record = json.loads(archive.read_text(encoding="utf-8"))
+            else:
+                record = dict(guest, bot=column["bot"], date=day)
+                archive.parent.mkdir(parents=True, exist_ok=True)
+                archive.write_text(json.dumps(record, ensure_ascii=False), encoding="utf-8")
+            payload["issues"].append(dict(record, slug=slug, weekly=column["weekly"]))
+            payload["latest"] = max(payload["latest"], day)
     for column in payload.get("bots", []):
         if column["slug"] == "ai-tools":
             column["column"] = "Product Radar"
