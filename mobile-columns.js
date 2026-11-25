@@ -181,8 +181,10 @@
   function neighbor(dx) {
     const current = activeButton();
     if (!current) return null;
-    return dx > 0 ? current.previousElementSibling || rail.lastElementChild
-                  : current.nextElementSibling || rail.firstElementChild;
+    const tabs = Array.from(rail.querySelectorAll('button[data-slug]:not([data-slug="all"])'));
+    const index = tabs.indexOf(current);
+    if (index < 0 || tabs.length < 2) return null;
+    return tabs[(index + (dx > 0 ? -1 : 1) + tabs.length) % tabs.length];
   }
 
   function snapBack() {
@@ -321,7 +323,16 @@
       if (fullName) button.textContent = (phone.matches && mobileLabels.get(slug)) || fullName;
     }
   }
-  phone.addEventListener('change', updateFilterLabels);
+  function selectMobileColumn() {
+    if (phone.matches && filters.querySelector('[data-slug="all"][aria-pressed="true"]')) {
+      filters.querySelector('button[data-slug]:not([data-slug="all"])')?.click();
+    }
+  }
+  selectMobileColumn();
+  phone.addEventListener('change', () => {
+    selectMobileColumn();
+    updateFilterLabels();
+  });
   const css = document.createElement('style');
   css.textContent = `
     .wrap #filters {
@@ -348,6 +359,7 @@
         display:grid; grid-auto-flow:column; grid-auto-columns:max(25%,92px);
         width:calc(100% + 32px); max-width:none; margin:0 -16px; scrollbar-width:none;
       }
+      .wrap #filters button[data-slug="all"] {display:none}
       .wrap #filters button[data-slug] {font-size:15px;min-width:0;padding:0 2px}
       .reading-pane {overflow-x:hidden}
       .swipe-outgoing {position:fixed;z-index:4;pointer-events:none;box-sizing:border-box;overflow:hidden}
@@ -967,6 +979,7 @@
     }
   }
 })();
+
 
 
 
