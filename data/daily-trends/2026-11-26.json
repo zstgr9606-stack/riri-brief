@@ -1,0 +1,110 @@
+{
+ "bot": "Daily Trends",
+ "date": "2026-11-26",
+ "status": "已检查 X、Reddit、GitHub、HN、Product Hunt、知乎、微信、微博 8 个来源（补发采集，时间窗口为 11 月 25 日 07:00 至 11 月 26 日 07:00，采集于 11 月 26 日 18:33–18:40）；Reddit 官方接口 403、RSS 404/429 改用 arctic-shift，Product Hunt 官网 403 改用官方 Atom，微博官方 403 改用 tophub，Bloomberg、AP、France24 读取失败；产品类条目已让给其他栏目；截至补发时的新进展：美国联邦法官 AliKhan 11 月 25 日（美东）裁定，禁止 FCC 对 ABC 八家电视台的提前续牌程序继续行动，并驳回 FCC 的驳回动议；FCC 称裁定在事实和法律上均错误（据 CNBC 转引 AP），法院提交时间未核到，最早报道在北京时间 11 月 26 日 08:30，已读法院命令。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "🔄 USTR 正式公布 14 个经济体的 301「产能过剩」调查结论，并提议加征关税（拟议，未生效）",
+   "summary": "USTR 新闻稿（美东时间 11 月 25 日）称，中国、欧盟、日本、韩国、印度、越南、台湾等 14 个经济体的相关做法「不合理，构成负担」，并提议加征关税，上限为：越南 35%、印度 25%、中国 20%（部分商品 10%，另有豁免清单）、欧盟 15%、日本/韩国/瑞士/台湾最多 15%；墨西哥、挪威暂无结论。意见和听证请求截止 2027 年 1 月 5 日，听证 2027 年 1 月 25 日起。均为拟议措施，税率是「最多」并要扣除既有 301 关税，联邦公报通知未逐份读。截至补发时的新进展：11 月 26 日外交部发言人称「产能过剩」是伪命题，商务部发言人称坚决反对 301 调查（据中新网、新民晚报）。",
+   "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "USTR",
+     "platform": "官网新闻稿",
+     "published": "2026-11-25",
+     "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+    }
+   ],
+   "new_since": "相比 11 月 25 日版（匿名消息、官方未公布、称 16 个经济体）：USTR 已官方公布，范围为 14 个经济体（墨西哥、挪威暂无结论），并给出各国税率上限、意见截止 2027-01-05 和听证 2027-01-25 的日期",
+   "prior": [
+    {
+     "title": "11-25 据报道 USTR 拟对 16 个经济体提议新关税（转述）",
+     "url": "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685"
+    }
+   ]
+  },
+  {
+   "title": "🔄 据 CBS 报道：美陆军已在艾奥瓦引爆约 5 吨叠氮化铅，EPA 称监测站未测到空气中的铅",
+   "summary": "CBS 芝加哥台称，陆军 11 月 25 日中部时间 9 时引爆 68 桶、约 5 吨已老化的叠氮化铅（一种起爆药）；行动指挥官称风险已降到「人力所能做到的接近零」；EPA 称 4 个空气监测站在引爆后 15 分钟及 2 小时后均未测到铅；陆军周二发布的引爆前预测图显示铅尘可能飘向密苏里东北部。仅为早期空气读数，土壤、水样结果未出，预测图不是实测，EPA 和陆军原始发布未读。截至补发时的新进展：NBC（11 月 26 日 09:32）称独立科学家说要数日才能弄清铅尘范围；陆军称 FEMA 已发「解除」，采样结果待公布。",
+   "url": "https://www.cbsnews.com/chicago/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "CBS News Chicago",
+     "platform": "CBS News",
+     "published": "",
+     "url": "https://www.cbsnews.com/chicago/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/"
+    }
+   ],
+   "new_since": "相比 11 月 25 日版（引爆前）：引爆已完成，EPA 称 4 个监测站在引爆后 15 分钟及 2 小时均未测到空气中的铅",
+   "prior": [
+    {
+     "title": "11-25 美陆军定于周三在艾奥瓦受控引爆约 5 吨老化叠氮化铅",
+     "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
+    }
+   ]
+  },
+  {
+   "title": "华盛顿联邦法官初步禁止执行特朗普第二道限制出生公民权的行政令（针对认证集体）",
+   "summary": "法官 Christopher Cooper 11 月 25 日在 Nathan v. Trump 案批准集体诉讼和初步禁令，禁止国土安全部、国务院、社保署对「正被或将被非法拒绝公民身份的儿童」执行该令。该令涉及外国政府或国际组织雇员、境外父母商业代孕、「敌对外国人」父母的子女。初步禁令，非终审；67 页意见书未读，已读法院命令。截至补发时的新进展：补发时未查到政府上诉记录。",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.297026/gov.uscourts.dcd.297026.51.0.pdf",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "美国哥伦比亚特区联邦地区法院",
+     "platform": "CourtListener（法院命令）",
+     "published": "2026-11-25",
+     "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.297026/gov.uscourts.dcd.297026.51.0.pdf"
+    },
+    {
+     "author": "MS NOW",
+     "platform": "MS NOW",
+     "published": "2026-11-25",
+     "url": "https://www.ms.now/news/federal-judge-blocks-trumps-latest-birthright-citizenship-executive-order"
+    }
+   ]
+  },
+  {
+   "title": "FCC 批准 SpaceX 最多 100 万颗「Starmind」轨道数据中心卫星（有条件授权）",
+   "summary": "FCC 命令（11 月 25 日）：有条件授权最多 100 万颗；须 2033 年 11 月 25 日前运行第 1 颗、2035 年前 10%、2038 年前 50%、2040 年 11 月 25 日前全部，否则授权作废；免除保证金；退役卫星可弃置到非再入轨道的豁免请求被「搁置」；FCC 依 10 月的 NEPA 决定，不再做环评。据 CNBC，亚马逊 Kuiper 等曾提出反对，请愿原文未读。",
+   "url": "https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/bltf4cdf2af47159e12/6b071c5f5506bb38bca5b0ec/FCC_report_and_order_on_SpaceX_Starmind_AI_constellation_11-25-2026.pdf",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "FCC",
+     "platform": "FCC 命令（PDF）",
+     "published": "2026-11-25",
+     "url": "https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/bltf4cdf2af47159e12/6b071c5f5506bb38bca5b0ec/FCC_report_and_order_on_SpaceX_Starmind_AI_constellation_11-25-2026.pdf"
+    },
+    {
+     "author": "Ars Technica",
+     "platform": "Ars Technica",
+     "published": "2026-11-25",
+     "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
+    }
+   ]
+  },
+  {
+   "title": "澳大利亚与所罗门群岛在堪培拉签署条约，澳方成为其「主要安全伙伴」（条约全文未读）",
+   "summary": "澳总理府声明（11 月 25 日）：Albanese 与所罗门总理 Wale 签约；条约写明所罗门群岛不允许外国军事或安全基地，敏感基础设施不受军事化、外国干涉；未来安全合作需求将求助太平洋岛国论坛成员。ABC 称所罗门已通知中方不续 2022 年安全协议（明年 4 月到期），Wale 因保密条款未证实，「不续」仅为 ABC 自称。条约全文未读，澳方称将公布。",
+   "url": "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "澳大利亚总理府",
+     "platform": "官网声明",
+     "published": "2026-11-25",
+     "url": "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty"
+    },
+    {
+     "author": "ABC News",
+     "platform": "ABC News",
+     "published": "2026-11-25",
+     "url": "https://www.abc.net.au/news/2026-11-25/australia-signs-pact-with-solomon-islands-in-blow-to-china/107424550"
+    }
+   ]
+  }
+ ]
+}
