@@ -1,0 +1,86 @@
+{
+ "bot": "Life Hacks",
+ "date": "2026-11-26",
+ "status": "已检查 8 个 Reddit 生活版块、HN、X 和 YouTube 今日上传搜索；Reddit 官方接口 403、RSS 429，已改用 arctic-shift（LifeProTips 窗口查询连续两次 422，第 3 次重试成功）。HN、X、YouTube 无合格生活技巧帖。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "燃气灶搪瓷台面五年烧焦垢：楼主用除油剂加小苏打、粗盐和剃须刀片清掉，但厂家说明并不把刀片当作搪瓷台面的推荐做法",
+   "summary": "r/CleaningTips 楼主清理 GE Profile 燃气灶台上五年烧焦垢，分三天共约 12 小时：先用 Zep 柑橘强力除油剂加小苏打浸泡，再用粗盐擦较硬的垢，最后在 Dawn Powerwash 浸泡后用剃须刀片刮掉剩余烧焦物，称台面明显干净，但贴近看有细微划痕。已看前后对比图，台面为深灰色搪瓷燃气灶，不是玻璃灶。GE 搪瓷灶台保养说明建议用肥皂和水，可用温和清洁粉并遵循该产品说明，多数钢丝球不推荐；剃须刀片刮除烧焦垢是 GE 针对陶瓷玻璃灶台的做法。Zep、Dawn Powerwash 为美国品牌，其产品页本次未能打开，是否标明可用于搪瓷台面未核实。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y5iixr/5_years_of_burnt_build_up_gone_in_12_hours/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-26",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y5iixr/5_years_of_burnt_build_up_gone_in_12_hours/"
+    },
+    {
+     "author": "GE Appliances",
+     "platform": "官方保养说明",
+     "published": "",
+     "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=39081"
+    },
+    {
+     "author": "GE Appliances",
+     "platform": "官方保养说明",
+     "published": "",
+     "url": "https://products.geappliances.com/appliance/gea-support-search-content?contentId=39080"
+    }
+   ]
+  },
+  {
+   "title": "漂白类清洁剂可能让旧浴缸出现红褐色痕迹：别再用漂白水去这些锈渍，应换除锈剂，并先彻底冲净残留漂白水",
+   "summary": "r/CleaningTips 楼主用含漂白成分的瓷砖清洁剂刷完瓷砖和浴缸，冲洗一部分后出门几小时，回来发现浴缸壁出现大片红褐色痕迹；再用漂白水、钢丝绒、醋和洗洁精都去不掉。已看楼主照片。康涅狄格州公共卫生部和弗吉尼亚理工大学写明，氯漂白水和碱性助剂可能加重铁、锰在搪瓷上的染色。Clorox 官方写明氯漂白水去不掉锈渍，应改用除锈剂并按标签使用、戴手套；不要把漂白水与其他清洁剂（尤其是氨水和酸）混用。热评推荐的过氧化氢去锈属网友经验，帖内未见楼主已恢复的后续。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y4uq40/used_tile_cleaner_scrubbed_tiles_and_bathtub/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主及热评",
+     "platform": "Reddit",
+     "published": "2026-11-25",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y4uq40/used_tile_cleaner_scrubbed_tiles_and_bathtub/"
+    },
+    {
+     "author": "Clorox",
+     "platform": "官方说明",
+     "published": "",
+     "url": "https://www.clorox.com/learn/does-bleach-remove-rust/"
+    },
+    {
+     "author": "Clorox",
+     "platform": "官方说明",
+     "published": "",
+     "url": "https://www.clorox.com/learn/dos-and-donts-for-cleaning-and-disinfecting-with-bleach/"
+    },
+    {
+     "author": "Connecticut Department of Public Health",
+     "platform": "州公共卫生文件",
+     "published": "",
+     "url": "https://portal.ct.gov/-/media/Departments-and-Agencies/DPH/dph/environmental_health/pdf/Ironpdf.pdf"
+    },
+    {
+     "author": "Virginia Cooperative Extension / Virginia Tech",
+     "platform": "大学推广文件",
+     "published": "",
+     "url": "https://accomack.ext.vt.edu/content/dam/pubs_ext_vt_edu/442/442-656/BSE-285.pdf"
+    }
+   ]
+  },
+  {
+   "title": "准备扔掉坏掉的物件前，先拆开看一看（前提是不会伤到自己）",
+   "summary": "r/LifeProTips 楼主建议：既然已经决定扔掉，不妨先拿螺丝刀看内部结构，既可能修好，也能减轻对自行修理的心理负担；他曾从别人丢弃的物品里得到厨师机、游戏机和音箱等，并写明不要在不熟悉的情况下拆高压电器。评论提醒：老式 CRT/背投电视和大电容电器拔电后仍可能带电，不要拆。这是网友经验，不是官方维修指南；微波炉、空调、冰箱和燃气设备不宜自行拆解。",
+   "url": "https://www.reddit.com/r/LifeProTips/comments/1y5ismc/lpt_if_youre_about_to_throw_away_a_broken_thing/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/LifeProTips 楼主及评论",
+     "platform": "Reddit",
+     "published": "2026-11-26",
+     "url": "https://www.reddit.com/r/LifeProTips/comments/1y5ismc/lpt_if_youre_about_to_throw_away_a_broken_thing/"
+    }
+   ]
+  }
+ ]
+}
