@@ -1,0 +1,67 @@
+{
+ "bot": "Startup News",
+ "date": "2026-11-26",
+ "status": "补发：2026-11-26 例程因额度用完未运行，约 18:35（北京时间）补采，窗口沿用 11-25 06:45 至 11-26 06:45。已检查 X、Reddit、Hacker News、Product Hunt、YouTube、Indie Hackers；Reddit 官方接口与 Product Hunt 官网 403，已改用 arctic-shift、PH feed 和 hunted.space（只读到当日榜，未取得窗口内票数）；r/SaaS 的 arctic-shift 接口持续 422/超时，该版未读到；YouTube 无达标播放；仅 2 条达到收录标准。截至补发时的新进展：两条均未发现。热度为补发时采集值。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Tally 联合创始人自述：43% 新用户经 AI 搜索而来，做法是注册时追问「当时用的什么提示词」，再用答案定追踪词和内容选题",
+   "summary": "Tally（比利时自筹资金的表单工具）联合创始人 Marie Martens 在 X 称，近半（43%）新用户经 ChatGPT、Claude 等 AI 搜索找到 Tally，并写出具体做法：每个新用户注册时被问是怎么找到的；答「通过 AI」的，再请对方贴出当时输入的提示词。答案汇总进团队共享的 Claude artifact，用于四件事：这些提示词成为要在 AI 搜索里追踪的提示词；用户提到的用例决定下一批内容；用户用的是哪个助手决定重点投放；用户提到的创作者加入发现名单。她 9 月 22 日的官方博客（43% 的出处）还写到：已达 600 万美元 ARR（年度经常性收入）、团队 10 人；团队追踪各大模型提及并引用 Tally 的位置、找出缺失的提示词、检查帮助中心内容并更新对比页；原话称这是「无法购买、也不完全可控」的渠道，模型更新可能一夜改变推荐。存疑：43% 与收入均为公司自报，口径是问卷回答；原帖未说明有多少用户愿意填写提示词；Jake Ward 的转述帖（673 赞）把团队写成 11 人，与官方博客的 10 人不一致，本条采用官方博客。热度（2026-11-26 约 18:35 北京时间采集）：Marie 原帖 268 赞 / 4 转 / 25 回复。截至补发时的新进展：未发现。",
+   "url": "https://x.com/MarieMartens/status/2125530130126680303",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Marie Martens",
+     "platform": "X",
+     "published": "2026-11-25",
+     "url": "https://x.com/MarieMartens/status/2125530130126680303"
+    },
+    {
+     "author": "Marie Martens",
+     "platform": "Tally 官方博客",
+     "published": "2026-09-22",
+     "url": "https://blog.tally.so/6-years-in-6-million-far/"
+    },
+    {
+     "author": "Jake Ward",
+     "platform": "X",
+     "published": "2026-11-25",
+     "url": "https://x.com/jakezward/status/2125570770621407480"
+    }
+   ],
+   "new_since": "相比 9 月官方博客新增：11-25 她公开了注册问卷追问提示词，并把答案转成追踪词、内容选题和投放重点的具体流程",
+   "prior": [
+    {
+     "title": "Tally 官方博客 2026-09-22：43% 新用户来自 AI 搜索",
+     "url": "https://blog.tally.so/6-years-in-6-million-far/"
+    }
+   ]
+  },
+  {
+   "title": "Affonso 创始人自述：没有粉丝和广告预算，靠 X Pro 盯关键词手动搭话拿到首批客户，并用一次性 49 美元、按收入额度计的「Revenue Pass」定价",
+   "summary": "Silvestro（Affonso 创始人，面向 SaaS 的联盟营销软件）在 X 长帖自述从 0 到能养活自己的经过。获客：产品先免费上线、没人付费；他用 X Pro 监控「affiliate software」等关键词和竞品名，进对话先帮忙、不先推销，对有需求的人手动私信，给免费使用权换反馈；首位付费客户花了数月，2025 年 1 月前后他已打算放弃。定价：推出 Revenue Pass，一次性 49 美元，可用到其联盟营销带来的收入累计达 1 万美元（用收入额度而不是终身买断），之后几乎每天都有人买，他逐步涨价后下架；常规订阅早期 9 美元/月起。他 9 月 14 日的邮件通讯补充：共卖出约 300 张 Pass，涨到 99 欧元后下架。结果：本人称 Affonso 现在能养活自己和家人；其个人网站自列 2025 年 12 月有 100 位活跃客户。存疑：全部为作者自报，帖中收入曲线是图片、未读到具体数字，未见第三方核对；这是单个成功案例，不能说明手动私信或该定价通用。热度（2026-11-26 约 18:35 北京时间采集）：217 赞 / 4 转 / 71 回复。截至补发时的新进展：未发现。",
+   "url": "https://x.com/zilvestro/status/2125636393867042930",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Silvestro (zilvestro)",
+     "platform": "X",
+     "published": "2026-11-25",
+     "url": "https://x.com/zilvestro/status/2125636393867042930"
+    },
+    {
+     "author": "Silvestro Zi",
+     "platform": "个人邮件通讯",
+     "published": "2026-09-14",
+     "url": "https://join.zilvestro.com/p/how-i-got-the-first-customers-for-affonso-5dee1cbdf7253586"
+    },
+    {
+     "author": "Silvestro Zinnanti",
+     "platform": "个人网站",
+     "published": "",
+     "url": "https://zilvestro.com/"
+    }
+   ]
+  }
+ ]
+}
