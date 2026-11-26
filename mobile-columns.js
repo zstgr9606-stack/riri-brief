@@ -490,8 +490,7 @@
       #cols.desktop-overview > .col {background:#fff;border:1px solid #ccd7db;border-radius:8px;overflow:hidden}
       #cols.desktop-overview .col-h {background:#e7eff1;border-left:5px solid var(--tab-blue);padding:12px 18px}
       #cols.desktop-overview .item {padding:16px 22px}
-      #cols.desktop-overview .brief-title {max-width:84ch;margin:0;cursor:auto;padding:0}
-      #cols.desktop-overview .brief-title::after {display:none}
+      #cols.desktop-overview .brief-title {max-width:84ch;margin:0}
       #cols.desktop-overview .brief-detail .sum {max-width:82ch}
       #cols.desktop-overview .source-bar {max-width:82ch}
     }
@@ -733,7 +732,7 @@
     }));
   }
 
-  function formatArticle(article, slug, issueDate, item, overview) {
+  function formatArticle(article, slug, issueDate, item) {
     const title = article.querySelector('.title');
     if (!title) return;
     article.dataset.readKey = readPrefix + issueDate + '/' + shareId(article.dataset.key || slug + '/' + title.textContent);
@@ -741,10 +740,10 @@
     const full = article.querySelector('.src');
     formatSummary(article.querySelector('.sum'), slug === 'ai-tools');
     article.querySelector('.sum-tg')?.remove();
-    const details = document.createElement(overview ? 'div' : 'details');
+    const details = document.createElement('details');
     details.className = 'brief-detail';
     details.addEventListener('toggle', () => { if (details.open) markRead(article); });
-    const summary = document.createElement(overview ? 'h3' : 'summary');
+    const summary = document.createElement('summary');
     summary.className = 'title brief-title';
     summary.textContent = title.textContent;
     title.replaceWith(details);
@@ -991,7 +990,7 @@
       articles.forEach((item, index) => {
         if (index < limit) {
           const sourceItem = issue?.items.find(entry => entry.title === item.querySelector('.title')?.textContent);
-          formatArticle(item, slug, issue?.date || date.value, sourceItem, overview);
+          formatArticle(item, slug, issue?.date || date.value, sourceItem);
         }
         else item.remove();
       });
