@@ -1,0 +1,88 @@
+{
+ "bot": "AI News",
+ "date": "2026-11-26",
+ "status": "补发（原 07:14 定时运行因额度用完失败，北京时间 11-26 约 19:00 采集）：窗口 11-25 07:00–11-26 07:00，正文只收 07:00 前内容，07:00 后已收条目无实质变化，热度为采集时数值。已检查 X、Reddit、Hacker News、YouTube；GitHub 日榜只有补发时快照，未选条目；Product Hunt 窗口日榜读不到（hunted.space 只有进行中的 11-26 榜，productlist.info 滞后），未收。AI 产品实测 1 条，其余 3 条中 1 条放「补看」。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Claude「Install as app」独立实测：Matt Paige 在 Mac 上把自己的晨报工件装成桌面应用，适合每天都要打开的小工具",
+   "summary": "测试者：Matt Paige（Substack 博主，Try It or Skip It 系列第 1 期），在 Mac 上测。场景：他自建的晨报工件，由每个工作日 7 点的例程生成，读日历、邮件、Slack 等，含日期条、日程时间线、待办看板和「写回复」按钮。结果：点安装并确认后约 30 秒装好，Dock 里有独立图标和窗口，图标角标显示未完成任务数（截图为 11），另有按钮开启通知；他只开了通知权限，称多数应用不需要「完全访问电脑」。他提到的局限：仍是 beta；必须联网并登录 Claude 才能打开；应用调用 Claude 计入套餐用量；Docs、Slides、Sheets 和旧版工件不能装；免费版不能分享，Pro/Max/Ultra 上别人收到的应用里调用 Claude 和连接器的部分不能用，Team/Enterprise 才能完整共享；只测了 Mac，没测 Windows。官方页（11-24 起 beta 推送）：需要 Claude Mac/Windows 版 6.28899.0 以上，权限分默认、应用权限、完全访问三档，应用更新后重新询问，Anthropic 不审核这些应用。另一家评测站 Kingy AI 11-24 在其 Mac 账号的菜单里没找到安装入口，说明推送尚未到所有账号。收录原因：这是第一手装机报告，写了真实应用、耗时和权限选择；仅一人一个场景，无第二人复测。",
+   "url": "https://mattpaige68.substack.com/p/i-turned-my-ai-chief-of-staff-into",
+   "label": "AI 产品实测 · 独立实测",
+   "sources": [
+    {
+     "author": "Matt Paige",
+     "platform": "Substack",
+     "published": "2026-11-25",
+     "url": "https://mattpaige68.substack.com/p/i-turned-my-ai-chief-of-staff-into"
+    },
+    {
+     "author": "Anthropic",
+     "platform": "Claude 官方页",
+     "published": "2026-11-24",
+     "url": "https://claude.com/resources/articles/install-as-app"
+    }
+   ]
+  },
+  {
+   "title": "Anthropic 自述：让线上 API 当校验器，Claude 智能体把 Messages API 从 Python 迁到 Rust",
+   "summary": "Anthropic 11-25 工程博客称，Messages API（客户以及 Claude Code、Cowork 都经它访问 Claude）从 2024 年初到 2026 年秋流量涨约 1,800 倍；Claude 约一周写出核心请求路径的第一版，难点是证明与线上版本一致：Python 版还在改、模型回复不确定、又不能读客户请求。做法：同一请求让线上 API 只调用一次模型，把输出回放给 Rust 版，按步骤（受理、解析设置、拼提示词等）逐段对比，只记录差异的位置和大小而不看内容，再自动派智能体去修。数字：4 月 Rust 版约 98% 测试通过，但线上流量只有约四分之一输入完全一致（如 emoji 在 JSON 工具调用里的转义方式不同，测试没覆盖）；9 月公开流量切到 Rust，称每请求 CPU 约降 70%，首 token 中位时间约快 20%（图注为 Claude Code 请求、较短时段），全程未下线服务、未冻结功能开发。以上数字均为 Anthropic 自报，无独立复测。",
+   "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Anthropic",
+     "platform": "官方工程博客",
+     "published": "2026-11-25",
+     "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+    },
+    {
+     "author": "Anthropic（@AnthropicAI）",
+     "platform": "X",
+     "published": "2026-11-25",
+     "url": "https://x.com/AnthropicAI/status/2125627317263466739"
+    }
+   ]
+  },
+  {
+   "title": "OpenAI 预印本称证明矩阵乘法指数 ω=9/4（下界为新），人类数学家尚无公开核对",
+   "summary": "OpenAI 11-24 在 openai/math 仓库放出预印本（署名「OpenAI」），称在任意域上方阵乘法的指数 ω=9/4。上界此前已有（OpenAI 10 月预印本，Amanov 等人扩展到任意域），新的是下界：在「形式算术电路」模型里，两个 n×n 矩阵相乘至少需要约 n^(9/4)/2 次乘除（加减免费）；若成立，ω=2 的猜想不成立。仓库自注这些稿件来自内部模型、部分未形式化的结果可能有问题。验证现状：OpenAI 附带 Lean 形式化；第三方 Carlos Toledo 用 AI 代理小组做的审计（截至北京时间 11-26 06:36）称形式化命题检查通过，同时声明不代表有人类核过数学；对 Lean 覆盖范围各方说法不一（madrobot 称仅限无除法电路）。这是理想化的算术步数模型，不等于硬件上马上提速。本栏只读了摘要和第 1 节，没核对证明。",
+   "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "OpenAI",
+     "platform": "GitHub 预印本",
+     "published": "2026-11-24",
+     "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"
+    },
+    {
+     "author": "Carlos Toledo",
+     "platform": "个人网站（第三方审计）",
+     "published": "2026-11-25",
+     "url": "https://carlostoledo.co/omega/"
+    }
+   ]
+  },
+  {
+   "title": "🔁 补看：MCP 服务器现在可以自带技能，Skills over MCP 在 Claude 和 Claude Code 公测",
+   "summary": "补看原因：首发在北京时间 11-25 凌晨，早于本期窗口起点约 5 小时，Claude Code 更新日志 11-25 才并入。Anthropic 11-24 文章称，MCP 服务器可随工具一起发布技能（教 Claude 怎么用这些工具的步骤说明），Claude 按需加载，技能随服务器更新；文中举例 Shopify、HubSpot、Atlassian 已在用，Carta 即将上线。Pro/Max/Ultra 默认开启，Team 需管理员启用，Enterprise 即将。Tasks（长任务）和 Elicitation（向用户追问）同日转正式可用，文件上传稍后。Claude Code 文档写明：需 v2.1.331 以上；MCP 技能不支持本地技能的 allowed-tools、hooks、model 等 frontmatter 字段，也不执行 ! 命令；11-25 更新日志 2.1.332 列入「MCP 服务器技能（beta）」。均为官方说法，本栏未实际使用。",
+   "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Anthropic",
+     "platform": "Claude 官方文章",
+     "published": "2026-11-24",
+     "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+    },
+    {
+     "author": "Anthropic",
+     "platform": "Claude Code 文档",
+     "published": "",
+     "url": "https://code.claude.com/docs/en/skills"
+    }
+   ]
+  }
+ ]
+}
