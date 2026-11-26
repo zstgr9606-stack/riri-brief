@@ -486,13 +486,16 @@
     .item .source-list {margin:4px 0 0;padding-left:1.1em;color:var(--muted)}
     .item .source-list li {margin:.15em 0;overflow-wrap:anywhere}
     @media (min-width:701px) {
-      .wrap #cols.desktop-overview {display:flex;flex-direction:column;gap:24px}
+      .wrap #cols.desktop-overview {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:20px}
       #cols.desktop-overview > .col {background:#fff;border:1px solid #ccd7db;border-radius:8px;overflow:hidden}
       #cols.desktop-overview .col-h {background:#e7eff1;border-left:5px solid var(--tab-blue);padding:12px 18px}
-      #cols.desktop-overview .item {padding:16px 22px}
+      #cols.desktop-overview .item {padding:12px 16px}
       #cols.desktop-overview .brief-title {max-width:84ch;margin:0}
       #cols.desktop-overview .brief-detail .sum {max-width:82ch}
       #cols.desktop-overview .source-bar {max-width:82ch}
+    }
+    @media (min-width:1280px) {
+      .wrap #cols.desktop-overview {grid-template-columns:repeat(3,minmax(0,1fr))}
     }
     .col-h .badge {margin-left:auto}
     .col-h .info-toggle {font:inherit;font-size:1rem;color:var(--muted);border:0;background:none;
