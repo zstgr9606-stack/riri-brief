@@ -1,0 +1,42 @@
+{
+ "bot": "Startup News",
+ "date": "2026-11-27",
+ "status": "已检查 X、Reddit、Hacker News、Product Hunt、YouTube、Indie Hackers（窗口 11-26 06:45 至 11-27 06:45 北京时间）；Reddit 官方接口与 Product Hunt 官网 403，已改用 arctic-shift、PH feed 和 hunted.space；今天没有达到门槛的经营做法类内容，收录 2 条职场趋势，两条均为转述。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "转述：Bloomberg 称 SAP 考虑裁至少 1 万个岗位、为 AI 转型重组（Bloomberg 原文付费未读全）",
+   "summary": "据 Bloomberg 引知情人士（2026-11-26 美东时间），SAP 要求所有部门提出削减方案，重点是产品/工程和销售，规模至少占全球员工 9%，最终数字待与员工代表谈判；SAP 未确认，只称持续审视组织。Reuters 称无法独立核实。Ctech 补充：2024 年上一轮约 1 万岗位、花费约 31 亿欧元，多为自愿离职和转岗，2025 年底总人数反而从 109,973 增至 111,397。存疑：仅 Bloomberg 一家信源，多家媒体转述只算一份证据。热度（2026-11-27 约 06:55 北京时间采集）：X 上 zerohedge 快讯 1,161 赞，FT 帖 450 赞。",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "Bloomberg（Christina Kyriasoglou）",
+     "platform": "Bloomberg",
+     "published": "2026-11-26",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring"
+    },
+    {
+     "author": "Ctech",
+     "platform": "Calcalist Ctech",
+     "published": "2026-11-26",
+     "url": "https://www.calcalistech.com/ctechnews/article/al8iwkfjx"
+    }
+   ]
+  },
+  {
+   "title": "转述：ET 援引 Rest of World 称，IBM 给部分在美 H-1B/绿卡员工 3 周决定外调或离职（Rest of World 原文未读）",
+   "summary": "Economic Times（2026-11-26）援引 Rest of World：IBM Consulting 停止多数岗位的美国签证和绿卡担保（H-1B 是美国雇主担保的工作签证），受影响员工须在 3 周内选择接受美国以外岗位，或拿 3 个月遣散费离开，最后工作日为 12-31；11-19 其招聘页美国以外咨询职位 1,278 个，其中印度 1,125 个，美国 89 个。停止担保一事 11-10 由 Bloomberg 首报，ET 称 IBM 发言人已确认。存疑：受影响人数 IBM 未披露；3 周期限和遣散条件只读到 ET 转述。热度（2026-11-27 约 06:55 北京时间采集）：X 上 NDTV 帖 3,497 赞，ET 链接帖 2,718 赞。",
+   "url": "https://economictimes.indiatimes.com/nri/work/ibm-gives-h-1b-green-card-holders-3-weeks-to-relocate-from-us-or-leave-company-december-31-deadline-set/articleshow/136180168.cms",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "ET Online",
+     "platform": "The Economic Times",
+     "published": "2026-11-26",
+     "url": "https://economictimes.indiatimes.com/nri/work/ibm-gives-h-1b-green-card-holders-3-weeks-to-relocate-from-us-or-leave-company-december-31-deadline-set/articleshow/136180168.cms"
+    }
+   ]
+  }
+ ]
+}
