@@ -1,0 +1,132 @@
+{
+ "bot": "AI Tools",
+ "date": "2026-11-26",
+ "status": "11-26 补发（原窗口为截至当天 07:00 北京时间的近 7 天）。已查 HN Show HN、Product Hunt（经 hunted.space）、X；There's An AI For That 返回 403，Futurepedia 无可用新品列表，均未用。热度与商店用户数为补发时（11/26 19:15 左右，北京时间）采集，没有 07:00 的历史快照。截止后至补发时，HN 新增 Show HN 热度均很低，PH 11/26 当日榜仍接近零票，均未收入正文。11/24 试刊产品未见符合条件的新增使用、付费或实测证据，本期无跟进条。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Carry 把 ChatGPT、Claude、Gemini 和 Grok 的对话自动存成本机 Markdown，还能把一篇对话拿到另一个助手里接着聊",
+   "summary": "这是一个浏览器扩展：14 天免费试用后一次性买断（现价 59 美元，原价 79 美元，促销到 12 月 1 日）；对话写到你指定的本地文件夹，作者在 HN 称不上传到服务器，默认会发送可在设置里关掉的用量统计。Show HN 于 11/25 发布，11/26 19:15 补发时采集为 29 分、19 条评论；同期查看 Chrome 网上应用店显示 134 名用户、4 条评分（5.0）。作者在 HN 称这是自己「第一个开始赚钱的产品」，但未公布金额。",
+   "url": "https://carry.md/",
+   "label": "商店用户数为 11/26 补发时观察，收入为作者自报",
+   "sources": [
+    {
+     "author": "Carry",
+     "platform": "官网",
+     "published": "",
+     "url": "https://carry.md/"
+    },
+    {
+     "author": "Chrome 网上应用店",
+     "platform": "Chrome Web Store",
+     "published": "",
+     "url": "https://chromewebstore.google.com/detail/carry-%E2%80%94-save-chatgpt-clau/mlligjaffhiphbpkjejefoibcclbdfll"
+    },
+    {
+     "author": "Carry 作者",
+     "platform": "Hacker News",
+     "published": "2026-11-25",
+     "url": "https://news.ycombinator.com/item?id=50637995"
+    }
+   ]
+  },
+  {
+   "title": "Mason 把现成的 Postgres 分析查询接到列式只读副本上，官网示例里同一条 1,000 万行统计从 15.7 秒降到 0.193 秒",
+   "summary": "Embeddable 团队做的开源只读副本（Apache-2.0）：选定要同步的表后，可按需、轮询或用逻辑复制更新到 DuckDB，查询仍按 Postgres 语法回答。团队用 159 个真实库里 5,410 条慢查询自测，称现有 96% 与原库结果一致，其余 4% 会报错并说明怎么改写。Show HN 于 11/24 发布，11/26 19:15 补发时采集为 105 分、21 条评论；GitHub 73 星、3 个 fork（星标不等于用户）。上述速度和一致率为作者自测，暂无公开的使用或收入数据。",
+   "url": "https://masondata.ai/",
+   "label": "基准作者自测，热度 11/26 补发时观察",
+   "sources": [
+    {
+     "author": "Mason",
+     "platform": "官网",
+     "published": "",
+     "url": "https://masondata.ai/"
+    },
+    {
+     "author": "embeddable-hq",
+     "platform": "GitHub",
+     "published": "",
+     "url": "https://github.com/embeddable-hq/mason-data"
+    },
+    {
+     "author": "tagspace",
+     "platform": "Hacker News",
+     "published": "2026-11-24",
+     "url": "https://news.ycombinator.com/item?id=50630294"
+    }
+   ]
+  },
+  {
+   "title": "AAE 让编程助手先写出可证伪的假设再改算法，只留下对照测试仍然正确而且更快的补丁",
+   "summary": "海德堡大学算法工程组做的 Claude Code / Codex 技能：先约定基准、指标和正确性断言，再循环「假设、实现、测试」，每次只保留更好且仍正确的改动，并给出 PDF 报告和可单独合并的补丁。他们在自己维护的开源求解器上称 VieCut 最小割快了 8.9 倍、KaHIP 划分快了 3.9 倍且质量不变（作者自报，附有公开报告）。Show HN 于 11/23 发布，11/26 19:15 补发时采集为 117 分、10 条评论；GitHub 128 星、9 个 fork（星标不等于用户）。暂无公开的使用或收入数据。",
+   "url": "https://github.com/CHSZLab/AgenticAlgorithmEngineering",
+   "label": "测试作者自报，热度 11/26 补发时观察",
+   "sources": [
+    {
+     "author": "CHSZLab",
+     "platform": "项目主页",
+     "published": "",
+     "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/"
+    },
+    {
+     "author": "CHSZLab",
+     "platform": "GitHub",
+     "published": "",
+     "url": "https://github.com/CHSZLab/AgenticAlgorithmEngineering"
+    },
+    {
+     "author": "AAE 作者",
+     "platform": "Hacker News",
+     "published": "2026-11-23",
+     "url": "https://news.ycombinator.com/item?id=50611593"
+    }
+   ]
+  },
+  {
+   "title": "Rchive 把多年换下来的硬盘放进同一个窗口搜索，硬盘没接上也能先查目录",
+   "summary": "Windows、Mac 和 Linux 桌面应用，可扫描内置盘、移动硬盘、光盘甚至软盘，用预览和元数据浏览，并按「配方」整理后再真正拷贝或移动；离线可用，官网称没有遥测、不会自行删除文件。免费试用是 90 天内可用 10 天，买断现价 39.99 美元（标价 79.99 美元，一人最多 3 台设备）。Show HN 于 11/24 发布，11/26 19:15 补发时采集为 47 分、26 条评论。暂无公开的使用或收入数据。",
+   "url": "https://www.rchive.computer/",
+   "label": "价格已读官网，暂无公开使用或收入数据",
+   "sources": [
+    {
+     "author": "Rchive",
+     "platform": "官网",
+     "published": "",
+     "url": "https://www.rchive.computer/"
+    },
+    {
+     "author": "Rchive",
+     "platform": "Hacker News",
+     "published": "2026-11-24",
+     "url": "https://news.ycombinator.com/item?id=50624684"
+    }
+   ]
+  },
+  {
+   "title": "GPU 演示馆把 1998 到 2006 年的显卡出厂演示按原文件在浏览器里重跑，打开就能玩",
+   "summary": "独立开发者 arkits 把 3dfx、NVIDIA 等当年随卡附送的技术演示重建到网页上，11/26 19:15 补发时页面列出 36 个可玩项目，例如 2000 年 GeForce 的水面波纹和变色龙皮肤。Show HN 于 11/25 发布，同期采集为 347 分、80 条评论；仓库本身 4 星，星标不等于用户。暂无公开的使用或收入数据。",
+   "url": "https://gpu-demo-gallery.pages.dev/",
+   "label": "已读原文，热度 11/26 补发时观察",
+   "sources": [
+    {
+     "author": "arkits",
+     "platform": "项目站点",
+     "published": "2026-11-25",
+     "url": "https://gpu-demo-gallery.pages.dev/"
+    },
+    {
+     "author": "arkits",
+     "platform": "GitHub",
+     "published": "2026-11-24",
+     "url": "https://github.com/arkits/gpu-demo-gallery"
+    },
+    {
+     "author": "arkits",
+     "platform": "Hacker News",
+     "published": "2026-11-25",
+     "url": "https://news.ycombinator.com/item?id=50638503"
+    }
+   ]
+  }
+ ]
+}
