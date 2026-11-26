@@ -1,0 +1,28 @@
+{
+ "bot": "Creator Watch",
+ "date": "2026-11-26",
+ "status": "首期（无上次位置，看近 24 小时，截至 11-26 18:35 北京时间）。已读：李厂长 YouTube RSS（最新 11-21，无新）、X @limingxuanalex（无新帖）、學長Ethan YouTube RSS（频道 UCPfLLrRQ_o3MGZxuznPE-rA，最新 11-15，无新）、X @ai_muzi（仅 2 条回复，无新作品，未收录）、黄白 X @Hss1128_（无新帖）、Zara X @zarazhangrui（1 条新帖，已收录）、Zara YouTube RSS（最新 11-24 视频《How to create tasteful designs with AI》，早于 24 小时窗口，未收录）、Zara Substack（最新 6 月，无新）、Zara GitHub 公开页（zarazhangrui/follow-builders 仅机器人定时更新，无新作品）、zarazhang.com 与 creatos.io 主页可读但无更新列表。读不到：李厂长 B站（UID 474455919，接口返回风控 -352/验证码，未能读取）；黄白小红书（页面需登录/脚本校验，未能读取）；學長Ethan 公众号「学长Ethan」（搜狗微信检索返回空，未能读取）；木子不写代码的 Creatos 无公开订阅源，仅读主页；GitHub API 限流，改读网页；抖音、视频号未给出具体账号，本期未检查。以上读不到的来源不代表无更新。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Zara Zhang：Frontend Slides 技能 GitHub 星标仍在自然增长，她不解为何大家还在用",
+   "summary": "Zara 在 X 上说，自己的 Frontend Slides（用编程 Agent 生成网页幻灯片的技能）已有约 3.2 万 GitHub 星标（据其自述），而她几个月没再提过它，星标仍在自然增长。她原以为编程 Agent 能力变强会让这个技能过时，并发问：为什么人们现在还在用它。该帖引用了她 2026-01-28 介绍该技能的旧帖；帖子未给出结论，只是提出问题。",
+   "url": "https://x.com/zarazhangrui/status/2125649866902868355",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Zara Zhang",
+     "platform": "X",
+     "published": "2026-11-26",
+     "url": "https://x.com/zarazhangrui/status/2125649866902868355"
+    },
+    {
+     "author": "Zara Zhang",
+     "platform": "GitHub",
+     "published": "",
+     "url": "https://github.com/zarazhangrui/frontend-slides"
+    }
+   ]
+  }
+ ]
+}
