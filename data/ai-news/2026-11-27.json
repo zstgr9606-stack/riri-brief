@@ -1,0 +1,88 @@
+{
+ "bot": "AI News",
+ "date": "2026-11-27",
+ "status": "已检查 X、Reddit、Hacker News、GitHub、Product Hunt（hunted.space 实时榜）、YouTube，均读到数据；窗口为北京时间 11-26 07:00–11-27 07:00，热度为 11-27 07:14–07:25 采集值。收录 4 条：新闻 2 条、AI 产品实测 1 条、补看 1 条。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "OpenAI 员工 Tibo 称 GPT-6.2 上线时计费打错折，修正后 Astra 用量额度消耗快 40%、Sol 快 25%",
+   "summary": "OpenAI 的 Tibo（X 简介写 Codex & ChatGPT @OpenAI）11-26 发帖称，GPT-6.2 上线时误给多数用户的 GPT-6.2 Astra 和 Sol 用量打了折，现已修正，同样的工作会消耗更多套餐用量额度：与上周相比，Astra 触顶快 40%，Sol 快 25%，但仍比 6 Astra、6.1 Sol 更耐用；其他模型不受影响，过去的差额不补收。作为补偿，Go、Plus、Pro、Business 用户每人增加一次「banked reset」（存起来的额度重置），他随后发帖称已上线。官方更新日志和帮助中心未见此事，原帖也未说明是否只适用 Codex；数字为 OpenAI 员工自报。",
+   "url": "https://x.com/thsottiaux/status/2125784147889393806",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Tibo（OpenAI）",
+     "platform": "X",
+     "published": "2026-11-26",
+     "url": "https://x.com/thsottiaux/status/2125784147889393806"
+    },
+    {
+     "author": "Hacker News 用户",
+     "platform": "Hacker News",
+     "published": "2026-11-26",
+     "url": "https://news.ycombinator.com/item?id=50651117"
+    }
+   ]
+  },
+  {
+   "title": "Artificial Analysis 图生视频榜：MAGI-2 与 Dreamina Seedance 2.5 统计上并列第一，单价约为后者七分之一",
+   "summary": "第三方评测机构 Artificial Analysis 11-26 发帖称，Sand AI 11-24 发布的 MAGI-2 在其图生视频榜排第一，与 Dreamina Seedance 2.5 统计持平。榜单页显示：MAGI-2 Elo（人工两两盲评得出的分数）1163±14，5,943 个样本；Seedance 2.5 为 1158±14；价格 $4.80/分钟 vs $34.12/分钟。厂商称 MAGI-2 为混合专家（MoE）视频模型，最长生成 30 秒 1080p 带音频视频；发布时只有闭源 API，开源仅为「打算」。分差在误差范围内，Elo 只反映盲评偏好。",
+   "url": "https://x.com/ArtificialAnlys/status/2125759745655210113",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "Artificial Analysis",
+     "platform": "X",
+     "published": "2026-11-26",
+     "url": "https://x.com/ArtificialAnlys/status/2125759745655210113"
+    },
+    {
+     "author": "Artificial Analysis",
+     "platform": "榜单页",
+     "published": "",
+     "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+    }
+   ]
+  },
+  {
+   "title": "Claude Code 桌面版（Opus 5.5 + ultracode）独立实测：Karpathy 用约 7 小时让它把美国公开数据做成可浏览的「文明」式策略地图",
+   "summary": "测试者：Andrej Karpathy（X，11-26）。场景：用 Claude Code 桌面版、Opus 5.5 中档并开启 ultracode，让它把美国真实数据填进「文明」游戏式地图。结果（作者自述）：约 7 小时、4.5 万行代码后跑通，用了人口普查、BEA、BLS、EIA、NOAA 等 31 个公开数据源，统一到 25 公里六边形网格，GDP 对应金币产出等；含 19 种视图、524 个都市区页面和 3,100+ 县的表格与散点图，已部署在 karpathy.ai/usaciv。他提到的局限：Claude 自行跳过了几个州和领地；耗掉了他一半的每周额度。单人单项目自述，未说明失败次数和人工介入程度，无第三方复测。",
+   "url": "https://x.com/karpathy/status/2125779541952246039",
+   "label": "AI 产品实测 · 独立实测",
+   "sources": [
+    {
+     "author": "Andrej Karpathy",
+     "platform": "X",
+     "published": "2026-11-26",
+     "url": "https://x.com/karpathy/status/2125779541952246039"
+    },
+    {
+     "author": "Andrej Karpathy",
+     "platform": "部署页",
+     "published": "",
+     "url": "https://karpathy.ai/usaciv/"
+    }
+   ]
+  },
+  {
+   "title": "🔁 补看：Google 要求 2027-02-01 起 AI 智能体经 Workspace MCP 服务器或 CLI 访问数据；Tech Stackups 称 Gmail MCP 暂不能发信",
+   "summary": "补看原因：首发于 11-24，11-26 Tech Stackups 的分析补充了 Gmail 工具缺口。Google Workspace 11-24 官方更新：Workspace MCP 服务器（MCP，让 AI 调用外部工具的开放协议）和官方 Workspace CLI 正式可用，覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks；AI 智能体须通过 MCP 或 CLI 访问 Workspace 数据，不得直接调用 REST API，技术执行自 2027-02-01；免费 Standard 档有公布配额，Scaled 档自 2027-04-01 起对超出免费额度的用量收费。Tech Stackups（自称文章由 AI 代理起草、人工编辑审校）称：Gmail MCP 能搜索、读信、建草稿，发信、回复、转发仅限合作伙伴；免费档每项目每产品每天 5,000 次请求。后两点为该文转述，Google 配额页原文未读。",
+   "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Google Workspace",
+     "platform": "Workspace Updates 官方博客",
+     "published": "2026-11-24",
+     "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+    },
+    {
+     "author": "Tech Stackups",
+     "platform": "网站",
+     "published": "",
+     "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/"
+    }
+   ]
+  }
+ ]
+}
