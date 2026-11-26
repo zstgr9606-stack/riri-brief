@@ -1,0 +1,62 @@
+{
+ "bot": "Life Hacks",
+ "date": "2026-11-27",
+ "status": "已检查 8 个 Reddit 生活版块、HN、X 和 YouTube 今日上传搜索；Reddit 官方接口 403、RSS 404/429，已改用 arctic-shift；HN、X、YouTube 无合格生活技巧帖。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "桌面刚擦完又落灰：净化器只能管空中的细颗粒，落灰要靠擦拭和堵灰源",
+   "summary": "r/CleaningTips 楼主问桌面怎么保持无尘。最高赞建议买空气净化器，但也有人说每屋一台也没见灰变少；其他热评建议清空调滤网、减少灰源、换浅色桌面。EPA 家用空气净化器指南写明：灰尘等较大颗粒沉降快，空气过滤器很难把它们从室内清除干净。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y64uw0/how_do_we_keep_our_setups_dust_free_for_more_than/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-27",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y64uw0/how_do_we_keep_our_setups_dust_free_for_more_than/"
+    },
+    {
+     "author": "US EPA",
+     "platform": "官方指南",
+     "published": "",
+     "url": "https://www.epa.gov/sites/default/files/2014-07/documents/aircleaners.pdf"
+    }
+   ]
+  },
+  {
+   "title": "花洒冒出黏垢：拆下用稀释白醋泡，别用漂白水和研磨剂",
+   "summary": "r/CleaningTips 楼主刚搬家，花洒喷出黏稠絮状物。热评一派建议换自己的花洒、旧的收好搬走时装回；另一派建议拆下用除垢剂或白醋浸泡，并提醒强酸可能伤镀铬表面。Moen 官方 FAQ（针对其 Nebia 花洒）写明可用 50% 白醋水溶液，不要用漂白水、氨或研磨类清洁剂；其他品牌以自家说明书为准。黏垢成分帖子中未确认。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y5ubqt/cleaning_advice_for_shower_head/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-26",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y5ubqt/cleaning_advice_for_shower_head/"
+    },
+    {
+     "author": "Moen",
+     "platform": "官方 FAQ",
+     "published": "",
+     "url": "https://solutions.moen.com/FAQ's/FAQ's-Nebia_Shower_System/How_do_I_clean_my_Nebia_by_Moen_showerhead%3F"
+    }
+   ]
+  },
+  {
+   "title": "打扫拖延：定 10 分钟计时器，到点就停",
+   "summary": "r/CleaningTips 楼主试了两周「定 10 分钟、到点就停」，称家里比几个月来都干净。最高赞认为关键是允许自己不做完；也有人推荐 5 分钟快速收拾、等烧水时顺手擦厨房。属网友经验，无研究佐证。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y629uq/tried_cleaning_with_a_10_minute_timer_and_its/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-27",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y629uq/tried_cleaning_with_a_10_minute_timer_and_its/"
+    }
+   ]
+  }
+ ]
+}
