@@ -1,0 +1,96 @@
+{
+ "bot": "Daily Trends",
+ "date": "2026-11-27",
+ "status": "已检查 X、Reddit、GitHub、HN、Product Hunt、知乎、微信、微博 8 个来源；知乎、微博、Reddit、Product Hunt 官方接口受限，已改用 tophub、arctic-shift、官方 Atom 等备用渠道，各源均读到数据；产品和市场类条目已让给其他栏目。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "英伟达暂停向马来西亚、新加坡、泰国、印尼发货 AI 服务器（据 FT、WSJ 报道，英伟达未置评）",
+   "summary": "FT 称戴尔、超微等服务器厂商已告知四国买家，英伟达不允许其订单发货，是否为临时措施尚不清楚；起因是美国商务部上周新规，要求云服务商在 90 天内取得许可证、证明终端用户不含受限实体，以阻止中国企业远程租用算力。WSJ 报道内容相近。消息来自匿名知情人，英伟达拒绝置评，商务部新规原文未读。",
+   "url": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "Financial Times（CNA 转载）",
+     "platform": "CNA",
+     "published": "",
+     "url": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351"
+    },
+    {
+     "author": "TechCrunch（转述 WSJ）",
+     "platform": "TechCrunch",
+     "published": "2026-11-26",
+     "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+    }
+   ]
+  },
+  {
+   "title": "国家药监局批准 GSK 乙肝新药贝普若韦生上市，用于慢性乙肝「功能性治愈」",
+   "summary": "国家药监局经优先审评批准 1 类创新药贝普若韦生钠注射液（贺舒可），联合核苷（酸）类似物用于已治疗至少 6 个月、HBV DNA<90 IU/mL、HBsAg≤3000 IU/mL、无肝硬化的成人慢性乙肝患者。GSK 称 III 期汇总数据功能性治愈率为 19%（HBsAg≤1000 者 26%），标准治疗一年通常低于 1%；功能性治愈指停药后病毒 DNA 和表面抗原至少 24 周测不到。疗效为厂家自报试验数据；据界面新闻，该药今年已先在日本、美国、加拿大获批，「全球首个在中国获批」的说法不准确；价格和医保未公布。",
+   "url": "https://www.cnpharm.com/c/2026-11-26/1111416.shtml",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "国家药监局（中国医药报转载）",
+     "platform": "中国食品药品网",
+     "published": "2026-11-26",
+     "url": "https://www.cnpharm.com/c/2026-11-26/1111416.shtml"
+    },
+    {
+     "author": "GSK",
+     "platform": "官网新闻稿",
+     "published": "2026-11-26",
+     "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-china-as-a-first-in-class-functional-cure-for-chronic-hepatitis-b-chb/"
+    }
+   ]
+  },
+  {
+   "title": "转述：IBM 咨询部门持 H-1B、绿卡的美国员工须三周内决定外调或离职（Rest of World 原文未读）",
+   "summary": "Economic Times 援引 Rest of World 称，IBM 让部分持 H-1B 签证和绿卡的美国员工在三周内决定是否接受美国以外岗位，拒绝者获 3 个月遣散费，最后工作日为 2026 年 12 月 31 日。IBM 发言人此前证实咨询部门多数岗位停止签证和绿卡担保，不涉及其他事业部；受影响人数未披露。三周期限和遣散条款均为转述，IBM 未公开回应细节。",
+   "url": "https://economictimes.indiatimes.com/nri/work/ibm-gives-h-1b-green-card-holders-3-weeks-to-relocate-from-us-or-leave-company-december-31-deadline-set/articleshow/136180168.cms",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "Economic Times",
+     "platform": "新闻网站",
+     "published": "2026-11-26",
+     "url": "https://economictimes.indiatimes.com/nri/work/ibm-gives-h-1b-green-card-holders-3-weeks-to-relocate-from-us-or-leave-company-december-31-deadline-set/articleshow/136180168.cms"
+    }
+   ]
+  },
+  {
+   "title": "科威特防空站点遭无人机袭击，两名意大利技术人员身亡；科、意指向伊朗，伊朗否认",
+   "summary": "意大利外交部称，两名 Rheinmetall 意大利公司技术员在维护科威特军方 Skyguard 防空系统探测天线时遇袭身亡。BBC 报道，科威特国防部称无人机来自伊朗，另有科威特籍、巴基斯坦籍人员受伤；伊朗外长阿拉格齐称事件「可疑」，愿与科、意两国查明原因。袭击归属仅为科、意两国说法，暂无独立调查结果。",
+   "url": "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/attacco-con-droni-in-kuwait-due-cittadini-italiani-deceduti/",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "意大利外交部",
+     "platform": "官网新闻稿",
+     "published": "2026-11-26",
+     "url": "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/attacco-con-droni-in-kuwait-due-cittadini-italiani-deceduti/"
+    },
+    {
+     "author": "BBC",
+     "platform": "BBC News",
+     "published": "2026-11-26",
+     "url": "https://www.bbc.com/news/articles/c39w9y5dx4k5o"
+    }
+   ]
+  },
+  {
+   "title": "英国国防部致信战略预备役老兵核对联系方式和技能，防长称因「威胁环境」上升",
+   "summary": "BBC 报道，英国国防部致信退役军人核对联系方式与技能，防长斯特里廷称背景是「威胁环境」上升，便于在国内灾害或海外冲突时「知道战略预备役在哪」。《每日电讯报》称约 10 万人收到信件、为冷战后首次，并邀请自愿参加训练和北约演习；人数和「首次」说法来自电讯报，国防部原始声明未读。官方定位为行政核对，并非动员令。",
+   "url": "https://www.bbc.co.uk/news/articles/cvrlgznd9z4po",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "BBC",
+     "platform": "BBC News",
+     "published": "2026-11-26",
+     "url": "https://www.bbc.co.uk/news/articles/cvrlgznd9z4po"
+    }
+   ]
+  }
+ ]
+}
