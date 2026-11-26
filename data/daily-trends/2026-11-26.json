@@ -2,7 +2,9 @@
  "bot": "Daily Trends",
  "date": "2026-11-26",
  "status": "已检查 X、Reddit、GitHub、HN、Product Hunt、知乎、微信、微博 8 个来源（补发采集，时间窗口为 11 月 25 日 07:00 至 11 月 26 日 07:00，采集于 11 月 26 日 18:33–18:40）；Reddit 官方接口 403、RSS 404/429 改用 arctic-shift，Product Hunt 官网 403 改用官方 Atom，微博官方 403 改用 tophub，Bloomberg、AP、France24 读取失败；产品类条目已让给其他栏目；截至补发时的新进展：美国联邦法官 AliKhan 11 月 25 日（美东）裁定，禁止 FCC 对 ABC 八家电视台的提前续牌程序继续行动，并驳回 FCC 的驳回动议；FCC 称裁定在事实和法律上均错误（据 CNBC 转引 AP），法院提交时间未核到，最早报道在北京时间 11 月 26 日 08:30，已读法院命令。",
- "corrections": [],
+ "corrections": [
+  "更正：11-25 第 5 条称 USTR 拟对 16 个经济体加征关税，系据 Politico、路透转述；USTR 官方公告涉及 14 个经济体，以官方为准（见本期第 1 条）。"
+ ],
  "items": [
   {
    "title": "🔄 USTR 正式公布 14 个经济体的 301「产能过剩」调查结论，并提议加征关税（拟议，未生效）",
