@@ -485,6 +485,16 @@
     .item .source-list[hidden], .col .status[hidden] {display:none}
     .item .source-list {margin:4px 0 0;padding-left:1.1em;color:var(--muted)}
     .item .source-list li {margin:.15em 0;overflow-wrap:anywhere}
+    @media (min-width:701px) {
+      .wrap #cols.desktop-overview {display:flex;flex-direction:column;gap:24px}
+      #cols.desktop-overview > .col {background:#fff;border:1px solid #ccd7db;border-radius:8px;overflow:hidden}
+      #cols.desktop-overview .col-h {background:#e7eff1;border-left:5px solid var(--tab-blue);padding:12px 18px}
+      #cols.desktop-overview .item {padding:16px 22px}
+      #cols.desktop-overview .brief-title {max-width:84ch;margin:0;cursor:auto;padding:0}
+      #cols.desktop-overview .brief-title::after {display:none}
+      #cols.desktop-overview .brief-detail .sum {max-width:82ch}
+      #cols.desktop-overview .source-bar {max-width:82ch}
+    }
     .col-h .badge {margin-left:auto}
     .col-h .info-toggle {font:inherit;font-size:1rem;color:var(--muted);border:0;background:none;
       padding:0;min-width:32px;min-height:36px;cursor:pointer}
@@ -723,7 +733,7 @@
     }));
   }
 
-  function formatArticle(article, slug, issueDate, item) {
+  function formatArticle(article, slug, issueDate, item, overview) {
     const title = article.querySelector('.title');
     if (!title) return;
     article.dataset.readKey = readPrefix + issueDate + '/' + shareId(article.dataset.key || slug + '/' + title.textContent);
@@ -731,10 +741,10 @@
     const full = article.querySelector('.src');
     formatSummary(article.querySelector('.sum'), slug === 'ai-tools');
     article.querySelector('.sum-tg')?.remove();
-    const details = document.createElement('details');
+    const details = document.createElement(overview ? 'div' : 'details');
     details.className = 'brief-detail';
     details.addEventListener('toggle', () => { if (details.open) markRead(article); });
-    const summary = document.createElement('summary');
+    const summary = document.createElement(overview ? 'h3' : 'summary');
     summary.className = 'title brief-title';
     summary.textContent = title.textContent;
     title.replaceWith(details);
@@ -934,6 +944,8 @@
       filters.querySelector('[aria-pressed="true"]')?.scrollIntoView({block:'nearest', inline:'nearest'});
     }
     const all = filters.querySelector('[aria-pressed="true"]')?.dataset.slug === 'all';
+    const overview = all && !phone.matches;
+    feed.classList.toggle('desktop-overview', overview);
     sortChildren(feed);
     for (const col of feed.children) {
       const slug = col.dataset.slug;
@@ -975,17 +987,17 @@
       foldStatus(col, issue?.status);
       foldCorrections(col);
       if (!issue && !all) col.querySelector('.state-missing').textContent = '待更新';
-      const limit = all ? (order.slice(0, 2).includes(slug) ? 3 : 1) : articles.length;
+      const limit = all && !overview ? (order.slice(0, 2).includes(slug) ? 3 : 1) : articles.length;
       articles.forEach((item, index) => {
         if (index < limit) {
           const sourceItem = issue?.items.find(entry => entry.title === item.querySelector('.title')?.textContent);
-          formatArticle(item, slug, issue?.date || date.value, sourceItem);
+          formatArticle(item, slug, issue?.date || date.value, sourceItem, overview);
         }
         else item.remove();
       });
       if (slug === 'ai-news' && issue) groupProductPicks(col, issue);
       col.querySelectorAll('.item').forEach(article => showEvidenceLabel(article, slug));
-      if (all && count) {
+      if (all && count && !overview) {
         col.querySelector('.foot')?.remove();
         col.append(action('查看全部 ' + count + ' 条', 'column-more', slug));
       }
