@@ -1,0 +1,80 @@
+{
+ "bot": "Life Hacks",
+ "date": "2026-11-28",
+ "status": "已检查 8 个 Reddit 生活版块、HN、X 和 YouTube 今日上传搜索；Reddit 官方接口 403、RSS 404/429，已改用 arctic-shift（BuyItForLife 首次超时，重试成功）；HN、X、YouTube 无合格生活技巧帖。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "电水壶、滴滤咖啡机除垢：白醋或柠檬酸都行，但先看说明书，胶囊机别用醋",
+   "summary": "r/CleaningTips 楼主称半醋半水跑一遍、再清水跑两遍即可除垢，比除垢剂好；热评反驳柠檬酸除垢更强、没有醋味，也有人说用醋后咖啡机漏水。飞利浦水壶 FAQ 写明可用醋酸不超过 8% 的白醋或柠檬酸除垢，硬水地区约每月一次；Nespresso 除垢说明写明不要用醋。「醋比除垢剂好」只是楼主经验，各机器以自家说明书为准。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y6ng6z/running_equal_parts_water_and_white_vinegar/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-27",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y6ng6z/running_equal_parts_water_and_white_vinegar/"
+    },
+    {
+     "author": "r/LifeProTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-27",
+     "url": "https://www.reddit.com/r/LifeProTips/comments/1y6vgeh/lpt_descale_your_coffee_maker_and_kettle_monthly/"
+    },
+    {
+     "author": "Philips",
+     "platform": "官方 FAQ",
+     "published": "",
+     "url": "https://www.philips.com.au/c-t/XC000003399/it-takes-a-long-time-for-my-philips-kettle-to-boil-water"
+    },
+    {
+     "author": "Nespresso",
+     "platform": "官方说明书",
+     "published": "",
+     "url": "https://www.nespresso.com/fileadmin/shared/_img/manuals/Pixie_DescalingKit.pdf"
+    }
+   ]
+  },
+  {
+   "title": "空气炸锅炸篮黏油垢：热水加洗洁精泡软再用软海绵，别用钢丝球",
+   "summary": "r/CleaningTips 楼主买了二手空气炸锅，炸篮厚油垢用洗洁精刷不掉。热评推荐洗碗块加热水浸泡、除油剂静置后再刷，也有人提醒强力清洁剂冲不净会串味。飞利浦官方说明写明：不粘炸篮用热水加洗洁精浸泡后软海绵清洗，不用金属器具和研磨材料，去不掉可用液体除油剂并按包装操作；洗碗块浸泡一夜属网友经验。",
+   "url": "https://www.reddit.com/r/CleaningTips/comments/1y71u1a/thrifted_this_airfryer_thinking_it_would_be/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/CleaningTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-28",
+     "url": "https://www.reddit.com/r/CleaningTips/comments/1y71u1a/thrifted_this_airfryer_thinking_it_would_be/"
+    },
+    {
+     "author": "Philips",
+     "platform": "官方 FAQ",
+     "published": "",
+     "url": "https://www.usa.philips.com/c-f/XC000012903/how-to-clean-my-philips-airfryer"
+    }
+   ]
+  },
+  {
+   "title": "点「提交」前先全选复制一遍，防止网页崩了长文白写",
+   "summary": "r/LifeProTips 楼主称曾因会话过期丢掉一封长邮件，建议发送前全选复制。最高赞建议长文先在本地文档写好、收件人最后再填；另有热评推荐在 Windows 开启剪贴板历史（Win+V），微软说明确认该功能存在。属网友经验。",
+   "url": "https://www.reddit.com/r/LifeProTips/comments/1y6nq2i/lpt_before_clicking_on_submit_always_select_all/",
+   "label": "网友经验",
+   "sources": [
+    {
+     "author": "r/LifeProTips 楼主",
+     "platform": "Reddit",
+     "published": "2026-11-27",
+     "url": "https://www.reddit.com/r/LifeProTips/comments/1y6nq2i/lpt_before_clicking_on_submit_always_select_all/"
+    },
+    {
+     "author": "Microsoft",
+     "platform": "官方支持文档",
+     "published": "",
+     "url": "https://support.microsoft.com/en-us/windows/clipboard-in-windows-c436501e-985d-1c8d-97ea-fe46ddf338c6"
+    }
+   ]
+  }
+ ]
+}
