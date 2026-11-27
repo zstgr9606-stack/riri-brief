@@ -1,0 +1,103 @@
+{
+ "bot": "Invest",
+ "date": "2026-11-28",
+ "status": "窗口 11/27 06:30–11/28 06:30（北京时间），采集于 11/28 06:27。已检查硅谷居士（X、Substack、文学城）、老雷（X、YouTube、Patreon）、脑总（YouTube、知识星球）、段永平（learnduan 镜像）、H&H 13F、伯克希尔：H&H 13F 与伯克希尔官方事件无新；脑总、文学城、老雷 YouTube 无新内容；老雷 Patreon 感恩节后暂无新交易笔记。雪球原帖、脑总雪球、小红书、知识星球因登录墙未能直接读取（段永平条目为镜像转述）。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "段永平：大概率不会投任何大模型公司，因为差异化很难持久，但会持续关注（转述，经 learnduan 镜像读到，雪球原帖未直接读取）",
+   "summary": "网友称编码工具在 Claude Code、GPT、DeepSeek 之间切换很方便，大模型（LLM，大语言模型）缺乏差异化且算力、电力投入巨大。段永平答：「我大概率不会投任何“大模型”，因为差异化很难持久，但我会很关注，因为这是件非常有意思的事情。」💬 此前他说过苹果不会做大模型（11/26）、腾讯必须做（11/27）；这一条是他本人作为投资者的态度。",
+   "url": "https://xueqiu.com/1247347556/418893944",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "段永平（大道无形我有型）",
+     "platform": "雪球",
+     "published": "2026-11-27",
+     "url": "https://xueqiu.com/1247347556/418893944"
+    },
+    {
+     "author": "learnduan 镜像",
+     "platform": "网站",
+     "published": "2026-11-27",
+     "url": "https://learnduan.com/posts/2026.html"
+    }
+   ],
+   "new_since": "相比上期新增：从评论苹果、腾讯转为说明他自己是否会投资大模型公司。"
+  },
+  {
+   "title": "老雷：一两天的反弹不改变长期趋势，目前还没出现扭转下行趋势的关键动作",
+   "summary": "11/27 夜盘几乎所有品类上涨，老雷称「好歡樂啊，但信息混亂」。回复网友时说：「利率走高，同時 VIX 期貨也是倒掛，所以這個行情不是一個看漲的行情」；「一兩天的波動不改變長期趨勢，目前還沒出現改變下行趨勢的關鍵性動作」；所谓关键动作「當然是圖形上的變化」。💬 VIX 期货倒挂指近月波动率期货高于远月，通常反映短期避险需求偏高；这是作者判断，非事实核实。",
+   "url": "https://x.com/TheMarketMemo/status/2126177902236684304",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "老雷 LEI",
+     "platform": "X",
+     "published": "2026-11-27",
+     "url": "https://x.com/TheMarketMemo/status/2126177723395829970"
+    },
+    {
+     "author": "老雷 LEI",
+     "platform": "X",
+     "published": "2026-11-27",
+     "url": "https://x.com/TheMarketMemo/status/2126177902236684304"
+    }
+   ],
+   "prior": [
+    {
+     "title": "老雷：SOXX较6月高点已腰斬，反弹仍是出清机会",
+     "url": "https://x.com/TheMarketMemo/status/2125643966217613738"
+    }
+   ]
+  },
+  {
+   "title": "老雷（转述 Groundbrkr 文章，原文未读）：AI 基础设施融资与 2007 年次贷相似，CDS 隐含评级平均比信评低 5.3 级",
+   "summary": "老雷发中文长帖并附原文链接（Groundbrkr《Mark to swap》）。帖中称：CDS（信用违约掉期）如同当年 ABX 指数，是外部唯一实时反映风险的定价；截至 2026 年 11 月中旬，AI 供应链与担保方的 CDS「市场隐含评级」平均比信评机构评级低 5.3 级，与 2007 年 2–7 月华尔街大型券商的差距（4.6–6.5 级）相当；约 2.2–3.5 兆美元的 AI 基建债务、租约与算力承诺按单 A 利率融资，却在信贷市场按双 B（高收益债）定价；实验室的算力承诺约占 MSFT、ORCL、AMZN、GOOGL 积压订单约 40%，各方信用互保，一旦 CDS 扩大可能形成负循环。💬 数字来自原文作者，未独立核实。",
+   "url": "https://x.com/TheMarketMemo/status/2126362225187475817",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "老雷 LEI",
+     "platform": "X",
+     "published": "2026-11-28",
+     "url": "https://x.com/TheMarketMemo/status/2126362225187475817"
+    },
+    {
+     "author": "Groundbrkr",
+     "platform": "Substack",
+     "published": "",
+     "url": "https://www.groundbrkr.com/p/mark-to-swap-how-the-market-is-mispricing"
+    }
+   ]
+  },
+  {
+   "title": "硅谷居士：长线投资者不应长期持有或定投 SOXL 这类三倍杠杆 ETF，要加杠杆宁可低息融资买 SMH/SOXX",
+   "summary": "Substack 新文《我为什么不碰杠杆ETF？》（免费部分）：「作为一个长线投资者，你应该选择低利息融资购买SMH或SOXX 这类现货 ETF，并且将杠杆率严格控制在安全范围内。你绝对不应该去长期持有、甚至定投像 SOXL 这样的三倍杠杆 ETF。」理由：杠杆 ETF 每天再平衡，追求单日收益的三倍，而非长期复合收益的三倍，设计用于日内或极短期交易。💬 SMH、SOXX 为半导体指数 ETF；SOXL 为三倍做多半导体 ETF。",
+   "url": "https://svscholar.substack.com/p/etf-2db",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "硅谷居士",
+     "platform": "Substack",
+     "published": "2026-11-27",
+     "url": "https://svscholar.substack.com/p/etf-2db"
+    }
+   ]
+  },
+  {
+   "title": "硅谷居士：他推荐的 QDII 纳指/标普基金溢价仍在历史高位附近，纳指类最高约 23%",
+   "summary": "居士列出 11 月 26 日溢价率：博时标普 513500 为 9.5%，嘉实纳指 159501 为 23.4%，易方达纳指 159696 为 23.1%，国泰纳指 513100 为 17.9%；今年以来收益率：513500 为 4.2%，159501 为 13.0%，159696 为 14.6%。💬 QDII（合格境内机构投资者）基金在 A 股场内交易，溢价率指场内价格高于基金净值的幅度；数字为作者自报，未独立核实。",
+   "url": "https://x.com/SVScholar/status/2126202862661423397",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "硅谷居士",
+     "platform": "X",
+     "published": "2026-11-27",
+     "url": "https://x.com/SVScholar/status/2126202862661423397"
+    }
+   ]
+  }
+ ]
+}
