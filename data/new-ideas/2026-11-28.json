@@ -1,0 +1,22 @@
+{
+ "bot": "New Ideas",
+ "date": "2026-11-28",
+ "status": "部分信源读取失败：astralcodexten.com 406、mattridley.co.uk 403、Thinking in Bets feed 404；X 账号与逐人搜索未覆盖，本期只收录 1 条。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Dean Valentine：社交媒体上的“断章取义吐槽”并非真实但不具代表性，而是常被篡改（LessWrong）",
+   "summary": "作者认为，多数人以为转发的名人“蠢话”属实、只是挑了最糟时刻，这过于乐观：几乎没人核查原话，澄清传播远不如原帖，所以篡改或断章取义对传播最有利。例子是对陶哲轩演讲和 Sam Altman 访谈（谈 DRAM 利用率）的曲解；“澄清可见度约 1/100”为作者估计，案例集中在 X 的科技名人，非系统抽样。",
+   "url": "https://www.lesswrong.com/posts/fnWGwwKDHFRhqoWva/dunks",
+   "label": "作者自报",
+   "sources": [
+    {
+     "author": "Dean Valentine",
+     "platform": "LessWrong",
+     "published": "2026-11-26",
+     "url": "https://www.lesswrong.com/posts/fnWGwwKDHFRhqoWva/dunks"
+    }
+   ]
+  }
+ ]
+}
