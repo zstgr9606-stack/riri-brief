@@ -1,0 +1,48 @@
+{
+ "bot": "Immigration",
+ "date": "2026-11-28",
+ "status": "已检查日本、美国、加拿大、英国、澳大利亚、新西兰、爱尔兰、新加坡、德国、荷兰等官方渠道；travel.state.gov 签证公告页仍返回 403，12 月 Final Action 表未能在官网核实；菲律宾外交部官网读取超时，相关条目为媒体转述；新西兰、爱尔兰、德国部分新闻页返回 404/500。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "美国 12 月签证排期：USCIS 指定身份调整继续使用 Dates for Filing 表，中国大陆出生各类可递交日与 11 月相同",
+   "summary": "USCIS「Adjustment of Status Filing Charts」页（Last Reviewed 2026-11-27）写明：2026 年 12 月家庭类和职业类身份调整申请（I-485）都必须使用 12 月签证公告的 Dates for Filing（可递交日）表。USCIS 转载的 12 月该表中，中国大陆出生 EB-1 为 2024-07-01、EB-2 为 2023-01-01、EB-3 为 2024-04-01、EB-5 非保留名额为 2021-03-01，EB-5 乡村/高失业/基础设施保留名额为 Current（无排期）；家庭类 F1 2021-02-01、F2A Current、F2B 2020-09-01、F3 2015-11-01、F4 2012-11-01，均与 11 月相同。该表只决定在美境内何时可递交 I-485，不代表可获批；Final Action（最终批准日）表未能在国务院官网核实，本条不含该表数字。",
+   "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/when-to-file-your-adjustment-of-status-application-for-family-sponsored-or-employment-based-131",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "USCIS",
+     "platform": "USCIS 官网",
+     "published": "2026-11-27",
+     "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin"
+    },
+    {
+     "author": "USCIS",
+     "platform": "USCIS 官网",
+     "published": "2026-11-27",
+     "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/when-to-file-your-adjustment-of-status-application-for-family-sponsored-or-employment-based-131"
+    }
+   ]
+  },
+  {
+   "title": "转述：菲律宾将中国公民 14 天免签入境延长至 2028 年 1 月 15 日（未读到菲律宾外交部原文）",
+   "summary": "据 GMA News 与 Rappler 2026-11-23 报道，菲律宾外交部当天宣布，自 2026 年 1 月起对中国公民实行的 14 天免签入境（旅游等目的、搭机入境）再延长一年，至 2028-01-15。报道引述的声明称，入境仍须经菲律宾移民局查验、身份核验、观察名单检查和风险评估；仅过境菲律宾的中国旅客仍应办理过境签证。外交部原始声明本期未能读取，具体条件以菲律宾使领馆公告为准。",
+   "url": "https://www.gmanetwork.com/news/topstories/nation/1010497/ph-extends-14-day-visa-free-entry-for-chinese-nationals-until-january-2028-dfa/story/",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "GMA News",
+     "platform": "GMA News Online",
+     "published": "2026-11-23",
+     "url": "https://www.gmanetwork.com/news/topstories/nation/1010497/ph-extends-14-day-visa-free-entry-for-chinese-nationals-until-january-2028-dfa/story/"
+    },
+    {
+     "author": "Rappler",
+     "platform": "Rappler",
+     "published": "2026-11-23",
+     "url": "https://www.rappler.com/philippines/visa-free-privilege-chinese-nationals-extended-january-2028/"
+    }
+   ]
+  }
+ ]
+}
