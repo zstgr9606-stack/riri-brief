@@ -1,0 +1,76 @@
+{
+ "bot": "Daily Trends",
+ "date": "2026-11-28",
+ "status": "已检查 X、Reddit、GitHub、HN、Product Hunt、知乎、微信、微博 8 个来源；微博、Reddit、Product Hunt 官方接口受限，已改用 tophub、arctic-shift、官方 Atom 等备用渠道，各源均读到数据；产品和市场类条目已让给其他栏目。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "转述：美国空军核心云平台 Cloud One 遭黑客入侵（据路透，空军不予评论）",
+   "summary": "路透援引三名知情人称，黑客入侵美国空军旗舰云平台 Cloud One，约一个月内在系统升级时被发现；一名消息人士称入侵者利用软件漏洞进入控制平面（统管整个云系统的中枢）。该平台承载人事、薪资、后勤以及北美防空雷达数据汇总、200 多处基地弹药追踪等应用；事后应用迁移暂停、更新被阻断、部分管理员权限被收回，网络司令部介入评估。路透无法确认黑客身份、入侵范围或是否窃取数据；空军称不评论具体系统。",
+   "url": "https://www.cnbc.com/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform.html",
+   "label": "转述",
+   "sources": [
+    {
+     "author": "Reuters（CNBC 转载）",
+     "platform": "CNBC",
+     "published": "2026-11-27",
+     "url": "https://www.cnbc.com/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform.html"
+    },
+    {
+     "author": "The Guardian",
+     "platform": "The Guardian",
+     "published": "2026-11-27",
+     "url": "https://www.theguardian.com/technology/2026/nov/27/hackers-breach-us-air-force-cloud-computing"
+    }
+   ]
+  },
+  {
+   "title": "加拿大最高法院基本维持魁北克公职人员宗教标志禁令（21 号法案）",
+   "summary": "据 BBC，加拿大最高法院确认魁北克 21 号法案有效，该法禁止教师、警察等公职人员佩戴头巾、十字架等宗教标志，魁北克动用「不顾条款」（允许省议会暂时凌驾部分宪章权利）也成立；但法院认定禁止民选议员因宗教原因遮面侵犯民主权利，并称即便援引该条款，法院仍可宣布法律是否符合宪章，只是本案不这样做。三名法官部分反对。判词原文未读。",
+   "url": "https://www.bbc.com/news/articles/cq3dgpy9lem3o",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "BBC",
+     "platform": "BBC News",
+     "published": "2026-11-27",
+     "url": "https://www.bbc.com/news/articles/cq3dgpy9lem3o"
+    }
+   ]
+  },
+  {
+   "title": "英国就业与养老金部（DWP）因「网络事件」下线线上福利和养老金服务",
+   "summary": "据 BBC，DWP 称出于预防关闭数字服务；截至英国时间 11/27 中午，养老金、通用福利、PIP 申请和死亡登记「Tell Us Once」均无法访问。唐宁街称目前没有证据显示个人数据丢失，但未排除黑客攻击；DWP 称常规发放不受影响，但多名领取人称当日款项未到账。是否为攻击、何时恢复均未公布。",
+   "url": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o",
+   "label": "已读原文",
+   "sources": [
+    {
+     "author": "BBC",
+     "platform": "BBC News",
+     "published": "2026-11-27",
+     "url": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o"
+    }
+   ]
+  },
+  {
+   "title": "央行发布《人民币存贷款利率管理规定》：取消贷款罚息利率上下限，2027 年 3 月 21 日起施行",
+   "summary": "中国人民银行 11 月 27 日发布新规，不再规定罚息利率区间（此前为在合同利率上加收 30%–50%，银行多按 50% 顶格），改由借贷双方协商罚息利率、计息方式和宽限期，且须以明显方式展示年化利率和罚息年化利率。央行负责人称预计罚息利率总体下行，这是预期而非硬性下限；新规留约 4 个月过渡期，存量合同新老划断。已读新华网刊发的答记者问，央行官网原文未直接打开。",
+   "url": "https://www.xinhuanet.com/20261127/708d7e96110e44f884b3da731eaa7696/c.html",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "中国人民银行（新华网转载答记者问）",
+     "platform": "新华网",
+     "published": "2026-11-27",
+     "url": "https://www.xinhuanet.com/20261127/708d7e96110e44f884b3da731eaa7696/c.html"
+    },
+    {
+     "author": "新华社",
+     "platform": "新华网",
+     "published": "2026-11-27",
+     "url": "https://www.news.cn/fortune/20261127/1122dbaea54247e0a4b624b3cef4eeca/c.html"
+    }
+   ]
+  }
+ ]
+}
