@@ -1,0 +1,28 @@
+{
+ "bot": "Startup News",
+ "date": "2026-11-28",
+ "status": "已检查 X、Reddit、Hacker News、Product Hunt、YouTube、Indie Hackers（窗口 11-27 06:45 至 11-28 06:45 北京时间）；Reddit 官方接口与 Product Hunt 官网 403，已改用 arctic-shift、PH feed 和 hunted.space；感恩节/黑五期间经营做法类内容未达门槛，收录 1 条平台政策。",
+ "corrections": [],
+ "items": [
+  {
+   "title": "Google Play 官方：所有开发者须在 2027-02-01 前声明是否「交易商」，个人账户交易商自 03-01 起向全球用户公开电话和地址",
+   "summary": "Google Play Console 帮助页称，为配合 2027-03-01 起在欧盟/英国转为「在线市场」模式，全球所有开发者须在 2027-02-01 前声明 trader（以营利为目的经营应用者）或 non-trader 身份，逾期可能被阻止更新或全球下架。个人账户声明为交易商的，须提供电话，地址也会公开，自 03-01 起所有地区用户可见；不在欧盟/英国分发的可声明为非交易商，虚假声明可能导致账户被封。存疑：帮助页未标发布日期；HN 评论中有人提用代收地址服务，属网友经验，官方页未说明是否接受。热度（2026-11-28 约 06:38 北京时间采集）：Hacker News 173 分 / 98 评论。",
+   "url": "https://support.google.com/googleplay/android-developer/answer/17594752?hl=en",
+   "label": "官方自报",
+   "sources": [
+    {
+     "author": "Google Play",
+     "platform": "Play Console 帮助中心",
+     "published": "",
+     "url": "https://support.google.com/googleplay/android-developer/answer/17594752?hl=en"
+    },
+    {
+     "author": "",
+     "platform": "Hacker News",
+     "published": "2026-11-27",
+     "url": "https://news.ycombinator.com/item?id=50662322"
+    }
+   ]
+  }
+ ]
+}
