@@ -389,7 +389,6 @@
       .wrap #cols { align-items:stretch; }
       .wrap #cols > .col { box-sizing:border-box; width:100%; min-width:0; align-self:start; }
       .wrap #cols > .col:only-child { grid-column:1 / -1; }
-      .col:only-child .brief-detail .sum { max-width:80ch; }
     }
     @media (min-width:900px) {
       .wrap #cols { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
